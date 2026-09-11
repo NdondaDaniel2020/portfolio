@@ -1,0 +1,91 @@
+[
+  {
+    "id": "c-standard-lib",
+    "name": "Libft — C Standard Library",
+    "description": {
+      "pt": "Recriação completa e rigorosa das funções padrão da libc em C, com gerenciamento manual de memória, tratamento de ponteiros e estruturas encadeadas.",
+      "en": "Rigorous recreation of C standard libc functions with manual memory management, pointer manipulation, and linked data structures."
+    },
+    "category": "systems",
+    "featured": true,
+    "pinned": true,
+    "language": "C",
+    "technologies": ["C", "POSIX", "Valgrind", "Makefiles", "Memory Safety"],
+    "githubUrl": "https://github.com/NdondaDaniel2020",
+    "visualType": "terminal"
+  },
+  {
+    "id": "ft-printf",
+    "name": "ft_printf — Custom Printf Engine",
+    "description": {
+      "pt": "Implementação do mecanismo de formatação e parsing variádico do printf em C, gerenciando conversões hexadecimais, ponteiros e buffers com eficiência.",
+      "en": "Implementation of variadic parsing and formatting engine in C, managing hex conversions, pointers, and memory buffers."
+    },
+    "category": "systems",
+    "featured": true,
+    "pinned": true,
+    "language": "C",
+    "technologies": ["C", "Variadic Functions", "Low-Level I/O", "Buffer Management"],
+    "githubUrl": "https://github.com/NdondaDaniel2020",
+    "visualType": "code"
+  },
+  {
+    "id": "minishell",
+    "name": "Minishell — UNIX Shell Implementation",
+    "description": {
+      "pt": "Recriação de um shell Bash funcional em C com parsing de comandos com aspas, redirecionamentos (>, >>, <, <<), pipes em cadeia, variáveis de ambiente e gestão de sinais.",
+      "en": "Functional Bash-like shell in C featuring quote parsing, redirection piping, environment variable expansion, and signal handling."
+    },
+    "category": "systems",
+    "featured": true,
+    "pinned": true,
+    "language": "C",
+    "technologies": ["C", "UNIX Processes", "Fork/Execve", "Pipes", "Signals"],
+    "githubUrl": "https://github.com/NdondaDaniel2020",
+    "visualType": "terminal"
+  },
+  {
+    "id": "philosophers",
+    "name": "Philosophers — Concurrency & Threads",
+    "description": {
+      "pt": "Solução otimizada para o problema clássico de concorrência usando Threads POSIX, Mutexes e prevenção estrita de Deadlocks e Race Conditions.",
+      "en": "Optimized solution for classic dining philosophers problem using POSIX Threads, Mutexes, and race condition prevention."
+    },
+    "category": "systems",
+    "featured": true,
+    "language": "C",
+    "technologies": ["C", "Pthreads", "Mutex", "Concurrency", "Synchronization"],
+    "githubUrl": "https://github.com/NdondaDaniel2020",
+    "visualType": "api"
+  },
+  {
+    "id": "fastapi-microservices",
+    "name": "Distributed Microservices Architecture",
+    "description": {
+      "pt": "Arquitetura de microsserviços orientada a eventos construída com FastAPI, Docker, RabbitMQ e PostgreSQL, com autenticação JWT e documentação OpenAPI.",
+      "en": "Event-driven microservices architecture with FastAPI, Docker, RabbitMQ, PostgreSQL, JWT auth, and OpenAPI specs."
+    },
+    "category": "backend",
+    "featured": true,
+    "pinned": true,
+    "language": "Python",
+    "technologies": ["Python", "FastAPI", "PostgreSQL", "Docker", "RabbitMQ", "SQLAlchemy"],
+    "githubUrl": "https://github.com/NdondaDaniel2020",
+    "visualType": "api"
+  },
+  {
+    "id": "portfolio-ndonda",
+    "name": "ndonda.me — Developer Portfolio",
+    "description": {
+      "pt": "Portfólio de engenharia de software construído com React, TypeScript e Tailwind CSS, alimentado por pipeline automatizada de CI/CD.",
+      "en": "Software engineering portfolio built with React, TypeScript, and Tailwind CSS, powered by an automated CI/CD pipeline."
+    },
+    "category": "web",
+    "featured": true,
+    "language": "TypeScript",
+    "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite", "GitHub Actions"],
+    "githubUrl": "https://github.com/NdondaDaniel2020",
+    "liveUrl": "https://ndonda.me",
+    "visualType": "chart"
+  }
+]

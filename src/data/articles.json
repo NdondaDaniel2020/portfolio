@@ -1,0 +1,29 @@
+[
+  {
+    "id": "c-standard-library-deep-dive",
+    "title": "Como implementei a minha própria biblioteca padrão em C",
+    "summary": "Aprofundando os fundamentos da libc: gerenciamento manual de memória, manipulação de ponteiros e arquitetura interna de funções essenciais do UNIX.",
+    "url": "https://medium.com/@ndondadaniel2020",
+    "publishedAt": "2025-06-02",
+    "readTime": "8 min de leitura",
+    "tags": ["C", "UNIX", "Sistemas", "Engenharia de Software"]
+  },
+  {
+    "id": "concurrency-in-posix-threads",
+    "title": "Concorrência e Paralelismo em C com Threads POSIX e Mutex",
+    "summary": "Um guia prático sobre como evitar Deadlocks, Race Conditions e lidar com primitivas de sincronização no problema clássico dos filósofos.",
+    "url": "https://medium.com/@ndondadaniel2020",
+    "publishedAt": "2025-08-14",
+    "readTime": "11 min de leitura",
+    "tags": ["C", "Concorrência", "Pthreads", "Sistemas Operacionais"]
+  },
+  {
+    "id": "fastapi-docker-resilient-apis",
+    "title": "Construindo APIs Resilientes com FastAPI, PostgreSQL e Docker",
+    "summary": "Padrões de design de software, tipagem estrita com Pydantic, transações atômicas de banco de dados e empacotamento com containers Docker.",
+    "url": "https://medium.com/@ndondadaniel2020",
+    "publishedAt": "2026-02-20",
+    "readTime": "6 min de leitura",
+    "tags": ["Python", "FastAPI", "Docker", "Backend"]
+  }
+]
