@@ -2,7 +2,6 @@
 
 > **Full Stack & Systems Engineer** focado em arquitetura backend de alta performance, sistemas em C/C++, ecossistema Python/FastAPI e aplicações web modernas com React + TypeScript.
 
-🌐 **Website / Live Demo**: [ndonda.me](https://ndonda.me)  
 📫 **Email**: [ndondadaniel2020@gmail.com](mailto:ndondadaniel2020@gmail.com)  
 💼 **LinkedIn**: [Ndonda Daniel Matondo](https://www.linkedin.com/in/ndonda-daniel-matondo-098370402/)  
 🐙 **GitHub**: [@NdondaDaniel2020](https://github.com/NdondaDaniel2020)  
@@ -42,7 +41,7 @@ Este repositório contém a versão moderna e reescrita do portfólio profission
 | **Estilização** | [Tailwind CSS v3](https://tailwindcss.com/), PostCSS, CSS Variables |
 | **Ícones** | [Lucide React](https://lucide.dev/) |
 | **Qualidade & Linting** | [Oxlint](https://oxc.rs/) |
-| **Deploy & Hosting** | [Vercel](https://vercel.com/) / [GitHub Pages](https://pages.github.com/) com domínio personalizado (`ndonda.me`) |
+| **Deploy & Hosting** | [Vercel](https://vercel.com/) / [GitHub Pages](https://pages.github.com/) |
 
 ---
 
@@ -55,7 +54,6 @@ portfolio/
 │       └── sync-and-deploy.yml    # Workflow de sincronização automática e deploy
 ├── public/
 │   ├── curriculo/                 # Currículos em PDF (PT e EN)
-│   ├── CNAME                      # Domínio customizado (ndonda.me)
 │   └── ndonda.png                 # Foto de perfil
 ├── scripts/
 │   └── sync-data.ts               # Script de sincronização com APIs GitHub e Medium
@@ -134,7 +132,7 @@ O projeto está totalmente preparado para a Vercel com suporte a rotas de SPA co
 3. A Vercel detectará o framework como **Vite** automaticamente:
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
-4. Configure o seu domínio customizado (`ndonda.me`) na aba **Domains**.
+4. O deploy gerará automaticamente uma URL gratuita da Vercel (ex: `https://seu-projeto.vercel.app`).
 
 ---
 
