@@ -195,7 +195,7 @@ export const ProjectsPage: React.FC = () => {
             {paginatedProjects.map((project) => (
               <div
                 key={project.id}
-                className="h-[356px] rounded-2xl bg-brand-card border border-brand-border hover:border-brand-teal/40 transition-all duration-300 p-6 flex flex-col justify-between group glow-teal-sm/0 hover:shadow-xl hover:shadow-brand-teal/5"
+                className="h-[318px] rounded-2xl bg-brand-card border border-brand-border hover:border-brand-teal/40 transition-all duration-300 p-6 flex flex-col justify-between group glow-teal-sm/0 hover:shadow-xl hover:shadow-brand-teal/5"
               >
                 <div className="space-y-4 min-w-0">
                   {/* Topo do Card */}
