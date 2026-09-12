@@ -1,0 +1,50 @@
+[
+  {
+    "id": "entendendo-ponteiros-em-c",
+    "title": {
+      "pt": "Entendendo Ponteiros em C do zero ao uso avançado na memória",
+      "en": "Understanding Pointers in C: From Zero to Advanced Memory Management"
+    },
+    "summary": {
+      "pt": "Desmistificando aritmética de ponteiros, alocação dinâmica com malloc/free e layout da pilha (stack) versus heap.",
+      "en": "Demystifying pointer arithmetic, dynamic allocation with malloc/free, and internal stack vs heap memory layout."
+    },
+    "url": "https://medium.com/@ndondadaniel2020",
+    "publishedAt": "2026-07-28",
+    "readTime": "8 min de leitura",
+    "tags": ["C", "Memória", "Sistemas", "Unix"],
+    "featured": true
+  },
+  {
+    "id": "arquitetura-fastapi-alta-concorrencia",
+    "title": {
+      "pt": "Arquitetando APIs resilientes de alta concorrência com FastAPI e Redis",
+      "en": "Architecting High-Concurrency Resilient APIs with FastAPI and Redis"
+    },
+    "summary": {
+      "pt": "Padrões práticos de pool de conexões assíncronas, rate-limiting distribuído e mitigação de gargalos de I/O.",
+      "en": "Real-world async connection pool designs, distributed rate-limiting, and strategic I/O bottleneck mitigation."
+    },
+    "url": "https://medium.com/@ndondadaniel2020",
+    "publishedAt": "2026-06-15",
+    "readTime": "11 min de leitura",
+    "tags": ["FastAPI", "Python", "Redis", "Backend"],
+    "featured": true
+  },
+  {
+    "id": "como-funciona-o-multiplexing-io",
+    "title": {
+      "pt": "Como funciona o Multiplexing de I/O por baixo dos panos (select, poll e epoll)",
+      "en": "Under the Hood: How I/O Multiplexing Works (select, poll, and epoll)"
+    },
+    "summary": {
+      "pt": "Uma análise detalhada de chamadas de sistema no kernel Linux para escalonar milhares de sockets simultâneos.",
+      "en": "An in-depth exploration of Linux kernel system calls to scale thousands of simultaneous active network sockets."
+    },
+    "url": "https://medium.com/@ndondadaniel2020",
+    "publishedAt": "2026-05-04",
+    "readTime": "14 min de leitura",
+    "tags": ["Linux", "Sockets", "C++", "Redes"],
+    "featured": false
+  }
+]
