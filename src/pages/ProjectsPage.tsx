@@ -122,10 +122,14 @@ export const ProjectsPage: React.FC = () => {
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
           <input
             ref={searchInputRef}
-            type="text"
+            type="search"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder={t.projects_page.search_placeholder}
+            aria-label={t.projects_page.search_placeholder}
+            enterKeyHint="search"
+            autoComplete="off"
+            spellCheck={false}
             className="w-full pl-12 pr-24 py-3.5 rounded-xl bg-brand-card border border-brand-border text-slate-200 placeholder-slate-500 focus:outline-none focus:border-brand-teal transition-all text-sm font-mono"
           />
           <span className="hidden sm:inline-block absolute right-4 top-1/2 -translate-y-1/2 px-2 py-0.5 rounded text-[11px] font-mono bg-brand-surface border border-brand-border text-slate-400">

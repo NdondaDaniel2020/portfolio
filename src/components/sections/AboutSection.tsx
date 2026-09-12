@@ -49,8 +49,10 @@ export const AboutSection: React.FC = () => {
               <img
                 src="/ndonda.png"
                 alt="Ndonda Daniel Matondo"
+                width="256"
+                height="256"
+                decoding="async"
                 className="w-56 h-56 sm:w-64 sm:h-64 object-cover rounded-xl"
-                loading="lazy"
               />
 
               {/* Status Badge */}

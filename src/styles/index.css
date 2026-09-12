@@ -64,6 +64,24 @@ body {
   border-color: rgba(0, 242, 176, 0.28);
 }
 
+/* Otimização de renderização moderna para seções fora da tela (Baseline Modern Web) */
+.content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 500px;
+}
+
+/* Acessibilidade: respeitar preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Light mode adjustments */
 html.light header {
   background-color: var(--bg-header) !important;
@@ -214,17 +232,20 @@ html.light .bg-\[\#091116\] .border-brand-border\/60 {
 }
 
 /* Inputs de busca e atalhos */
-html.light input[type="text"] {
+html.light input[type="text"],
+html.light input[type="search"] {
   background-color: #FFFFFF !important;
   color: #0F172A !important;
   border-color: #CBD5E1 !important;
 }
 
-html.light input[type="text"]::placeholder {
+html.light input[type="text"]::placeholder,
+html.light input[type="search"]::placeholder {
   color: #64748B !important;
 }
 
-html.light input[type="text"]:focus {
+html.light input[type="text"]:focus,
+html.light input[type="search"]:focus {
   border-color: #00F2B0 !important;
   box-shadow: 0 0 0 3px rgba(0, 242, 176, 0.15) !important;
 }

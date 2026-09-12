@@ -12,11 +12,21 @@ export const HomePage: React.FC = () => {
     <main className="max-w-7xl mx-auto px-6 lg:px-12 pb-24 space-y-32">
       <HeroSection />
       <AboutSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <ArticlesSection />
-      <ExperienceSection />
-      <ContactSection />
+      <div className="content-auto">
+        <ProjectsSection />
+      </div>
+      <div className="content-auto">
+        <SkillsSection />
+      </div>
+      <div className="content-auto">
+        <ArticlesSection />
+      </div>
+      <div className="content-auto">
+        <ExperienceSection />
+      </div>
+      <div className="content-auto">
+        <ContactSection />
+      </div>
     </main>
   );
 };
