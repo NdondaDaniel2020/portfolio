@@ -1,0 +1,85 @@
+export const pt = {
+  nav: {
+    home: "Home",
+    about: "Sobre mim",
+    projects: "Projetos",
+    skills: "Skills",
+    articles: "Artigos",
+    contact: "Contato",
+  },
+  hero: {
+    badge: "FULL STACK DEVELOPER",
+    headline_p1: "Construo sistemas",
+    headline_p2: "que resolvem problemas",
+    headline_p3: "reais.",
+    subtitle_p1: "Backend-first developer focado em",
+    subtitle_bold: "Python, FastAPI, React, TypeScript",
+    subtitle_p2: "e engenharia de dados de alta concorrência.",
+    cta_projects: "Ver projetos",
+    cta_contact: "Contactar",
+    cta_cv: "Baixar Currículo",
+    explore: "Explorar",
+  },
+  about: {
+    tag: "01 — SOBRE MIM",
+    title: "Desenvolvedor com mentalidade de engenharia.",
+    bio: "Gosto de transformar ideias em produtos funcionais, com APIs bem estruturadas, bases de dados sólidas e sistemas preparados para crescer. Tenho experiência prática em projetos pessoais, freelancing, hackathons e na 42, onde o trabalho em equipa faz parte do processo contínuo de aprendizagem e excelência técnica.",
+    online_badge: "Disponível para novos desafios",
+    skills_tags: {
+      backend: "Backend & APIs",
+      data: "Data & Databases",
+      cloud: "Cloud & DevOps",
+      frontend: "Frontend",
+    },
+  },
+  projects: {
+    tag: "02 — PROJETOS EM DESTAQUE",
+    title: "Sistemas em produção e open-source.",
+    view_all: "Ver todos os projetos",
+    view_github: "Código no GitHub",
+    view_live: "Acessar Sistema",
+  },
+  skills: {
+    tag: "03 — STACK TÉCNICA",
+    title: "Tecnologias com as quais construo sistemas.",
+  },
+  articles: {
+    tag: "04 — ARTIGOS & PUBLICAÇÕES",
+    title: "Compartilhando conhecimento técnico.",
+    read_more: "Ler artigo no Medium",
+    view_all: "Ver todos os artigos",
+  },
+  experience: {
+    tag: "05 — EXPERIÊNCIA",
+    title: "Minha trajetória e vivência técnica.",
+  },
+  contact: {
+    tag: "06 — VAMOS CONVERSAR",
+    title: "Interessado em trabalhar juntos?",
+    subtitle: "Estou disponível para contratações full-time, consultorias e projetos desafiadores.",
+    channels: {
+      whatsapp: "WhatsApp Direto",
+      email: "Email Profissional",
+      github: "Perfil no GitHub",
+      linkedin: "Conectar no LinkedIn",
+    },
+    whatsapp_msg: "Olá Ndonda Daniel! Vi seu portfólio e gostaria de conversar sobre uma oportunidade.",
+  },
+  footer: {
+    status: "System: Operational • 99.9% uptime",
+    rights: "Todos os direitos reservados.",
+  },
+  projects_page: {
+    title: "Todos os Projetos",
+    subtitle: "Galeria completa de repositórios, ferramentas e sistemas em produção.",
+    search_placeholder: "Buscar projetos por tecnologia, nome ou conceito (Pressione Ctrl+K)...",
+    tab_all: "Todos os Projetos",
+    tab_production: "Em Produção",
+    tab_opensource: "Open Source",
+  },
+  articles_page: {
+    title: "Artigos & Publicações",
+    subtitle: "Reflexões sobre sistemas de baixo nível, concorrência, bancos de dados e boas práticas.",
+    search_placeholder: "Buscar artigos por assunto ou palavra-chave...",
+  }
+};
