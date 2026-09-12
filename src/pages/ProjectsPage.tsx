@@ -195,16 +195,16 @@ export const ProjectsPage: React.FC = () => {
             {paginatedProjects.map((project) => (
               <div
                 key={project.id}
-                className="rounded-2xl bg-brand-card border border-brand-border hover:border-brand-teal/40 transition-all duration-300 p-6 flex flex-col justify-between group glow-teal-sm/0 hover:shadow-xl hover:shadow-brand-teal/5"
+                className="h-[280px] rounded-2xl bg-brand-card border border-brand-border hover:border-brand-teal/40 transition-all duration-300 p-6 flex flex-col justify-between group glow-teal-sm/0 hover:shadow-xl hover:shadow-brand-teal/5"
               >
-                <div className="space-y-4">
+                <div className="space-y-3 min-w-0">
                   {/* Topo do Card */}
                   <div className="flex items-center justify-between">
-                    <span className="px-2.5 py-1 rounded-md text-[11px] font-mono uppercase bg-brand-surface border border-brand-border text-brand-teal">
+                    <span className="px-2.5 py-1 rounded-md text-[11px] font-mono uppercase bg-brand-surface border border-brand-border text-brand-teal shrink-0">
                       {project.language}
                     </span>
 
-                    <div className="flex items-center gap-3 text-slate-400 text-xs font-mono">
+                    <div className="flex items-center gap-3 text-slate-400 text-xs font-mono shrink-0">
                       {project.stars !== undefined && (
                         <span className="flex items-center gap-1">
                           <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400/20" />
@@ -220,31 +220,39 @@ export const ProjectsPage: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Título & Descrição */}
-                  <div>
-                    <h3 className="text-xl font-bold text-white group-hover:text-brand-teal transition-colors">
+                  {/* Título & Descrição Fixa com Elipse (...) */}
+                  <div className="min-w-0">
+                    <h3 className="text-xl font-bold text-white group-hover:text-brand-teal transition-colors truncate">
                       {project.name}
                     </h3>
-                    <p className="text-sm text-brand-muted mt-2 leading-relaxed">
+                    <p
+                      title={project.description[language]}
+                      className="text-sm text-brand-muted mt-2 leading-relaxed line-clamp-3 overflow-hidden text-ellipsis"
+                    >
                       {project.description[language]}
                     </p>
                   </div>
 
                   {/* Tecnologias */}
-                  <div className="flex flex-wrap gap-1.5 pt-2">
-                    {project.technologies.map((tech) => (
+                  <div className="flex flex-wrap gap-1.5 pt-1 overflow-hidden h-7">
+                    {project.technologies.slice(0, 4).map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-0.5 rounded text-[11px] font-mono bg-brand-surface/80 text-slate-300 border border-brand-border/60"
+                        className="px-2 py-0.5 rounded text-[11px] font-mono bg-brand-surface/80 text-slate-300 border border-brand-border/60 shrink-0 truncate max-w-[130px]"
                       >
                         {tech}
                       </span>
                     ))}
+                    {project.technologies.length > 4 && (
+                      <span className="px-1.5 py-0.5 rounded text-[10px] font-mono bg-brand-surface/50 text-slate-500 border border-brand-border/40 shrink-0">
+                        +{project.technologies.length - 4}
+                      </span>
+                    )}
                   </div>
                 </div>
 
-                {/* Ações */}
-                <div className="pt-6 mt-6 border-t border-brand-border/60 flex items-center justify-between">
+                {/* Ações Alinhadas na Base */}
+                <div className="pt-4 border-t border-brand-border/60 flex items-center justify-between shrink-0">
                   <a
                     href={project.githubUrl}
                     target="_blank"
