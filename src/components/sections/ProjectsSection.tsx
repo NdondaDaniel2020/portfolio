@@ -21,44 +21,39 @@ export const ProjectsSection: React.FC = () => {
 
       {/* Projects Desktop 3-column Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Project 1: DataLab */}
+        {/* Project 1: Auth (FastAPI + JWT + RBAC) */}
         <article
           className="rounded-2xl bg-brand-card border border-brand-border hover:border-brand-teal/40 transition-all duration-300 p-6 flex flex-col justify-between group"
           data-purpose="project-card"
         >
           <div className="space-y-4">
             {/* Project Visual Showcase / Mock Header */}
-            <div className="h-44 w-full rounded-xl bg-[#091116] border border-brand-border/70 p-4 flex flex-col justify-between relative overflow-hidden group-hover:border-brand-teal/30 transition-all">
-              <div className="flex items-center justify-between text-[11px] font-mono">
+            <div className="h-44 w-full rounded-xl bg-[#091116] border border-brand-border/70 p-4 flex flex-col justify-between relative overflow-hidden group-hover:border-brand-teal/30 transition-all font-mono text-xs">
+              <div className="flex items-center justify-between text-[11px]">
                 <span className="text-brand-teal flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>
-                  Live Project
+                  Live on Vercel
                 </span>
-                <span className="text-slate-500">datalab-edu.io</span>
+                <span className="text-slate-500">FastAPI • JWT</span>
               </div>
-              {/* Mini Visual preview diagram */}
-              <div className="space-y-2">
-                <p className="text-xs font-semibold text-white">Estruturas de Dados &amp; Algoritmos</p>
-                <div className="flex items-end gap-1.5 h-8">
-                  <div className="w-3 bg-brand-teal h-4 rounded-sm"></div>
-                  <div className="w-3 bg-brand-teal h-8 rounded-sm"></div>
-                  <div className="w-3 bg-brand-teal h-6 rounded-sm"></div>
-                  <div className="w-3 bg-brand-teal h-7 rounded-sm"></div>
-                  <div className="w-3 bg-slate-700 h-3 rounded-sm"></div>
-                </div>
+              {/* Mini Auth diagram */}
+              <div className="space-y-1.5 text-[11px]">
+                <p className="text-slate-300"><span className="text-brand-teal">POST</span> /api/v1/auth/login</p>
+                <p className="text-slate-400 pl-2">→ Bearer Token [HMAC-SHA256]</p>
+                <p className="text-emerald-400 pl-2">[200 OK] RBAC Verified</p>
               </div>
-              <p className="text-[11px] text-slate-400 font-mono">Visualizador Interativo • Exploração Dinâmica</p>
+              <p className="text-[11px] text-slate-500">Controlo de Acessos &amp; Segurança Robusta</p>
             </div>
 
             {/* Title & External Link */}
             <div className="flex items-start justify-between gap-2 pt-2">
               <h3 className="text-xl font-bold text-white group-hover:text-brand-teal transition-colors">
-                DataLab
+                Auth (FastAPI Service)
               </h3>
               <a
-                aria-label="Abrir DataLab"
+                aria-label="Abrir Auth Live Demo"
                 className="text-slate-400 hover:text-brand-teal transition-colors"
-                href="https://datalab-edu.io"
+                href="https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -67,15 +62,15 @@ export const ProjectsSection: React.FC = () => {
             </div>
 
             <p className="text-sm text-brand-muted leading-relaxed">
-              O DataLab é uma plataforma educacional interactiva focada no ensino de estruturas de dados e algoritmos com exploração clara e visualizações dinâmicas.
+              Aplicação base robusta em FastAPI implementando autenticação JWT, controlo de acessos baseado em papéis (RBAC) e melhores práticas de segurança de APIs.
             </p>
 
             {/* Tech Tags */}
             <div className="flex flex-wrap gap-2 pt-1">
-              <span className="px-2.5 py-1 rounded-md bg-brand-surface border border-brand-border text-[11px] font-mono text-slate-300">Next.js</span>
-              <span className="px-2.5 py-1 rounded-md bg-brand-surface border border-brand-border text-[11px] font-mono text-slate-300">TypeScript</span>
-              <span className="px-2.5 py-1 rounded-md bg-brand-surface border border-brand-border text-[11px] font-mono text-slate-300">Framer Motion</span>
-              <span className="px-2.5 py-1 rounded-md bg-brand-surface border border-brand-border text-[11px] font-mono text-slate-300">TailwindCSS</span>
+              <span className="px-2.5 py-1 rounded-md bg-brand-surface border border-brand-border text-[11px] font-mono text-slate-300">Python</span>
+              <span className="px-2.5 py-1 rounded-md bg-brand-surface border border-brand-border text-[11px] font-mono text-slate-300">FastAPI</span>
+              <span className="px-2.5 py-1 rounded-md bg-brand-surface border border-brand-border text-[11px] font-mono text-slate-300">JWT</span>
+              <span className="px-2.5 py-1 rounded-md bg-brand-surface border border-brand-border text-[11px] font-mono text-slate-300">RBAC</span>
             </div>
           </div>
 
@@ -90,7 +85,7 @@ export const ProjectsSection: React.FC = () => {
             <a
               aria-label="Código no GitHub"
               className="p-2.5 rounded-lg border border-brand-border hover:border-slate-500 text-slate-300 hover:text-white transition-colors"
-              href="https://github.com/NdondaDaniel2020/DataLab"
+              href="https://github.com/NdondaDaniel2020/Auth"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -231,7 +226,7 @@ export const ProjectsSection: React.FC = () => {
               rel="noopener noreferrer"
             >
               <GithubIcon className="w-4 h-4" />
-              <span>Ver Código-Fonte</span>
+              <span>Ver Repositório GitHub</span>
             </a>
           </div>
         </article>

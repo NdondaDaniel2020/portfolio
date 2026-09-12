@@ -72,6 +72,7 @@ body {
 
 /* Acessibilidade: respeitar preferência de movimento reduzido */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   ::before,
   ::after {
@@ -285,6 +286,3 @@ html.light .bg-brand-dark\/90 span.text-slate-300,
 html.light [data-purpose="about-section"] .bg-brand-dark\/90 span {
   color: #E2E8F0 !important;
 }
-
-
-

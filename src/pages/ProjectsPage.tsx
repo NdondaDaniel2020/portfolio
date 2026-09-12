@@ -143,31 +143,28 @@ export const ProjectsPage: React.FC = () => {
           <div className="flex items-center gap-1 p-1 rounded-xl bg-brand-card border border-brand-border text-xs font-mono">
             <button
               onClick={() => setActiveTab('all')}
-              className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer ${
-                activeTab === 'all'
+              className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer ${activeTab === 'all'
                   ? 'bg-brand-teal text-slate-950 font-bold'
                   : 'text-slate-400 hover:text-white'
-              }`}
+                }`}
             >
               {t.projects_page.tab_all}
             </button>
             <button
               onClick={() => setActiveTab('production')}
-              className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer ${
-                activeTab === 'production'
+              className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer ${activeTab === 'production'
                   ? 'bg-brand-teal text-slate-950 font-bold'
                   : 'text-slate-400 hover:text-white'
-              }`}
+                }`}
             >
               {t.projects_page.tab_production}
             </button>
             <button
               onClick={() => setActiveTab('opensource')}
-              className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer ${
-                activeTab === 'opensource'
+              className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer ${activeTab === 'opensource'
                   ? 'bg-brand-teal text-slate-950 font-bold'
                   : 'text-slate-400 hover:text-white'
-              }`}
+                }`}
             >
               {t.projects_page.tab_opensource}
             </button>
@@ -179,11 +176,10 @@ export const ProjectsPage: React.FC = () => {
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer ${
-                  activeCategory === cat.id
+                className={`px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer ${activeCategory === cat.id
                     ? 'border-brand-teal bg-brand-teal/10 text-brand-teal font-semibold'
                     : 'border-brand-border bg-brand-card text-slate-400 hover:border-slate-600 hover:text-white'
-                }`}
+                  }`}
               >
                 {cat.label}
               </button>
