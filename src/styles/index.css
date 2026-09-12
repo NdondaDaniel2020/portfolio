@@ -65,6 +65,27 @@ body {
 }
 
 /* Light mode adjustments */
+html.light {
+  --bg-main: #F4F7F9;
+  --bg-header: rgba(244, 247, 249, 0.88);
+  --text-main: #0F172A;
+  --card-bg: #FFFFFF;
+  --card-surface: #E8EEF3;
+  --border-color: #CBD5E1;
+  --text-muted: #475569;
+  --grid-dot: rgba(0, 180, 130, 0.08);
+}
+
+html.light header {
+  background-color: var(--bg-header) !important;
+  border-color: rgba(203, 213, 225, 0.7) !important;
+}
+
+html.light #mobile-menu-panel {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-color: #E2E8F0 !important;
+}
+
 html.light .bg-brand-card {
   background-color: #FFFFFF !important;
   border-color: #E2E8F0 !important;
@@ -102,27 +123,54 @@ html.light [data-purpose="hero-visual-card"] .border-brand-border\/60 {
   border-color: #1E2B35 !important;
 }
 
+/* Mockups de código / terminais dos projetos */
+html.light .bg-\[\#091116\] {
+  background-color: #0F172A !important;
+  border-color: #1E293B !important;
+}
+
 html.light .text-white {
-  color: #0F172A;
+  color: #0F172A !important;
 }
 
 html.light .text-slate-200,
 html.light .text-slate-300 {
-  color: #1E293B;
+  color: #1E293B !important;
 }
 
 html.light .text-brand-muted,
 html.light .text-slate-400 {
-  color: #64748B;
+  color: #64748B !important;
 }
 
 html.light .text-slate-500 {
-  color: #64748B;
+  color: #64748B !important;
 }
 
 html.light .border-brand-border,
 html.light .border-brand-border\/40,
 html.light .border-brand-border\/60,
 html.light .border-brand-border\/70 {
-  border-color: #CBD5E1;
+  border-color: #E2E8F0 !important;
 }
+
+/* Ícones de canais de contato no light mode */
+html.light .bg-\[\#0E1B22\] {
+  background-color: #E6FAF3 !important;
+  border-color: #A7F3D0 !important;
+}
+
+/* Thumbnail dos artigos no light mode */
+html.light .from-\[\#0B151F\] {
+  --tw-gradient-from: #1E293B var(--tw-gradient-from-position) !important;
+}
+html.light .to-\[\#12222E\] {
+  --tw-gradient-to: #0F172A var(--tw-gradient-to-position) !important;
+}
+html.light article .from-\[\#0B151F\] h3 {
+  color: #FFFFFF !important;
+}
+html.light article .from-\[\#0B151F\] .text-slate-400 {
+  color: #CBD5E1 !important;
+}
+
