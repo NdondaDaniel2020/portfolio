@@ -1,5 +1,546 @@
 [
   {
+    "id": "portfolio",
+    "name": "portfolio",
+    "description": {
+      "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
+      "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "Code",
+    "technologies": [
+      "Git"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-11"
+  },
+  {
+    "id": "reactexercises",
+    "name": "ReactExercises",
+    "description": {
+      "pt": "exemplos de interfaces com react.",
+      "en": "exemplos de interfaces com react."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "technologies": [
+      "JavaScript"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-10"
+  },
+  {
+    "id": "auth",
+    "name": "Auth",
+    "description": {
+      "pt": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura.",
+      "en": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 1,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Python"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Auth",
+    "liveUrl": "https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-08"
+  },
+  {
+    "id": "cv",
+    "name": "cv",
+    "description": {
+      "pt": "Repositório público no GitHub.",
+      "en": "Public GitHub repository."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "HTML"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/cv",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-30"
+  },
+  {
+    "id": "cub3d",
+    "name": "cub3D",
+    "description": {
+      "pt": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos.",
+      "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "inception",
+    "name": "Inception",
+    "description": {
+      "pt": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. ",
+      "en": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. "
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "PHP",
+    "technologies": [
+      "PHP"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Inception",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "minishell",
+    "name": "Minishell",
+    "description": {
+      "pt": "Interpretador de comandos (shell) em C desenvolvido para o currículo da Escola 42, inspirado no Bash. Suporta execução de comandos via PATH, pipes (|), redirecionamentos (<, >, >>, <<), built-ins (cd, echo, pwd, export, unset, env, exit), gestão de variáveis de ambiente e manipulação de sinais (Ctrl+C, Ctrl+D, Ctrl+\\).",
+      "en": "Interpretador de comandos (shell) em C desenvolvido para o currículo da Escola 42, inspirado no Bash. Suporta execução de comandos via PATH, pipes (|), redirecionamentos (<, >, >>, <<), built-ins (cd, echo, pwd, export, unset, env, exit), gestão de variáveis de ambiente e manipulação de sinais (Ctrl+C, Ctrl+D, Ctrl+\\)."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Minishell",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "webserver",
+    "name": "Webserver",
+    "description": {
+      "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
+      "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "HTML"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "ft_printf",
+    "name": "ft_printf",
+    "description": {
+      "pt": "Recriação personalizada da função printf da biblioteca padrão em C, desenvolvida no currículo da Escola 42. Implementa manipulação de argumentos variádicos via stdarg.h, conversão de bases numéricas (decimal, hexadecimal, ponteiros) e especificadores de formato (%c, %s, %p, %d, %i, %u, %x, %X, %%), com suporte a flags de precisão e largura (bônus).",
+      "en": "Recriação personalizada da função printf da biblioteca padrão em C, desenvolvida no currículo da Escola 42. Implementa manipulação de argumentos variádicos via stdarg.h, conversão de bases numéricas (decimal, hexadecimal, ponteiros) e especificadores de formato (%c, %s, %p, %d, %i, %u, %x, %X, %%), com suporte a flags de precisão e largura (bônus)."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/ft_printf",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "libft",
+    "name": "Libft",
+    "description": {
+      "pt": "Libft é uma biblioteca estática em C desenvolvida para o currículo da 42 School. Recria funções da biblioteca padrão (memória, strings e alocação dinâmica), suporte a listas ligadas (t_list) e extensões personalizadas como get_next_line e ft_printf, compilada via Makefile.",
+      "en": "Libft é uma biblioteca estática em C desenvolvida para o currículo da 42 School. Recria funções da biblioteca padrão (memória, strings e alocação dinâmica), suporte a listas ligadas (t_list) e extensões personalizadas como get_next_line e ft_printf, compilada via Makefile."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Libft",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "minitalk",
+    "name": "Minitalk",
+    "description": {
+      "pt": "Projeto de comunicação entre processos (IPC) em C desenvolvido para a Escola 42. Implementa uma arquitetura cliente-servidor para transmissão de strings bit a bit usando apenas sinais UNIX (SIGUSR1 e SIGUSR2), com tratamento assíncrono e confirmação de recebimento (handshake).",
+      "en": "Projeto de comunicação entre processos (IPC) em C desenvolvido para a Escola 42. Implementa uma arquitetura cliente-servidor para transmissão de strings bit a bit usando apenas sinais UNIX (SIGUSR1 e SIGUSR2), com tratamento assíncrono e confirmação de recebimento (handshake)."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Minitalk",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "solong",
+    "name": "SoLong",
+    "description": {
+      "pt": "Jogo 2D em C desenvolvido com a MiniLibX (projeto da 42). Guie uma kunoichi por um dojo para coletar todas as estrelas ninjas e escapar pelo portal místico. Apresenta validação rigorosa de mapas (.ber) com flood fill, física de plataforma com gravidade, animações fluidas, inimigos patrulheiros e HUD dinâmico na tela.",
+      "en": "Jogo 2D em C desenvolvido com a MiniLibX (projeto da 42). Guie uma kunoichi por um dojo para coletar todas as estrelas ninjas e escapar pelo portal místico. Apresenta validação rigorosa de mapas (.ber) com flood fill, física de plataforma com gravidade, animações fluidas, inimigos patrulheiros e HUD dinâmico na tela."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/SoLong",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "pushswap",
+    "name": "PushSwap",
+    "description": {
+      "pt": "O Push_swap é um projeto da Escola 42 desenvolvido em C para ordenação eficiente de dados usando duas pilhas (A e B) e instruções restritas. Implementa uma variante otimizada do Turk Algorithm (algoritmo guloso de menor custo) para calcular as rotações ideais e ordenar pilhas numéricas com o mínimo de operações possível.",
+      "en": "O Push_swap é um projeto da Escola 42 desenvolvido em C para ordenação eficiente de dados usando duas pilhas (A e B) e instruções restritas. Implementa uma variante otimizada do Turk Algorithm (algoritmo guloso de menor custo) para calcular as rotações ideais e ordenar pilhas numéricas com o mínimo de operações possível."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/PushSwap",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "pseudo-object-orientation-in-c",
+    "name": "Pseudo-Object-Orientation-in-C",
+    "description": {
+      "pt": "Demonstração prática de Orientação a Objetos em C utilizando structs, ponteiros de função e construtores dinâmicos. O projeto simula encapsulamento e métodos com o ponteiro 'self', permitindo associar comportamentos diretamente a estruturas de dados na linguagem C.",
+      "en": "Demonstração prática de Orientação a Objetos em C utilizando structs, ponteiros de função e construtores dinâmicos. O projeto simula encapsulamento e métodos com o ponteiro 'self', permitindo associar comportamentos diretamente a estruturas de dados na linguagem C."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Pseudo-Object-Orientation-in-C",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "philosophers",
+    "name": "Philosophers",
+    "description": {
+      "pt": "Projeto da 42 sobre concorrência, multithreading e sincronização de processos em C. Resolve o clássico Problema dos Filósofos Comensais utilizando POSIX threads (pthreads) e mutexes para gerenciar a disputa de recursos (garfos), prevenir data races e deadlocks, garantindo o gerenciamento preciso do tempo e dos estados dos filósofos.",
+      "en": "Projeto da 42 sobre concorrência, multithreading e sincronização de processos em C. Resolve o clássico Problema dos Filósofos Comensais utilizando POSIX threads (pthreads) e mutexes para gerenciar a disputa de recursos (garfos), prevenir data races e deadlocks, garantindo o gerenciamento preciso do tempo e dos estados dos filósofos."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Philosophers",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "get_next_line",
+    "name": "get_next_line",
+    "description": {
+      "pt": "Função em C desenvolvida no currículo da 42 para leitura de arquivos ou da entrada padrão linha a linha através de um File Descriptor. Implementa variáveis estáticas, gerenciamento dinâmico de memória (sem memory leaks), buffer customizável e suporte simultâneo a múltiplos descritores de arquivos (bônus).",
+      "en": "Função em C desenvolvida no currículo da 42 para leitura de arquivos ou da entrada padrão linha a linha através de um File Descriptor. Implementa variáveis estáticas, gerenciamento dinâmico de memória (sem memory leaks), buffer customizável e suporte simultâneo a múltiplos descritores de arquivos (bônus)."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/get_next_line",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "inception2-0",
+    "name": "Inception2.0",
+    "description": {
+      "pt": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. ",
+      "en": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. "
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "HTML"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Inception2.0",
+    "visualType": "terminal",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "sidebarmenureact",
+    "name": "sidebarMenuReact",
+    "description": {
+      "pt": "Repositório público no GitHub.",
+      "en": "Public GitHub repository."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "technologies": [
+      "JavaScript"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/sidebarMenuReact",
+    "visualType": "terminal",
+    "updatedAt": "2026-05-01"
+  },
+  {
+    "id": "sidebarmenu",
+    "name": "SidebarMenu",
+    "description": {
+      "pt": "Este projeto  é um exemplo de um menu lateral web",
+      "en": "Este projeto  é um exemplo de um menu lateral web"
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "HTML"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/SidebarMenu",
+    "visualType": "terminal",
+    "updatedAt": "2026-05-01"
+  },
+  {
+    "id": "fullstackcrudwebapplication",
+    "name": "FullStackCRUDWebApplication",
+    "description": {
+      "pt": "Repositório público no GitHub.",
+      "en": "Public GitHub repository."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "technologies": [
+      "JavaScript"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/FullStackCRUDWebApplication",
+    "visualType": "terminal",
+    "updatedAt": "2026-04-29"
+  },
+  {
+    "id": "regex",
+    "name": "regex",
+    "description": {
+      "pt": "Repositório público no GitHub.",
+      "en": "Public GitHub repository."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Python"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/regex",
+    "visualType": "terminal",
+    "updatedAt": "2025-12-21"
+  },
+  {
+    "id": "splash-screen",
+    "name": "splash-screen",
+    "description": {
+      "pt": "uma interface de incialização",
+      "en": "uma interface de incialização"
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 1,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Python"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/splash-screen",
+    "visualType": "terminal",
+    "updatedAt": "2025-12-20"
+  },
+  {
+    "id": "controlefinanceiro",
+    "name": "ControleFinanceiro",
+    "description": {
+      "pt": "Controle Finaceiro Criado em Python Para um projeto escolar",
+      "en": "Controle Finaceiro Criado em Python Para um projeto escolar"
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 2,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Python"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro",
+    "visualType": "terminal",
+    "updatedAt": "2025-10-11"
+  },
+  {
+    "id": "cpp",
+    "name": "CPP",
+    "description": {
+      "pt": "Repositório público no GitHub.",
+      "en": "Public GitHub repository."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "Code",
+    "technologies": [
+      "Git"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/CPP",
+    "visualType": "terminal",
+    "updatedAt": "2025-07-04"
+  },
+  {
+    "id": "splashscreencircularprogress",
+    "name": "SplashScreenCircularProgress",
+    "description": {
+      "pt": "um tela de incialização com progressBar circular",
+      "en": "um tela de incialização com progressBar circular"
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 1,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Python"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/SplashScreenCircularProgress",
+    "visualType": "terminal",
+    "updatedAt": "2022-10-08"
+  },
+  {
+    "id": "mainsplashscreen",
+    "name": "MainSplashScreen",
+    "description": {
+      "pt": "Progeto criação de uma interface com login, window, Spla ",
+      "en": "Progeto criação de uma interface com login, window, Spla "
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 1,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Python"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/MainSplashScreen",
+    "visualType": "terminal",
+    "updatedAt": "2022-10-06"
+  },
+  {
+    "id": "html-css",
+    "name": "HTML-CSS",
+    "description": {
+      "pt": "Curso de HTML5 e CSS3 do CursoemVideo",
+      "en": "Curso de HTML5 e CSS3 do CursoemVideo"
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 1,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "HTML"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/HTML-CSS",
+    "visualType": "terminal",
+    "updatedAt": "2022-10-06"
+  },
+  {
     "id": "datalab",
     "name": "DataLab",
     "description": {
@@ -12,7 +553,12 @@
     "stars": 18,
     "forks": 3,
     "language": "TypeScript",
-    "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Canvas API"],
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Canvas API"
+    ],
     "githubUrl": "https://github.com/NdondaDaniel2020/DataLab",
     "liveUrl": "https://datalab-edu.io",
     "visualType": "chart",
@@ -31,7 +577,13 @@
     "stars": 24,
     "forks": 5,
     "language": "C++",
-    "technologies": ["C++98", "Sockets", "epoll", "HTTP/1.1", "CGI"],
+    "technologies": [
+      "C++98",
+      "Sockets",
+      "epoll",
+      "HTTP/1.1",
+      "CGI"
+    ],
     "githubUrl": "https://github.com/NdondaDaniel2020/webserv",
     "visualType": "terminal",
     "updatedAt": "2026-07-12"
@@ -49,7 +601,13 @@
     "stars": 14,
     "forks": 2,
     "language": "Python",
-    "technologies": ["Python", "PySide6", "SQLite", "ReportLab", "SQLAlchemy"],
+    "technologies": [
+      "Python",
+      "PySide6",
+      "SQLite",
+      "ReportLab",
+      "SQLAlchemy"
+    ],
     "githubUrl": "https://github.com/NdondaDaniel2020/SalesManagement",
     "visualType": "stats",
     "updatedAt": "2026-06-30"
@@ -67,7 +625,12 @@
     "stars": 9,
     "forks": 1,
     "language": "C",
-    "technologies": ["C", "Valgrind", "Linux Ptrace", "Unix Syscalls"],
+    "technologies": [
+      "C",
+      "Valgrind",
+      "Linux Ptrace",
+      "Unix Syscalls"
+    ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Kernel-Memory-Inspector",
     "visualType": "code",
     "updatedAt": "2026-05-18"
@@ -85,7 +648,13 @@
     "stars": 16,
     "forks": 3,
     "language": "Python",
-    "technologies": ["Python", "FastAPI", "Redis", "AsyncIO", "Docker"],
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "Redis",
+      "AsyncIO",
+      "Docker"
+    ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Resilient-API-Gateway",
     "visualType": "terminal",
     "updatedAt": "2026-04-22"
@@ -103,7 +672,13 @@
     "stars": 11,
     "forks": 1,
     "language": "Shell",
-    "technologies": ["Docker", "Distroless", "GitHub Actions", "Trivy", "Bash"],
+    "technologies": [
+      "Docker",
+      "Distroless",
+      "GitHub Actions",
+      "Trivy",
+      "Bash"
+    ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Cloud-Distroless-Deployer",
     "visualType": "stats",
     "updatedAt": "2026-03-10"
