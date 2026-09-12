@@ -195,9 +195,9 @@ export const ProjectsPage: React.FC = () => {
             {paginatedProjects.map((project) => (
               <div
                 key={project.id}
-                className="h-[280px] rounded-2xl bg-brand-card border border-brand-border hover:border-brand-teal/40 transition-all duration-300 p-6 flex flex-col justify-between group glow-teal-sm/0 hover:shadow-xl hover:shadow-brand-teal/5"
+                className="h-[356px] rounded-2xl bg-brand-card border border-brand-border hover:border-brand-teal/40 transition-all duration-300 p-6 flex flex-col justify-between group glow-teal-sm/0 hover:shadow-xl hover:shadow-brand-teal/5"
               >
-                <div className="space-y-3 min-w-0">
+                <div className="space-y-4 min-w-0">
                   {/* Topo do Card */}
                   <div className="flex items-center justify-between">
                     <span className="px-2.5 py-1 rounded-md text-[11px] font-mono uppercase bg-brand-surface border border-brand-border text-brand-teal shrink-0">
@@ -220,14 +220,14 @@ export const ProjectsPage: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Título & Descrição Fixa com Elipse (...) */}
+                  {/* Título & Descrição com Elipse (...) */}
                   <div className="min-w-0">
                     <h3 className="text-xl font-bold text-white group-hover:text-brand-teal transition-colors truncate">
                       {project.name}
                     </h3>
                     <p
                       title={project.description[language]}
-                      className="text-sm text-brand-muted mt-2 leading-relaxed line-clamp-3 overflow-hidden text-ellipsis"
+                      className="text-sm text-brand-muted mt-2.5 leading-relaxed line-clamp-4 overflow-hidden text-ellipsis"
                     >
                       {project.description[language]}
                     </p>
