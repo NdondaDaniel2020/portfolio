@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #070B0D;
+  --bg-header: rgba(7, 11, 13, 0.85);
+  --text-main: #E2E8F0;
+  --card-bg: #0E151A;
+  --card-surface: #11181F;
+  --border-color: #1E2B35;
+  --text-muted: #7E92A2;
+  --grid-dot: rgba(0, 242, 176, 0.05);
+}
+
+html.light {
+  --bg-main: #F4F7F9;
+  --bg-header: rgba(244, 247, 249, 0.88);
+  --text-main: #0F172A;
+  --card-bg: #FFFFFF;
+  --card-surface: #E8EEF3;
+  --border-color: #CBD5E1;
+  --text-muted: #475569;
+  --grid-dot: rgba(0, 180, 130, 0.08);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background-color: #00F2B0;
+  color: #080C0E;
+}
+
+.font-mono-tag {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.08em;
+}
+
+/* Subtle grid background for engineering feel */
+.bg-grid-pattern {
+  background-image: radial-gradient(var(--grid-dot) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.glow-teal-sm {
+  box-shadow: 0 0 16px -2px rgba(0, 242, 176, 0.35);
+}
+
+.glow-teal-xs {
+  box-shadow: 0 0 8px rgba(0, 242, 176, 0.6);
+}
+
+.card-border {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card-border:hover {
+  border-color: rgba(0, 242, 176, 0.28);
+}
+
+/* Light mode adjustments */
+html.light .bg-brand-card {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+}
+
+html.light .bg-brand-surface,
+html.light .bg-brand-surface\/70,
+html.light .bg-brand-surface\/80 {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+html.light [data-purpose="hero-visual-card"] .bg-brand-card {
+  background-color: #0B1115 !important;
+  border-color: #1E2B35 !important;
+  box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.15) !important;
+}
+
+html.light [data-purpose="hero-visual-card"] .text-white {
+  color: #FFFFFF !important;
+}
+
+html.light [data-purpose="hero-visual-card"] .text-slate-300 {
+  color: #CBD5E1 !important;
+}
+
+html.light [data-purpose="hero-visual-card"] .text-slate-400 {
+  color: #94A3B8 !important;
+}
+
+html.light [data-purpose="hero-visual-card"] .border-brand-border,
+html.light [data-purpose="hero-visual-card"] .border-brand-border\/70,
+html.light [data-purpose="hero-visual-card"] .border-brand-border\/60 {
+  border-color: #1E2B35 !important;
+}
+
+html.light .text-white {
+  color: #0F172A;
+}
+
+html.light .text-slate-200,
+html.light .text-slate-300 {
+  color: #1E293B;
+}
+
+html.light .text-brand-muted,
+html.light .text-slate-400 {
+  color: #64748B;
+}
+
+html.light .text-slate-500 {
+  color: #64748B;
+}
+
+html.light .border-brand-border,
+html.light .border-brand-border\/40,
+html.light .border-brand-border\/60,
+html.light .border-brand-border\/70 {
+  border-color: #CBD5E1;
+}
