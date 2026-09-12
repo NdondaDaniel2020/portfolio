@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { ThemeToggle } from '../controls/ThemeToggle';
 import { LangToggle } from '../controls/LangToggle';
@@ -8,13 +9,17 @@ import { Menu, X } from 'lucide-react';
 export const Navbar: React.FC = () => {
   const { t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isHome = location.pathname === '/';
+  const getAnchor = (hash: string) => (isHome ? hash : `/${hash}`);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#070B0D]/85 backdrop-blur-md border-b border-brand-border/40">
       <nav aria-label="Main Navigation" className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Logo Responsivo calibrado com os breakpoints do design original */}
-        <a
-          href="#hero"
+        <Link
+          to="/"
           className="text-lg sm:text-xl xl:text-2xl font-extrabold tracking-tight text-white flex items-center gap-0.5 group shrink-0"
         >
           <span className="hidden xl:inline">Ndonda Daniel Matondo</span>
@@ -25,28 +30,28 @@ export const Navbar: React.FC = () => {
           <span className="text-brand-teal inline-block transform group-hover:scale-125 transition-transform duration-200">
             .
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Nav Links (visível a partir de md) */}
         <div className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 text-sm font-medium text-slate-300">
-          <a className="hover:text-brand-teal transition-colors whitespace-nowrap" href="#hero">
+          <Link className="hover:text-brand-teal transition-colors whitespace-nowrap" to="/">
             {t.nav.home}
-          </a>
-          <a className="hover:text-brand-teal transition-colors whitespace-nowrap" href="#sobre-mim">
+          </Link>
+          <a className="hover:text-brand-teal transition-colors whitespace-nowrap" href={getAnchor('#sobre-mim')}>
             {t.nav.about}
           </a>
-          <a className="hover:text-brand-teal transition-colors whitespace-nowrap" href="#projetos">
+          <Link className="hover:text-brand-teal transition-colors whitespace-nowrap" to="/projetos">
             {t.nav.projects}
-          </a>
-          <a className="hover:text-brand-teal transition-colors whitespace-nowrap" href="#skills">
+          </Link>
+          <a className="hover:text-brand-teal transition-colors whitespace-nowrap" href={getAnchor('#skills')}>
             {t.nav.skills}
           </a>
-          <a className="hover:text-brand-teal transition-colors whitespace-nowrap" href="#artigos">
+          <Link className="hover:text-brand-teal transition-colors whitespace-nowrap" to="/artigos">
             {t.nav.articles}
-          </a>
+          </Link>
           <a
             className="px-3.5 py-2 rounded-lg border border-brand-border bg-brand-surface/70 text-brand-teal hover:border-brand-teal hover:bg-brand-teal/10 transition-all whitespace-nowrap"
-            href="#contato"
+            href={getAnchor('#contato')}
           >
             {t.nav.contact}
           </a>
