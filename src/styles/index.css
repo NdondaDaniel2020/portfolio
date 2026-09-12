@@ -65,25 +65,44 @@ body {
 }
 
 /* Light mode adjustments */
-html.light {
-  --bg-main: #F4F7F9;
-  --bg-header: rgba(244, 247, 249, 0.88);
-  --text-main: #0F172A;
-  --card-bg: #FFFFFF;
-  --card-surface: #E8EEF3;
-  --border-color: #CBD5E1;
-  --text-muted: #475569;
-  --grid-dot: rgba(0, 180, 130, 0.08);
-}
-
 html.light header {
   background-color: var(--bg-header) !important;
-  border-color: rgba(203, 213, 225, 0.7) !important;
+  border-color: rgba(203, 213, 225, 0.8) !important;
+}
+
+html.light header nav a:not([class*="bg-brand-teal"]),
+html.light header nav div.text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light header nav a:not([class*="bg-brand-teal"]):hover {
+  color: #059669 !important;
+}
+
+html.light footer {
+  background-color: #EBF1F5 !important;
+  border-color: #CBD5E1 !important;
+}
+
+html.light footer p {
+  color: #475569 !important;
+}
+
+html.light footer a {
+  color: #64748B !important;
+}
+
+html.light footer a:hover {
+  color: #059669 !important;
 }
 
 html.light #mobile-menu-panel {
-  background-color: rgba(255, 255, 255, 0.96) !important;
+  background-color: rgba(255, 255, 255, 0.98) !important;
   border-color: #E2E8F0 !important;
+}
+
+html.light #mobile-menu-panel a.text-slate-200 {
+  color: #1E293B !important;
 }
 
 html.light .bg-brand-card {
@@ -94,11 +113,14 @@ html.light .bg-brand-card {
 
 html.light .bg-brand-surface,
 html.light .bg-brand-surface\/70,
-html.light .bg-brand-surface\/80 {
+html.light .bg-brand-surface\/80,
+html.light .bg-brand-surface\/40,
+html.light .bg-brand-surface\/50 {
   background-color: #F8FAFC !important;
   border-color: #E2E8F0 !important;
 }
 
+/* Manter o terminal hero escuro com alto contraste */
 html.light [data-purpose="hero-visual-card"] .bg-brand-card {
   background-color: #0B1115 !important;
   border-color: #1E2B35 !important;
@@ -119,16 +141,12 @@ html.light [data-purpose="hero-visual-card"] .text-slate-400 {
 
 html.light [data-purpose="hero-visual-card"] .border-brand-border,
 html.light [data-purpose="hero-visual-card"] .border-brand-border\/70,
-html.light [data-purpose="hero-visual-card"] .border-brand-border\/60 {
+html.light [data-purpose="hero-visual-card"] .border-brand-border\/60,
+html.light [data-purpose="hero-visual-card"] .border-brand-border\/90 {
   border-color: #1E2B35 !important;
 }
 
-/* Mockups de código / terminais dos projetos */
-html.light .bg-\[\#091116\] {
-  background-color: #0F172A !important;
-  border-color: #1E293B !important;
-}
-
+/* Cores de texto gerais no Light Mode */
 html.light .text-white {
   color: #0F172A !important;
 }
@@ -140,7 +158,7 @@ html.light .text-slate-300 {
 
 html.light .text-brand-muted,
 html.light .text-slate-400 {
-  color: #64748B !important;
+  color: #475569 !important;
 }
 
 html.light .text-slate-500 {
@@ -151,7 +169,64 @@ html.light .border-brand-border,
 html.light .border-brand-border\/40,
 html.light .border-brand-border\/60,
 html.light .border-brand-border\/70 {
-  border-color: #E2E8F0 !important;
+  border-color: #CBD5E1 !important;
+}
+
+/* Exceções: Preservar texto claro dentro de cabeçalhos de artigos com gradientes escuros */
+html.light article .bg-gradient-to-br h3,
+html.light article .bg-gradient-to-br .text-white,
+html.light article .bg-gradient-to-br p.text-white {
+  color: #FFFFFF !important;
+}
+
+html.light article .bg-gradient-to-br .text-slate-400 {
+  color: #CBD5E1 !important;
+}
+
+/* Exceções: Mockups de código e terminais dos projetos (#091116) */
+html.light .bg-\[\#091116\] {
+  background-color: #0B1218 !important;
+  border-color: #1E2E38 !important;
+}
+
+html.light .bg-\[\#091116\] .text-white,
+html.light .bg-\[\#091116\] p.text-white,
+html.light .bg-\[\#091116\] span.text-white {
+  color: #FFFFFF !important;
+}
+
+html.light .bg-\[\#091116\] .text-slate-300 {
+  color: #CBD5E1 !important;
+}
+
+html.light .bg-\[\#091116\] .text-slate-400 {
+  color: #94A3B8 !important;
+}
+
+html.light .bg-\[\#091116\] .text-slate-500 {
+  color: #64748B !important;
+}
+
+html.light .bg-\[\#091116\] .border-brand-border,
+html.light .bg-\[\#091116\] .border-brand-border\/70,
+html.light .bg-\[\#091116\] .border-brand-border\/60 {
+  border-color: #1E2E38 !important;
+}
+
+/* Inputs de busca e atalhos */
+html.light input[type="text"] {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+}
+
+html.light input[type="text"]::placeholder {
+  color: #64748B !important;
+}
+
+html.light input[type="text"]:focus {
+  border-color: #00F2B0 !important;
+  box-shadow: 0 0 0 3px rgba(0, 242, 176, 0.15) !important;
 }
 
 /* Ícones de canais de contato no light mode */
@@ -160,17 +235,35 @@ html.light .bg-\[\#0E1B22\] {
   border-color: #A7F3D0 !important;
 }
 
-/* Thumbnail dos artigos no light mode */
-html.light .from-\[\#0B151F\] {
-  --tw-gradient-from: #1E293B var(--tw-gradient-from-position) !important;
+/* Botões com fundo teal mantêm texto escuro para contraste */
+html.light .bg-brand-teal,
+html.light button.bg-brand-teal,
+html.light a.bg-brand-teal {
+  color: #080C0E !important;
 }
-html.light .to-\[\#12222E\] {
-  --tw-gradient-to: #0F172A var(--tw-gradient-to-position) !important;
+
+/* Abas de filtro inativas e pílulas */
+html.light button.text-slate-400:hover,
+html.light a.text-slate-400:hover {
+  color: #0F172A !important;
 }
-html.light article .from-\[\#0B151F\] h3 {
-  color: #FFFFFF !important;
+
+/* Paginação Compacta no Light Mode */
+html.light .bg-brand-card button:not(:disabled) {
+  background-color: #FFFFFF !important;
+  color: #1E293B !important;
 }
-html.light article .from-\[\#0B151F\] .text-slate-400 {
-  color: #CBD5E1 !important;
+
+html.light .bg-brand-card button:not(:disabled):hover {
+  background-color: #F8FAFC !important;
+  color: #059669 !important;
 }
+
+/* Badge de status sobre a foto de perfil: manter fundo escuro e texto claro com alto contraste */
+html.light .bg-brand-dark\/90 span.text-slate-300,
+html.light [data-purpose="about-section"] .bg-brand-dark\/90 span {
+  color: #E2E8F0 !important;
+}
+
+
 
