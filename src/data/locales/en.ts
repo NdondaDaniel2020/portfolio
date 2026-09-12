@@ -21,7 +21,7 @@ export const en = {
     explore: "Explore",
   },
   about: {
-    tag: "01 — ABOUT ME",
+    tag: "ABOUT THE ENGINEER",
     title: "Developer with an engineering mindset.",
     bio: "I build robust, functional products with well-structured APIs, resilient databases, and scalable architectures. I have hands-on experience through personal projects, freelancing, hackathons, and at 42, where peer-to-peer collaboration is fundamental to continuous learning and technical excellence.",
     online_badge: "Available for new challenges",
@@ -33,28 +33,28 @@ export const en = {
     },
   },
   projects: {
-    tag: "02 — FEATURED PROJECTS",
+    tag: "FEATURED PROJECTS",
     title: "Production and open-source systems.",
     view_all: "View all projects",
     view_github: "Code on GitHub",
     view_live: "Live Demo",
   },
   skills: {
-    tag: "03 — TECH STACK",
+    tag: "STACK & ARCHITECTURE",
     title: "Technologies I use to build scalable systems.",
   },
   articles: {
-    tag: "04 — ARTICLES & PUBLICATIONS",
+    tag: "TECHNICAL WRITING",
     title: "Sharing engineering and architectural insights.",
     read_more: "Read on Medium",
     view_all: "View all articles",
   },
   experience: {
-    tag: "05 — EXPERIENCE",
+    tag: "BACKGROUND & JOURNEY",
     title: "My background and technical journey.",
   },
   contact: {
-    tag: "06 — LET'S TALK",
+    tag: "DIRECT INQUIRIES",
     title: "Interested in working together?",
     subtitle: "I am open to full-time roles, engineering consulting, and challenging projects.",
     channels: {

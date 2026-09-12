@@ -82,21 +82,21 @@ export const ProjectsPage: React.FC = () => {
       {/* Banner de Métricas de Engenharia */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="bg-brand-card border border-brand-border rounded-xl p-4">
-          <div className="text-[11px] font-mono text-slate-400">// COMMITS_2026</div>
+          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">Commits em 2026</div>
           <div className="text-xl sm:text-2xl font-bold font-mono text-white mt-1">520+</div>
         </div>
         <div className="bg-brand-card border border-brand-border rounded-xl p-4">
-          <div className="text-[11px] font-mono text-slate-400">// REPOSITÓRIOS</div>
+          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">Repositórios</div>
           <div className="text-xl sm:text-2xl font-bold font-mono text-brand-teal mt-1">
             {projects.length}
           </div>
         </div>
         <div className="bg-brand-card border border-brand-border rounded-xl p-4">
-          <div className="text-[11px] font-mono text-slate-400">// UPSTREAM</div>
+          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">Upstream Repos</div>
           <div className="text-xl sm:text-2xl font-bold font-mono text-emerald-400 mt-1">04</div>
         </div>
         <div className="bg-brand-card border border-brand-border rounded-xl p-4">
-          <div className="text-[11px] font-mono text-slate-400">// UPTIME_SLA</div>
+          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">Uptime SLA</div>
           <div className="text-xl sm:text-2xl font-bold font-mono text-white mt-1">99.9%</div>
         </div>
       </div>

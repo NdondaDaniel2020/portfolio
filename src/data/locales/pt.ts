@@ -21,7 +21,7 @@ export const pt = {
     explore: "Explorar",
   },
   about: {
-    tag: "01 — SOBRE MIM",
+    tag: "SOBRE O ENGENHEIRO",
     title: "Desenvolvedor com mentalidade de engenharia.",
     bio: "Gosto de transformar ideias em produtos funcionais, com APIs bem estruturadas, bases de dados sólidas e sistemas preparados para crescer. Tenho experiência prática em projetos pessoais, freelancing, hackathons e na 42, onde o trabalho em equipa faz parte do processo contínuo de aprendizagem e excelência técnica.",
     online_badge: "Disponível para novos desafios",
@@ -33,28 +33,28 @@ export const pt = {
     },
   },
   projects: {
-    tag: "02 — PROJETOS EM DESTAQUE",
+    tag: "PROJETOS EM DESTAQUE",
     title: "Sistemas em produção e open-source.",
     view_all: "Ver todos os projetos",
     view_github: "Código no GitHub",
     view_live: "Acessar Sistema",
   },
   skills: {
-    tag: "03 — STACK TÉCNICA",
+    tag: "STACK & ARQUITETURA",
     title: "Tecnologias com as quais construo sistemas.",
   },
   articles: {
-    tag: "04 — ARTIGOS & PUBLICAÇÕES",
+    tag: "PUBLICAÇÕES TÉCNICAS",
     title: "Compartilhando conhecimento técnico.",
     read_more: "Ler artigo no Medium",
     view_all: "Ver todos os artigos",
   },
   experience: {
-    tag: "05 — EXPERIÊNCIA",
+    tag: "TRAJETÓRIA TÉCNICA",
     title: "Minha trajetória e vivência técnica.",
   },
   contact: {
-    tag: "06 — VAMOS CONVERSAR",
+    tag: "CONTATO DIRETO",
     title: "Interessado em trabalhar juntos?",
     subtitle: "Estou disponível para contratações full-time, consultorias e projetos desafiadores.",
     channels: {
