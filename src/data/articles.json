@@ -1,50 +1,46 @@
 [
   {
-    "id": "entendendo-ponteiros-em-c",
+    "id": "https://medium.com/p/c36abf7b3fc0",
     "title": {
-      "pt": "Entendendo Ponteiros em C do zero ao uso avançado na memória",
-      "en": "Understanding Pointers in C: From Zero to Advanced Memory Management"
+      "pt": "Python Assíncrono Descomplicado: A Regra de Ouro do Event Loop e por que Migrei para o uv",
+      "en": "Python Assíncrono Descomplicado: A Regra de Ouro do Event Loop e por que Migrei para o uv"
     },
     "summary": {
-      "pt": "Desmistificando aritmética de ponteiros, alocação dinâmica com malloc/free e layout da pilha (stack) versus heap.",
-      "en": "Demystifying pointer arithmetic, dynamic allocation with malloc/free, and internal stack vs heap memory layout."
+      "pt": "Photo by Chris Ried on Unsplash\nDo Zero ao Sênior em Python: Entenda de uma vez por todas a diferença entre concorrência e paralelismo, o perigo de congelar o...",
+      "en": "Photo by Chris Ried on Unsplash\nDo Zero ao Sênior em Python: Entenda de uma vez por todas a diferença entre concorrência e paralelismo, o perigo de congelar o..."
     },
-    "url": "https://medium.com/@ndondadaniel2020",
-    "publishedAt": "2026-07-28",
-    "readTime": "8 min de leitura",
-    "tags": ["C", "Memória", "Sistemas", "Unix"],
-    "featured": true
+    "url": "https://medium.com/@ndondadaniel2020/python-ass%C3%ADncrono-descomplicado-a-regra-de-ouro-do-event-loop-e-por-que-migrei-para-o-uv-c36abf7b3fc0?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-09-13",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "software-architecture",
+      "software-development",
+      "fastapi",
+      "python",
+      "asynchronous"
+    ],
+    "featured": false
   },
   {
-    "id": "arquitetura-fastapi-alta-concorrencia",
+    "id": "https://medium.com/p/183f4be8f72c",
     "title": {
-      "pt": "Arquitetando APIs resilientes de alta concorrência com FastAPI e Redis",
-      "en": "Architecting High-Concurrency Resilient APIs with FastAPI and Redis"
+      "pt": "Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python",
+      "en": "Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python"
     },
     "summary": {
-      "pt": "Padrões práticos de pool de conexões assíncronas, rate-limiting distribuído e mitigação de gargalos de I/O.",
-      "en": "Real-world async connection pool designs, distributed rate-limiting, and strategic I/O bottleneck mitigation."
+      "pt": "Building in Public: Da concepção arquitetural às decisões de segurança defensiva (Argon2id, RTR, RBAC sem N+1, WebSockets e Event-Driven Architecture).\n\nO Pro...",
+      "en": "Building in Public: Da concepção arquitetural às decisões de segurança defensiva (Argon2id, RTR, RBAC sem N+1, WebSockets e Event-Driven Architecture).\n\nO Pro..."
     },
-    "url": "https://medium.com/@ndondadaniel2020",
-    "publishedAt": "2026-06-15",
-    "readTime": "11 min de leitura",
-    "tags": ["FastAPI", "Python", "Redis", "Backend"],
-    "featured": true
-  },
-  {
-    "id": "como-funciona-o-multiplexing-io",
-    "title": {
-      "pt": "Como funciona o Multiplexing de I/O por baixo dos panos (select, poll e epoll)",
-      "en": "Under the Hood: How I/O Multiplexing Works (select, poll, and epoll)"
-    },
-    "summary": {
-      "pt": "Uma análise detalhada de chamadas de sistema no kernel Linux para escalonar milhares de sockets simultâneos.",
-      "en": "An in-depth exploration of Linux kernel system calls to scale thousands of simultaneous active network sockets."
-    },
-    "url": "https://medium.com/@ndondadaniel2020",
-    "publishedAt": "2026-05-04",
-    "readTime": "14 min de leitura",
-    "tags": ["Linux", "Sockets", "C++", "Redes"],
+    "url": "https://medium.com/@ndondadaniel2020/como-estruturei-uma-api-de-autentica%C3%A7%C3%A3o-em-n%C3%ADvel-de-produ%C3%A7%C3%A3o-com-fastapi-e-python-183f4be8f72c?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-09-12",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "python",
+      "web-development",
+      "fastapi",
+      "software-architecture",
+      "authentication"
+    ],
     "featured": false
   }
 ]
