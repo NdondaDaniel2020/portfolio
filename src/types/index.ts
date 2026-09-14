@@ -19,6 +19,13 @@ export interface Project {
   updatedAt?: string;
 }
 
+export interface ArticleSnippet {
+  type: 'code' | 'diagram' | 'terminal';
+  filename?: string;
+  content: string;
+  language?: string;
+}
+
 export interface Article {
   id: string;
   title: {
@@ -35,6 +42,7 @@ export interface Article {
   tags: string[];
   featured?: boolean;
   coverImage?: string;
+  snippet?: ArticleSnippet;
 }
 
 export interface SkillCategory {

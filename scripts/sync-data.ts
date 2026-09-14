@@ -201,6 +201,73 @@ async function syncMediumArticles() {
         .trim() + '...';
     };
 
+    const extractSnippet = (contentHtml: string) => {
+      // Busca blocos <pre>
+      const preMatches = contentHtml.match(/<pre[^>]*>([\s\S]*?)<\/pre>/gi);
+      if (!preMatches || preMatches.length === 0) return undefined;
+
+      for (const rawPre of preMatches) {
+        // Converte quebras de linha e entidades HTML
+        const cleanPre = rawPre
+          .replace(/<br\s*[\/]?>/gi, '\n')
+          .replace(/<\/p>/gi, '\n')
+          .replace(/<p[^>]*>/gi, '')
+          .replace(/<[^>]+>/g, '')
+          .replace(/&gt;/g, '>')
+          .replace(/&lt;/g, '<')
+          .replace(/&amp;/g, '&')
+          .replace(/&quot;/g, '"')
+          .replace(/&#39;/g, "'")
+          .trim();
+
+        if (!cleanPre || cleanPre.length < 15) continue;
+
+        // Prioridade 1: Código Python real (funções, classes, imports)
+        const isPython = /(async\s+def\s+|def\s+|class\s+|@\w+|raise\s+|import\s+)/i.test(cleanPre);
+        if (isPython) {
+          // Extrai até 16 linhas significativas
+          const lines = cleanPre.split('\n').filter((l, idx) => idx < 18);
+          let filename = 'dependencies.py';
+          if (cleanPre.includes('get_current_user')) filename = 'auth_dependencies.py';
+          else if (cleanPre.includes('User') || cleanPre.includes('Base')) filename = 'models.py';
+          else if (cleanPre.includes('uv') || cleanPre.includes('asyncio')) filename = 'event_loop.py';
+
+          return {
+            type: 'code' as const,
+            filename,
+            content: lines.join('\n'),
+            language: 'python',
+          };
+        }
+
+        // Prioridade 2: Comandos de Terminal / Shell (uv run, pytest, alembic, docker)
+        const isTerminal = /(uv\s+run|pytest|alembic\s+upgrade|docker\s+run|pip\s+install)/i.test(cleanPre);
+        if (isTerminal) {
+          const lines = cleanPre.split('\n').filter((l, idx) => idx < 12);
+          return {
+            type: 'terminal' as const,
+            filename: 'bash',
+            content: lines.join('\n'),
+            language: 'bash',
+          };
+        }
+
+        // Prioridade 3: Diagrama / Tabela ASCII (bordas ┌, │, ─, +, |)
+        const isDiagram = /[┌│─┼└┤┬┴├]/.test(cleanPre) || (cleanPre.includes('|') && cleanPre.includes('---'));
+        if (isDiagram) {
+          const lines = cleanPre.split('\n').filter((l, idx) => idx < 14);
+          return {
+            type: 'diagram' as const,
+            filename: 'architecture.ascii',
+            content: lines.join('\n'),
+            language: 'text',
+          };
+        }
+      }
+
+      return undefined;
+    };
+
     const updatedArticles = data.items.map((item: any) => {
       const existing = articlesMap.get(item.link);
       const summaryText = cleanSummary(item.description || item.content || '');
@@ -209,6 +276,9 @@ async function syncMediumArticles() {
       const contentHtml = item.content || item.description || '';
       const imgMatch = contentHtml.match(/<img[^>]+src=["']([^"']+)["']/i);
       const coverImage = item.thumbnail || (imgMatch ? imgMatch[1] : existing?.coverImage);
+
+      // Extrai snippet de código, diagrama ou terminal do artigo
+      const snippet = extractSnippet(contentHtml) || existing?.snippet;
 
       return {
         id: item.guid || item.link.split('/').pop() || String(Date.now()),
@@ -226,6 +296,7 @@ async function syncMediumArticles() {
         tags: item.categories && item.categories.length > 0 ? item.categories : (existing?.tags || ['Engineering']),
         featured: existing ? existing.featured : false,
         coverImage: coverImage || undefined,
+        snippet: snippet || undefined,
       };
     });
 

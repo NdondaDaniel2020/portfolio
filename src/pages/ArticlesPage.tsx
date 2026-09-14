@@ -103,23 +103,57 @@ export const ArticlesPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Lado Direito: Terminal de Inspeção em C */}
-            <div className="lg:col-span-5">
-              <div className="rounded-2xl bg-[#091116] border border-brand-border p-5 font-mono text-xs text-slate-300 space-y-2 shadow-inner">
-                <div className="flex items-center justify-between border-b border-brand-border/60 pb-3 mb-3">
-                  <div className="flex items-center gap-1.5">
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#EF4444]"></span>
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#F59E0B]"></span>
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#10B981]"></span>
+            {/* Lado Direito: Terminal Dinâmico que se adapta ao Conteúdo do Artigo */}
+            <div className="lg:col-span-5 flex flex-col justify-center">
+              {featuredArticle.snippet ? (
+                <div className="rounded-2xl bg-[#091116] border border-brand-border p-5 font-mono text-xs text-slate-300 shadow-2xl relative overflow-hidden group/terminal">
+                  {/* Subtle Glow no topo do terminal */}
+                  <div className="absolute -top-10 -right-10 w-32 h-32 bg-brand-teal/10 rounded-full blur-2xl pointer-events-none" />
+
+                  {/* Header do Terminal com status e nome do arquivo/diagrama */}
+                  <div className="flex items-center justify-between border-b border-brand-border/60 pb-3 mb-3">
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#EF4444] opacity-80"></span>
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#F59E0B] opacity-80"></span>
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#10B981] opacity-80"></span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-brand-teal/10 text-brand-teal border border-brand-teal/20">
+                        {featuredArticle.snippet.type === 'diagram' ? 'Diagrama ASCII' : (featuredArticle.snippet.type === 'code' ? 'Python' : 'Terminal')}
+                      </span>
+                      <span className="text-[11px] text-slate-400">
+                        {featuredArticle.snippet.filename || 'snippet.txt'}
+                      </span>
+                    </div>
                   </div>
-                  <span className="text-[11px] text-slate-400">memory_inspect.c</span>
+
+                  {/* Corpo do Snippet (Auto-ajustável com scroll horizontal seguro) */}
+                  <div className="overflow-x-auto max-h-[320px] scrollbar-thin scrollbar-thumb-brand-border">
+                    <pre className="text-[11px] sm:text-xs leading-relaxed font-mono whitespace-pre text-slate-300 select-text">
+                      {featuredArticle.snippet.content}
+                    </pre>
+                  </div>
                 </div>
-                <p><span className="text-brand-teal">void</span>* <span className="text-sky-300">ptr</span> = <span className="text-amber-300">malloc</span>(<span className="text-emerald-300">sizeof</span>(<span className="text-brand-teal">t_node</span>));</p>
-                <p className="text-slate-400">// Stack Pointer: 0x7fff5fbff8a0</p>
-                <p className="text-slate-400">// Heap Base:     0x0000000001a4</p>
-                <p><span className="text-brand-teal">assert</span>(ptr != <span className="text-sky-300">NULL</span>);</p>
-                <p className="text-emerald-400 pt-1">// Valgrind: 0 errors from 0 contexts</p>
-              </div>
+              ) : featuredArticle.coverImage ? (
+                /* Fallback caso não haja snippet textual: Capa tratada com moldura terminal */
+                <div className="rounded-2xl bg-[#091116] border border-brand-border p-4 shadow-2xl relative overflow-hidden">
+                  <div className="flex items-center justify-between border-b border-brand-border/60 pb-2.5 mb-3 font-mono text-xs">
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#EF4444]"></span>
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#F59E0B]"></span>
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#10B981]"></span>
+                    </div>
+                    <span className="text-[11px] text-slate-400">preview_cover.jpg</span>
+                  </div>
+                  <div className="relative rounded-xl overflow-hidden aspect-video">
+                    <img
+                      src={featuredArticle.coverImage}
+                      alt={featuredArticle.title[language]}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>

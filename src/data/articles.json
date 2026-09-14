@@ -20,7 +20,13 @@
       "web-development"
     ],
     "featured": false,
-    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*9vKVFwCWea7vkvqqZjwRAQ.jpeg"
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*9vKVFwCWea7vkvqqZjwRAQ.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌─────────────────────────────────────────────────────────────────────────┐\n│                     FLUXO DE DECISÃO NA REQUISIÇÃO                      │\n├─────────────────────────────────────────────────────────────────────────┤\n│ 1. REQUISIÇÃO HTTP CHEGA:                                               │\n│    └─► Tem token Bearer válido?                                         │\n│        ├─► NÃO: Rejeita imediatamente com HTTP 401 Unauthorized         │\n│        └─► SIM: Identidade confirmada (AuthN concluído). Avança!        │\n│                                                                         │\n│ 2. CONTROLE DE ACESSO:                                                  │\n│    └─► O usuário possui a permissão requerida para a rota?              │\n│        ├─► NÃO: Rejeita com HTTP 403 Forbidden (Sem permissão!)         │\n│        └─► SIM: Autorizado (AuthZ concluído). Executa regra de negócio! │\n└─────────────────────────────────────────────────────────────────────────┘",
+      "language": "text"
+    }
   },
   {
     "id": "https://medium.com/p/c36abf7b3fc0",
@@ -43,7 +49,13 @@
       "asynchronous"
     ],
     "featured": false,
-    "coverImage": "https://cdn-images-1.medium.com/max/1024/0*SglTdI_TGuDU6MHb"
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/0*SglTdI_TGuDU6MHb",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌─────────────────────────────────────────────────────────────────────────┐\n│               SÍNCRONO (BLOQUEANTE)  VS. ASSÍNCRONO (EVENT LOOP)        │\n├────────────────────────────────────┬────────────────────────────────────┤\n│ Modelo Síncrono (1 Requisição/vez) │ Modelo Assíncrono (Concorrência)   │\n├────────────────────────────────────┼────────────────────────────────────┤\n│ Req A: [ Consulta DB (Espera...) ] │ Req A: Inicia DB ─┐                │\n│ Req B: ⏳ Bloqueada esperando A    │ Req B: Inicia DB ─┼─► Event Loop   │\n│ Req C: ⏳ Bloqueada esperando B    │ Req C: Inicia DB ─┘   processa A,  │\n│                                    │                       B e C juntos!│\n│ 1 Thread = 1 tarefa por vez        │ 1 Thread = Milhares de requisições │\n└────────────────────────────────────┴────────────────────────────────────┘",
+      "language": "text"
+    }
   },
   {
     "id": "https://medium.com/p/183f4be8f72c",
@@ -66,6 +78,12 @@
       "authentication"
     ],
     "featured": false,
-    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*yzoPDPmBscwcmVCAbnUlhQ.jpeg"
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*yzoPDPmBscwcmVCAbnUlhQ.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌─────────────────────────────────────────────────────────────────────────────┐\n│                            FLUXO ARQUITETURAL                               │\n├─────────────────┬─────────────────┬───────────────────┬─────────────────────┤\n│   HTTP / WS     │     SERVICE     │    REPOSITORY     │    INFRAESTRUTURA   │\n│  (FastAPI Core) │ (Regras de Neg) │ (SQLAlchemy 2.0)  │ (PostgreSQL/Redis)  │\n├─────────────────┼─────────────────┼───────────────────┼─────────────────────┤\n│  POST /login    │ Autentica Creds │ get_by_email()    │ Supabase (IPv4 Pool)│\n│                 │ Gera Tokens JWT │ save_refresh()    │ Upstash Redis       │\n│  POST /refresh  │ Executa RTR     │ revoke(jti)       │ EventBus / DLQ      │\n│  WS /ws:events  │ Valida Ticket   │ Log de Auditoria  │ Prometheus Metrics  │\n└─────────────────┴─────────────────┴───────────────────┴─────────────────────┘",
+      "language": "text"
+    }
   }
 ]
