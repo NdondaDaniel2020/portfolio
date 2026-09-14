@@ -3,6 +3,7 @@ import { useLanguage } from '../context/LanguageContext';
 import articlesDataRaw from '../data/articles.json';
 import type { Article } from '../types';
 import { Search, ExternalLink, Calendar, Clock, BookOpen, Sparkles } from 'lucide-react';
+import { formatArticleDate } from '../utils/date';
 
 export const ArticlesPage: React.FC = () => {
   const { t, language } = useLanguage();
@@ -80,7 +81,7 @@ export const ArticlesPage: React.FC = () => {
               <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-slate-400">
                 <span className="flex items-center gap-1.5">
                   <Calendar className="w-3.5 h-3.5 text-brand-teal" />
-                  {featuredArticle.publishedAt}
+                  {formatArticleDate(featuredArticle.publishedAt, language)}
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1.5">
@@ -177,7 +178,7 @@ export const ArticlesPage: React.FC = () => {
               <div className="flex items-center gap-4 text-xs font-mono text-slate-400">
                 <span className="flex items-center gap-1.5">
                   <Calendar className="w-3.5 h-3.5 text-brand-teal" />
-                  {article.publishedAt}
+                  {formatArticleDate(article.publishedAt, language)}
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1.5">

@@ -5,6 +5,7 @@ import { ArrowRight, BookOpen, ExternalLink } from 'lucide-react';
 
 import articlesDataRaw from '../../data/articles.json';
 import type { Article } from '../../types';
+import { formatArticleDate } from '../../utils/date';
 
 export const ArticlesSection: React.FC = () => {
   const { t, language } = useLanguage();
@@ -45,7 +46,7 @@ export const ArticlesSection: React.FC = () => {
                       {article.tags[0] || 'Python'}
                     </span>
                     <span className="text-xs text-slate-400 font-mono shrink-0">
-                      {article.publishedAt} • {article.readTime}
+                      {formatArticleDate(article.publishedAt, language)} • {article.readTime}
                     </span>
                   </div>
                   <div>
