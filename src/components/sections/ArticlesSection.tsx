@@ -46,7 +46,7 @@ export const ArticlesSection: React.FC = () => {
                       {article.tags[0] || 'Python'}
                     </span>
                     <span className="text-xs text-slate-400 font-mono shrink-0">
-                      {formatArticleDate(article.publishedAt, language)} • {article.readTime}
+                      {formatArticleDate(article.publishedAt, language)}
                     </span>
                   </div>
                   <div>
