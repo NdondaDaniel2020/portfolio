@@ -205,6 +205,11 @@ async function syncMediumArticles() {
       const existing = articlesMap.get(item.link);
       const summaryText = cleanSummary(item.description || item.content || '');
 
+      // Extrai imagem de capa do Medium (thumbnail ou primeiro <img> no conteúdo)
+      const contentHtml = item.content || item.description || '';
+      const imgMatch = contentHtml.match(/<img[^>]+src=["']([^"']+)["']/i);
+      const coverImage = item.thumbnail || (imgMatch ? imgMatch[1] : existing?.coverImage);
+
       return {
         id: item.guid || item.link.split('/').pop() || String(Date.now()),
         title: {
@@ -220,6 +225,7 @@ async function syncMediumArticles() {
         readTime: existing?.readTime || '7 min de leitura',
         tags: item.categories && item.categories.length > 0 ? item.categories : (existing?.tags || ['Engineering']),
         featured: existing ? existing.featured : false,
+        coverImage: coverImage || undefined,
       };
     });
 

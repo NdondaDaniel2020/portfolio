@@ -19,7 +19,8 @@
       "authentication",
       "web-development"
     ],
-    "featured": false
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*9vKVFwCWea7vkvqqZjwRAQ.jpeg"
   },
   {
     "id": "https://medium.com/p/c36abf7b3fc0",
@@ -41,7 +42,8 @@
       "python",
       "asynchronous"
     ],
-    "featured": false
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/0*SglTdI_TGuDU6MHb"
   },
   {
     "id": "https://medium.com/p/183f4be8f72c",
@@ -63,6 +65,7 @@
       "software-architecture",
       "authentication"
     ],
-    "featured": false
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*yzoPDPmBscwcmVCAbnUlhQ.jpeg"
   }
 ]

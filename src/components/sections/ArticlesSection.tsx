@@ -39,18 +39,32 @@ export const ArticlesSection: React.FC = () => {
               className="rounded-2xl bg-brand-card border border-brand-border hover:border-brand-teal/40 transition-all duration-300 overflow-hidden flex flex-col justify-between group"
             >
               <div>
-                {/* Visual Header / Thumbnail */}
-                <div className={`min-h-[190px] h-auto w-full bg-gradient-to-br ${gradientClass} p-6 relative flex flex-col justify-between gap-4 border-b border-brand-border/60`}>
-                  <div className="flex justify-between items-center gap-2">
-                    <span className="px-2.5 py-1 rounded bg-brand-teal/15 text-brand-teal text-[11px] font-mono border border-brand-teal/20 truncate uppercase">
+                {/* Visual Header / Thumbnail com Imagem de Capa em Opacidade */}
+                <div className={`min-h-[200px] h-auto w-full bg-gradient-to-br ${gradientClass} p-6 relative flex flex-col justify-between gap-4 border-b border-brand-border/60 overflow-hidden`}>
+                  {/* Background Cover Image com opacidade, blur sutil e zoom suave no hover */}
+                  {article.coverImage && (
+                    <>
+                      <img
+                        src={article.coverImage}
+                        alt=""
+                        aria-hidden="true"
+                        className="absolute inset-0 w-full h-full object-cover object-center opacity-25 group-hover:opacity-40 group-hover:scale-105 transition-all duration-500 ease-out pointer-events-none"
+                      />
+                      {/* Gradient Overlay cinematográfico para garantir contraste absoluto com o texto */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-dark/80 to-transparent pointer-events-none" />
+                    </>
+                  )}
+
+                  <div className="flex justify-between items-center gap-2 relative z-10">
+                    <span className="px-2.5 py-1 rounded bg-brand-teal/15 text-brand-teal text-[11px] font-mono border border-brand-teal/20 truncate uppercase backdrop-blur-sm">
                       {article.tags[0] || 'Python'}
                     </span>
-                    <span className="text-xs text-slate-400 font-mono shrink-0">
+                    <span className="text-xs text-slate-300 font-mono shrink-0 drop-shadow-sm">
                       {formatArticleDate(article.publishedAt, language)}
                     </span>
                   </div>
-                  <div>
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white group-hover:text-brand-teal transition-colors tracking-tight leading-snug break-words">
+                  <div className="relative z-10">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white group-hover:text-brand-teal transition-colors tracking-tight leading-snug break-words drop-shadow-md">
                       {article.title[language]}
                     </h3>
                   </div>

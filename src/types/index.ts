@@ -34,6 +34,7 @@ export interface Article {
   readTime: string;
   tags: string[];
   featured?: boolean;
+  coverImage?: string;
 }
 
 export interface SkillCategory {
