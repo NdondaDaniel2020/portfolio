@@ -198,56 +198,95 @@ export const ArticlesPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Grid de Artigos */}
+      {/* Grid de Artigos com o mesmo design premium da HomePage */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        {filteredArticles.map((article) => (
-          <a
-            key={article.id}
-            href={article.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-2xl bg-brand-card border border-brand-border hover:border-brand-teal/40 transition-all duration-300 p-6 flex flex-col justify-between group glow-teal-sm/0 hover:shadow-xl hover:shadow-brand-teal/5"
-          >
-            <div className="space-y-4">
-              <div className="flex items-center gap-4 text-xs font-mono text-slate-400">
-                <span className="flex items-center gap-1.5">
-                  <Calendar className="w-3.5 h-3.5 text-brand-teal" />
-                  {formatArticleDate(article.publishedAt, language)}
-                </span>
-                <span>•</span>
-                <span className="flex items-center gap-1.5">
-                  <Clock className="w-3.5 h-3.5" />
-                  {article.readTime}
-                </span>
-              </div>
+        {filteredArticles.map((article, index) => {
+          const gradients = [
+            'from-[#0B1720] to-[#0A272A]',
+            'from-[#0B151F] to-[#12222E]',
+            'from-[#0D1A1E] to-[#0A2022]'
+          ];
+          const gradientClass = gradients[index % gradients.length];
 
+          return (
+            <article
+              key={article.id}
+              className="rounded-2xl bg-brand-card border border-brand-border hover:border-brand-teal/40 transition-all duration-300 overflow-hidden flex flex-col justify-between group shadow-lg"
+            >
               <div>
-                <h3 className="text-lg font-bold text-white group-hover:text-brand-teal transition-colors leading-snug">
-                  {article.title[language]}
-                </h3>
-                <p className="text-sm text-brand-muted mt-2 leading-relaxed">
-                  {article.summary[language]}
-                </p>
+                {/* Visual Header / Thumbnail com Imagem de Capa em Opacidade (+1cm de respiro) */}
+                <div className={`min-h-[180px] h-auto w-full bg-gradient-to-br ${gradientClass} p-6 relative flex flex-col justify-between gap-4 border-b border-brand-border/60 overflow-hidden`}>
+                  {/* Background Cover Image com opacidade, blur sutil e zoom no hover */}
+                  {article.coverImage && (
+                    <>
+                      <img
+                        src={article.coverImage}
+                        alt=""
+                        aria-hidden="true"
+                        className="absolute inset-0 w-full h-full object-cover object-center opacity-25 group-hover:opacity-40 group-hover:scale-105 transition-all duration-500 ease-out pointer-events-none"
+                      />
+                      {/* Gradient Overlay para garantir alto contraste com o texto */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-dark/80 to-transparent pointer-events-none" />
+                    </>
+                  )}
+
+                  <div className="flex justify-between items-center gap-2 relative z-10">
+                    <span className="px-2.5 py-1 rounded bg-brand-teal/15 text-brand-teal text-[11px] font-mono border border-brand-teal/20 truncate uppercase backdrop-blur-sm">
+                      {article.tags[0] || 'Python'}
+                    </span>
+                    <span className="text-xs text-slate-300 font-mono shrink-0 drop-shadow-sm">
+                      {formatArticleDate(article.publishedAt, language)}
+                    </span>
+                  </div>
+
+                  <div className="relative z-10">
+                    <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white group-hover:text-brand-teal transition-colors tracking-tight leading-snug break-words drop-shadow-md">
+                      {article.title[language]}
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Prévia do Conteúdo */}
+                <div className="p-6 space-y-4">
+                  <p className="text-xs sm:text-sm text-brand-muted leading-relaxed whitespace-pre-line line-clamp-3">
+                    {article.summary[language]}
+                  </p>
+
+                  {/* Badges de Tópicos (Exibe Todas as Tags) */}
+                  <div className="flex flex-wrap gap-1.5 pt-1">
+                    {article.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-2 py-0.5 rounded bg-brand-surface text-slate-400 text-[11px] font-mono border border-brand-border/40 hover:text-brand-teal hover:border-brand-teal/40 transition-colors"
+                      >
+                        #{tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
 
-              <div className="flex flex-wrap gap-1.5 pt-2">
-                {article.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-2 py-0.5 rounded text-[11px] font-mono bg-brand-surface/80 text-brand-teal border border-brand-border/60"
-                  >
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-            </div>
+              {/* Rodapé do Card */}
+              <div className="px-6 pb-5 pt-3 flex items-center justify-between border-t border-brand-border/40">
+                <a
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-teal hover:text-emerald-300 transition-colors"
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>{t.articles.read_more || 'Ler no Medium'}</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
 
-            <div className="pt-6 mt-6 border-t border-brand-border/60 flex items-center justify-between text-xs font-medium text-slate-300 group-hover:text-brand-teal transition-colors">
-              <span>{t.articles.read_more}</span>
-              <ExternalLink className="w-4 h-4" />
-            </div>
-          </a>
-        ))}
+                {/* Tempo de Leitura no Canto Inferior Direito */}
+                <div className="inline-flex items-center gap-1.5 text-xs font-mono text-slate-400">
+                  <Clock className="w-3.5 h-3.5 text-brand-teal/80" />
+                  <span>{article.readTime}</span>
+                </div>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </main>
   );
