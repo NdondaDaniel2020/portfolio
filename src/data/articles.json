@@ -1,5 +1,27 @@
 [
   {
+    "id": "https://medium.com/p/4a211e0fb753",
+    "title": {
+      "pt": "Stateless vs. Stateful: Quando Usar Sessões ou Tokens na sua Arquitetura",
+      "en": "Stateless vs. Stateful: Quando Usar Sessões ou Tokens na sua Arquitetura"
+    },
+    "summary": {
+      "pt": "Arquitetura de Software em Camadas: A separação definitiva entre Autenticação (AuthN) e Autorização (AuthZ), Cookies HttpOnly vs. Bearer Tokens e o padrão Rou...",
+      "en": "Arquitetura de Software em Camadas: A separação definitiva entre Autenticação (AuthN) e Autorização (AuthZ), Cookies HttpOnly vs. Bearer Tokens e o padrão Rou..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/stateless-vs-stateful-quando-usar-sess%C3%B5es-ou-tokens-na-sua-arquitetura-4a211e0fb753?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-09-14",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "software-architecture",
+      "fastapi",
+      "python",
+      "authentication",
+      "web-development"
+    ],
+    "featured": false
+  },
+  {
     "id": "https://medium.com/p/c36abf7b3fc0",
     "title": {
       "pt": "Python Assíncrono Descomplicado: A Regra de Ouro do Event Loop e por que Migrei para o uv",
