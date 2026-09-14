@@ -286,3 +286,12 @@ html.light .bg-brand-dark\/90 span.text-slate-300,
 html.light [data-purpose="about-section"] .bg-brand-dark\/90 span {
   color: #E2E8F0 !important;
 }
+
+/* Ocultar barra de rolagem (mantendo capacidade de scroll/swipe se necessário) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

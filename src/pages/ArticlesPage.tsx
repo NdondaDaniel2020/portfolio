@@ -127,8 +127,8 @@ export const ArticlesPage: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Corpo do Snippet (Auto-ajustável com scroll horizontal seguro) */}
-                  <div className="overflow-x-auto max-h-[320px] scrollbar-thin scrollbar-thumb-brand-border">
+                  {/* Corpo do Snippet (Auto-ajustável sem barra de rolagem visível) */}
+                  <div className="overflow-x-auto max-h-[320px] no-scrollbar">
                     <pre className="text-[11px] sm:text-xs leading-relaxed font-mono whitespace-pre text-slate-300 select-text">
                       {featuredArticle.snippet.content}
                     </pre>
