@@ -46,3 +46,13 @@ export interface SkillCategory {
     level: string;
   }[];
 }
+
+export interface EngineeringStats {
+  totalCommitsYear: number;
+  year: number;
+  totalRepos: number;
+  productionSystems: number;
+  mainLanguagesCount: number;
+  mainLanguages: string[];
+  lastUpdated: string;
+}

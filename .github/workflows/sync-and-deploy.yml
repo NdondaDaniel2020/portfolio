@@ -32,6 +32,8 @@ jobs:
         run: npm ci
 
       - name: Sincronizar Dados (GitHub + Medium)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run sync-data
 
       - name: Commit e Push dos Dados Atualizados

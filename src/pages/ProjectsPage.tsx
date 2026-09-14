@@ -1,7 +1,8 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import projectsDataRaw from '../data/projects.json';
-import type { Project } from '../types';
+import statsDataRaw from '../data/stats.json';
+import type { Project, EngineeringStats } from '../types';
 import { Search, ExternalLink, Star, GitFork, Terminal } from 'lucide-react';
 import { GithubIcon } from '../components/common/BrandIcons';
 import { CompactPagination } from '../components/common/CompactPagination';
@@ -16,6 +17,7 @@ export const ProjectsPage: React.FC = () => {
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   const projects = projectsDataRaw as Project[];
+  const stats = statsDataRaw as EngineeringStats;
 
   // Atalho de Teclado Ctrl + K
   useEffect(() => {
@@ -77,27 +79,55 @@ export const ProjectsPage: React.FC = () => {
     window.scrollTo({ top: 380, behavior: 'smooth' });
   };
 
+  // Contagens dinâmicas baseadas nos dados
+  const productionCount = useMemo(() => {
+    return projects.filter((p) => Boolean(p.liveUrl)).length || stats.productionSystems;
+  }, [projects, stats.productionSystems]);
+
+  const languagesCount = useMemo(() => {
+    const uniqueLangs = new Set(
+      projects
+        .map((p) => p.language)
+        .filter((l) => l && l !== 'Code' && l !== 'Git')
+    );
+    return uniqueLangs.size || stats.mainLanguagesCount;
+  }, [projects, stats.mainLanguagesCount]);
+
   return (
     <main className="max-w-7xl mx-auto px-6 lg:px-12 pt-28 pb-24 space-y-12">
       {/* Banner de Métricas de Engenharia */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="bg-brand-card border border-brand-border rounded-xl p-4">
-          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">Commits em 2026</div>
-          <div className="text-xl sm:text-2xl font-bold font-mono text-white mt-1">520+</div>
-        </div>
-        <div className="bg-brand-card border border-brand-border rounded-xl p-4">
-          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">Repositórios</div>
-          <div className="text-xl sm:text-2xl font-bold font-mono text-brand-teal mt-1">
-            {projects.length}
+          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">
+            {t.projects_page.stats?.commits_year || 'Commits em'} {stats.year}
+          </div>
+          <div className="text-xl sm:text-2xl font-bold font-mono text-white mt-1">
+            {stats.totalCommitsYear.toLocaleString()}+
           </div>
         </div>
         <div className="bg-brand-card border border-brand-border rounded-xl p-4">
-          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">Upstream Repos</div>
-          <div className="text-xl sm:text-2xl font-bold font-mono text-emerald-400 mt-1">04</div>
+          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">
+            {t.projects_page.stats?.repositories || 'Repositórios'}
+          </div>
+          <div className="text-xl sm:text-2xl font-bold font-mono text-brand-teal mt-1">
+            {projects.length.toString().padStart(2, '0')}
+          </div>
         </div>
         <div className="bg-brand-card border border-brand-border rounded-xl p-4">
-          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">Uptime SLA</div>
-          <div className="text-xl sm:text-2xl font-bold font-mono text-white mt-1">99.9%</div>
+          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">
+            {t.projects_page.stats?.production_systems || 'Sistemas em Produção'}
+          </div>
+          <div className="text-xl sm:text-2xl font-bold font-mono text-emerald-400 mt-1">
+            {productionCount.toString().padStart(2, '0')}
+          </div>
+        </div>
+        <div className="bg-brand-card border border-brand-border rounded-xl p-4">
+          <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400">
+            {t.projects_page.stats?.main_languages || 'Linguagens Principais'}
+          </div>
+          <div className="text-xl sm:text-2xl font-bold font-mono text-sky-400 mt-1">
+            {languagesCount.toString().padStart(2, '0')}
+          </div>
         </div>
       </div>
 

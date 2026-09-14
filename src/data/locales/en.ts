@@ -76,6 +76,12 @@ export const en = {
     tab_all: "All Projects",
     tab_production: "In Production",
     tab_opensource: "Open Source",
+    stats: {
+      commits_year: "Commits in",
+      repositories: "Repositories",
+      production_systems: "Production Systems",
+      main_languages: "Main Languages"
+    }
   },
   articles_page: {
     title: "Articles & Publications",
