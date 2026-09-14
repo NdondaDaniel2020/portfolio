@@ -28,11 +28,6 @@ export const ArticlesSection: React.FC = () => {
       {/* Articles Grid (2 Col Desktop dinâmico com dados reais de articles.json) */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {articles.map((article, index) => {
-          const cleanSummary = article.summary[language]
-            .replace(/Photo by.*?\n/gi, '')
-            .replace(/Do Zero ao Sênior em Python: /gi, '')
-            .trim();
-
           const gradientClass = index === 0
             ? 'from-[#0B1720] to-[#0A272A]'
             : 'from-[#0B151F] to-[#12222E]';
@@ -61,12 +56,12 @@ export const ArticlesSection: React.FC = () => {
                 </div>
 
                 {/* Content preview */}
-                <div className="p-6 space-y-3">
-                  <p className="text-sm text-brand-muted leading-relaxed line-clamp-3">
-                    {cleanSummary}
+                <div className="p-6 space-y-4">
+                  <p className="text-sm text-brand-muted leading-relaxed whitespace-pre-line">
+                    {article.summary[language]}
                   </p>
                   {/* Topic Badges */}
-                  <div className="flex flex-wrap gap-2 pt-2">
+                  <div className="flex flex-wrap gap-2 pt-1">
                     {article.tags.slice(0, 3).map((tag) => (
                       <span
                         key={tag}
