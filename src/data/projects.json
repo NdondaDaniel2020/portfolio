@@ -6,14 +6,22 @@
       "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
       "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
     },
-    "category": "backend",
+    "category": "web",
     "featured": false,
     "pinned": false,
     "stars": 0,
     "forks": 0,
     "language": "TypeScript",
     "technologies": [
-      "Git"
+      "Git",
+      "dark-teal",
+      "desenvolvedor",
+      "frontend",
+      "github-actions",
+      "react",
+      "tailwindcss",
+      "typescript",
+      "vite"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
@@ -27,7 +35,7 @@
       "pt": "exemplos de interfaces com react.",
       "en": "exemplos de interfaces com react."
     },
-    "category": "backend",
+    "category": "web",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -54,7 +62,27 @@
     "forks": 0,
     "language": "Python",
     "technologies": [
-      "Python"
+      "Python",
+      "alembic",
+      "argon2",
+      "asyncio",
+      "authentication",
+      "authorization",
+      "boilerplate",
+      "event-driven",
+      "fastapi",
+      "google-oauth2",
+      "jwt",
+      "oauth2",
+      "postgresql",
+      "pydantic",
+      "rbac",
+      "redis",
+      "security",
+      "sqlalchemy",
+      "uv",
+      "vercel",
+      "websockets"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Auth",
     "liveUrl": "https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app",
@@ -68,7 +96,7 @@
       "pt": "Repositório público no GitHub.",
       "en": "Public GitHub repository."
     },
-    "category": "backend",
+    "category": "web",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -88,14 +116,16 @@
       "pt": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos.",
       "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
     "forks": 0,
     "language": "C",
     "technologies": [
-      "C"
+      "C",
+      "c",
+      "raycasting"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
     "visualType": "terminal",
@@ -108,14 +138,23 @@
       "pt": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. ",
       "en": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. "
     },
-    "category": "backend",
+    "category": "tools",
     "featured": false,
     "pinned": false,
     "stars": 0,
     "forks": 0,
     "language": "PHP",
     "technologies": [
-      "PHP"
+      "PHP",
+      "adminer",
+      "devops",
+      "docker",
+      "docker-compose",
+      "ftp",
+      "mariadb",
+      "nginx",
+      "redis",
+      "wordpress"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Inception",
     "visualType": "terminal",
@@ -128,14 +167,16 @@
       "pt": "Interpretador de comandos (shell) em C desenvolvido para o currículo da Escola 42, inspirado no Bash. Suporta execução de comandos via PATH, pipes (|), redirecionamentos (<, >, >>, <<), built-ins (cd, echo, pwd, export, unset, env, exit), gestão de variáveis de ambiente e manipulação de sinais (Ctrl+C, Ctrl+D, Ctrl+\\).",
       "en": "Interpretador de comandos (shell) em C desenvolvido para o currículo da Escola 42, inspirado no Bash. Suporta execução de comandos via PATH, pipes (|), redirecionamentos (<, >, >>, <<), built-ins (cd, echo, pwd, export, unset, env, exit), gestão de variáveis de ambiente e manipulação de sinais (Ctrl+C, Ctrl+D, Ctrl+\\)."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
     "forks": 0,
     "language": "C",
     "technologies": [
-      "C"
+      "C",
+      "c",
+      "shell"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Minishell",
     "visualType": "terminal",
@@ -148,14 +189,19 @@
       "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
       "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
     "forks": 0,
     "language": "HTML",
     "technologies": [
-      "HTML"
+      "HTML",
+      "cpp",
+      "css3",
+      "html-templates",
+      "javascript",
+      "nginx"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
     "visualType": "terminal",
@@ -168,14 +214,15 @@
       "pt": "Recriação personalizada da função printf da biblioteca padrão em C, desenvolvida no currículo da Escola 42. Implementa manipulação de argumentos variádicos via stdarg.h, conversão de bases numéricas (decimal, hexadecimal, ponteiros) e especificadores de formato (%c, %s, %p, %d, %i, %u, %x, %X, %%), com suporte a flags de precisão e largura (bônus).",
       "en": "Recriação personalizada da função printf da biblioteca padrão em C, desenvolvida no currículo da Escola 42. Implementa manipulação de argumentos variádicos via stdarg.h, conversão de bases numéricas (decimal, hexadecimal, ponteiros) e especificadores de formato (%c, %s, %p, %d, %i, %u, %x, %X, %%), com suporte a flags de precisão e largura (bônus)."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
     "forks": 0,
     "language": "C",
     "technologies": [
-      "C"
+      "C",
+      "c"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/ft_printf",
     "visualType": "terminal",
@@ -188,7 +235,7 @@
       "pt": "Libft é uma biblioteca estática em C desenvolvida para o currículo da 42 School. Recria funções da biblioteca padrão (memória, strings e alocação dinâmica), suporte a listas ligadas (t_list) e extensões personalizadas como get_next_line e ft_printf, compilada via Makefile.",
       "en": "Libft é uma biblioteca estática em C desenvolvida para o currículo da 42 School. Recria funções da biblioteca padrão (memória, strings e alocação dinâmica), suporte a listas ligadas (t_list) e extensões personalizadas como get_next_line e ft_printf, compilada via Makefile."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -208,7 +255,7 @@
       "pt": "Projeto de comunicação entre processos (IPC) em C desenvolvido para a Escola 42. Implementa uma arquitetura cliente-servidor para transmissão de strings bit a bit usando apenas sinais UNIX (SIGUSR1 e SIGUSR2), com tratamento assíncrono e confirmação de recebimento (handshake).",
       "en": "Projeto de comunicação entre processos (IPC) em C desenvolvido para a Escola 42. Implementa uma arquitetura cliente-servidor para transmissão de strings bit a bit usando apenas sinais UNIX (SIGUSR1 e SIGUSR2), com tratamento assíncrono e confirmação de recebimento (handshake)."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -228,7 +275,7 @@
       "pt": "Jogo 2D em C desenvolvido com a MiniLibX (projeto da 42). Guie uma kunoichi por um dojo para coletar todas as estrelas ninjas e escapar pelo portal místico. Apresenta validação rigorosa de mapas (.ber) com flood fill, física de plataforma com gravidade, animações fluidas, inimigos patrulheiros e HUD dinâmico na tela.",
       "en": "Jogo 2D em C desenvolvido com a MiniLibX (projeto da 42). Guie uma kunoichi por um dojo para coletar todas as estrelas ninjas e escapar pelo portal místico. Apresenta validação rigorosa de mapas (.ber) com flood fill, física de plataforma com gravidade, animações fluidas, inimigos patrulheiros e HUD dinâmico na tela."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -248,7 +295,7 @@
       "pt": "O Push_swap é um projeto da Escola 42 desenvolvido em C para ordenação eficiente de dados usando duas pilhas (A e B) e instruções restritas. Implementa uma variante otimizada do Turk Algorithm (algoritmo guloso de menor custo) para calcular as rotações ideais e ordenar pilhas numéricas com o mínimo de operações possível.",
       "en": "O Push_swap é um projeto da Escola 42 desenvolvido em C para ordenação eficiente de dados usando duas pilhas (A e B) e instruções restritas. Implementa uma variante otimizada do Turk Algorithm (algoritmo guloso de menor custo) para calcular as rotações ideais e ordenar pilhas numéricas com o mínimo de operações possível."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -268,7 +315,7 @@
       "pt": "Demonstração prática de Orientação a Objetos em C utilizando structs, ponteiros de função e construtores dinâmicos. O projeto simula encapsulamento e métodos com o ponteiro 'self', permitindo associar comportamentos diretamente a estruturas de dados na linguagem C.",
       "en": "Demonstração prática de Orientação a Objetos em C utilizando structs, ponteiros de função e construtores dinâmicos. O projeto simula encapsulamento e métodos com o ponteiro 'self', permitindo associar comportamentos diretamente a estruturas de dados na linguagem C."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -288,7 +335,7 @@
       "pt": "Projeto da 42 sobre concorrência, multithreading e sincronização de processos em C. Resolve o clássico Problema dos Filósofos Comensais utilizando POSIX threads (pthreads) e mutexes para gerenciar a disputa de recursos (garfos), prevenir data races e deadlocks, garantindo o gerenciamento preciso do tempo e dos estados dos filósofos.",
       "en": "Projeto da 42 sobre concorrência, multithreading e sincronização de processos em C. Resolve o clássico Problema dos Filósofos Comensais utilizando POSIX threads (pthreads) e mutexes para gerenciar a disputa de recursos (garfos), prevenir data races e deadlocks, garantindo o gerenciamento preciso do tempo e dos estados dos filósofos."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -308,7 +355,7 @@
       "pt": "Função em C desenvolvida no currículo da 42 para leitura de arquivos ou da entrada padrão linha a linha através de um File Descriptor. Implementa variáveis estáticas, gerenciamento dinâmico de memória (sem memory leaks), buffer customizável e suporte simultâneo a múltiplos descritores de arquivos (bônus).",
       "en": "Função em C desenvolvida no currículo da 42 para leitura de arquivos ou da entrada padrão linha a linha através de um File Descriptor. Implementa variáveis estáticas, gerenciamento dinâmico de memória (sem memory leaks), buffer customizável e suporte simultâneo a múltiplos descritores de arquivos (bônus)."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -328,7 +375,7 @@
       "pt": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. ",
       "en": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. "
     },
-    "category": "backend",
+    "category": "tools",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -348,7 +395,7 @@
       "pt": "Repositório público no GitHub.",
       "en": "Public GitHub repository."
     },
-    "category": "backend",
+    "category": "web",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -368,7 +415,7 @@
       "pt": "Este projeto  é um exemplo de um menu lateral web",
       "en": "Este projeto  é um exemplo de um menu lateral web"
     },
-    "category": "backend",
+    "category": "web",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -388,7 +435,7 @@
       "pt": "Repositório público no GitHub.",
       "en": "Public GitHub repository."
     },
-    "category": "backend",
+    "category": "web",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -468,7 +515,7 @@
       "pt": "Repositório público no GitHub.",
       "en": "Public GitHub repository."
     },
-    "category": "backend",
+    "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
@@ -528,7 +575,7 @@
       "pt": "Curso de HTML5 e CSS3 do CursoemVideo",
       "en": "Curso de HTML5 e CSS3 do CursoemVideo"
     },
-    "category": "backend",
+    "category": "web",
     "featured": false,
     "pinned": false,
     "stars": 1,
