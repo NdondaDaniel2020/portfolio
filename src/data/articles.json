@@ -1,5 +1,34 @@
 [
   {
+    "id": "https://medium.com/p/29a101199c9a",
+    "title": {
+      "pt": "Além do JWT Básico: Por que Abandonei o Bcrypt pelo Argon2id e Como Implementei Rotação de Refresh…",
+      "en": "Além do JWT Básico: Por que Abandonei o Bcrypt pelo Argon2id e Como Implementei Rotação de Refresh…"
+    },
+    "summary": {
+      "pt": "Além do JWT Básico: Por que Abandonei o Bcrypt pelo Argon2id e Como Implementei Rotação de Refresh Tokens (RTR)\n\nSaga: Como Estruturei uma API de Autenticação...",
+      "en": "Além do JWT Básico: Por que Abandonei o Bcrypt pelo Argon2id e Como Implementei Rotação de Refresh Tokens (RTR)\n\nSaga: Como Estruturei uma API de Autenticação..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/al%C3%A9m-do-jwt-b%C3%A1sico-por-que-abandonei-o-bcrypt-pelo-argon2id-e-como-implementei-rota%C3%A7%C3%A3o-de-refresh-29a101199c9a?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-09-14",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "cybersecurity",
+      "python",
+      "software-engineering",
+      "web-development",
+      "fastapi"
+    ],
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*lkCLU6UyFZDg7qO4oS1udg.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌─────────────────────────────────────────────────────────────────────────────┐\n│                          EVOLUÇÃO DOS ALGORITMOS                            │\n├───────────────────┬─────────────────────┬───────────────────────────────────┤\n│ Algoritmo         │ Característica      │ Vetor de Ataque Atual             │\n├───────────────────┼─────────────────────┼───────────────────────────────────┤\n│ MD5 / SHA-256     │ Rápido (Checksum)   │ Bilhões de hashes/seg via GPU/ASIC│\n│ PBKDF2 / Bcrypt   │ CPU-Bound           │ Paralelizável em farms de GPUs    │\n│ Argon2id (PHC)    │ Memory-Hard Hashing │ Inviável para GPUs (exige RAM)    │\n└───────────────────┴─────────────────────┴───────────────────────────────────┘",
+      "language": "text"
+    }
+  },
+  {
     "id": "https://medium.com/p/4a211e0fb753",
     "title": {
       "pt": "Stateless vs. Stateful: Quando Usar Sessões ou Tokens na sua Arquitetura",
