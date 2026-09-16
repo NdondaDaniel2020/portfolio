@@ -24,7 +24,8 @@
       "PostgreSQL",
       "Redis",
       "Celery",
-      "Docker"
+      "Docker",
+      "devops"
     ],
     "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive",
     "visualType": "stats",
