@@ -61,6 +61,53 @@
     "updatedAt": "2026-09-16"
   },
   {
+    "id": "cv",
+    "name": "cv",
+    "description": {
+      "pt": "Currículo profissional de Ndonda Daniel Matondo (Software Engineer) em versões Português e Inglês, código HTML/CSS e PDF ATS-friendly.",
+      "en": "Professional curriculum vitae of Ndonda Daniel Matondo (Software Engineer) in Portuguese and English, HTML/CSS source and ATS-friendly PDF."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "PDF",
+      "ATS-Friendly",
+      "Resume"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/cv",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "regex",
+    "name": "regex",
+    "description": {
+      "pt": "Guia prático de estudos e automação com Expressões Regulares (RegEx) em Python, cobrindo o módulo re e manipulação avançada de strings.",
+      "en": "Practical study guide and automation scripts with Regular Expressions (RegEx) in Python, covering the re module and string processing."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Python",
+      "RegEx",
+      "Automation",
+      "String Manipulation"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/regex",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-16"
+  },
+  {
     "id": "fullstackcrudwebapplication",
     "name": "FullStackCRUDWebApplication",
     "description": {
@@ -132,29 +179,6 @@
       "Web Development"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/HTML-CSS",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14"
-  },
-  {
-    "id": "regex",
-    "name": "regex",
-    "description": {
-      "pt": "Guia prático de estudos e automação com Expressões Regulares (RegEx) em Python, cobrindo o módulo re e manipulação avançada de strings.",
-      "en": "Practical study guide and automation scripts with Regular Expressions (RegEx) in Python, covering the re module and string processing."
-    },
-    "category": "backend",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "technologies": [
-      "Python",
-      "RegEx",
-      "Automation",
-      "String Manipulation"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/regex",
     "visualType": "terminal",
     "updatedAt": "2026-09-14"
   },
@@ -644,30 +668,6 @@
     "liveUrl": "https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app",
     "visualType": "terminal",
     "updatedAt": "2026-09-08"
-  },
-  {
-    "id": "cv",
-    "name": "cv",
-    "description": {
-      "pt": "Currículo profissional de Ndonda Daniel Matondo (Software Engineer) em versões Português e Inglês, código HTML/CSS e PDF ATS-friendly.",
-      "en": "Professional curriculum vitae of Ndonda Daniel Matondo (Software Engineer) in Portuguese and English, HTML/CSS source and ATS-friendly PDF."
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "HTML",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "PDF",
-      "ATS-Friendly",
-      "Resume"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/cv",
-    "visualType": "terminal",
-    "updatedAt": "2026-08-30"
   },
   {
     "id": "webserver",

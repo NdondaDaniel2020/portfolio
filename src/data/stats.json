@@ -6,12 +6,12 @@
   "mainLanguagesCount": 7,
   "mainLanguages": [
     "TypeScript",
-    "JavaScript",
     "HTML",
     "Python",
+    "JavaScript",
     "C",
-    "C++",
-    "PHP"
+    "PHP",
+    "C++"
   ],
   "lastUpdated": "2026-09-16"
 }
