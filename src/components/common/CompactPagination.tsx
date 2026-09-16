@@ -7,6 +7,7 @@ interface CompactPaginationProps {
   onPageChange: (page: number) => void;
   totalItems?: number;
   itemsPerPage?: number;
+  itemLabel?: string;
 }
 
 export const CompactPagination: React.FC<CompactPaginationProps> = ({
@@ -15,6 +16,7 @@ export const CompactPagination: React.FC<CompactPaginationProps> = ({
   onPageChange,
   totalItems,
   itemsPerPage,
+  itemLabel = 'projetos',
 }) => {
   if (totalPages <= 1) return null;
 
@@ -38,7 +40,7 @@ export const CompactPagination: React.FC<CompactPaginationProps> = ({
       {/* Contagem técnica de itens */}
       {totalItems !== undefined && (
         <div className="text-xs font-mono text-slate-400">
-          Mostrando <span className="text-brand-teal font-semibold">{startItem}–{endItem}</span> de <span className="text-white font-semibold">{totalItems}</span> projetos
+          Mostrando <span className="text-brand-teal font-semibold">{startItem}–{endItem}</span> de <span className="text-white font-semibold">{totalItems}</span> {itemLabel}
         </div>
       )}
 
