@@ -15,8 +15,8 @@ export const ArticlesPage: React.FC = () => {
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   const articles = articlesDataRaw as Article[];
-  const explicitFeatured = articles.find(a => a.featured);
-  const showFeaturedHero = explicitFeatured && !searchQuery.trim() && activeTag === 'all';
+  const featuredArticle = articles.find(a => a.featured) || articles[0];
+  const showFeaturedHero = featuredArticle && !searchQuery.trim() && activeTag === 'all';
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -80,8 +80,8 @@ export const ArticlesPage: React.FC = () => {
         </p>
       </div>
 
-      {/* Artigo em Destaque (Apenas se explicitFeatured estiver definido como true) */}
-      {showFeaturedHero && explicitFeatured && (
+      {/* Artigo em Destaque (Com fallback automático para o artigo mais recente) */}
+      {showFeaturedHero && featuredArticle && (
         <div className="rounded-3xl bg-brand-card border border-brand-teal/30 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group glow-teal-sm/0 hover:shadow-brand-teal/10 transition-all">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Lado Esquerdo: Conteúdo */}
@@ -92,28 +92,28 @@ export const ArticlesPage: React.FC = () => {
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white group-hover:text-brand-teal transition-colors leading-tight">
-                {explicitFeatured.title[language]}
+                {featuredArticle.title[language]}
               </h2>
 
               <p className="text-sm sm:text-base text-brand-muted leading-relaxed line-clamp-3">
-                {explicitFeatured.summary[language]}
+                {featuredArticle.summary[language]}
               </p>
 
               <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-slate-400">
                 <span className="flex items-center gap-1.5">
                   <Calendar className="w-3.5 h-3.5 text-brand-teal" />
-                  {formatArticleDate(explicitFeatured.publishedAt, language)}
+                  {formatArticleDate(featuredArticle.publishedAt, language)}
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5" />
-                  {explicitFeatured.readTime}
+                  {featuredArticle.readTime}
                 </span>
               </div>
 
               <div className="pt-2">
                 <a
-                  href={explicitFeatured.url}
+                  href={featuredArticle.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-teal text-slate-950 font-bold text-sm hover:bg-emerald-300 transition-all glow-teal-sm"
@@ -126,7 +126,7 @@ export const ArticlesPage: React.FC = () => {
 
             {/* Lado Direito: Terminal Dinâmico que se adapta ao Conteúdo do Artigo */}
             <div className="lg:col-span-5 flex flex-col justify-center">
-              {explicitFeatured.snippet ? (
+              {featuredArticle.snippet ? (
                 <div className="rounded-2xl bg-[#091116] border border-brand-border p-5 font-mono text-xs text-slate-300 space-y-2 shadow-inner">
                   {/* Subtle Glow no topo do terminal */}
                   <div className="absolute -top-10 -right-10 w-32 h-32 bg-brand-teal/10 rounded-full blur-2xl pointer-events-none" />
@@ -140,10 +140,10 @@ export const ArticlesPage: React.FC = () => {
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-brand-teal/10 text-brand-teal border border-brand-teal/20">
-                        {explicitFeatured.snippet.type === 'diagram' ? 'Diagrama ASCII' : (explicitFeatured.snippet.type === 'code' ? 'Python' : 'Terminal')}
+                        {featuredArticle.snippet.type === 'diagram' ? 'Diagrama ASCII' : (featuredArticle.snippet.type === 'code' ? 'Python' : 'Terminal')}
                       </span>
                       <span className="text-[11px] text-slate-400">
-                        {explicitFeatured.snippet.filename || 'snippet.txt'}
+                        {featuredArticle.snippet.filename || 'snippet.txt'}
                       </span>
                     </div>
                   </div>
@@ -151,11 +151,11 @@ export const ArticlesPage: React.FC = () => {
                   {/* Corpo do Snippet (Auto-ajustável sem barra de rolagem visível) */}
                   <div className="overflow-x-auto max-h-[320px] no-scrollbar">
                     <pre className="text-[11px] sm:text-xs leading-relaxed font-mono whitespace-pre text-slate-300 select-text">
-                      {explicitFeatured.snippet.content}
+                      {featuredArticle.snippet.content}
                     </pre>
                   </div>
                 </div>
-              ) : explicitFeatured.coverImage ? (
+              ) : featuredArticle.coverImage ? (
                 /* Fallback caso não haja snippet textual: Capa tratada com moldura terminal */
                 <div className="rounded-2xl bg-[#091116] border border-brand-border p-4 shadow-2xl relative overflow-hidden">
                   <div className="flex items-center justify-between border-b border-brand-border/60 pb-2.5 mb-3 font-mono text-xs">
@@ -168,8 +168,8 @@ export const ArticlesPage: React.FC = () => {
                   </div>
                   <div className="relative rounded-xl overflow-hidden aspect-video">
                     <img
-                      src={explicitFeatured.coverImage}
-                      alt={explicitFeatured.title[language]}
+                      src={featuredArticle.coverImage}
+                      alt={featuredArticle.title[language]}
                       className="w-full h-full object-cover"
                     />
                   </div>
