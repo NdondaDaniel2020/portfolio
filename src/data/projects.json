@@ -15,9 +15,15 @@
     "technologies": [
       "TypeScript",
       "Python",
-      "FastAPI",
+      "Django",
+      "Django Channels",
       "React",
       "WebSockets",
+      "LiveKit",
+      "WebRTC",
+      "PostgreSQL",
+      "Redis",
+      "Celery",
       "Docker"
     ],
     "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive",
