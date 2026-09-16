@@ -2,7 +2,7 @@
   "totalCommitsYear": 1913,
   "year": 2026,
   "totalRepos": 28,
-  "productionSystems": 3,
+  "productionSystems": 2,
   "mainLanguagesCount": 6,
   "mainLanguages": [
     "TypeScript",
@@ -12,5 +12,5 @@
     "C",
     "PHP"
   ],
-  "lastUpdated": "2026-09-15"
+  "lastUpdated": "2026-09-16"
 }

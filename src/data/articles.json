@@ -1,5 +1,63 @@
 [
   {
+    "id": "https://medium.com/p/f61ff22870e3",
+    "title": {
+      "pt": "OAuth 2.0 vs. OpenID Connect: Por que Chamar Login Social de “OAuth” Está Conceitualmente Errado",
+      "en": "OAuth 2.0 vs. OpenID Connect: Por que Chamar Login Social de “OAuth” Está Conceitualmente Errado"
+    },
+    "summary": {
+      "pt": "Saga: Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python — Parte 4Arquitetura de Identidade & Federação: A analogia do quarto d...",
+      "en": "Saga: Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python — Parte 4Arquitetura de Identidade & Federação: A analogia do quarto d..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/oauth-2-0-vs-openid-connect-por-que-chamar-login-social-de-oauth-est%C3%A1-conceitualmente-errado-f61ff22870e3?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-09-15",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "fastapi",
+      "software-architecture",
+      "cybersecurity",
+      "oauth2",
+      "python"
+    ],
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*JGQcGhf4LBor69M08tz7zg.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌─────────────────────────────────────────────────────────────────────────────┐\n│                    AUTORIZAÇÃO (OAuth) vs. IDENTIDADE (OIDC)                │\n├──────────────────────────────────────┬──────────────────────────────────────┤\n│       OAuth 2.0 (Autorização)        │     OpenID Connect (Autenticação)    │\n├──────────────────────────────────────┼──────────────────────────────────────┤\n│  Cartão Magnético do Quarto          │  Passaporte / Identidade Cidadã      │\n│  • Abre a porta 402 e o elevador     │  • Tem sua foto, nome e CPF/NIF      │\n│  • Não diz quem você é               │  • Selado por uma autoridade oficial │\n│  • Artefato: ACCESS TOKEN            │  • Artefato: ID TOKEN (JWT Assinado) │\n└──────────────────────────────────────┴──────────────────────────────────────┘",
+      "language": "text"
+    }
+  },
+  {
+    "id": "https://medium.com/p/c36b811af554",
+    "title": {
+      "pt": "Rate Limiting Distribuído com Redis: Como Protegi o Endpoint de Login contra Força Bruta e Botnets",
+      "en": "Rate Limiting Distribuído com Redis: Como Protegi o Endpoint de Login contra Força Bruta e Botnets"
+    },
+    "summary": {
+      "pt": "Saga: Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python — Parte 5Segurança Defensiva em Infraestrutura: Por que limitar apenas...",
+      "en": "Saga: Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python — Parte 5Segurança Defensiva em Infraestrutura: Por que limitar apenas..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/rate-limiting-distribu%C3%ADdo-com-redis-como-protegi-o-endpoint-de-login-contra-for%C3%A7a-bruta-e-botnets-c36b811af554?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-09-15",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "python",
+      "software-architecture",
+      "cybersecurity",
+      "fastapi",
+      "redis"
+    ],
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*j3nZV53p5jVSdI3UV3CkzQ.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌─────────────────────────────────────────────────────────────────────────────┐\n│                       ARQUITETURA DE DUPLA CAMADA                           │\n├──────────────────────────────┬──────────────────────────────────────────────┤\n│ Camada 1: Por IP             │ Camada 2: Por Conta / E-mail                 │\n├──────────────────────────────┼──────────────────────────────────────────────┤\n│ Chave: 'rate_limit:ip:{ip}'  │ Chave: 'login_failures:{email}'              │\n│ Alvo: Anti-DDoS / Scraping   │ Alvo: Anti-Brute Force / Credential Stuffing │\n│ Ação: HTTP 429 Too Many Req  │ Ação: HTTP 423 Locked (Account Lockout)      │\n│ Efeito: Bloqueia a máquina   │ Efeito: Congela a conta temporariamente      │\n└──────────────────────────────┴──────────────────────────────────────────────┘",
+      "language": "text"
+    }
+  },
+  {
     "id": "https://medium.com/p/29a101199c9a",
     "title": {
       "pt": "Além do JWT Básico: Por que Abandonei o Bcrypt pelo Argon2id e Como Implementei Rotação de Refresh…",
