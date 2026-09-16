@@ -48,7 +48,31 @@ export const ProjectsPage: React.FC = () => {
       if (activeTab === 'opensource' && p.liveUrl) return false;
 
       // Filtro por categoria
-      if (activeCategory !== 'all' && p.category !== activeCategory) return false;
+      if (activeCategory !== 'all') {
+        const matchesCategory = p.category === activeCategory;
+        const techs = p.technologies.map((t) => t.toLowerCase());
+
+        let matchesDomain = false;
+        if (activeCategory === 'tools') {
+          matchesDomain = techs.some((t) =>
+            ['docker', 'docker compose', 'devops', 'containers', 'ci/cd', 'nginx', 'kubernetes', 'prometheus', 'grafana'].includes(t)
+          );
+        } else if (activeCategory === 'backend') {
+          matchesDomain = techs.some((t) =>
+            ['fastapi', 'django', 'python', 'node.js', 'express', 'postgresql', 'redis'].includes(t)
+          );
+        } else if (activeCategory === 'web') {
+          matchesDomain = techs.some((t) =>
+            ['react', 'vite', 'frontend', 'tailwind css', 'ui/ux', 'html5', 'css3'].includes(t)
+          );
+        } else if (activeCategory === 'systems') {
+          matchesDomain = p.language === 'C' || p.language === 'C++' || techs.some((t) =>
+            ['c', 'c++', 'c++98', 'algorithms', 'unix'].includes(t)
+          );
+        }
+
+        if (!matchesCategory && !matchesDomain) return false;
+      }
 
       // Filtro por texto de busca
       if (!searchQuery.trim()) return true;

@@ -25,6 +25,7 @@
       "Redis",
       "Celery",
       "Docker",
+      "DevOps",
       "ft-transcendence",
       "42school"
     ],
@@ -717,40 +718,5 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/CPP",
     "visualType": "terminal",
     "updatedAt": "2025-07-04"
-  },
-  {
-    "id": "bidlive",
-    "name": "BidLive",
-    "description": {
-      "pt": "Plataforma de leilões em tempo real (ft_transcendence 42) onde usuários participam de lances ao vivo, interagem via chat full-duplex e recebem recomendações inteligentes.",
-      "en": "Real-time auction platform (42 ft_transcendence) featuring live bidding, full-duplex WebSocket chat, and intelligent user activity recommendations."
-    },
-    "category": "web",
-    "featured": true,
-    "pinned": true,
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "technologies": [
-      "TypeScript",
-      "Python",
-      "Django",
-      "Django Channels",
-      "Django",
-      "Django Channels",
-      "React",
-      "WebSockets",
-      "LiveKit",
-      "WebRTC",
-      "PostgreSQL",
-      "Redis",
-      "Celery",
-      "Docker",
-      "ft-transcendence",
-      "42school"
-    ],
-    "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive",
-    "visualType": "stats",
-    "updatedAt": "2026-09-15"
   }
 ]
