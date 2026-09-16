@@ -3,13 +3,14 @@
   "year": 2026,
   "totalRepos": 28,
   "productionSystems": 2,
-  "mainLanguagesCount": 6,
+  "mainLanguagesCount": 7,
   "mainLanguages": [
     "TypeScript",
     "JavaScript",
     "HTML",
     "Python",
     "C",
+    "C++",
     "PHP"
   ],
   "lastUpdated": "2026-09-16"

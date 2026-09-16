@@ -25,7 +25,8 @@
       "Redis",
       "Celery",
       "Docker",
-      "devops"
+      "ft-transcendence",
+      "42school"
     ],
     "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive",
     "visualType": "stats",
@@ -45,15 +46,13 @@
     "forks": 0,
     "language": "TypeScript",
     "technologies": [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "GitHub Actions",
       "Git",
-      "dark-teal",
-      "desenvolvedor",
-      "frontend",
-      "github-actions",
-      "react",
-      "tailwindcss",
-      "typescript",
-      "vite"
+      "Portfolio"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
@@ -64,8 +63,8 @@
     "id": "fullstackcrudwebapplication",
     "name": "FullStackCRUDWebApplication",
     "description": {
-      "pt": "Repositório público no GitHub.",
-      "en": "Public GitHub repository."
+      "pt": "Aplicação web Full Stack completa com React, Vite, Node.js, Express, Prisma ORM e MongoDB, com operações CRUD completas e API RESTful.",
+      "en": "Full Stack web application built with React, Vite, Node.js, Express, Prisma ORM, and MongoDB, featuring complete CRUD operations and RESTful API."
     },
     "category": "web",
     "featured": false,
@@ -74,7 +73,14 @@
     "forks": 0,
     "language": "JavaScript",
     "technologies": [
-      "JavaScript"
+      "React",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "MongoDB",
+      "Vite",
+      "REST API",
+      "Full Stack"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/FullStackCRUDWebApplication",
     "visualType": "terminal",
@@ -84,8 +90,8 @@
     "id": "sidebarmenureact",
     "name": "sidebarMenuReact",
     "description": {
-      "pt": "Repositório público no GitHub.",
-      "en": "Public GitHub repository."
+      "pt": "Componente de menu lateral responsivo construído em React com Vite, animações fluidas em CSS3 e suporte a submenus interativos.",
+      "en": "Responsive sidebar menu component built with React and Vite, fluid CSS3 animations, and interactive nested submenus."
     },
     "category": "web",
     "featured": false,
@@ -94,7 +100,12 @@
     "forks": 0,
     "language": "JavaScript",
     "technologies": [
-      "JavaScript"
+      "React",
+      "Vite",
+      "CSS3",
+      "Responsive Design",
+      "UI Components",
+      "Frontend"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/sidebarMenuReact",
     "visualType": "terminal",
@@ -104,8 +115,8 @@
     "id": "html-css",
     "name": "HTML-CSS",
     "description": {
-      "pt": "Curso de HTML5 e CSS3 do CursoemVideo",
-      "en": "Curso de HTML5 e CSS3 do CursoemVideo"
+      "pt": "Curso prático de HTML5 e CSS3 do CursoemVideo com projetos práticos e design responsivo.",
+      "en": "Practical HTML5 and CSS3 course from CursoemVideo with hands-on projects and responsive web design."
     },
     "category": "web",
     "featured": false,
@@ -114,7 +125,10 @@
     "forks": 0,
     "language": "HTML",
     "technologies": [
-      "HTML"
+      "HTML5",
+      "CSS3",
+      "Responsive Design",
+      "Web Development"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/HTML-CSS",
     "visualType": "terminal",
@@ -124,8 +138,8 @@
     "id": "regex",
     "name": "regex",
     "description": {
-      "pt": "Repositório público no GitHub.",
-      "en": "Public GitHub repository."
+      "pt": "Guia prático de estudos e automação com Expressões Regulares (RegEx) em Python, cobrindo o módulo re e manipulação avançada de strings.",
+      "en": "Practical study guide and automation scripts with Regular Expressions (RegEx) in Python, covering the re module and string processing."
     },
     "category": "backend",
     "featured": false,
@@ -134,7 +148,10 @@
     "forks": 0,
     "language": "Python",
     "technologies": [
-      "Python"
+      "Python",
+      "RegEx",
+      "Automation",
+      "String Manipulation"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/regex",
     "visualType": "terminal",
@@ -154,7 +171,11 @@
     "forks": 0,
     "language": "Python",
     "technologies": [
-      "Python"
+      "Python",
+      "PySide6",
+      "Qt Widgets",
+      "Desktop GUI",
+      "Splash Screen"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/splash-screen",
     "visualType": "terminal",
@@ -174,7 +195,11 @@
     "forks": 0,
     "language": "Python",
     "technologies": [
-      "Python"
+      "Python",
+      "PySide6",
+      "Custom Widgets",
+      "Circular ProgressBar",
+      "Qt Designer"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/SplashScreenCircularProgress",
     "visualType": "terminal",
@@ -194,7 +219,11 @@
     "forks": 0,
     "language": "Python",
     "technologies": [
-      "Python"
+      "Python",
+      "PySide6",
+      "PyQt",
+      "Desktop GUI",
+      "UI Templates"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/MainSplashScreen",
     "visualType": "terminal",
@@ -214,7 +243,12 @@
     "forks": 0,
     "language": "Python",
     "technologies": [
-      "Python"
+      "Python",
+      "PySide6",
+      "OpenCV",
+      "Facial Recognition",
+      "SQLite",
+      "Financial Control"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro",
     "visualType": "terminal",
@@ -234,7 +268,11 @@
     "forks": 0,
     "language": "JavaScript",
     "technologies": [
-      "JavaScript"
+      "React",
+      "TypeScript",
+      "Vite",
+      "UI/UX",
+      "Frontend Exercises"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
     "visualType": "terminal",
@@ -254,7 +292,12 @@
     "forks": 0,
     "language": "HTML",
     "technologies": [
-      "HTML"
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Sidebar",
+      "Responsive Design",
+      "Accordion Menu"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/SidebarMenu",
     "visualType": "terminal",
@@ -274,7 +317,12 @@
     "forks": 0,
     "language": "C",
     "technologies": [
-      "C"
+      "C",
+      "OOP in C",
+      "Function Pointers",
+      "Structs",
+      "Design Patterns",
+      "Polymorphism"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Pseudo-Object-Orientation-in-C",
     "visualType": "terminal",
@@ -294,7 +342,14 @@
     "forks": 0,
     "language": "HTML",
     "technologies": [
-      "HTML"
+      "Docker",
+      "Docker Compose",
+      "NGINX",
+      "WordPress",
+      "MariaDB",
+      "DevOps",
+      "System Administration",
+      "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Inception2.0",
     "visualType": "terminal",
@@ -315,8 +370,12 @@
     "language": "C",
     "technologies": [
       "C",
-      "c",
-      "shell"
+      "Bash",
+      "Unix Processes",
+      "Pipes & Redirections",
+      "AST Parser",
+      "Signals",
+      "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Minishell",
     "visualType": "terminal",
@@ -337,8 +396,12 @@
     "language": "C",
     "technologies": [
       "C",
-      "c",
-      "raycasting"
+      "Raycasting",
+      "MiniLibX",
+      "Game Engine",
+      "Computer Graphics",
+      "Wolfenstein 3D",
+      "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
     "visualType": "terminal",
@@ -358,7 +421,13 @@
     "forks": 0,
     "language": "C",
     "technologies": [
-      "C"
+      "C",
+      "Pthreads",
+      "Multithreading",
+      "Mutex",
+      "Deadlock Prevention",
+      "Concurrency",
+      "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Philosophers",
     "visualType": "terminal",
@@ -378,7 +447,12 @@
     "forks": 0,
     "language": "C",
     "technologies": [
-      "C"
+      "C",
+      "Algorithms",
+      "Sorting Algorithms",
+      "Turk Algorithm",
+      "Stack Manipulation",
+      "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/PushSwap",
     "visualType": "terminal",
@@ -398,7 +472,13 @@
     "forks": 0,
     "language": "C",
     "technologies": [
-      "C"
+      "C",
+      "MiniLibX",
+      "2D Game",
+      "Flood Fill",
+      "Pixel Art",
+      "Game Development",
+      "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/SoLong",
     "visualType": "terminal",
@@ -418,7 +498,13 @@
     "forks": 0,
     "language": "C",
     "technologies": [
-      "C"
+      "C",
+      "UNIX Signals",
+      "IPC",
+      "Client-Server",
+      "SIGUSR1/SIGUSR2",
+      "Bitwise Operations",
+      "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Minitalk",
     "visualType": "terminal",
@@ -439,7 +525,11 @@
     "language": "C",
     "technologies": [
       "C",
-      "c"
+      "Variadic Functions",
+      "Format Specifiers",
+      "stdarg.h",
+      "Buffer Formatting",
+      "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/ft_printf",
     "visualType": "terminal",
@@ -459,7 +549,12 @@
     "forks": 0,
     "language": "C",
     "technologies": [
-      "C"
+      "C",
+      "File Descriptors",
+      "Static Variables",
+      "Memory Management",
+      "Buffer Management",
+      "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/get_next_line",
     "visualType": "terminal",
@@ -479,7 +574,13 @@
     "forks": 0,
     "language": "C",
     "technologies": [
-      "C"
+      "C",
+      "Standard Library",
+      "Data Structures",
+      "Linked Lists",
+      "Memory Management",
+      "Makefile",
+      "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Libft",
     "visualType": "terminal",
@@ -499,16 +600,15 @@
     "forks": 0,
     "language": "PHP",
     "technologies": [
-      "PHP",
-      "adminer",
-      "devops",
-      "docker",
-      "docker-compose",
-      "ftp",
-      "mariadb",
-      "nginx",
-      "redis",
-      "wordpress"
+      "Docker",
+      "Docker Compose",
+      "NGINX",
+      "WordPress",
+      "MariaDB",
+      "Redis",
+      "FTP",
+      "Adminer",
+      "DevOps"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Inception",
     "visualType": "terminal",
@@ -528,27 +628,16 @@
     "forks": 0,
     "language": "Python",
     "technologies": [
+      "FastAPI",
       "Python",
-      "alembic",
-      "argon2",
-      "asyncio",
-      "authentication",
-      "authorization",
-      "boilerplate",
-      "event-driven",
-      "fastapi",
-      "google-oauth2",
-      "jwt",
-      "oauth2",
-      "postgresql",
-      "pydantic",
-      "rbac",
-      "redis",
-      "security",
-      "sqlalchemy",
-      "uv",
-      "vercel",
-      "websockets"
+      "JWT",
+      "RBAC",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Alembic",
+      "Redis",
+      "OAuth2",
+      "WebSockets"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Auth",
     "liveUrl": "https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app",
@@ -559,8 +648,8 @@
     "id": "cv",
     "name": "cv",
     "description": {
-      "pt": "Repositório público no GitHub.",
-      "en": "Public GitHub repository."
+      "pt": "Currículo profissional de Ndonda Daniel Matondo (Software Engineer) em versões Português e Inglês, código HTML/CSS e PDF ATS-friendly.",
+      "en": "Professional curriculum vitae of Ndonda Daniel Matondo (Software Engineer) in Portuguese and English, HTML/CSS source and ATS-friendly PDF."
     },
     "category": "web",
     "featured": false,
@@ -569,7 +658,11 @@
     "forks": 0,
     "language": "HTML",
     "technologies": [
-      "HTML"
+      "HTML5",
+      "CSS3",
+      "PDF",
+      "ATS-Friendly",
+      "Resume"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/cv",
     "visualType": "terminal",
@@ -589,12 +682,13 @@
     "forks": 0,
     "language": "HTML",
     "technologies": [
-      "HTML",
-      "cpp",
-      "css3",
-      "html-templates",
-      "javascript",
-      "nginx"
+      "C++98",
+      "HTTP/1.1",
+      "Epoll / Poll",
+      "I/O Multiplexing",
+      "CGI",
+      "NGINX Architecture",
+      "Networking"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
     "visualType": "terminal",
@@ -604,17 +698,21 @@
     "id": "cpp",
     "name": "CPP",
     "description": {
-      "pt": "Repositório público no GitHub.",
-      "en": "Public GitHub repository."
+      "pt": "Repositório de estudos e exercícios em C++ (Padrão 42 School: POO, templates, STL e herança).",
+      "en": "Study repository for C++ exercises (42 School standard: OOP, templates, STL, and inheritance)."
     },
     "category": "systems",
     "featured": false,
     "pinned": false,
     "stars": 0,
     "forks": 0,
-    "language": "Code",
+    "language": "C++",
     "technologies": [
-      "Git"
+      "C++",
+      "OOP",
+      "STL",
+      "Templates",
+      "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/CPP",
     "visualType": "terminal",
@@ -636,10 +734,18 @@
     "technologies": [
       "TypeScript",
       "Python",
-      "FastAPI",
+      "Django",
+      "Django Channels",
       "React",
       "WebSockets",
-      "Docker"
+      "LiveKit",
+      "WebRTC",
+      "PostgreSQL",
+      "Redis",
+      "Celery",
+      "Docker",
+      "ft-transcendence",
+      "42school"
     ],
     "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive",
     "visualType": "stats",
