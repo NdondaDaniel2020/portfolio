@@ -1,5 +1,29 @@
 [
   {
+    "id": "reactexercises",
+    "name": "ReactExercises",
+    "description": {
+      "pt": "exemplos de interfaces com react.",
+      "en": "exemplos de interfaces com react."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "UI/UX",
+      "Frontend Exercises"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-16"
+  },
+  {
     "id": "portfolio",
     "name": "portfolio",
     "description": {
@@ -242,30 +266,6 @@
       "Financial Control"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14"
-  },
-  {
-    "id": "reactexercises",
-    "name": "ReactExercises",
-    "description": {
-      "pt": "exemplos de interfaces com react.",
-      "en": "exemplos de interfaces com react."
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "technologies": [
-      "React",
-      "TypeScript",
-      "Vite",
-      "UI/UX",
-      "Frontend Exercises"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
     "visualType": "terminal",
     "updatedAt": "2026-09-14"
   },
