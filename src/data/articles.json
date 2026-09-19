@@ -1,5 +1,63 @@
 [
   {
+    "id": "https://medium.com/p/28fad749ede0",
+    "title": {
+      "pt": "Como Recuperar o Histórico de Conversas no Google Antigravity IDE (Engenharia Reversa, Mistério do…",
+      "en": "Como Recuperar o Histórico de Conversas no Google Antigravity IDE (Engenharia Reversa, Mistério do…"
+    },
+    "summary": {
+      "pt": "Como Recuperar o Histórico de Conversas no Google Antigravity IDE (Engenharia Reversa, Mistério do Plano e Soluções Prontas)\nSe você já abriu o Google Antigrav...",
+      "en": "Como Recuperar o Histórico de Conversas no Google Antigravity IDE (Engenharia Reversa, Mistério do Plano e Soluções Prontas)\nSe você já abriu o Google Antigrav..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/como-recuperar-o-hist%C3%B3rico-de-conversas-no-google-antigravity-ide-engenharia-reversa-mist%C3%A9rio-do-28fad749ede0?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-09-18",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "recovery",
+      "vscode-extension",
+      "google-antigravity-ide",
+      "chat-history",
+      "ai-chat"
+    ],
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*Ltdfz61l8uI6aWSk2AXXOw.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌────────────────────────────────────────────────────────┐\n│                   VS Code UI (Frontend)                │\n│  - Painel do Agent, Histórico, \"Search all convos...\"  │\n│  - Cache volátil: state.vscdb                          │\n└───────────────────────────▲────────────────────────────┘\n                            │\n               RPC Connect (HTTP/POST JSON)\n               Porta 127.0.0.1:<random> + CSRF\n                            │\n┌───────────────────────────▼────────────────────────────┐\n│         Language Server (language_server_linux_x64)    │\n│  - Motor daemon de IA em segundo plano                 │\n│  - Responsável pelo streaming, diffs e contexto        │\n└───────────────────────────▲────────────────────────────┘",
+      "language": "text"
+    }
+  },
+  {
+    "id": "https://medium.com/p/b7d34797b3fc",
+    "title": {
+      "pt": "How to Restore Lost Chat History in Google Antigravity IDE (Reverse Engineering, The Plan Mystery…",
+      "en": "How to Restore Lost Chat History in Google Antigravity IDE (Reverse Engineering, The Plan Mystery…"
+    },
+    "summary": {
+      "pt": "How to Restore Lost Chat History in Google Antigravity IDE (Reverse Engineering, The Plan Mystery, and Ready-to-Use Solutions)\nIf you have ever launched Google...",
+      "en": "How to Restore Lost Chat History in Google Antigravity IDE (Reverse Engineering, The Plan Mystery, and Ready-to-Use Solutions)\nIf you have ever launched Google..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/how-to-restore-lost-chat-history-in-google-antigravity-ide-reverse-engineering-the-plan-mystery-b7d34797b3fc?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-09-18",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "recovery",
+      "google-antigravity-ide",
+      "vscode-extension",
+      "chat-history",
+      "ai-chat"
+    ],
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*Ltdfz61l8uI6aWSk2AXXOw.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌────────────────────────────────────────────────────────┐\n│                   VS Code UI (Frontend)                │\n│  - Agent Panel, History, \"Search all convos...\"        │\n│  - Volatile frontend cache: state.vscdb                │\n└───────────────────────────▲────────────────────────────┘\n                            │\n               RPC Connect (HTTP/POST JSON)\n               Port 127.0.0.1:<random> + CSRF Token\n                            │\n┌───────────────────────────▼────────────────────────────┐\n│         Language Server (language_server_linux_x64)    │\n│  - Background AI daemon engine                         │\n│  - Handles agent streaming, diffs, and indexing        │\n└───────────────────────────▲────────────────────────────┘",
+      "language": "text"
+    }
+  },
+  {
     "id": "https://medium.com/p/f61ff22870e3",
     "title": {
       "pt": "OAuth 2.0 vs. OpenID Connect: Por que Chamar Login Social de “OAuth” Está Conceitualmente Errado",

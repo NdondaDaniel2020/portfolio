@@ -1,5 +1,53 @@
 [
   {
+    "id": "portfolio",
+    "name": "portfolio",
+    "description": {
+      "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
+      "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 1,
+    "forks": 0,
+    "language": "TypeScript",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "GitHub Actions",
+      "Git",
+      "Portfolio"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
+    "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-18"
+  },
+  {
+    "id": "antigravity-history-restorer",
+    "name": "antigravity-history-restorer",
+    "description": {
+      "pt": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC.",
+      "en": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 1,
+    "forks": 0,
+    "language": "TypeScript",
+    "technologies": [
+      "TypeScript"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-history-restorer",
+    "liveUrl": "https://open-vsx.org/extension/NdondaDaniel2020/antigravity-history-restorer",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-18"
+  },
+  {
     "id": "reactexercises",
     "name": "ReactExercises",
     "description": {
@@ -20,33 +68,6 @@
       "Frontend Exercises"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-16"
-  },
-  {
-    "id": "portfolio",
-    "name": "portfolio",
-    "description": {
-      "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
-      "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "technologies": [
-      "TypeScript",
-      "React",
-      "Tailwind CSS",
-      "Vite",
-      "GitHub Actions",
-      "Git",
-      "Portfolio"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
-    "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
     "visualType": "terminal",
     "updatedAt": "2026-09-16"
   },
