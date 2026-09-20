@@ -1,5 +1,34 @@
 [
   {
+    "id": "https://medium.com/p/b061eef454a1",
+    "title": {
+      "pt": "RBAC sem N+1: Como Modelar Permissões Granulares com SQLAlchemy 2.0 Async",
+      "en": "RBAC sem N+1: Como Modelar Permissões Granulares com SQLAlchemy 2.0 Async"
+    },
+    "summary": {
+      "pt": "Saga: Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python — Parte 6Engenharia de Dados & Autorização: Modelagem N:N (User-Role-P...",
+      "en": "Saga: Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python — Parte 6Engenharia de Dados & Autorização: Modelagem N:N (User-Role-P..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/rbac-sem-n-1-como-modelar-permiss%C3%B5es-granulares-com-sqlalchemy-2-0-async-b061eef454a1?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-09-19",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "software-architecture",
+      "python",
+      "postgresql",
+      "sqlalchemy",
+      "fastapi"
+    ],
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*jZW6Q10kYTGtz12ukC5yJg.jpeg",
+    "snippet": {
+      "type": "code",
+      "filename": "dependencies.py",
+      "content": "# O clássico erro de início de projeto\nif current_user.role != \"admin\":\n    raise HTTPException(status_code=403, detail=\"Acesso negado\")",
+      "language": "python"
+    }
+  },
+  {
     "id": "https://medium.com/p/28fad749ede0",
     "title": {
       "pt": "Como Recuperar o Histórico de Conversas no Google Antigravity IDE (Engenharia Reversa, Mistério do…",

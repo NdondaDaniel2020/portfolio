@@ -9,7 +9,7 @@
     "category": "web",
     "featured": false,
     "pinned": false,
-    "stars": 1,
+    "stars": 2,
     "forks": 0,
     "language": "TypeScript",
     "technologies": [
@@ -24,7 +24,31 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
     "visualType": "terminal",
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-09-20"
+  },
+  {
+    "id": "cv",
+    "name": "cv",
+    "description": {
+      "pt": "Currículo profissional de Ndonda Daniel Matondo (Software Engineer) em versões Português e Inglês, código HTML/CSS e PDF ATS-friendly.",
+      "en": "Professional curriculum vitae of Ndonda Daniel Matondo (Software Engineer) in Portuguese and English, HTML/CSS source and ATS-friendly PDF."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "PDF",
+      "ATS-Friendly",
+      "Resume"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/cv",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-19"
   },
   {
     "id": "antigravity-history-restorer",
@@ -68,30 +92,6 @@
       "Frontend Exercises"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-16"
-  },
-  {
-    "id": "cv",
-    "name": "cv",
-    "description": {
-      "pt": "Currículo profissional de Ndonda Daniel Matondo (Software Engineer) em versões Português e Inglês, código HTML/CSS e PDF ATS-friendly.",
-      "en": "Professional curriculum vitae of Ndonda Daniel Matondo (Software Engineer) in Portuguese and English, HTML/CSS source and ATS-friendly PDF."
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "HTML",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "PDF",
-      "ATS-Friendly",
-      "Resume"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/cv",
     "visualType": "terminal",
     "updatedAt": "2026-09-16"
   },
