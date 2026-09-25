@@ -1,5 +1,31 @@
 [
   {
+    "id": "cub3d",
+    "name": "cub3D",
+    "description": {
+      "pt": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos.",
+      "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
+    },
+    "category": "systems",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C",
+      "Raycasting",
+      "MiniLibX",
+      "Game Engine",
+      "Computer Graphics",
+      "Wolfenstein 3D",
+      "42-school"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-24"
+  },
+  {
     "id": "portfolio",
     "name": "portfolio",
     "description": {
@@ -24,7 +50,7 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
     "visualType": "terminal",
-    "updatedAt": "2026-09-23"
+    "updatedAt": "2026-09-24"
   },
   {
     "id": "cv",
@@ -390,32 +416,6 @@
       "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Minishell",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14"
-  },
-  {
-    "id": "cub3d",
-    "name": "cub3D",
-    "description": {
-      "pt": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos.",
-      "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
-    },
-    "category": "systems",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "C",
-    "technologies": [
-      "C",
-      "Raycasting",
-      "MiniLibX",
-      "Game Engine",
-      "Computer Graphics",
-      "Wolfenstein 3D",
-      "42-school"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
     "visualType": "terminal",
     "updatedAt": "2026-09-14"
   },

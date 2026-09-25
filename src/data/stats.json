@@ -5,13 +5,13 @@
   "productionSystems": 3,
   "mainLanguagesCount": 7,
   "mainLanguages": [
+    "C",
     "TypeScript",
     "HTML",
     "JavaScript",
     "Python",
-    "C",
     "PHP",
     "C++"
   ],
-  "lastUpdated": "2026-09-24"
+  "lastUpdated": "2026-09-25"
 }
