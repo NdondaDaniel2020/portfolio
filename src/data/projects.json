@@ -1,29 +1,33 @@
 [
   {
-    "id": "cub3d",
-    "name": "cub3D",
+    "id": "auth",
+    "name": "Auth",
     "description": {
-      "pt": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos.",
-      "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
+      "pt": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura.",
+      "en": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura."
     },
-    "category": "systems",
+    "category": "backend",
     "featured": false,
     "pinned": false,
-    "stars": 0,
+    "stars": 1,
     "forks": 0,
-    "language": "C",
+    "language": "Python",
     "technologies": [
-      "C",
-      "Raycasting",
-      "MiniLibX",
-      "Game Engine",
-      "Computer Graphics",
-      "Wolfenstein 3D",
-      "42-school"
+      "FastAPI",
+      "Python",
+      "JWT",
+      "RBAC",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Alembic",
+      "Redis",
+      "OAuth2",
+      "WebSockets"
     ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
+    "githubUrl": "https://github.com/NdondaDaniel2020/Auth",
+    "liveUrl": "https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app",
     "visualType": "terminal",
-    "updatedAt": "2026-09-24"
+    "updatedAt": "2026-09-26"
   },
   {
     "id": "portfolio",
@@ -49,6 +53,32 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "cub3d",
+    "name": "cub3D",
+    "description": {
+      "pt": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos.",
+      "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
+    },
+    "category": "systems",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C",
+      "Raycasting",
+      "MiniLibX",
+      "Game Engine",
+      "Computer Graphics",
+      "Wolfenstein 3D",
+      "42-school"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
     "visualType": "terminal",
     "updatedAt": "2026-09-24"
   },
@@ -625,36 +655,6 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/Inception",
     "visualType": "terminal",
     "updatedAt": "2026-09-14"
-  },
-  {
-    "id": "auth",
-    "name": "Auth",
-    "description": {
-      "pt": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura.",
-      "en": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura."
-    },
-    "category": "backend",
-    "featured": false,
-    "pinned": false,
-    "stars": 1,
-    "forks": 0,
-    "language": "Python",
-    "technologies": [
-      "FastAPI",
-      "Python",
-      "JWT",
-      "RBAC",
-      "PostgreSQL",
-      "SQLAlchemy",
-      "Alembic",
-      "Redis",
-      "OAuth2",
-      "WebSockets"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/Auth",
-    "liveUrl": "https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-08"
   },
   {
     "id": "webserver",
