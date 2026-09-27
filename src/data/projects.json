@@ -24,7 +24,8 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
     "visualType": "terminal",
-    "updatedAt": "2026-09-16"
+    "updatedAt": "2026-09-16",
+    "hasDetails": false
   },
   {
     "id": "cv",
@@ -48,7 +49,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/cv",
     "visualType": "terminal",
-    "updatedAt": "2026-09-16"
+    "updatedAt": "2026-09-16",
+    "hasDetails": false
   },
   {
     "id": "regex",
@@ -71,7 +73,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/regex",
     "visualType": "terminal",
-    "updatedAt": "2026-09-16"
+    "updatedAt": "2026-09-16",
+    "hasDetails": false
   },
   {
     "id": "fullstackcrudwebapplication",
@@ -98,7 +101,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/FullStackCRUDWebApplication",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "sidebarmenureact",
@@ -123,7 +127,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/sidebarMenuReact",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "html-css",
@@ -146,7 +151,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/HTML-CSS",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "splash-screen",
@@ -170,7 +176,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/splash-screen",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "splashscreencircularprogress",
@@ -194,7 +201,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/SplashScreenCircularProgress",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "mainsplashscreen",
@@ -218,7 +226,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/MainSplashScreen",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "controlefinanceiro",
@@ -228,7 +237,7 @@
       "en": "Controle Finaceiro Criado em Python Para um projeto escolar"
     },
     "category": "backend",
-    "featured": false,
+    "featured": true,
     "pinned": false,
     "stars": 2,
     "forks": 0,
@@ -243,7 +252,9 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": true,
+    "coverImage": "https://user-images.githubusercontent.com/108186371/210639045-f7182afe-bc6a-4c8c-acee-2286c7938d8a.png"
   },
   {
     "id": "reactexercises",
@@ -267,7 +278,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "sidebarmenu",
@@ -292,7 +304,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/SidebarMenu",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "pseudo-object-orientation-in-c",
@@ -317,7 +330,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Pseudo-Object-Orientation-in-C",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "inception2-0",
@@ -344,7 +358,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Inception2.0",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "minishell",
@@ -354,7 +369,7 @@
       "en": "Interpretador de comandos (shell) em C desenvolvido para o currículo da Escola 42, inspirado no Bash. Suporta execução de comandos via PATH, pipes (|), redirecionamentos (<, >, >>, <<), built-ins (cd, echo, pwd, export, unset, env, exit), gestão de variáveis de ambiente e manipulação de sinais (Ctrl+C, Ctrl+D, Ctrl+\\)."
     },
     "category": "systems",
-    "featured": false,
+    "featured": true,
     "pinned": false,
     "stars": 0,
     "forks": 0,
@@ -370,7 +385,9 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Minishell",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/cover.webp"
   },
   {
     "id": "cub3d",
@@ -380,7 +397,7 @@
       "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
     },
     "category": "systems",
-    "featured": false,
+    "featured": true,
     "pinned": false,
     "stars": 0,
     "forks": 0,
@@ -396,7 +413,9 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/cover.webp"
   },
   {
     "id": "philosophers",
@@ -422,7 +441,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Philosophers",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "pushswap",
@@ -447,7 +467,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/PushSwap",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "solong",
@@ -473,7 +494,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/SoLong",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "minitalk",
@@ -499,7 +521,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Minitalk",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "ft_printf",
@@ -524,7 +547,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/ft_printf",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "get_next_line",
@@ -549,7 +573,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/get_next_line",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "libft",
@@ -575,7 +600,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Libft",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": false
   },
   {
     "id": "inception",
@@ -603,7 +629,9 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Inception",
     "visualType": "terminal",
-    "updatedAt": "2026-09-14"
+    "updatedAt": "2026-09-14",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/13-grafana-nginx-conn.webp"
   },
   {
     "id": "auth",
@@ -613,7 +641,7 @@
       "en": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura."
     },
     "category": "backend",
-    "featured": false,
+    "featured": true,
     "pinned": false,
     "stars": 1,
     "forks": 0,
@@ -633,7 +661,9 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/Auth",
     "liveUrl": "https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app",
     "visualType": "terminal",
-    "updatedAt": "2026-09-08"
+    "updatedAt": "2026-09-08",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/cover.webp"
   },
   {
     "id": "webserver",
@@ -643,7 +673,7 @@
       "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
     },
     "category": "systems",
-    "featured": false,
+    "featured": true,
     "pinned": false,
     "stars": 0,
     "forks": 0,
@@ -659,7 +689,9 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
     "visualType": "terminal",
-    "updatedAt": "2026-08-18"
+    "updatedAt": "2026-08-18",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp"
   },
   {
     "id": "cpp",
@@ -683,7 +715,8 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/CPP",
     "visualType": "terminal",
-    "updatedAt": "2025-07-04"
+    "updatedAt": "2025-07-04",
+    "hasDetails": false
   },
   {
     "id": "bidlive",
@@ -717,6 +750,8 @@
     ],
     "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive",
     "visualType": "stats",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-15",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/cover.webp"
   }
 ]

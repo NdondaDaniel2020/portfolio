@@ -1,0 +1,750 @@
+{
+  "auth": {
+    "id": "auth",
+    "name": "Auth (FastAPI Service)",
+    "tagline": {
+      "pt": "API de Autenticação e Autorização Assíncrona com FastAPI, RBAC Granular, Tokens JWT Rotativos e Rate Limiting no Redis",
+      "en": "Asynchronous Authentication & Authorization Microservice with FastAPI, Granular RBAC, Rotating JWTs, and Distributed Redis Rate Limiting"
+    },
+    "category": "backend",
+    "featured": true,
+    "architecture_type": "Async Event-Driven Hexagonal Architecture (FastAPI, SQLAlchemy 2.0, PostgreSQL, Redis, RabbitMQ)",
+    "about": {
+      "pt": "O Auth API é um microsserviço corporativo de autenticação, autorização e gestão de identidades construído com FastAPI assíncrono e SQLAlchemy 2.0. Desenvolvido para atuar como autoridade central de identidade (IdP), o sistema implementa fluxo completo de registro e login com hashing Argon2id, emissão de tokens JWT com estratégia de Refresh Token Rotation (RTR), proteção contra ataques de força bruta com rate limiting distribuído em janela deslizante (Sliding Window) no Redis, autorização baseada em papéis (RBAC) com dependências injetadas sem queries N+1, autenticação social OAuth2/OpenID Connect com Google, mensageria de eventos de auditoria e segurança via RabbitMQ/Kafka e observabilidade completa com métricas Prometheus.",
+      "en": "Auth API is an enterprise-grade identity and access management (IAM) microservice built with asynchronous FastAPI and SQLAlchemy 2.0. Designed as a central identity provider, the system features complete user registration and authentication workflows with Argon2id password hashing, rotating JWT session management with Refresh Token Rotation (RTR), distributed sliding-window rate limiting via Redis against brute-force attacks, role-based access control (RBAC) with clean dependency injection eliminating N+1 queries, Google OAuth2/OpenID Connect social sign-in, security event streaming with RabbitMQ/Kafka, and full Prometheus observability."
+    },
+    "highlights": [
+      "Autenticação assíncrona robusta com FastAPI e hashing criptográfico Argon2id de última geração",
+      "Gestão segura de sessões com JWT rotativo (Refresh Token Rotation - RTR) e revogação instantânea via Redis",
+      "Controle de Acesso Baseado em Papéis (RBAC) com permissões granulares e injeção de dependências sem queries N+1",
+      "Rate Limiting distribuído em janela deslizante (Sliding Window Counter) gerenciado pelo Redis",
+      "Login social unificado integrando OAuth2 e OpenID Connect (Google Auth) com vínculo de identidade híbrida",
+      "Persistência assíncrona com PostgreSQL e SQLAlchemy 2.0 (AsyncSession) e migrações estruturadas via Alembic",
+      "Disparo de eventos de auditoria e segurança em segundo plano via mensageria assíncrona (RabbitMQ / Kafka)",
+      "Observabilidade corporativa com endpoint Prometheus (/metrics) e logs estruturados em formato JSON",
+      "Documentação interativa automática com Swagger UI (OpenAPI 3.1) e ReDoc",
+      "Ambiente de desenvolvimento e testes ultrarrápido gerenciado com uv (Python 3.14)"
+    ],
+    "technologies": [
+      "FastAPI",
+      "Python",
+      "SQLAlchemy",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "RabbitMQ",
+      "Alembic",
+      "Argon2",
+      "JWT",
+      "Prometheus",
+      "Pydantic",
+      "uv"
+    ],
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/gallery/01-swagger-ui.webp",
+          "caption": "Swagger UI Interativo com Documentação OpenAPI 3.1 dos Endpoints de Autenticação e RBAC"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/gallery/02-redoc-spec.webp",
+          "caption": "ReDoc com Especificação Técnica Detalhada dos Schemas Pydantic e Payloads"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/gallery/03-api-response.webp",
+          "caption": "Estrutura Padrão de Resposta JSON da API"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-auth",
+          "file": "01-demo-auth.mp4",
+          "title": "Navegação no Swagger UI e Fluxos de Autenticação",
+          "description": "Demonstração interativa dos endpoints da API no Swagger UI: registro de usuário, login com obtenção de tokens JWT, validação de rotas protegidas por RBAC e visualização da documentação OpenAPI.",
+          "category": "backend",
+          "duration": "63s",
+          "size_mb": 6.1,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/videos/01-demo-auth.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/Auth"
+  },
+  "webserver": {
+    "id": "webserver",
+    "name": "Webserver (Web Ninjas)",
+    "tagline": {
+      "pt": "Servidor HTTP/1.1 de Alta Performance com I/O Não-Bloqueante (epoll), Execução de CGI, Uploads Multipart e Virtual Hosts em C++98",
+      "en": "High-Performance Non-Blocking HTTP/1.1 Web Server with I/O Multiplexing (epoll), CGI Execution, Multipart Uploads, and Virtual Hosts in C++98"
+    },
+    "category": "backend",
+    "featured": true,
+    "architecture_type": "Non-Blocking Event-Driven HTTP/1.1 Web Server with I/O Multiplexing (epoll) in C++98",
+    "about": {
+      "pt": "O Webserver (Web Ninjas) é um servidor web HTTP/1.1 de alto desempenho implementado em C++98, desenvolvido em conformidade com as RFCs 2616 e 7230-7235. Utiliza uma arquitetura orientada a eventos totalmente não-bloqueante baseada em epoll (Linux), capaz de lidar com milhares de conexões simultâneas com baixo consumo de memória e latência mínima. O servidor inclui parser robusto de configurações no estilo Nginx (com múltiplos servidores virtuais, rotas, limites de cliente e páginas de erro customizadas), suporte integral aos métodos GET, POST e DELETE, streaming de upload multipart/form-data e chunked transfer encoding, listagem automática de diretórios (autoindex) e uma pipeline completa para execução assíncrona de scripts CGI (Python e PHP) via pipes não-bloqueantes com isolamento de processos.",
+      "en": "Webserver (Web Ninjas) is a high-performance HTTP/1.1 web server implemented in C++98, strictly complying with RFCs 2616 and 7230-7235. Built on a fully non-blocking, event-driven architecture powered by Linux epoll, it handles thousands of concurrent connections with minimal memory footprint and ultra-low latency. The server features a robust Nginx-style configuration parser (supporting multiple virtual hosts, location blocks, client body limits, and custom error pages), full HTTP method support (GET, POST, DELETE), multipart/form-data upload streaming and chunked transfer encoding, automatic directory indexing (autoindex), and a complete asynchronous CGI pipeline (Python and PHP) utilizing non-blocking pipes with process isolation."
+    },
+    "highlights": [
+      "Arquitetura orientada a eventos com I/O multiplexing via epoll() no Linux para alta concorrência",
+      "Parser e manipulador de protocolo HTTP/1.1 em C++98 (RFC 7230-7235) com Keep-Alive e conexões persistentes",
+      "Motor de roteamento e configuração estilo Nginx com Virtual Hosts, location blocks, redirecionamentos (301/302/307) e páginas de erro customizadas",
+      "Pipeline de execução CGI assíncrona via pipes não-bloqueantes para Python e PHP com isolamento de processos e timeout configurável",
+      "Suporte a upload de arquivos em streaming com multipart/form-data e Transfer-Encoding: chunked sem bloqueio do servidor",
+      "Serviço de arquivos estáticos de alta performance com resolução automática de MIME types e geração de autoindex HTML",
+      "Portal Web interativo ('Web Ninjas') com autenticação baseada em cookies de sessão, formulários SQLite e console Server Battle Arena",
+      "Validação estrita de limites de memória (client_max_body_size) e proteção contra buffer overflows e memory leaks"
+    ],
+    "technologies": [
+      "C++98",
+      "HTTP/1.1",
+      "epoll",
+      "POSIX Sockets",
+      "CGI (RFC 3875)",
+      "Python",
+      "PHP",
+      "SQLite",
+      "Nginx-style Config",
+      "Linux",
+      "Makefile"
+    ],
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/gallery/demo.mp4",
+          "caption": "Demonstração Completa do Webserver: Conexões Concorrentes, CGI, Uploads e Portal Ninja"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/gallery/01-landing-hero.webp",
+          "caption": "Landing Page 'Web Ninjas': Apresentação Moderna do Servidor HTTP/1.1 C++98"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/gallery/02-dashboard-tester.webp",
+          "caption": "Dashboard de Gerenciamento com Testador Interativo de Métodos HTTP (GET, POST, DELETE)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/gallery/03-dashboard-database.webp",
+          "caption": "Painel de Dados e Integração com SQLite via Scripts CGI e Cookies de Sessão"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/gallery/04-battle-arena.webp",
+          "caption": "Server Battle Arena: Console Visual para Validação de Rotas e Métodos em Tempo Real"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/gallery/05-auth-login.webp",
+          "caption": "Portal de Autenticação com Login Seguro e Gestão de Sessão via Cookies HTTP"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/gallery/06-auth-signup.webp",
+          "caption": "Registro de Utilizadores com Hashing Seguro e Validação de Formulários via CGI"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/gallery/07-server-logs-ide.webp",
+          "caption": "Monitorização em Tempo Real no Terminal com Logs Detalhados de Conexões e Requisições epoll"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/gallery/08-config-routing.webp",
+          "caption": "Arquivo de Configuração Estilo Nginx com Servidores Virtuais, Rotas e Handlers CGI"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-webserver",
+          "file": "01-demo-webserver.mp4",
+          "title": "Demonstração Completa do Webserver (C++98 / HTTP/1.1)",
+          "description": "Showcase completo do servidor HTTP/1.1: inicialização de múltiplos virtual hosts com epoll, navegação na interface Web Ninjas, testes de métodos GET/POST/DELETE na Battle Arena, fluxo de autenticação com cookies de sessão e persistência em banco de dados SQLite via CGI.",
+          "category": "backend",
+          "duration": "208s",
+          "size_mb": 5.02,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/videos/01-demo-webserver.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver"
+  },
+  "minishell": {
+    "id": "minishell",
+    "name": "Minishell (TeamWork Shell)",
+    "tagline": {
+      "pt": "Interpretador de Comandos UNIX em C com Gestão de Processos, Pipelines Concorrentes, Redirecionamentos e Sinais POSIX",
+      "en": "UNIX Command Interpreter in C with Process Management, Concurrent Pipelines, Redirections, and POSIX Signals"
+    },
+    "category": "systems",
+    "featured": true,
+    "architecture_type": "Unix Command Interpreter & Process Management Engine in C (POSIX)",
+    "about": {
+      "pt": "O Minishell é uma implementação em linguagem C de um interpretador de comandos (shell) compatível com o comportamento do Bash, desenvolvido no currículo comum da 42. O projeto simula o funcionamento interno de um sistema operativo ao implementar leitura interativa com histórico via GNU Readline, análise léxica (lexer/tokenizer) com tratamento estrito de aspas simples e duplas, expansão dinâmica de variáveis de ambiente ($VAR) e código de retorno ($?), execução de comandos externos via busca no PATH e comandos internos (built-ins) otimizados. O núcleo do motor gerencia pipelines encadeados (|) com criação concorrente de processos filhos (fork, pipe e dup2), redirecionamentos flexíveis (<, >, >> e Here-doc << com expansão), além de controlo robusto de sinais do terminal (SIGINT, SIGQUIT e EOF) para garantir estabilidade contínua sem vazamentos de memória.",
+      "en": "Minishell is a C implementation of a UNIX command line interpreter modeled after Bash behavior, developed as part of the 42 School common core curriculum. The project mirrors operating system internals by implementing interactive user input with history via GNU Readline, lexical parsing (lexer/tokenizer) with strict single/double quote handling, dynamic environment variable expansion ($VAR) and exit status retrieval ($?), external binary execution via PATH resolution, and optimized custom built-in commands. The execution engine orchestrates chained multi-stage pipelines (|) with concurrent child process management (fork, pipe, dup2), flexible I/O file redirections (<, >, >>, and Here-doc << with expansion), and robust terminal signal handling (SIGINT, SIGQUIT, EOF) guaranteeing non-blocking operation and zero memory leaks."
+    },
+    "highlights": [
+      "Motor de execução de processos UNIX com fork(), execve(), pipe() e dup2() para pipelines encadeados",
+      "Implementação completa de 7 comandos built-in essenciais: echo (com flag -n), cd, pwd, export, unset, env e exit",
+      "Parser léxico e expansor com suporte a aspas duplas, aspas simples, variáveis de ambiente ($VAR) e status de retorno ($?)",
+      "Suporte avançado a redirecionamentos de I/O: entrada (<), saída truncada (>), saída acumulada (>>) e Here-doc interativo (<<)",
+      "Gestão precisa de sinais POSIX com termios/sigaction (Ctrl-C para interrupção de linha, Ctrl-D para EOF e Ctrl-\\ sem interrupção)",
+      "Prompt interativo customizado ('TeamWork>') integrado à biblioteca GNU Readline com navegação no histórico",
+      "Resolução dinâmica de executáveis no PATH do sistema com suporte a caminhos absolutos e relativos",
+      "Gestão rigorosa de memória e encerramento seguro de descritores de arquivos, prevenindo leaks e processos zumbis"
+    ],
+    "technologies": [
+      "C",
+      "UNIX / POSIX",
+      "Process Management",
+      "Pipes & Redirections",
+      "Signal Handling",
+      "GNU Readline",
+      "Libft",
+      "Makefile",
+      "Linux"
+    ],
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/demo.mp4",
+          "caption": "Demonstração Completa do Minishell: Pipelines, Built-ins, Redirecionamentos e Sinais"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/01-pipelines-heredoc.webp",
+          "caption": "Execução de Here-doc (<< EOF) e Encadeamento de Comandos com Pipes no Prompt TeamWork"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/02-multi-pipe-filter.webp",
+          "caption": "Pipeline Sequencial Múltiplo (ls -l | sort | head) com Manipulação de Streams"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/03-advanced-pipe-chain.webp",
+          "caption": "Pipeline Avançado de 4 Estágios Processando Streams do Sistema Operativo"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/04-env-expansion.webp",
+          "caption": "Comando Built-in Export e Expansão Dinâmica de Variáveis de Ambiente ($A$B)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/05-builtins-execution.webp",
+          "caption": "Validação de Built-ins (cd, pwd, echo, unset), Inspeção de Status ($?) e Gestão de Erros"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-minishell",
+          "file": "01-demo-minishell.mp4",
+          "title": "Showcase Completo do Minishell (UNIX Shell em C)",
+          "description": "Demonstração prática de todas as capacidades do Minishell: execução de binários externos via PATH, comandos internos (echo, cd, pwd, export, unset, env, exit), expansão de variáveis, sinais SIGINT/SIGQUIT, redirecionamentos complexos (<, >, >>, <<) e pipelines concorrentes.",
+          "category": "systems",
+          "duration": "165s",
+          "size_mb": 1.15,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/videos/01-demo-minishell.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/Minishell"
+  },
+  "cub3d": {
+    "id": "cub3d",
+    "name": "cub3D",
+    "tagline": {
+      "pt": "Motor Gráfico 3D Raycasting em C com MiniLibX, Áudio BASS e Combate em Primeira Pessoa",
+      "en": "Raycasting 3D Graphics Engine in C with MiniLibX, BASS Audio, and First-Person Combat"
+    },
+    "category": "gamedev",
+    "featured": true,
+    "architecture_type": "Software Raycasting Engine (DDA Algorithm) in C",
+    "about": {
+      "pt": "O cub3D é um motor gráfico 3D em primeira pessoa desenvolvido em C com a MiniLibX, inspirado no clássico Wolfenstein 3D. O projeto implementa um raycaster completo utilizando o algoritmo DDA (Digital Differential Analysis) para calcular interseções de raios com paredes em tempo real, mapeamento de texturas com cálculo de coordenadas UV, projeção de perspectiva com correção de distorção olho-de-peixe, e um sistema de minimapa em tempo real. A versão expandida inclui animações completas de armas, portas dinâmicas com colisão e transições de abertura/fecho, renderização de chão e teto com texturização contínua, mira interativa pelo mouse e áudio espacial imersivo integrado à engine de áudio BASS.",
+      "en": "cub3D is a first-person 3D raycasting engine developed in C with MiniLibX, inspired by the classic Wolfenstein 3D. The project implements a complete software raycaster using the DDA (Digital Differential Analysis) algorithm to compute ray-wall intersections in real time, texture mapping with UV coordinate calculation, perspective projection with fisheye distortion correction, and a real-time minimap. The bonus expansion features full weapon animation cycles, dynamic sliding/swinging doors, texture-mapped floor and ceiling casting, interactive mouse-look aiming, and an immersive multi-channel sound engine powered by the BASS audio library."
+    },
+    "highlights": [
+      "Motor de Raycasting em software baseado no algoritmo DDA (Digital Differential Analysis)",
+      "Mapeamento e amostragem de texturas XPM com correção de distorção olho-de-peixe (fisheye)",
+      "Renderização de chão e teto com mapeamento de textura contínuo por scanline",
+      "Portas dinâmicas com verificação de colisão, animação por frames e SFX de abertura/fecho",
+      "Sistema de combate em primeira pessoa com 5 armas e ciclos completos de animação (idle, walk, shoot)",
+      "Minimapa HUD em tempo real com radar, cone de visão do jogador e posições das portas",
+      "Integração com BASS Audio Engine para áudio multicanal (música de fundo, passos, tiros, portas)",
+      "Controle suave de câmera com mira responsiva pelo mouse e rotação fluida",
+      "Parser e validador estrito de mapas .cub com flood-fill para garantia de perímetro fechado",
+      "Arquitetura C modularizada com separação limpa de core, parser, raycaster, render, player e bonus"
+    ],
+    "technologies": [
+      "C",
+      "Raycasting (DDA)",
+      "MiniLibX",
+      "X11",
+      "BASS Audio",
+      "Makefile",
+      "Linux"
+    ],
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/gallery/demo.mp4",
+          "caption": "Showcase Completo do Motor Gráfico: Raycasting DDA, Animações e Áudio BASS"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/gallery/01-title-screen.webp",
+          "caption": "Tela de Apresentação e Preload de Texturas do cub3D (Odyssey 2.0)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/gallery/02-weapons-arsenal-01.webp",
+          "caption": "Arma 1: Faca de Combate com Animação Fluida"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/gallery/02-weapons-arsenal-02.webp",
+          "caption": "Arma 2: Pistola Semi-Automática com Recuo e Efeitos Sonoros"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/gallery/02-weapons-arsenal-03.webp",
+          "caption": "Arma 3: Escopeta Lupara de Dois Canos"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/gallery/02-weapons-arsenal-04.webp",
+          "caption": "Arma 4: Metralhadora Automática de Cadência Rápida"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/gallery/02-weapons-arsenal-05.webp",
+          "caption": "Arma 5: Lança-Foguetes / Arma Pesada"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/gallery/03-door-animations.webp",
+          "caption": "Portas Dinâmicas com Transição de Abertura/Fecho e Colisão"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/gallery/04-environment-textures.webp",
+          "caption": "Amostragem e Mapeamento de Texturas XPM para Paredes e Superfícies"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-showcase",
+          "file": "01-demo-showcase.mp4",
+          "title": "Showcase Completo de Gameplay (Modo Bónus)",
+          "description": "Demonstração completa do motor gráfico com raycasting DDA, arsenal com 5 armas, portas animadas, minimapa em tempo real e áudio espacial BASS.",
+          "category": "gamedev",
+          "duration": "82s",
+          "size_mb": 19.03,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/videos/01-demo-showcase.mp4"
+        },
+        {
+          "id": "mandatory-raycaster",
+          "file": "02-mandatory-raycaster.mp4",
+          "title": "Motor de Raycasting Obrigatório",
+          "description": "Execução da versão base do cub3D com renderização de paredes texturizadas, movimentação livre pelo labirinto e minimapa.",
+          "category": "graphics",
+          "duration": "23s",
+          "size_mb": 2.84,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/videos/02-mandatory-raycaster.mp4"
+        },
+        {
+          "id": "door-animations",
+          "file": "03-door-animations.mp4",
+          "title": "Mecânica de Portas Dinâmicas e Interação",
+          "description": "Interação com portas no cenário: colisão, verificação de proximidade, animação progressiva de abertura e efeitos de som de tranca.",
+          "category": "gamedev",
+          "duration": "10s",
+          "size_mb": 1.76,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/videos/03-door-animations.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/cub3D"
+  },
+  "bidlive": {
+    "id": "bidlive",
+    "name": "BidLive",
+    "tagline": {
+      "pt": "Plataforma de Leilões em Tempo Real com Streaming WebRTC, WebSockets e Observabilidade Completa",
+      "en": "Real-time Live Auction Platform with WebRTC Streaming, WebSockets, and Full Observability"
+    },
+    "category": "fullstack",
+    "featured": true,
+    "architecture_type": "Event-Driven Microservices with Container Orchestration",
+    "about": {
+      "pt": "O BidLive é uma plataforma de leilões ao vivo de alta performance desenvolvida no currículo da 42 School (projeto ft_transcendence). Permite que compradores participem de disputas de lances em frações de segundo sem recarregamento de página, assistam a transmissões ao vivo de vídeo de baixa latência via LiveKit (WebRTC) e interajam por chat simultâneo. A infraestrutura conta com 15+ microsserviços containerizados com Docker Compose, telemetria em tempo real com Prometheus e Grafana, e auditoria e agregação de logs com a stack ELK (Elasticsearch, Logstash, Kibana).",
+      "en": "BidLive is a high-performance live auction platform developed as the capstone project at 42 School (ft_transcendence). It allows buyers to participate in split-second real-time bidding without page reloads, watch ultra-low latency video streams via LiveKit (WebRTC), and interact via simultaneous chat. The infrastructure features 15+ containerized microservices managed by Docker Compose, real-time observability with Prometheus and Grafana, and centralized log auditing with the ELK stack (Elasticsearch, Logstash, Kibana)."
+    },
+    "highlights": [
+      "Lances em tempo real com WebSockets (Django Channels + Redis Channel Layer)",
+      "Proteção estrita anti-race condition e integridade transacional de carteiras",
+      "Streaming ao vivo com WebRTC de ultrabaixa latência powered by LiveKit",
+      "Orquestração multi-container de 15+ serviços isolados em redes Docker dedicadas",
+      "Observabilidade de ponta: Prometheus, Grafana e Exporters (Nginx, Redis, Postgres, Celery)",
+      "Logging centralizado estruturado com Stack ELK (Logstash GELF + Elasticsearch + Kibana)",
+      "Autenticação segura JWT com suporte a OAuth2 (Google e 42 Intra)",
+      "Gerenciamento de banco de dados relacional PostgreSQL via Adminer e orquestração via Portainer"
+    ],
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Python",
+      "Django",
+      "Django Channels",
+      "PostgreSQL",
+      "Redis",
+      "Celery",
+      "LiveKit",
+      "WebRTC",
+      "WebSockets",
+      "Docker",
+      "Docker Compose",
+      "Nginx",
+      "Prometheus",
+      "Grafana",
+      "Elasticsearch",
+      "Logstash",
+      "Kibana",
+      "Portainer",
+      "Adminer"
+    ],
+    "media": {
+      "cover": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/demo.mp4",
+          "caption": "Demonstração em Tempo Real: Disputa de Lances Concorrentes (Anti-Race Condition via WebSockets)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/01-landing-hero.webp",
+          "caption": "Landing Page com Hero Section e Chamada para Ação"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/02-destaques-ao-vivo.webp",
+          "caption": "Leilões Acontecendo Agora e em Destaque"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/03-leiloes-catalogo.webp",
+          "caption": "Catálogo Completo com Filtros Dinâmicos e Busca"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/04-login-oauth.webp",
+          "caption": "Autenticação OAuth2 (Google e 42 Intra)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/05-dashboard-usuario.webp",
+          "caption": "Painel Geral do Usuário e Métricas de Atividade"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/06-meus-leiloes-gestao.webp",
+          "caption": "Gestão de Leilões Criados pelo Usuário"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/07-criar-leilao-wizard.webp",
+          "caption": "Wizard de Criação de Novos Lotes em 3 Etapas"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/08-transmissao-livekit.webp",
+          "caption": "Central de Transmissão Ao Vivo com WebRTC"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/09-amigos-rede-social.webp",
+          "caption": "Rede Social de Amigos e Solicitações de Amizade"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/10-chat-tempo-real.webp",
+          "caption": "Chat Social com WebSocket Full-Duplex"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/11-batalha-lances-split.webp",
+          "caption": "Disputa de Lances Concorrentes em Tempo Real"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/12-grafana-dashboards.webp",
+          "caption": "Painel de Observabilidade do Grafana"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/13-grafana-nginx-conn.webp",
+          "caption": "Telemetria Nginx: Conexões Ativas e Tráfego"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/14-grafana-celery-tasks.webp",
+          "caption": "Monitoramento de Workers Celery e Filas"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/15-grafana-django-prometheus.webp",
+          "caption": "Métricas Django Prometheus: Latência e Throughput"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/16-grafana-livekit-webrtc.webp",
+          "caption": "Métricas de Áudio/Vídeo e Salas LiveKit"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/17-grafana-redis-metrics.webp",
+          "caption": "Métricas do Redis: Comandos/s e Clientes Ativos"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/18-kibana-security-overview.webp",
+          "caption": "Stack ELK: Dashboard de Segurança no Kibana"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/19-kibana-nginx-performance.webp",
+          "caption": "Stack ELK: Performance de Resposta HTTP do Nginx"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/20-kibana-celery-tasks.webp",
+          "caption": "Stack ELK: Rastreamento de Tarefas Assíncronas Celery"
+        }
+      ],
+      "videos": [
+        {
+          "id": "landing-page",
+          "file": "01-capa-principal-bidlive.mp4",
+          "title": "Visão Geral e Navegação na Plataforma",
+          "description": "Navegação pela Landing Page, exibição de leilões ao vivo, em destaque e catálogo de produtos.",
+          "category": "frontend",
+          "duration": "69s",
+          "size_mb": 3.74,
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/videos/01-capa-principal-bidlive.mp4"
+        },
+        {
+          "id": "telemetria-grafana",
+          "file": "02-grafana-bidlive.mp4",
+          "title": "Telemetria e Observabilidade em Tempo Real (Grafana)",
+          "description": "Monitoramento em tempo real de requisições Nginx, pooling PostgreSQL, filas Celery e métricas de conexão Redis.",
+          "category": "devops",
+          "duration": "49s",
+          "size_mb": 2.83,
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/videos/02-grafana-bidlive.mp4"
+        },
+        {
+          "id": "auditoria-kibana",
+          "file": "03-kibana-bidlive.mp4",
+          "title": "Central de Logs e Auditoria de Segurança (Stack ELK)",
+          "description": "Agregação e busca estruturada de logs com Logstash GELF, Elasticsearch e dashboards de segurança no Kibana.",
+          "category": "devops",
+          "duration": "35s",
+          "size_mb": 1.82,
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/videos/03-kibana-bidlive.mp4"
+        },
+        {
+          "id": "orquestracao-portainer",
+          "file": "04-portainer-bidlive.mp4",
+          "title": "Topologia e Gestão de Containers (Portainer)",
+          "description": "Visualização da orquestração dos 15+ microsserviços containerizados e isolamento de redes frontend/backend.",
+          "category": "devops",
+          "duration": "45s",
+          "size_mb": 1.62,
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/videos/04-portainer-bidlive.mp4"
+        },
+        {
+          "id": "banco-adminer",
+          "file": "05-adminer-bidlive.mp4",
+          "title": "Estrutura do Banco Relacional (Adminer & PostgreSQL)",
+          "description": "Inspeção de tabelas relacionais de usuários, carteiras, transações e auditoria de integridade de lances.",
+          "category": "database",
+          "duration": "19s",
+          "size_mb": 0.68,
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/videos/05-adminer-bidlive.mp4"
+        },
+        {
+          "id": "streamer-leiloeiro",
+          "file": "06-leiloeiro-mobile-bidlive.mp4",
+          "title": "Painel de Transmissão do Leiloeiro (LiveKit WebRTC)",
+          "description": "Interface responsiva do leiloeiro com publicação de streaming WebRTC de ultrabaixa latência e controle do lote.",
+          "category": "realtime",
+          "duration": "49s",
+          "size_mb": 3.01,
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/videos/06-leiloeiro-mobile-bidlive.mp4"
+        },
+        {
+          "id": "batalha-lances",
+          "file": "07-batalha-lances-bidlive.mp4",
+          "title": "Batalha de Lances Concorrentes (WebSockets)",
+          "description": "Dois usuários disputando lances ao vivo com propagação instantânea via Django Channels e proteção anti-race condition.",
+          "category": "realtime",
+          "duration": "20s",
+          "size_mb": 2.67,
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/videos/07-batalha-lances-bidlive.mp4"
+        },
+        {
+          "id": "batalha-lances-take2",
+          "file": "07-batalha-lances-take2-bidlive.mp4",
+          "title": "Batalha de Lances Concorrentes - Tomada Estendida",
+          "description": "Disputa estendida de lances demonstrando atualização dinâmica de saldos e contagem regressiva em tempo real.",
+          "category": "realtime",
+          "duration": "35s",
+          "size_mb": 2.81,
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/videos/07-batalha-lances-take2-bidlive.mp4"
+        },
+        {
+          "id": "chat-social",
+          "file": "08-chat-amigos-bidlive.mp4",
+          "title": "Chat Social e Amigos em Tempo Real",
+          "description": "Comunicação full-duplex entre usuários, lista de contatos e notificações instantâneas de convites.",
+          "category": "frontend",
+          "duration": "53s",
+          "size_mb": 1.17,
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/videos/08-chat-amigos-bidlive.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive"
+  },
+  "controlefinanceiro": {
+    "id": "controlefinanceiro",
+    "name": "ControleFinanceiro (Stock Control)",
+    "tagline": {
+      "pt": "Sistema Desktop de Gestão de Estoque, Controle de Vendas e Fluxo Financeiro com Reconhecimento Facial e SQLite",
+      "en": "Desktop POS, Inventory & Financial Management System with OpenCV Facial Recognition and SQLite"
+    },
+    "category": "desktop",
+    "featured": true,
+    "architecture_type": "Modular Desktop Architecture (Python, PySide6, OpenCV, SQLite)",
+    "about": {
+      "pt": "O ControleFinanceiro (Stock Control) é uma aplicação desktop completa desenvolvida para automatizar a gestão de pequenas e médias empresas. Com interface gráfica moderna e intuitiva construída com PySide6 (Qt for Python), o sistema integra controle de fluxo de caixa, entrada e saída de mercadorias, movimentações financeiras em tempo real, geração de relatórios de vendas e módulo de segurança avançado com autenticação biométrica via reconhecimento facial usando OpenCV.",
+      "en": "ControleFinanceiro (Stock Control) is an all-in-one desktop POS and financial management suite built with Python and PySide6 (Qt). Designed for streamlined business operations, it handles inventory tracking, real-time cash flow, automated sales analytics, and biometric access control via OpenCV facial recognition."
+    },
+    "highlights": [
+      "Interface gráfica desktop moderna desenvolvida com PySide6 (Qt) e animações fluidas",
+      "Autenticação biométrica avançada com reconhecimento facial via OpenCV",
+      "Gestão completa de estoque com alertas de reposição e controle de entradas/saídas",
+      "Módulo financeiro com fluxo de caixa, livro caixa e conciliação de receitas/despesas",
+      "Relatórios analíticos automatizados e gráficos de desempenho de vendas",
+      "Persistência transacional local ultra-confiável com SQLite"
+    ],
+    "technologies": [
+      "Python",
+      "PySide6",
+      "OpenCV",
+      "SQLite",
+      "Facial Recognition",
+      "Desktop POS",
+      "Financial Control"
+    ],
+    "media": {
+      "cover": "https://user-images.githubusercontent.com/108186371/210639045-f7182afe-bc6a-4c8c-acee-2286c7938d8a.png",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "https://user-images.githubusercontent.com/108186371/210639045-f7182afe-bc6a-4c8c-acee-2286c7938d8a.png",
+          "caption": "Dashboard Principal - Visão Geral de Vendas, Estoque e Faturamento"
+        },
+        {
+          "type": "image",
+          "src": "https://user-images.githubusercontent.com/108186371/210638859-c82a0af4-7f64-4cd0-b95e-c8035bd6f9ec.png",
+          "caption": "Tela de Login com Suporte a Autenticação Facial Biométrica"
+        },
+        {
+          "type": "image",
+          "src": "https://user-images.githubusercontent.com/108186371/210639070-c7d1a8c3-84cf-4337-9b86-d29691667117.png",
+          "caption": "Movimentação Financeira - Entradas, Saídas e Categorização de Custos"
+        },
+        {
+          "type": "image",
+          "src": "https://user-images.githubusercontent.com/108186371/210639108-c61c9acb-0d4d-4ca6-bf9a-3aa8f2711070.png",
+          "caption": "Fluxo de Caixa Consolidado e Relatórios Diários"
+        }
+      ],
+      "videos": []
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro"
+  },
+  "inception": {
+    "id": "inception",
+    "name": "Inception (Docker Infrastructure)",
+    "tagline": {
+      "pt": "Infraestrutura de Microsserviços e Virtualização com Docker, Nginx TLS v1.3, WordPress e MariaDB em Redes Isoladas",
+      "en": "Multi-container Microservices Infrastructure with Docker Compose, Nginx TLS v1.3, WordPress, and MariaDB on Isolated Networks"
+    },
+    "category": "tools",
+    "featured": true,
+    "architecture_type": "Isolated Multi-Container DevOps Architecture (Docker, Docker Compose, Nginx Reverse Proxy, TLS)",
+    "about": {
+      "pt": "O Inception é um projeto de engenharia de sistemas e infraestrutura DevOps desenvolvido na 42 School. O objetivo é orquestrar uma infraestrutura completa e segura em ambiente multi-container usando Docker e Docker Compose, sem recorrer a imagens prontas do Docker Hub. Cada serviço (Nginx com TLS v1.2/v1.3 obrigatório, WordPress com php-fpm e banco de dados MariaDB) possui Dockerfile dedicado construído sobre Alpine/Debian, com persistência em volumes independentes e comunicação estritamente confinada em bridge network privada. Essa mesma arquitetura serve de espinha dorsal para os containers de produção e monitoramento do ecossistema BidLive.",
+      "en": "Inception is a system engineering and DevOps virtualization project developed at 42 School. It orchestrates a secure, resilient multi-container infrastructure using custom Dockerfiles and Docker Compose without public pre-built application images. Every service (Nginx with mandatory TLS v1.2/v1.3, WordPress with php-fpm, and MariaDB) runs isolated with independent volumes and strict private bridge networking, serving as the DevOps foundation leveraged in microservice platforms like BidLive."
+    },
+    "highlights": [
+      "Construção de Dockerfiles dedicados para cada serviço a partir de imagens base do Alpine/Debian",
+      "Nginx configurado como ponto único de entrada (Reverse Proxy) com TLS v1.2/v1.3 e certificados autoassinados",
+      "Isolamento total de portas: apenas o Nginx expõe a porta 443; MariaDB e WordPress comunicam-se via Docker Bridge Network",
+      "Persistência de dados consistente com Docker Volumes dedicados para o banco de dados e arquivos estáticos",
+      "Estratégia de reinicialização automática (restart: on-failure) para alta resiliência operacional",
+      "Fundação de infraestrutura compartilhada com a orquestração e monitoramento do BidLive"
+    ],
+    "technologies": [
+      "Docker",
+      "Docker Compose",
+      "Nginx",
+      "MariaDB",
+      "WordPress",
+      "TLS/SSL",
+      "DevOps",
+      "Linux",
+      "Bash",
+      "Networking"
+    ],
+    "media": {
+      "cover": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/13-grafana-nginx-conn.webp",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/13-grafana-nginx-conn.webp",
+          "caption": "Orquestração de Rede e Conexões Seguras Nginx (TLS)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/12-grafana-dashboards.webp",
+          "caption": "Métricas e Telemetria de Containers em Tempo Real"
+        }
+      ],
+      "videos": [
+        {
+          "id": "portainer-infra",
+          "title": "Orquestração de Containers via Portainer",
+          "description": "Visão geral da topologia de containers, redes virtuais e volumes isolados.",
+          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/videos/04-portainer-bidlive.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/Inception"
+  }
+}
