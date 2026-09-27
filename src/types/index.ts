@@ -1,3 +1,46 @@
+export interface ProjectMediaItem {
+  type: 'image' | 'video';
+  src: string;
+  caption?: string;
+  alt?: string;
+}
+
+export interface ProjectVideoItem {
+  id: string;
+  file?: string;
+  title: string;
+  description: string;
+  category?: string;
+  duration?: string;
+  size_mb?: number;
+  src: string;
+}
+
+export interface ProjectDetails {
+  id: string;
+  name: string;
+  tagline: {
+    pt: string;
+    en: string;
+  };
+  category: string;
+  featured: boolean;
+  architecture_type?: string;
+  about: {
+    pt: string;
+    en: string;
+  };
+  highlights: string[];
+  technologies: string[];
+  media: {
+    cover: string;
+    gallery: ProjectMediaItem[];
+    videos?: ProjectVideoItem[];
+  };
+  githubUrl?: string;
+  liveUrl?: string;
+}
+
 export interface Project {
   id: string;
   name: string;
@@ -17,6 +60,8 @@ export interface Project {
   visualType?: 'chart' | 'code' | 'terminal' | 'stats';
   codeSnippet?: string;
   updatedAt?: string;
+  hasDetails?: boolean;
+  coverImage?: string;
 }
 
 export interface ArticleSnippet {
