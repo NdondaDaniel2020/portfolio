@@ -6,6 +6,7 @@ import { Footer } from './components/layout/Footer';
 import { ScrollToTop } from './components/common/ScrollToTop';
 import { HomePage } from './pages/HomePage';
 import { ProjectsPage } from './pages/ProjectsPage';
+import { ProjectDetailPage } from './pages/ProjectDetailPage';
 import { ArticlesPage } from './pages/ArticlesPage';
 
 function NotFound() {
@@ -42,6 +43,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/projetos" element={<ProjectsPage />} />
+              <Route path="/projetos/:id" element={<ProjectDetailPage />} />
               <Route path="/artigos" element={<ArticlesPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
