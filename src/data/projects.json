@@ -1,5 +1,60 @@
 [
   {
+    "id": "portfolio",
+    "name": "portfolio",
+    "description": {
+      "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
+      "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 2,
+    "forks": 0,
+    "language": "TypeScript",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "GitHub Actions",
+      "Git",
+      "Portfolio"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
+    "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-27",
+    "hasDetails": false
+  },
+  {
+    "id": "controlefinanceiro",
+    "name": "ControleFinanceiro",
+    "description": {
+      "pt": "Controle Finaceiro Criado em Python Para um projeto escolar",
+      "en": "Controle Finaceiro Criado em Python Para um projeto escolar"
+    },
+    "category": "backend",
+    "featured": true,
+    "pinned": false,
+    "stars": 2,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Python",
+      "PySide6",
+      "OpenCV",
+      "Facial Recognition",
+      "SQLite",
+      "Financial Control"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-27",
+    "hasDetails": true,
+    "coverImage": "https://user-images.githubusercontent.com/108186371/210639045-f7182afe-bc6a-4c8c-acee-2286c7938d8a.png"
+  },
+  {
     "id": "antigravity-history-restorer",
     "name": "antigravity-history-restorer",
     "description": {
@@ -28,7 +83,7 @@
       "en": "Interpretador de comandos (shell) em C desenvolvido para o currículo da Escola 42, inspirado no Bash. Suporta execução de comandos via PATH, pipes (|), redirecionamentos (<, >, >>, <<), built-ins (cd, echo, pwd, export, unset, env, exit), gestão de variáveis de ambiente e manipulação de sinais (Ctrl+C, Ctrl+D, Ctrl+\\)."
     },
     "category": "systems",
-    "featured": false,
+    "featured": true,
     "pinned": false,
     "stars": 0,
     "forks": 0,
@@ -44,7 +99,9 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Minishell",
     "visualType": "terminal",
-    "updatedAt": "2026-09-26"
+    "updatedAt": "2026-09-26",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/cover.webp"
   },
   {
     "id": "webserver",
@@ -54,7 +111,7 @@
       "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
     },
     "category": "systems",
-    "featured": false,
+    "featured": true,
     "pinned": false,
     "stars": 0,
     "forks": 0,
@@ -70,7 +127,9 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
     "visualType": "terminal",
-    "updatedAt": "2026-09-26"
+    "updatedAt": "2026-09-26",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp"
   },
   {
     "id": "solong",
@@ -96,35 +155,68 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/SoLong",
     "visualType": "terminal",
-    "updatedAt": "2026-09-26"
+    "updatedAt": "2026-09-26",
+    "hasDetails": false
   },
   {
-    "id": "portfolio",
-    "name": "portfolio",
+    "id": "auth",
+    "name": "Auth",
     "description": {
-      "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
-      "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
+      "pt": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura.",
+      "en": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura."
     },
-    "category": "web",
-    "featured": false,
+    "category": "backend",
+    "featured": true,
     "pinned": false,
-    "stars": 2,
+    "stars": 1,
     "forks": 0,
-    "language": "TypeScript",
+    "language": "Python",
     "technologies": [
-      "TypeScript",
-      "React",
-      "Tailwind CSS",
-      "Vite",
-      "GitHub Actions",
-      "Git",
-      "Portfolio"
+      "FastAPI",
+      "Python",
+      "JWT",
+      "RBAC",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Alembic",
+      "Redis",
+      "OAuth2",
+      "WebSockets"
     ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
-    "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
+    "githubUrl": "https://github.com/NdondaDaniel2020/Auth",
+    "liveUrl": "https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app",
     "visualType": "terminal",
-    "updatedAt": "2026-09-16",
-    "hasDetails": false
+    "updatedAt": "2026-09-26",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/cover.webp"
+  },
+  {
+    "id": "cub3d",
+    "name": "cub3D",
+    "description": {
+      "pt": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos.",
+      "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
+    },
+    "category": "systems",
+    "featured": true,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C",
+      "Raycasting",
+      "MiniLibX",
+      "Game Engine",
+      "Computer Graphics",
+      "Wolfenstein 3D",
+      "42-school"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-24",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/cover.webp"
   },
   {
     "id": "cv",
@@ -147,6 +239,31 @@
       "Resume"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/cv",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-19",
+    "hasDetails": false
+  },
+  {
+    "id": "reactexercises",
+    "name": "ReactExercises",
+    "description": {
+      "pt": "exemplos de interfaces com react.",
+      "en": "exemplos de interfaces com react."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "UI/UX",
+      "Frontend Exercises"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
     "visualType": "terminal",
     "updatedAt": "2026-09-16",
     "hasDetails": false
@@ -329,58 +446,6 @@
     "hasDetails": false
   },
   {
-    "id": "controlefinanceiro",
-    "name": "ControleFinanceiro",
-    "description": {
-      "pt": "Controle Finaceiro Criado em Python Para um projeto escolar",
-      "en": "Controle Finaceiro Criado em Python Para um projeto escolar"
-    },
-    "category": "backend",
-    "featured": true,
-    "pinned": false,
-    "stars": 2,
-    "forks": 0,
-    "language": "Python",
-    "technologies": [
-      "Python",
-      "PySide6",
-      "OpenCV",
-      "Facial Recognition",
-      "SQLite",
-      "Financial Control"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": true,
-    "coverImage": "https://user-images.githubusercontent.com/108186371/210639045-f7182afe-bc6a-4c8c-acee-2286c7938d8a.png"
-  },
-  {
-    "id": "reactexercises",
-    "name": "ReactExercises",
-    "description": {
-      "pt": "exemplos de interfaces com react.",
-      "en": "exemplos de interfaces com react."
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "technologies": [
-      "React",
-      "TypeScript",
-      "Vite",
-      "UI/UX",
-      "Frontend Exercises"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": false
-  },
-  {
     "id": "sidebarmenu",
     "name": "SidebarMenu",
     "description": {
@@ -461,62 +526,6 @@
     "hasDetails": false
   },
   {
-    "id": "minishell",
-    "name": "Minishell",
-    "description": {
-      "pt": "Interpretador de comandos (shell) em C desenvolvido para o currículo da Escola 42, inspirado no Bash. Suporta execução de comandos via PATH, pipes (|), redirecionamentos (<, >, >>, <<), built-ins (cd, echo, pwd, export, unset, env, exit), gestão de variáveis de ambiente e manipulação de sinais (Ctrl+C, Ctrl+D, Ctrl+\\).",
-      "en": "Interpretador de comandos (shell) em C desenvolvido para o currículo da Escola 42, inspirado no Bash. Suporta execução de comandos via PATH, pipes (|), redirecionamentos (<, >, >>, <<), built-ins (cd, echo, pwd, export, unset, env, exit), gestão de variáveis de ambiente e manipulação de sinais (Ctrl+C, Ctrl+D, Ctrl+\\)."
-    },
-    "category": "systems",
-    "featured": true,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "C",
-    "technologies": [
-      "C",
-      "Bash",
-      "Unix Processes",
-      "Pipes & Redirections",
-      "AST Parser",
-      "Signals",
-      "42-school"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/Minishell",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/cover.webp"
-  },
-  {
-    "id": "cub3d",
-    "name": "cub3D",
-    "description": {
-      "pt": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos.",
-      "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
-    },
-    "category": "systems",
-    "featured": true,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "C",
-    "technologies": [
-      "C",
-      "Raycasting",
-      "MiniLibX",
-      "Game Engine",
-      "Computer Graphics",
-      "Wolfenstein 3D",
-      "42-school"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/cover.webp"
-  },
-  {
     "id": "philosophers",
     "name": "Philosophers",
     "description": {
@@ -565,33 +574,6 @@
       "42-school"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/PushSwap",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": false
-  },
-  {
-    "id": "solong",
-    "name": "SoLong",
-    "description": {
-      "pt": "Jogo 2D em C desenvolvido com a MiniLibX (projeto da 42). Guie uma kunoichi por um dojo para coletar todas as estrelas ninjas e escapar pelo portal místico. Apresenta validação rigorosa de mapas (.ber) com flood fill, física de plataforma com gravidade, animações fluidas, inimigos patrulheiros e HUD dinâmico na tela.",
-      "en": "Jogo 2D em C desenvolvido com a MiniLibX (projeto da 42). Guie uma kunoichi por um dojo para coletar todas as estrelas ninjas e escapar pelo portal místico. Apresenta validação rigorosa de mapas (.ber) com flood fill, física de plataforma com gravidade, animações fluidas, inimigos patrulheiros e HUD dinâmico na tela."
-    },
-    "category": "systems",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "C",
-    "technologies": [
-      "C",
-      "MiniLibX",
-      "2D Game",
-      "Flood Fill",
-      "Pixel Art",
-      "Game Development",
-      "42-school"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/SoLong",
     "visualType": "terminal",
     "updatedAt": "2026-09-14",
     "hasDetails": false
@@ -731,66 +713,6 @@
     "updatedAt": "2026-09-14",
     "hasDetails": true,
     "coverImage": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/13-grafana-nginx-conn.webp"
-  },
-  {
-    "id": "auth",
-    "name": "Auth",
-    "description": {
-      "pt": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura.",
-      "en": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura."
-    },
-    "category": "backend",
-    "featured": true,
-    "pinned": false,
-    "stars": 1,
-    "forks": 0,
-    "language": "Python",
-    "technologies": [
-      "FastAPI",
-      "Python",
-      "JWT",
-      "RBAC",
-      "PostgreSQL",
-      "SQLAlchemy",
-      "Alembic",
-      "Redis",
-      "OAuth2",
-      "WebSockets"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/Auth",
-    "liveUrl": "https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-08",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/cover.webp"
-  },
-  {
-    "id": "webserver",
-    "name": "Webserver",
-    "description": {
-      "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
-      "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
-    },
-    "category": "systems",
-    "featured": true,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "HTML",
-    "technologies": [
-      "C++98",
-      "HTTP/1.1",
-      "Epoll / Poll",
-      "I/O Multiplexing",
-      "CGI",
-      "NGINX Architecture",
-      "Networking"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
-    "visualType": "terminal",
-    "updatedAt": "2026-08-18",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp"
   },
   {
     "id": "cpp",
