@@ -139,6 +139,8 @@ async function syncGithubRepos() {
           liveUrl: r.homepage || existing?.liveUrl,
           visualType: existing?.visualType || 'terminal',
           updatedAt: r.updated_at ? r.updated_at.split('T')[0] : existing?.updatedAt,
+          hasDetails: existing ? existing.hasDetails : false,
+          coverImage: existing?.coverImage,
         };
       });
 
