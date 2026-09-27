@@ -1,5 +1,104 @@
 [
   {
+    "id": "antigravity-history-restorer",
+    "name": "antigravity-history-restorer",
+    "description": {
+      "pt": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC.",
+      "en": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 1,
+    "forks": 0,
+    "language": "TypeScript",
+    "technologies": [
+      "TypeScript"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-history-restorer",
+    "liveUrl": "https://open-vsx.org/extension/NdondaDaniel2020/antigravity-history-restorer",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-26"
+  },
+  {
+    "id": "minishell",
+    "name": "Minishell",
+    "description": {
+      "pt": "Interpretador de comandos (shell) em C desenvolvido para o currículo da Escola 42, inspirado no Bash. Suporta execução de comandos via PATH, pipes (|), redirecionamentos (<, >, >>, <<), built-ins (cd, echo, pwd, export, unset, env, exit), gestão de variáveis de ambiente e manipulação de sinais (Ctrl+C, Ctrl+D, Ctrl+\\).",
+      "en": "Interpretador de comandos (shell) em C desenvolvido para o currículo da Escola 42, inspirado no Bash. Suporta execução de comandos via PATH, pipes (|), redirecionamentos (<, >, >>, <<), built-ins (cd, echo, pwd, export, unset, env, exit), gestão de variáveis de ambiente e manipulação de sinais (Ctrl+C, Ctrl+D, Ctrl+\\)."
+    },
+    "category": "systems",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C",
+      "Bash",
+      "Unix Processes",
+      "Pipes & Redirections",
+      "AST Parser",
+      "Signals",
+      "42-school"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Minishell",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-26"
+  },
+  {
+    "id": "webserver",
+    "name": "Webserver",
+    "description": {
+      "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
+      "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
+    },
+    "category": "systems",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "C++98",
+      "HTTP/1.1",
+      "Epoll / Poll",
+      "I/O Multiplexing",
+      "CGI",
+      "NGINX Architecture",
+      "Networking"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-26"
+  },
+  {
+    "id": "solong",
+    "name": "SoLong",
+    "description": {
+      "pt": "Jogo 2D em C desenvolvido com a MiniLibX (projeto da 42). Guie uma kunoichi por um dojo para coletar todas as estrelas ninjas e escapar pelo portal místico. Apresenta validação rigorosa de mapas (.ber) com flood fill, física de plataforma com gravidade, animações fluidas, inimigos patrulheiros e HUD dinâmico na tela.",
+      "en": "Jogo 2D em C desenvolvido com a MiniLibX (projeto da 42). Guie uma kunoichi por um dojo para coletar todas as estrelas ninjas e escapar pelo portal místico. Apresenta validação rigorosa de mapas (.ber) com flood fill, física de plataforma com gravidade, animações fluidas, inimigos patrulheiros e HUD dinâmico na tela."
+    },
+    "category": "systems",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C",
+      "MiniLibX",
+      "2D Game",
+      "Flood Fill",
+      "Pixel Art",
+      "Game Development",
+      "42-school"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/SoLong",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-26"
+  },
+  {
     "id": "portfolio",
     "name": "portfolio",
     "description": {
@@ -9,7 +108,7 @@
     "category": "web",
     "featured": false,
     "pinned": false,
-    "stars": 0,
+    "stars": 2,
     "forks": 0,
     "language": "TypeScript",
     "technologies": [
