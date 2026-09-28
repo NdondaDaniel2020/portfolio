@@ -9,8 +9,17 @@ import { GithubIcon } from '../common/BrandIcons';
 export const ProjectsSection: React.FC = () => {
   const { t, language } = useLanguage();
 
+  const featuredOrder = ['bidlive', 'antigravity-history-restorer', 'webserver'];
   const featuredProjects = (projectsDataRaw as Project[])
     .filter((p) => p.featured)
+    .sort((a, b) => {
+      const idxA = featuredOrder.indexOf(a.id.toLowerCase());
+      const idxB = featuredOrder.indexOf(b.id.toLowerCase());
+      if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+      if (idxA !== -1) return -1;
+      if (idxB !== -1) return 1;
+      return 0;
+    })
     .slice(0, 3);
 
   return (

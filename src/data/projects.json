@@ -1,5 +1,41 @@
 [
   {
+    "id": "bidlive",
+    "name": "BidLive",
+    "description": {
+      "pt": "Plataforma de leilões em tempo real (ft_transcendence 42) onde usuários participam de lances ao vivo, interagem via chat full-duplex e recebem recomendações inteligentes.",
+      "en": "Real-time auction platform (42 ft_transcendence) featuring live bidding, full-duplex WebSocket chat, and intelligent user activity recommendations."
+    },
+    "category": "web",
+    "featured": true,
+    "pinned": true,
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "technologies": [
+      "TypeScript",
+      "Python",
+      "Django",
+      "Django Channels",
+      "React",
+      "WebSockets",
+      "LiveKit",
+      "WebRTC",
+      "PostgreSQL",
+      "Redis",
+      "Celery",
+      "Docker",
+      "DevOps",
+      "ft-transcendence",
+      "42school"
+    ],
+    "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive",
+    "visualType": "stats",
+    "updatedAt": "2026-09-15",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/cover.webp"
+  },
+  {
     "id": "antigravity-history-restorer",
     "name": "antigravity-history-restorer",
     "description": {
@@ -7,7 +43,7 @@
       "en": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC."
     },
     "category": "backend",
-    "featured": false,
+    "featured": true,
     "pinned": false,
     "stars": 1,
     "forks": 0,
@@ -21,6 +57,34 @@
     "updatedAt": "2026-09-26",
     "hasDetails": true,
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/cover.webp"
+  },
+  {
+    "id": "webserver",
+    "name": "Webserver",
+    "description": {
+      "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
+      "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
+    },
+    "category": "systems",
+    "featured": true,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "C++98",
+      "HTTP/1.1",
+      "Epoll / Poll",
+      "I/O Multiplexing",
+      "CGI",
+      "NGINX Architecture",
+      "Networking"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-26",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp"
   },
   {
     "id": "minishell",
@@ -49,34 +113,6 @@
     "updatedAt": "2026-09-26",
     "hasDetails": true,
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/cover.webp"
-  },
-  {
-    "id": "webserver",
-    "name": "Webserver",
-    "description": {
-      "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
-      "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
-    },
-    "category": "systems",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "HTML",
-    "technologies": [
-      "C++98",
-      "HTTP/1.1",
-      "Epoll / Poll",
-      "I/O Multiplexing",
-      "CGI",
-      "NGINX Architecture",
-      "Networking"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-26",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp"
   },
   {
     "id": "solong",
@@ -353,7 +389,7 @@
       "en": "Controle Finaceiro Criado em Python Para um projeto escolar"
     },
     "category": "backend",
-    "featured": true,
+    "featured": false,
     "pinned": false,
     "stars": 2,
     "forks": 0,
@@ -489,7 +525,7 @@
       "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
     },
     "category": "systems",
-    "featured": true,
+    "featured": false,
     "pinned": false,
     "stars": 0,
     "forks": 0,
@@ -712,7 +748,7 @@
       "en": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura."
     },
     "category": "backend",
-    "featured": true,
+    "featured": false,
     "pinned": false,
     "stars": 1,
     "forks": 0,
@@ -763,42 +799,6 @@
     "coverImage": null
   },
   {
-    "id": "bidlive",
-    "name": "BidLive",
-    "description": {
-      "pt": "Plataforma de leilões em tempo real (ft_transcendence 42) onde usuários participam de lances ao vivo, interagem via chat full-duplex e recebem recomendações inteligentes.",
-      "en": "Real-time auction platform (42 ft_transcendence) featuring live bidding, full-duplex WebSocket chat, and intelligent user activity recommendations."
-    },
-    "category": "web",
-    "featured": true,
-    "pinned": true,
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "technologies": [
-      "TypeScript",
-      "Python",
-      "Django",
-      "Django Channels",
-      "React",
-      "WebSockets",
-      "LiveKit",
-      "WebRTC",
-      "PostgreSQL",
-      "Redis",
-      "Celery",
-      "Docker",
-      "DevOps",
-      "ft-transcendence",
-      "42school"
-    ],
-    "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive",
-    "visualType": "stats",
-    "updatedAt": "2026-09-15",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/cover.webp"
-  },
-  {
     "id": "stockcontrol",
     "name": "StockControl",
     "description": {
@@ -806,7 +806,7 @@
       "en": "Modern Desktop Inventory Management System with Facial Recognition Authentication, Interactive Charts, and Report Generation"
     },
     "category": "backend",
-    "featured": true,
+    "featured": false,
     "pinned": false,
     "stars": 1,
     "forks": 0,
@@ -837,7 +837,7 @@
       "en": "Desktop POS & ERP Retail Management Suite with Fluent Design, Camera Barcode Scanner, and Real-Time Analytics"
     },
     "category": "backend",
-    "featured": true,
+    "featured": false,
     "pinned": false,
     "stars": 1,
     "forks": 0,

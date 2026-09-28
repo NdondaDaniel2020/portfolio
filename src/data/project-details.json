@@ -207,7 +207,7 @@
       "en": "Complete orchestration of a Docker container-based web infrastructure with NGINX, WordPress, MariaDB, Redis, and Alpine Linux."
     },
     "category": "devops",
-    "featured": true,
+    "featured": false,
     "architecture_type": "Docker Container-based Microservices Infrastructure",
     "about": {
       "pt": "Inception é um projeto focado em System Administration e DevOps, onde o objetivo é construir e orquestrar uma infraestrutura web completa utilizando Docker e Docker Compose a partir do zero. A arquitetura inclui múltiplos serviços configurados individualmente em contentores baseados em Alpine Linux 3.22, garantindo um ambiente leve (minimal attack surface) e seguro. A comunicação ocorre numa rede isolada (Docker Network), com persistência de dados via Docker Volumes e gestão segura de senhas via Docker Secrets. O ambiente providencia um site WordPress acelerado por Redis Cache, uma base de dados MariaDB com interface Adminer, um servidor FTP para transferências e uma landing page (MyProfile). Cada serviço possui health checks robustos e resolve o problema do PID 1, assegurando encerramentos corretos dos processos.",
@@ -353,7 +353,7 @@
       "en": "Complete orchestration of a Docker container-based web infrastructure with NGINX, WordPress, MariaDB, Redis, and Alpine Linux."
     },
     "category": "devops",
-    "featured": true,
+    "featured": false,
     "architecture_type": "Docker Container-based Microservices Infrastructure",
     "about": {
       "pt": "Inception é um projeto focado em System Administration e DevOps, onde o objetivo é construir e orquestrar uma infraestrutura web completa utilizando Docker e Docker Compose a partir do zero. A arquitetura inclui múltiplos serviços configurados individualmente em contentores baseados em Alpine Linux 3.22, garantindo um ambiente leve (minimal attack surface) e seguro. A comunicação ocorre numa rede isolada (Docker Network), com persistência de dados via Docker Volumes e gestão segura de senhas via Docker Secrets. O ambiente providencia um site WordPress acelerado por Redis Cache, uma base de dados MariaDB com interface Adminer, um servidor FTP para transferências e uma landing page (MyProfile). Cada serviço possui health checks robustos e resolve o problema do PID 1, assegurando encerramentos corretos dos processos.",
@@ -499,7 +499,7 @@
       "en": "Complete orchestration of a Docker container-based web infrastructure with NGINX, WordPress, MariaDB, Redis, and Alpine Linux."
     },
     "category": "devops",
-    "featured": true,
+    "featured": false,
     "architecture_type": "Docker Container-based Microservices Infrastructure",
     "about": {
       "pt": "Inception é um projeto focado em System Administration e DevOps, onde o objetivo é construir e orquestrar uma infraestrutura web completa utilizando Docker e Docker Compose a partir do zero. A arquitetura inclui múltiplos serviços configurados individualmente em contentores baseados em Alpine Linux 3.22, garantindo um ambiente leve (minimal attack surface) e seguro. A comunicação ocorre numa rede isolada (Docker Network), com persistência de dados via Docker Volumes e gestão segura de senhas via Docker Secrets. O ambiente providencia um site WordPress acelerado por Redis Cache, uma base de dados MariaDB com interface Adminer, um servidor FTP para transferências e uma landing page (MyProfile). Cada serviço possui health checks robustos e resolve o problema do PID 1, assegurando encerramentos corretos dos processos.",
@@ -645,7 +645,7 @@
       "en": "Modern Desktop Inventory Management System with Facial Recognition Authentication, Interactive Charts, and Report Generation"
     },
     "category": "desktop",
-    "featured": true,
+    "featured": false,
     "architecture_type": "Desktop Application with MVC Architecture (Python, PySide6/Qt6, SQLite, OpenCV LBPH)",
     "about": {
       "pt": "O StockControl é uma aplicação desktop desenvolvida em Python com PySide6 (Qt6) para a gestão e controlo completo de estoque de produtos de beleza da marca Miss Xtrela. A aplicação combina uma interface gráfica moderna sem bordas nativas do sistema operativo com segurança biométrica avançada via reconhecimento facial em tempo real utilizando o algoritmo LBPH (Local Binary Patterns Histograms) do OpenCV com classificador Haar Cascade. O sistema implementa autenticação dupla (senha criptografada + Face ID), gestão completa de inventário com cadastro, edição, remoção e busca de produtos por categoria, controlo de quantidade mínima com alertas de reposição, histórico detalhado de movimentações (entradas e saídas), gráficos interativos de barras e linhas via QtCharts para acompanhamento mensal, indicadores circulares de progresso para status do estoque, envio assíncrono de notificações por e-mail em background via QThreadPool, exportação automática de relatórios em Excel (openpyxl) e suporte a temas configuráveis (Light/Dark mode) com persistência em JSON.",
@@ -760,7 +760,7 @@
       "en": "Modern Desktop Inventory Management System with Facial Recognition Authentication, Interactive Charts, and Report Generation"
     },
     "category": "desktop",
-    "featured": true,
+    "featured": false,
     "architecture_type": "Desktop Application with MVC Architecture (Python, PySide6/Qt6, SQLite, OpenCV LBPH)",
     "about": {
       "pt": "O StockControl é uma aplicação desktop desenvolvida em Python com PySide6 (Qt6) para a gestão e controlo completo de estoque de produtos de beleza da marca Miss Xtrela. A aplicação combina uma interface gráfica moderna sem bordas nativas do sistema operativo com segurança biométrica avançada via reconhecimento facial em tempo real utilizando o algoritmo LBPH (Local Binary Patterns Histograms) do OpenCV com classificador Haar Cascade. O sistema implementa autenticação dupla (senha criptografada + Face ID), gestão completa de inventário com cadastro, edição, remoção e busca de produtos por categoria, controlo de quantidade mínima com alertas de reposição, histórico detalhado de movimentações (entradas e saídas), gráficos interativos de barras e linhas via QtCharts para acompanhamento mensal, indicadores circulares de progresso para status do estoque, envio assíncrono de notificações por e-mail em background via QThreadPool, exportação automática de relatórios em Excel (openpyxl) e suporte a temas configuráveis (Light/Dark mode) com persistência em JSON.",
@@ -875,7 +875,7 @@
       "en": "Desktop POS & ERP Retail Management Suite with Fluent Design, Camera Barcode Scanner, and Real-Time Analytics"
     },
     "category": "desktop",
-    "featured": true,
+    "featured": false,
     "architecture_type": "Layered Desktop Architecture (PySide6 / Qt, Clean Architecture with Models, Repositories, Services, and Background Workers)",
     "about": {
       "pt": "O SalesManagement MX é uma solução desktop completa de Ponto de Venda (PDV) e Planeamento de Recursos Empresariais (ERP) desenvolvida em Python e PySide6/Qt com estética Fluent Design da Microsoft. O sistema oferece controlo abrangente de inventário e stock com alertas de validade, registo de compras e vendas atómicas, leitura contínua de códigos de barras com visão computacional via câmara em thread dedicada (QThread) a 60+ FPS, emissão de faturas e recibos em PDF com ReportLab, além de dashboards dinâmicos com gráficos interativos de desempenho financeiro e ranking de operadores.",
@@ -990,7 +990,7 @@
       "en": "Desktop POS & ERP Retail Management Suite with Fluent Design, Camera Barcode Scanner, and Real-Time Analytics"
     },
     "category": "desktop",
-    "featured": true,
+    "featured": false,
     "architecture_type": "Layered Desktop Architecture (PySide6 / Qt, Clean Architecture with Models, Repositories, Services, and Background Workers)",
     "about": {
       "pt": "O SalesManagement MX é uma solução desktop completa de Ponto de Venda (PDV) e Planeamento de Recursos Empresariais (ERP) desenvolvida em Python e PySide6/Qt com estética Fluent Design da Microsoft. O sistema oferece controlo abrangente de inventário e stock com alertas de validade, registo de compras e vendas atómicas, leitura contínua de códigos de barras com visão computacional via câmara em thread dedicada (QThread) a 60+ FPS, emissão de faturas e recibos em PDF com ReportLab, além de dashboards dinâmicos com gráficos interativos de desempenho financeiro e ranking de operadores.",
@@ -1191,7 +1191,7 @@
       "en": "UNIX Command Interpreter in C with Process Management, Concurrent Pipelines, Redirections, and POSIX Signals"
     },
     "category": "systems",
-    "featured": true,
+    "featured": false,
     "architecture_type": "Unix Command Interpreter & Process Management Engine in C (POSIX)",
     "about": {
       "pt": "O Minishell é uma implementação em linguagem C de um interpretador de comandos (shell) compatível com o comportamento do Bash, desenvolvido no currículo comum da 42. O projeto simula o funcionamento interno de um sistema operativo ao implementar leitura interativa com histórico via GNU Readline, análise léxica (lexer/tokenizer) com tratamento estrito de aspas simples e duplas, expansão dinâmica de variáveis de ambiente ($VAR) e código de retorno ($?), execução de comandos externos via busca no PATH e comandos internos (built-ins) otimizados. O núcleo do motor gerencia pipelines encadeados (|) com criação concorrente de processos filhos (fork, pipe e dup2), redirecionamentos flexíveis (<, >, >> e Here-doc << com expansão), além de controlo robusto de sinais do terminal (SIGINT, SIGQUIT e EOF) para garantir estabilidade contínua sem vazamentos de memória.",
@@ -1376,7 +1376,7 @@
       "en": "2D Platformer & Adventure Game in C with MiniLibX, Gravity Physics, Flood-Fill Validation, and Enemy AI"
     },
     "category": "gamedev",
-    "featured": true,
+    "featured": false,
     "architecture_type": "2D Tile-Based Game Engine with MiniLibX (X11) in C",
     "about": {
       "pt": "O so_long (Ninja SoLong) é um jogo 2D de aventura e plataformas desenvolvido em linguagem C utilizando a biblioteca gráfica MiniLibX (X11). No papel de uma ágil Kunoichi (ninja feminina), o jogador deve percorrer dojos e labirintos orientais, recolher todas as estrelas ninja (shurikens) e alcançar o portal místico de escape. O projeto destaca-se pelo parser estrito de mapas .ber com validação de caminho jogável via algoritmo Flood-Fill, gestão manual de janelas e eventos de teclado/fecho em X11, e um modo Bónus completo que introduz física de gravidade em tempo real (sistema de queda e pulo estilo platformer), ciclos de sprites animados, inteligência artificial de patrulha com perseguição de inimigos e um HUD dinâmico na tela desenhando contadores de passos e colecionáveis.",
@@ -1466,7 +1466,7 @@
       "en": "2D Platformer & Adventure Game in C with MiniLibX, Gravity Physics, Flood-Fill Validation, and Enemy AI"
     },
     "category": "gamedev",
-    "featured": true,
+    "featured": false,
     "architecture_type": "2D Tile-Based Game Engine with MiniLibX (X11) in C",
     "about": {
       "pt": "O so_long (Ninja SoLong) é um jogo 2D de aventura e plataformas desenvolvido em linguagem C utilizando a biblioteca gráfica MiniLibX (X11). No papel de uma ágil Kunoichi (ninja feminina), o jogador deve percorrer dojos e labirintos orientais, recolher todas as estrelas ninja (shurikens) e alcançar o portal místico de escape. O projeto destaca-se pelo parser estrito de mapas .ber com validação de caminho jogável via algoritmo Flood-Fill, gestão manual de janelas e eventos de teclado/fecho em X11, e um modo Bónus completo que introduz física de gravidade em tempo real (sistema de queda e pulo estilo platformer), ciclos de sprites animados, inteligência artificial de patrulha com perseguição de inimigos e um HUD dinâmico na tela desenhando contadores de passos e colecionáveis.",
@@ -1556,7 +1556,7 @@
       "en": "Asynchronous Authentication & Authorization Microservice with FastAPI, Granular RBAC, Rotating JWTs, and Distributed Redis Rate Limiting"
     },
     "category": "backend",
-    "featured": true,
+    "featured": false,
     "architecture_type": "Async Event-Driven Hexagonal Architecture (FastAPI, SQLAlchemy 2.0, PostgreSQL, Redis, RabbitMQ)",
     "about": {
       "pt": "O Auth API é um microsserviço corporativo de autenticação, autorização e gestão de identidades construído com FastAPI assíncrono e SQLAlchemy 2.0. Desenvolvido para atuar como autoridade central de identidade (IdP), o sistema implementa fluxo completo de registro e login com hashing Argon2id, emissão de tokens JWT com estratégia de Refresh Token Rotation (RTR), proteção contra ataques de força bruta com rate limiting distribuído em janela deslizante (Sliding Window) no Redis, autorização baseada em papéis (RBAC) com dependências injetadas sem queries N+1, autenticação social OAuth2/OpenID Connect com Google, mensageria de eventos de auditoria e segurança via RabbitMQ/Kafka e observabilidade completa com métricas Prometheus.",
@@ -1631,7 +1631,7 @@
       "en": "Raycasting 3D Graphics Engine in C with MiniLibX, BASS Audio, and First-Person Combat"
     },
     "category": "gamedev",
-    "featured": true,
+    "featured": false,
     "architecture_type": "Software Raycasting Engine (DDA Algorithm) in C",
     "about": {
       "pt": "O cub3D é um motor gráfico 3D em primeira pessoa desenvolvido em C com a MiniLibX, inspirado no clássico Wolfenstein 3D. O projeto implementa um raycaster completo utilizando o algoritmo DDA (Digital Differential Analysis) para calcular interseções de raios com paredes em tempo real, mapeamento de texturas com cálculo de coordenadas UV, projeção de perspectiva com correção de distorção olho-de-peixe, e um sistema de minimapa em tempo real. A versão expandida inclui animações completas de armas, portas dinâmicas com colisão e transições de abertura/fecho, renderização de chão e teto com texturização contínua, mira interativa pelo mouse e áudio espacial imersivo integrado à engine de áudio BASS.",
