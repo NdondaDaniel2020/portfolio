@@ -1,30 +1,30 @@
 [
   {
-    "id": "portfolio",
-    "name": "portfolio",
+    "id": "inception2-0",
+    "name": "Inception2.0",
     "description": {
-      "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
-      "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
+      "pt": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. ",
+      "en": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. "
     },
-    "category": "web",
+    "category": "tools",
     "featured": false,
     "pinned": false,
-    "stars": 2,
+    "stars": 0,
     "forks": 0,
-    "language": "TypeScript",
+    "language": "HTML",
     "technologies": [
-      "TypeScript",
-      "React",
-      "Tailwind CSS",
-      "Vite",
-      "GitHub Actions",
-      "Git",
-      "Portfolio"
+      "Docker",
+      "Docker Compose",
+      "NGINX",
+      "WordPress",
+      "MariaDB",
+      "DevOps",
+      "System Administration",
+      "42-school"
     ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
-    "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
+    "githubUrl": "https://github.com/NdondaDaniel2020/Inception2.0",
     "visualType": "terminal",
-    "updatedAt": "2026-09-27",
+    "updatedAt": "2026-09-28",
     "hasDetails": false
   },
   {
@@ -53,6 +53,34 @@
     "updatedAt": "2026-09-27",
     "hasDetails": true,
     "coverImage": "https://user-images.githubusercontent.com/108186371/210639045-f7182afe-bc6a-4c8c-acee-2286c7938d8a.png"
+  },
+  {
+    "id": "portfolio",
+    "name": "portfolio",
+    "description": {
+      "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
+      "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 2,
+    "forks": 0,
+    "language": "TypeScript",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "GitHub Actions",
+      "Git",
+      "Portfolio"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
+    "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-27",
+    "hasDetails": false
   },
   {
     "id": "antigravity-history-restorer",
@@ -493,34 +521,6 @@
       "Polymorphism"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/Pseudo-Object-Orientation-in-C",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": false
-  },
-  {
-    "id": "inception2-0",
-    "name": "Inception2.0",
-    "description": {
-      "pt": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. ",
-      "en": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. "
-    },
-    "category": "tools",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "HTML",
-    "technologies": [
-      "Docker",
-      "Docker Compose",
-      "NGINX",
-      "WordPress",
-      "MariaDB",
-      "DevOps",
-      "System Administration",
-      "42-school"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/Inception2.0",
     "visualType": "terminal",
     "updatedAt": "2026-09-14",
     "hasDetails": false
