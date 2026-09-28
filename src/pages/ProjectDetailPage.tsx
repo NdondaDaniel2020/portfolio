@@ -22,7 +22,19 @@ export const ProjectDetailPage: React.FC = () => {
   const { t, language } = useLanguage();
 
   const detailsMap = projectDetailsDataRaw as Record<string, ProjectDetails>;
-  const project = id ? detailsMap[id.toLowerCase()] : undefined;
+  const project = useMemo(() => {
+    if (!id) return undefined;
+    const lower = id.toLowerCase();
+    if (detailsMap[lower]) return detailsMap[lower];
+    const stripped = lower.replace(/[^a-z0-9]/g, '');
+    if (detailsMap[stripped]) return detailsMap[stripped];
+    for (const key of Object.keys(detailsMap)) {
+      if (key.replace(/[^a-z0-9]/g, '') === stripped) {
+        return detailsMap[key];
+      }
+    }
+    return undefined;
+  }, [id, detailsMap]);
 
   // Monta a lista unificada de mídias para a galeria
   const allMediaItems = useMemo<ProjectMediaItem[]>(() => {

@@ -12,6 +12,8 @@ const PROJECTS_PATH = path.resolve(__dirname, '../src/data/projects.json');
 const ARTICLES_PATH = path.resolve(__dirname, '../src/data/articles.json');
 const STATS_PATH = path.resolve(__dirname, '../src/data/stats.json');
 
+const PROJECT_DETAILS_PATH = path.resolve(__dirname, '../src/data/project-details.json');
+
 async function syncGithubStats() {
   console.log(`[Sync] Buscando estatísticas do GitHub para @${GITHUB_USERNAME}...`);
   try {
@@ -84,10 +86,15 @@ async function syncGithubStats() {
 async function syncGithubRepos() {
   console.log(`[Sync] Buscando repositórios do GitHub para @${GITHUB_USERNAME}...`);
   try {
+    const headers: Record<string, string> = {
+      'User-Agent': 'ndonda-portfolio-sync',
+    };
+    if (process.env.GITHUB_TOKEN) {
+      headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+    }
+
     const res = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`, {
-      headers: {
-        'User-Agent': 'ndonda-portfolio-sync',
-      },
+      headers,
     });
 
     if (!res.ok) {
@@ -100,6 +107,28 @@ async function syncGithubRepos() {
       console.warn('[Sync Warning] Formato de resposta do GitHub inválido. Mantendo dados locais.');
       return;
     }
+
+    // Carrega project-details.json para vincular hasDetails e coverImage reais
+    let detailsMap: Record<string, any> = {};
+    if (fs.existsSync(PROJECT_DETAILS_PATH)) {
+      try {
+        detailsMap = JSON.parse(fs.readFileSync(PROJECT_DETAILS_PATH, 'utf-8'));
+      } catch (err) {
+        console.warn('[Sync Warning] Erro ao ler project-details.json.', err);
+      }
+    }
+
+    const findDetail = (key: string) => {
+      if (!key) return undefined;
+      const lower = key.toLowerCase();
+      if (detailsMap[lower]) return detailsMap[lower];
+      const stripped = lower.replace(/[^a-z0-9]/g, '');
+      if (detailsMap[stripped]) return detailsMap[stripped];
+      for (const [k, val] of Object.entries(detailsMap)) {
+        if (k.replace(/[^a-z0-9]/g, '') === stripped) return val;
+      }
+      return undefined;
+    };
 
     // Lê os dados existentes para preservar customizações manuais (featured, descrições bilíngues, etc.)
     let existingProjects: any[] = [];
@@ -114,15 +143,22 @@ async function syncGithubRepos() {
     const projectsMap = new Map<string, any>();
     existingProjects.forEach((p) => {
       projectsMap.set(p.name.toLowerCase(), p);
+      if (p.id) projectsMap.set(p.id.toLowerCase(), p);
     });
 
     // Mapeia e mescla repositórios
     const updatedProjects = repos
       .filter((r) => !r.fork && !r.archived && r.name !== GITHUB_USERNAME)
       .map((r) => {
-        const existing = projectsMap.get(r.name.toLowerCase());
+        const id = r.name.toLowerCase().replace(/[^a-z0-9_-]/g, '-');
+        const existing = projectsMap.get(r.name.toLowerCase()) || projectsMap.get(id);
+        const detail = findDetail(r.name) || findDetail(id);
+
+        const hasDetails = Boolean(detail) || Boolean(existing?.hasDetails);
+        const coverImage = detail?.coverImage || detail?.media?.cover || existing?.coverImage;
+
         return {
-          id: r.name.toLowerCase().replace(/[^a-z0-9_-]/g, '-'),
+          id: existing?.id || id,
           name: existing?.name || r.name,
           description: {
             pt: existing?.description?.pt || r.description || 'Repositório público no GitHub.',
@@ -139,17 +175,22 @@ async function syncGithubRepos() {
           liveUrl: r.homepage || existing?.liveUrl,
           visualType: existing?.visualType || 'terminal',
           updatedAt: r.updated_at ? r.updated_at.split('T')[0] : existing?.updatedAt,
-          hasDetails: existing ? existing.hasDetails : false,
-          coverImage: existing?.coverImage,
+          hasDetails,
+          coverImage,
         };
       });
 
-    // Se temos repositórios válidos, mescla priorizando os featured
+    // Se temos repositórios válidos, mescla garantindo que privados ou manuais não sejam perdidos
     if (updatedProjects.length > 0) {
-      // Garante que repositórios customizados que talvez sejam privados ou manuais não sejam perdidos
       const finalProjects = [...updatedProjects];
       existingProjects.forEach((ex) => {
-        if (!finalProjects.some((p) => p.id === ex.id)) {
+        const exIdNorm = ex.id.toLowerCase().replace(/[^a-z0-9]/g, '');
+        const exists = finalProjects.some(
+          (p) =>
+            p.id.toLowerCase().replace(/[^a-z0-9]/g, '') === exIdNorm ||
+            (p.githubUrl && ex.githubUrl && p.githubUrl.toLowerCase() === ex.githubUrl.toLowerCase())
+        );
+        if (!exists) {
           finalProjects.push(ex);
         }
       });
