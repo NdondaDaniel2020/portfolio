@@ -1,4 +1,4 @@
-# aniel Matondo — Portfolio & Engineering Showcase
+# Ndonda Daniel Matondo — Portfolio & Engineering Showcase
 
 > **Full Stack & Systems Engineer** focado em arquitetura backend de alta performance, sistemas em C/C++, ecossistema Python/FastAPI e aplicações web modernas com React + TypeScript.
 
