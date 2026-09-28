@@ -1,39 +1,88 @@
 [
   {
-    "id": "bidlive",
-    "name": "BidLive",
+    "id": "portfolio",
+    "name": "portfolio",
     "description": {
-      "pt": "Plataforma de leilões em tempo real (ft_transcendence 42) onde usuários participam de lances ao vivo, interagem via chat full-duplex e recebem recomendações inteligentes.",
-      "en": "Real-time auction platform (42 ft_transcendence) featuring live bidding, full-duplex WebSocket chat, and intelligent user activity recommendations."
+      "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
+      "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
     },
     "category": "web",
-    "featured": true,
-    "pinned": true,
-    "stars": 0,
+    "featured": false,
+    "pinned": false,
+    "stars": 2,
     "forks": 0,
     "language": "TypeScript",
     "technologies": [
       "TypeScript",
-      "Python",
-      "Django",
-      "Django Channels",
       "React",
-      "WebSockets",
-      "LiveKit",
-      "WebRTC",
-      "PostgreSQL",
-      "Redis",
-      "Celery",
-      "Docker",
-      "DevOps",
-      "ft-transcendence",
-      "42school"
+      "Tailwind CSS",
+      "Vite",
+      "GitHub Actions",
+      "Git",
+      "Portfolio"
     ],
-    "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive",
-    "visualType": "stats",
-    "updatedAt": "2026-09-15",
+    "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
+    "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-28",
+    "hasDetails": false,
+    "coverImage": null
+  },
+  {
+    "id": "inception2-0",
+    "name": "Inception2.0",
+    "description": {
+      "pt": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. ",
+      "en": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. "
+    },
+    "category": "tools",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "Docker",
+      "Docker Compose",
+      "NGINX",
+      "WordPress",
+      "MariaDB",
+      "DevOps",
+      "System Administration",
+      "42-school"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Inception2.0",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-28",
     "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/cover.webp"
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/cover.webp"
+  },
+  {
+    "id": "controlefinanceiro",
+    "name": "ControleFinanceiro",
+    "description": {
+      "pt": "Controle Finaceiro Criado em Python Para um projeto escolar",
+      "en": "Controle Finaceiro Criado em Python Para um projeto escolar"
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 2,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Python",
+      "PySide6",
+      "OpenCV",
+      "Facial Recognition",
+      "SQLite",
+      "Financial Control"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-27",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/cover.webp"
   },
   {
     "id": "antigravity-history-restorer",
@@ -57,34 +106,6 @@
     "updatedAt": "2026-09-26",
     "hasDetails": true,
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/cover.webp"
-  },
-  {
-    "id": "webserver",
-    "name": "Webserver",
-    "description": {
-      "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
-      "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
-    },
-    "category": "systems",
-    "featured": true,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "HTML",
-    "technologies": [
-      "C++98",
-      "HTTP/1.1",
-      "Epoll / Poll",
-      "I/O Multiplexing",
-      "CGI",
-      "NGINX Architecture",
-      "Networking"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-26",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp"
   },
   {
     "id": "minishell",
@@ -115,6 +136,34 @@
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/cover.webp"
   },
   {
+    "id": "webserver",
+    "name": "Webserver",
+    "description": {
+      "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
+      "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
+    },
+    "category": "systems",
+    "featured": true,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "C++98",
+      "HTTP/1.1",
+      "Epoll / Poll",
+      "I/O Multiplexing",
+      "CGI",
+      "NGINX Architecture",
+      "Networking"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-26",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp"
+  },
+  {
     "id": "solong",
     "name": "SoLong",
     "description": {
@@ -143,33 +192,64 @@
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/cover.webp"
   },
   {
-    "id": "portfolio",
-    "name": "portfolio",
+    "id": "auth",
+    "name": "Auth",
     "description": {
-      "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
-      "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
+      "pt": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura.",
+      "en": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura."
     },
-    "category": "web",
+    "category": "backend",
     "featured": false,
     "pinned": false,
-    "stars": 2,
+    "stars": 1,
     "forks": 0,
-    "language": "TypeScript",
+    "language": "Python",
     "technologies": [
-      "TypeScript",
-      "React",
-      "Tailwind CSS",
-      "Vite",
-      "GitHub Actions",
-      "Git",
-      "Portfolio"
+      "FastAPI",
+      "Python",
+      "JWT",
+      "RBAC",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Alembic",
+      "Redis",
+      "OAuth2",
+      "WebSockets"
     ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
-    "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
+    "githubUrl": "https://github.com/NdondaDaniel2020/Auth",
+    "liveUrl": "https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app",
     "visualType": "terminal",
-    "updatedAt": "2026-09-16",
-    "hasDetails": false,
-    "coverImage": null
+    "updatedAt": "2026-09-26",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/cover.webp"
+  },
+  {
+    "id": "cub3d",
+    "name": "cub3D",
+    "description": {
+      "pt": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos.",
+      "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
+    },
+    "category": "systems",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "C",
+    "technologies": [
+      "C",
+      "Raycasting",
+      "MiniLibX",
+      "Game Engine",
+      "Computer Graphics",
+      "Wolfenstein 3D",
+      "42-school"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-24",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/cover.webp"
   },
   {
     "id": "cv",
@@ -192,6 +272,32 @@
       "Resume"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/cv",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-19",
+    "hasDetails": false,
+    "coverImage": null
+  },
+  {
+    "id": "reactexercises",
+    "name": "ReactExercises",
+    "description": {
+      "pt": "exemplos de interfaces com react.",
+      "en": "exemplos de interfaces com react."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "UI/UX",
+      "Frontend Exercises"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
     "visualType": "terminal",
     "updatedAt": "2026-09-16",
     "hasDetails": false,
@@ -382,59 +488,6 @@
     "coverImage": null
   },
   {
-    "id": "controlefinanceiro",
-    "name": "ControleFinanceiro",
-    "description": {
-      "pt": "Controle Finaceiro Criado em Python Para um projeto escolar",
-      "en": "Controle Finaceiro Criado em Python Para um projeto escolar"
-    },
-    "category": "backend",
-    "featured": false,
-    "pinned": false,
-    "stars": 2,
-    "forks": 0,
-    "language": "Python",
-    "technologies": [
-      "Python",
-      "PySide6",
-      "OpenCV",
-      "Facial Recognition",
-      "SQLite",
-      "Financial Control"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/cover.webp"
-  },
-  {
-    "id": "reactexercises",
-    "name": "ReactExercises",
-    "description": {
-      "pt": "exemplos de interfaces com react.",
-      "en": "exemplos de interfaces com react."
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "technologies": [
-      "React",
-      "TypeScript",
-      "Vite",
-      "UI/UX",
-      "Frontend Exercises"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": false,
-    "coverImage": null
-  },
-  {
     "id": "sidebarmenu",
     "name": "SidebarMenu",
     "description": {
@@ -487,63 +540,6 @@
     "updatedAt": "2026-09-14",
     "hasDetails": false,
     "coverImage": null
-  },
-  {
-    "id": "inception2-0",
-    "name": "Inception2.0",
-    "description": {
-      "pt": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. ",
-      "en": "Descrição: Projeto Inception da 42. Criação de uma infraestrutura multi-containerizada no Alpine Linux usando Docker e Docker Compose, com NGINX (TLS), WordPress, MariaDB, além de bônus como Redis, FTP, Adminer e Elasticsearch. Focado em administração de sistemas, redes isoladas, volumes persistentes e segurança. "
-    },
-    "category": "tools",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "HTML",
-    "technologies": [
-      "Docker",
-      "Docker Compose",
-      "NGINX",
-      "WordPress",
-      "MariaDB",
-      "DevOps",
-      "System Administration",
-      "42-school"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/Inception2.0",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/cover.webp"
-  },
-  {
-    "id": "cub3d",
-    "name": "cub3D",
-    "description": {
-      "pt": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos.",
-      "en": "Motor de jogo 3D em primeira pessoa baseado em Raycasting (C/MiniLibX) inspirado em Wolfenstein 3D. Inclui renderização de texturas, colisão DDA e versão bônus com física de pulo, mira livre por rato, minimapa, portas dinâmicas, múltiplos sprites de armas e efeitos sonoros imersivos."
-    },
-    "category": "systems",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "C",
-    "technologies": [
-      "C",
-      "Raycasting",
-      "MiniLibX",
-      "Game Engine",
-      "Computer Graphics",
-      "Wolfenstein 3D",
-      "42-school"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/cub3D",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/cover.webp"
   },
   {
     "id": "philosophers",
@@ -741,38 +737,6 @@
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/cover.webp"
   },
   {
-    "id": "auth",
-    "name": "Auth",
-    "description": {
-      "pt": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura.",
-      "en": "Uma aplicação base robusta em \"FastAPI\" implementando Autenticação JWT, Controlo de Acessos Baseado em Papéis (RBAC) e melhores práticas de segurança e arquitetura."
-    },
-    "category": "backend",
-    "featured": false,
-    "pinned": false,
-    "stars": 1,
-    "forks": 0,
-    "language": "Python",
-    "technologies": [
-      "FastAPI",
-      "Python",
-      "JWT",
-      "RBAC",
-      "PostgreSQL",
-      "SQLAlchemy",
-      "Alembic",
-      "Redis",
-      "OAuth2",
-      "WebSockets"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/Auth",
-    "liveUrl": "https://auth-jdho56snb-ndonda-daniel-matondos-projects.vercel.app",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-08",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/cover.webp"
-  },
-  {
     "id": "cpp",
     "name": "CPP",
     "description": {
@@ -797,6 +761,42 @@
     "updatedAt": "2025-07-04",
     "hasDetails": false,
     "coverImage": null
+  },
+  {
+    "id": "bidlive",
+    "name": "BidLive",
+    "description": {
+      "pt": "Plataforma de leilões em tempo real (ft_transcendence 42) onde usuários participam de lances ao vivo, interagem via chat full-duplex e recebem recomendações inteligentes.",
+      "en": "Real-time auction platform (42 ft_transcendence) featuring live bidding, full-duplex WebSocket chat, and intelligent user activity recommendations."
+    },
+    "category": "web",
+    "featured": true,
+    "pinned": true,
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "technologies": [
+      "TypeScript",
+      "Python",
+      "Django",
+      "Django Channels",
+      "React",
+      "WebSockets",
+      "LiveKit",
+      "WebRTC",
+      "PostgreSQL",
+      "Redis",
+      "Celery",
+      "Docker",
+      "DevOps",
+      "ft-transcendence",
+      "42school"
+    ],
+    "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive",
+    "visualType": "stats",
+    "updatedAt": "2026-09-15",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/cover.webp"
   },
   {
     "id": "stockcontrol",

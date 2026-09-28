@@ -1,13 +1,13 @@
 {
   "totalCommitsYear": 1913,
   "year": 2026,
-  "totalRepos": 29,
+  "totalRepos": 31,
   "productionSystems": 3,
   "mainLanguagesCount": 7,
   "mainLanguages": [
+    "TypeScript",
     "HTML",
     "Python",
-    "TypeScript",
     "C",
     "JavaScript",
     "PHP",
