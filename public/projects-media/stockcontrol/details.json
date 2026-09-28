@@ -1,0 +1,114 @@
+{
+  "id": "stockcontrol",
+  "name": "StockControl — Miss Xtrela",
+  "tagline": {
+    "pt": "Sistema Desktop Moderno de Controlo de Estoque com Autenticação por Reconhecimento Facial, Gráficos Interativos e Exportação de Relatórios",
+    "en": "Modern Desktop Inventory Management System with Facial Recognition Authentication, Interactive Charts, and Report Generation"
+  },
+  "category": "desktop",
+  "featured": true,
+  "architecture_type": "Desktop Application with MVC Architecture (Python, PySide6/Qt6, SQLite, OpenCV LBPH)",
+  "about": {
+    "pt": "O StockControl é uma aplicação desktop desenvolvida em Python com PySide6 (Qt6) para a gestão e controlo completo de estoque de produtos de beleza da marca Miss Xtrela. A aplicação combina uma interface gráfica moderna sem bordas nativas do sistema operativo com segurança biométrica avançada via reconhecimento facial em tempo real utilizando o algoritmo LBPH (Local Binary Patterns Histograms) do OpenCV com classificador Haar Cascade. O sistema implementa autenticação dupla (senha criptografada + Face ID), gestão completa de inventário com cadastro, edição, remoção e busca de produtos por categoria, controlo de quantidade mínima com alertas de reposição, histórico detalhado de movimentações (entradas e saídas), gráficos interativos de barras e linhas via QtCharts para acompanhamento mensal, indicadores circulares de progresso para status do estoque, envio assíncrono de notificações por e-mail em background via QThreadPool, exportação automática de relatórios em Excel (openpyxl) e suporte a temas configuráveis (Light/Dark mode) com persistência em JSON.",
+    "en": "StockControl is a desktop application built with Python and PySide6 (Qt6) for complete inventory management of beauty products for the Miss Xtrela brand. The application combines a modern frameless GUI with advanced biometric security via real-time facial recognition using OpenCV's LBPH (Local Binary Patterns Histograms) algorithm with Haar Cascade classifier. The system implements dual authentication (encrypted password + Face ID), full inventory management with product CRUD operations and category-based search, minimum stock level alerts with replenishment warnings, detailed movement history (entries and exits), interactive bar and line charts via QtCharts for monthly tracking, circular progress indicators for stock status, asynchronous email notifications via QThreadPool, automatic Excel report generation (openpyxl), and configurable theme support (Light/Dark mode) with JSON persistence."
+  },
+  "highlights": [
+    "Autenticação biométrica dupla com reconhecimento facial em tempo real (LBPH + Haar Cascade) e senha criptografada",
+    "Interface gráfica moderna frameless (sem bordas do SO) com PySide6/Qt6 e suporte a temas Light/Dark",
+    "Dashboard completo com cards de resumo, gráficos de barras e linhas interativos (QtCharts) e indicadores circulares",
+    "Gestão completa de inventário com cadastro, edição, remoção e busca de produtos por categoria e grupo",
+    "Controlo de quantidade mínima com alertas visuais de reposição e nível ótimo de estoque",
+    "Histórico detalhado de movimentações de entrada e saída com filtros por requisitor, data e tipo",
+    "Gráfico de distribuição por categoria com donut chart e legenda interativa de cores",
+    "Exportação automática de relatórios em Excel (openpyxl) com totais de entradas e saídas",
+    "Envio assíncrono de notificações por e-mail em background via QThreadPool sem bloquear a interface",
+    "Animações de transição fluidas entre painéis e componentes visuais reutilizáveis customizados"
+  ],
+  "technologies": [
+    "Python",
+    "PySide6 / Qt6",
+    "OpenCV",
+    "SQLite",
+    "QtCharts",
+    "Pandas",
+    "OpenPyXL",
+    "Haar Cascade",
+    "LBPH",
+    "uv"
+  ],
+  "links": {
+    "repository": "https://github.com/NdondaDaniel2020/stockControl"
+  },
+  "media": {
+    "cover": "cover.webp",
+    "gallery": [
+      {
+        "type": "video",
+        "src": "gallery/demo.mp4",
+        "caption": "Demonstração Completa do StockControl: Login, Dashboard, Gestão de Estoque e Gráficos"
+      },
+      {
+        "type": "video",
+        "src": "gallery/02-face-id-login.mp4",
+        "caption": "Animação do Reconhecimento Facial em Tempo Real via OpenCV LBPH para Autenticação Biométrica"
+      },
+      {
+        "type": "image",
+        "src": "gallery/01-lock-screen.webp",
+        "caption": "Ecrã de Bloqueio com Branding Miss Xtrela, Toggle Face ID e Troca de Utilizador"
+      },
+      {
+        "type": "image",
+        "src": "gallery/02-login-screen.webp",
+        "caption": "Formulário de Login com Autenticação por Senha e Alternativa Biométrica (Face ID)"
+      },
+      {
+        "type": "image",
+        "src": "gallery/03-dashboard.webp",
+        "caption": "Dashboard Principal com Cards de Resumo (Saídas, Entradas, Stock, Utilizador) e Gráfico de Movimentação Mensal"
+      },
+      {
+        "type": "image",
+        "src": "gallery/04-stock-management.webp",
+        "caption": "Painel de Gestão de Estoque com Filtros de Entrada/Saída e Botões de Ação Rápida"
+      },
+      {
+        "type": "image",
+        "src": "gallery/05-charts-analytics.webp",
+        "caption": "Gráficos de Linha Interativos: Visão Geral Anual e Detalhamento Mensal de Movimentações"
+      },
+      {
+        "type": "image",
+        "src": "gallery/06-settings-transactions.webp",
+        "caption": "Painel de Definições com Tabela de Transações, Filtros por Data e Exportação XLSX"
+      },
+      {
+        "type": "image",
+        "src": "gallery/07-stock-product-list.webp",
+        "caption": "Lista de Produtos com Donut Chart de Distribuição por Categoria, Quantidades e Valores em Kz"
+      }
+    ],
+    "videos": [
+      {
+        "id": "demo-stockcontrol",
+        "file": "01-demo-stockcontrol.mp4",
+        "title": "Showcase Completo do StockControl — Miss Xtrela",
+        "description": "Demonstração prática de todas as funcionalidades: autenticação dupla (senha + Face ID), dashboard com gráficos interativos, gestão de inventário, movimentações de entrada/saída e exportação de relatórios.",
+        "category": "desktop",
+        "duration": "46s",
+        "size_mb": 0.98,
+        "src": "videos/01-demo-stockcontrol.mp4"
+      },
+      {
+        "id": "face-id-login",
+        "file": "02-face-id-login.mp4",
+        "title": "Reconhecimento Facial em Tempo Real (OpenCV LBPH)",
+        "description": "Demonstração do fluxo de autenticação biométrica com detecção e reconhecimento facial em tempo real usando o algoritmo LBPH e classificador Haar Cascade do OpenCV.",
+        "category": "desktop",
+        "duration": "18s",
+        "size_mb": 0.21,
+        "src": "videos/02-face-id-login.mp4"
+      }
+    ]
+  }
+}

@@ -1,78 +1,1271 @@
 {
-  "auth": {
-    "id": "auth",
-    "name": "Auth (FastAPI Service)",
+  "controle-financeiro": {
+    "id": "controle-financeiro",
+    "name": "Controle Financeiro",
     "tagline": {
-      "pt": "API de Autenticação e Autorização Assíncrona com FastAPI, RBAC Granular, Tokens JWT Rotativos e Rate Limiting no Redis",
-      "en": "Asynchronous Authentication & Authorization Microservice with FastAPI, Granular RBAC, Rotating JWTs, and Distributed Redis Rate Limiting"
+      "pt": "Aplicação Desktop de Gestão Financeira com Gráficos Analíticos, Controlo de Fluxo de Caixa e Interface Moderna",
+      "en": "Desktop Financial Management Application with Analytical Charts, Cash Flow Control, and Modern Interface"
     },
-    "category": "backend",
-    "featured": true,
-    "architecture_type": "Async Event-Driven Hexagonal Architecture (FastAPI, SQLAlchemy 2.0, PostgreSQL, Redis, RabbitMQ)",
+    "category": "desktop",
+    "featured": false,
+    "architecture_type": "Desktop Application (Python, PySide6/Qt6, MVC)",
     "about": {
-      "pt": "O Auth API é um microsserviço corporativo de autenticação, autorização e gestão de identidades construído com FastAPI assíncrono e SQLAlchemy 2.0. Desenvolvido para atuar como autoridade central de identidade (IdP), o sistema implementa fluxo completo de registro e login com hashing Argon2id, emissão de tokens JWT com estratégia de Refresh Token Rotation (RTR), proteção contra ataques de força bruta com rate limiting distribuído em janela deslizante (Sliding Window) no Redis, autorização baseada em papéis (RBAC) com dependências injetadas sem queries N+1, autenticação social OAuth2/OpenID Connect com Google, mensageria de eventos de auditoria e segurança via RabbitMQ/Kafka e observabilidade completa com métricas Prometheus.",
-      "en": "Auth API is an enterprise-grade identity and access management (IAM) microservice built with asynchronous FastAPI and SQLAlchemy 2.0. Designed as a central identity provider, the system features complete user registration and authentication workflows with Argon2id password hashing, rotating JWT session management with Refresh Token Rotation (RTR), distributed sliding-window rate limiting via Redis against brute-force attacks, role-based access control (RBAC) with clean dependency injection eliminating N+1 queries, Google OAuth2/OpenID Connect social sign-in, security event streaming with RabbitMQ/Kafka, and full Prometheus observability."
+      "pt": "O Controle Financeiro é uma aplicação desktop desenvolvida em Python e PySide6 para facilitar a gestão financeira de forma intuitiva e visual. Conta com um Dashboard principal que apresenta resumos financeiros e gráficos de linha dinâmicos. A aplicação possui um sistema robusto de 'Movimentação' para rastrear entradas e saídas detalhadas por categoria, com suporte a filtros e busca. Destaca-se também o módulo de 'Fluxo de Caixa', que inclui gráficos de barras agrupados e donut charts para análise visual clara e categorizada das finanças ao longo dos meses. A interface é responsiva, adaptando-se suavemente entre o layout da barra lateral expandida e colapsada.",
+      "en": "Controle Financeiro is a desktop application developed in Python and PySide6 to facilitate intuitive and visual financial management. It features a main Dashboard presenting financial summaries and dynamic line charts. The application has a robust 'Movements' system to track income and expenses detailed by category, supporting filters and search. Also notable is the 'Cash Flow' module, including grouped bar charts and donut charts for clear, categorized visual analysis of finances over the months. The interface is responsive, smoothly adapting between expanded and collapsed sidebar layouts."
     },
     "highlights": [
-      "Autenticação assíncrona robusta com FastAPI e hashing criptográfico Argon2id de última geração",
-      "Gestão segura de sessões com JWT rotativo (Refresh Token Rotation - RTR) e revogação instantânea via Redis",
-      "Controle de Acesso Baseado em Papéis (RBAC) com permissões granulares e injeção de dependências sem queries N+1",
-      "Rate Limiting distribuído em janela deslizante (Sliding Window Counter) gerenciado pelo Redis",
-      "Login social unificado integrando OAuth2 e OpenID Connect (Google Auth) com vínculo de identidade híbrida",
-      "Persistência assíncrona com PostgreSQL e SQLAlchemy 2.0 (AsyncSession) e migrações estruturadas via Alembic",
-      "Disparo de eventos de auditoria e segurança em segundo plano via mensageria assíncrona (RabbitMQ / Kafka)",
-      "Observabilidade corporativa com endpoint Prometheus (/metrics) e logs estruturados em formato JSON",
-      "Documentação interativa automática com Swagger UI (OpenAPI 3.1) e ReDoc",
-      "Ambiente de desenvolvimento e testes ultrarrápido gerenciado com uv (Python 3.14)"
+      "Dashboard completo com indicadores-chave de desempenho (Resumo de Saldos, Entradas e Saídas)",
+      "Interface de utilizador (UI) moderna e responsiva desenvolvida com PySide6",
+      "Gestão detalhada de movimentações financeiras com identificação visual (cores) para créditos e débitos",
+      "Gráficos de fluxo de caixa (barras agrupadas) e distribuição por categoria (donut chart) para análise avançada",
+      "Filtros robustos por código, intervalo de datas e categoria",
+      "Navegação lateral dinâmica (Sidebar) expansível e colapsável"
     ],
     "technologies": [
-      "FastAPI",
       "Python",
-      "SQLAlchemy",
-      "PostgreSQL",
-      "Redis",
-      "Docker",
-      "RabbitMQ",
-      "Alembic",
-      "Argon2",
-      "JWT",
-      "Prometheus",
-      "Pydantic",
-      "uv"
+      "PySide6 / Qt6",
+      "QtCharts",
+      "OpenCV"
     ],
+    "links": {
+      "repository": "https://github.com/NdondaDaniel2020/ControleFinanceiro"
+    },
     "media": {
-      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/cover.webp",
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/cover.webp",
       "gallery": [
         {
-          "type": "image",
-          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/gallery/01-swagger-ui.webp",
-          "caption": "Swagger UI Interativo com Documentação OpenAPI 3.1 dos Endpoints de Autenticação e RBAC"
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/01-demo-main.mp4",
+          "caption": "Demonstração Principal: Navegação pelo Dashboard, Fluxo de Caixa e Relatórios"
+        },
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/02-demo-movements.mp4",
+          "caption": "Demonstração: Interação com a Lista de Movimentações e Filtros"
         },
         {
           "type": "image",
-          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/gallery/02-redoc-spec.webp",
-          "caption": "ReDoc com Especificação Técnica Detalhada dos Schemas Pydantic e Payloads"
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/01-home-dashboard.webp",
+          "caption": "Home / Dashboard com Cards de Resumo e Gráfico de Linha Mensal"
         },
         {
           "type": "image",
-          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/gallery/03-api-response.webp",
-          "caption": "Estrutura Padrão de Resposta JSON da API"
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/02-movements.webp",
+          "caption": "Página de Movimentações (Expandida) listando Entradas e Saídas Detalhadas"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/03-cash-flow-expanded.webp",
+          "caption": "Análise de Fluxo de Caixa com Gráfico de Barras Comparativo e Tabela Resumo"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/04-cash-flow-collapsed.webp",
+          "caption": "Fluxo de Caixa em Layout Expandido Horizontalmente (Sidebar Colapsada)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/05-movements-expanded-alt.webp",
+          "caption": "Gestão de Transações mostrando os Filtros e Funcionalidade de Pesquisa"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/06-movements-collapsed.webp",
+          "caption": "Lista de Movimentações com Espaço Maximizado para visualização de Dados"
         }
       ],
       "videos": [
         {
-          "id": "demo-auth",
-          "file": "01-demo-auth.mp4",
-          "title": "Navegação no Swagger UI e Fluxos de Autenticação",
-          "description": "Demonstração interativa dos endpoints da API no Swagger UI: registro de usuário, login com obtenção de tokens JWT, validação de rotas protegidas por RBAC e visualização da documentação OpenAPI.",
-          "category": "backend",
-          "duration": "63s",
-          "size_mb": 6.1,
-          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/videos/01-demo-auth.mp4"
+          "id": "demo-main",
+          "file": "01-demo-main.mp4",
+          "title": "Demonstração Principal (Dashboard e Fluxo de Caixa)",
+          "description": "Showcase visual das principais áreas do sistema: o resumo financeiro (Dashboard) e o módulo de análise analítica (Fluxo de Caixa).",
+          "category": "desktop",
+          "duration": "29s",
+          "size_mb": 11.32,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/videos/01-demo-main.mp4"
+        },
+        {
+          "id": "demo-movements",
+          "file": "02-demo-movements.mp4",
+          "title": "Demonstração de Gestão de Movimentações",
+          "description": "Visão geral sobre o ecrã de registo de entradas e saídas com filtro avançado por códigos, categorias e datas.",
+          "category": "desktop",
+          "duration": "27s",
+          "size_mb": 10.92,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/videos/02-demo-movements.mp4"
         }
       ]
     },
-    "githubUrl": "https://github.com/NdondaDaniel2020/Auth"
+    "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro"
+  },
+  "controlefinanceiro": {
+    "id": "controle-financeiro",
+    "name": "Controle Financeiro",
+    "tagline": {
+      "pt": "Aplicação Desktop de Gestão Financeira com Gráficos Analíticos, Controlo de Fluxo de Caixa e Interface Moderna",
+      "en": "Desktop Financial Management Application with Analytical Charts, Cash Flow Control, and Modern Interface"
+    },
+    "category": "desktop",
+    "featured": false,
+    "architecture_type": "Desktop Application (Python, PySide6/Qt6, MVC)",
+    "about": {
+      "pt": "O Controle Financeiro é uma aplicação desktop desenvolvida em Python e PySide6 para facilitar a gestão financeira de forma intuitiva e visual. Conta com um Dashboard principal que apresenta resumos financeiros e gráficos de linha dinâmicos. A aplicação possui um sistema robusto de 'Movimentação' para rastrear entradas e saídas detalhadas por categoria, com suporte a filtros e busca. Destaca-se também o módulo de 'Fluxo de Caixa', que inclui gráficos de barras agrupados e donut charts para análise visual clara e categorizada das finanças ao longo dos meses. A interface é responsiva, adaptando-se suavemente entre o layout da barra lateral expandida e colapsada.",
+      "en": "Controle Financeiro is a desktop application developed in Python and PySide6 to facilitate intuitive and visual financial management. It features a main Dashboard presenting financial summaries and dynamic line charts. The application has a robust 'Movements' system to track income and expenses detailed by category, supporting filters and search. Also notable is the 'Cash Flow' module, including grouped bar charts and donut charts for clear, categorized visual analysis of finances over the months. The interface is responsive, smoothly adapting between expanded and collapsed sidebar layouts."
+    },
+    "highlights": [
+      "Dashboard completo com indicadores-chave de desempenho (Resumo de Saldos, Entradas e Saídas)",
+      "Interface de utilizador (UI) moderna e responsiva desenvolvida com PySide6",
+      "Gestão detalhada de movimentações financeiras com identificação visual (cores) para créditos e débitos",
+      "Gráficos de fluxo de caixa (barras agrupadas) e distribuição por categoria (donut chart) para análise avançada",
+      "Filtros robustos por código, intervalo de datas e categoria",
+      "Navegação lateral dinâmica (Sidebar) expansível e colapsável"
+    ],
+    "technologies": [
+      "Python",
+      "PySide6 / Qt6",
+      "QtCharts",
+      "OpenCV"
+    ],
+    "links": {
+      "repository": "https://github.com/NdondaDaniel2020/ControleFinanceiro"
+    },
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/01-demo-main.mp4",
+          "caption": "Demonstração Principal: Navegação pelo Dashboard, Fluxo de Caixa e Relatórios"
+        },
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/02-demo-movements.mp4",
+          "caption": "Demonstração: Interação com a Lista de Movimentações e Filtros"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/01-home-dashboard.webp",
+          "caption": "Home / Dashboard com Cards de Resumo e Gráfico de Linha Mensal"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/02-movements.webp",
+          "caption": "Página de Movimentações (Expandida) listando Entradas e Saídas Detalhadas"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/03-cash-flow-expanded.webp",
+          "caption": "Análise de Fluxo de Caixa com Gráfico de Barras Comparativo e Tabela Resumo"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/04-cash-flow-collapsed.webp",
+          "caption": "Fluxo de Caixa em Layout Expandido Horizontalmente (Sidebar Colapsada)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/05-movements-expanded-alt.webp",
+          "caption": "Gestão de Transações mostrando os Filtros e Funcionalidade de Pesquisa"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/gallery/06-movements-collapsed.webp",
+          "caption": "Lista de Movimentações com Espaço Maximizado para visualização de Dados"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-main",
+          "file": "01-demo-main.mp4",
+          "title": "Demonstração Principal (Dashboard e Fluxo de Caixa)",
+          "description": "Showcase visual das principais áreas do sistema: o resumo financeiro (Dashboard) e o módulo de análise analítica (Fluxo de Caixa).",
+          "category": "desktop",
+          "duration": "29s",
+          "size_mb": 11.32,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/videos/01-demo-main.mp4"
+        },
+        {
+          "id": "demo-movements",
+          "file": "02-demo-movements.mp4",
+          "title": "Demonstração de Gestão de Movimentações",
+          "description": "Visão geral sobre o ecrã de registo de entradas e saídas com filtro avançado por códigos, categorias e datas.",
+          "category": "desktop",
+          "duration": "27s",
+          "size_mb": 10.92,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/videos/02-demo-movements.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro"
+  },
+  "inception": {
+    "id": "inception",
+    "name": "Inception 2.0 — Infraestrutura Docker",
+    "tagline": {
+      "pt": "Orquestração completa de uma infraestrutura web baseada em contentores Docker com NGINX, WordPress, MariaDB, Redis e Alpine Linux.",
+      "en": "Complete orchestration of a Docker container-based web infrastructure with NGINX, WordPress, MariaDB, Redis, and Alpine Linux."
+    },
+    "category": "devops",
+    "featured": true,
+    "architecture_type": "Docker Container-based Microservices Infrastructure",
+    "about": {
+      "pt": "Inception é um projeto focado em System Administration e DevOps, onde o objetivo é construir e orquestrar uma infraestrutura web completa utilizando Docker e Docker Compose a partir do zero. A arquitetura inclui múltiplos serviços configurados individualmente em contentores baseados em Alpine Linux 3.22, garantindo um ambiente leve (minimal attack surface) e seguro. A comunicação ocorre numa rede isolada (Docker Network), com persistência de dados via Docker Volumes e gestão segura de senhas via Docker Secrets. O ambiente providencia um site WordPress acelerado por Redis Cache, uma base de dados MariaDB com interface Adminer, um servidor FTP para transferências e uma landing page (MyProfile). Cada serviço possui health checks robustos e resolve o problema do PID 1, assegurando encerramentos corretos dos processos.",
+      "en": "Inception is a project focused on System Administration and DevOps, aiming to build and orchestrate a complete web infrastructure using Docker and Docker Compose from scratch. The architecture features multiple services individually configured in Alpine Linux 3.22 containers, ensuring a lightweight (minimal attack surface) and secure environment. Communication takes place on an isolated Docker Network, with data persistence via Docker Volumes and secure password management via Docker Secrets. The environment provides a WordPress site accelerated by Redis Cache, a MariaDB database with an Adminer interface, an FTP server for file transfers, and a landing page (MyProfile). Each service includes robust health checks and solves the PID 1 problem, ensuring graceful shutdowns."
+    },
+    "highlights": [
+      "Arquitetura multi-contentor orquestrada via Docker Compose numa rede isolada (bridge)",
+      "Criação de Dockerfiles personalizados a partir do Alpine Linux (sem usar imagens pré-configuradas)",
+      "Persistência de dados segura com Docker Volumes locais e gestão de credenciais via Docker Secrets",
+      "Reverse Proxy NGINX configurado com TLS 1.3",
+      "Sistema WordPress integrado nativamente com Redis Object Cache e base de dados relacional MariaDB",
+      "Serviços auxiliares de FTP (vsftpd) e administração de base de dados (Adminer)",
+      "Implementação de Health Checks automatizados e resolução de signals PID 1 para graceful shutdown"
+    ],
+    "technologies": [
+      "Docker",
+      "Docker Compose",
+      "Alpine Linux",
+      "NGINX",
+      "WordPress",
+      "MariaDB",
+      "Redis",
+      "vsftpd",
+      "Adminer"
+    ],
+    "links": {
+      "repository": "https://github.com/NdondaDaniel2020/Inception"
+    },
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/01-demo-wordpress.mp4",
+          "caption": "Demonstração do Sistema WordPress com Plugins, Redis Cache e Interface Administrativa"
+        },
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/02-demo-ftp.mp4",
+          "caption": "Acesso e Transferência de Ficheiros Segura via Servidor FTP"
+        },
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/03-demo-adminer.mp4",
+          "caption": "Acesso Seguro à Base de Dados MariaDB através da Interface Adminer"
+        },
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/04-demo-myprofile.mp4",
+          "caption": "Demonstração da Aplicação Auxiliar: MyProfile Landing Page"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/01-inception-readme.webp",
+          "caption": "Documentação e Estrutura da Infraestrutura (README)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/02-wordpress-home.webp",
+          "caption": "Página Principal do WordPress a correr na Infraestrutura Inception"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/03-adminer-login.webp",
+          "caption": "Página de Login do Adminer para Gestão de Base de Dados"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/04-myprofile-home.webp",
+          "caption": "Website Pessoal MyProfile a correr como serviço Docker"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/05-wordpress-dashboard.webp",
+          "caption": "Painel de Controlo do WordPress (WP Admin)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/10-wordpress-plugins.webp",
+          "caption": "Plugins Instalados no WordPress (Redis Cache, ElasticPress)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/14-wordpress-redis-cache.webp",
+          "caption": "Configuração da Conexão do WordPress ao Contentor Redis Cache"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/16-terminal-ftp-session.webp",
+          "caption": "Sessão FTP ativa mostrando conexão e transferência de arquivos"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-wordpress",
+          "file": "01-demo-wordpress.mp4",
+          "title": "Demonstração da Infraestrutura WordPress",
+          "description": "Navegação completa no WordPress configurado: Acesso via NGINX proxy, navegação no painel, verificação do status dos plugins e do Object Cache do Redis.",
+          "category": "devops",
+          "duration": "1m 14s",
+          "size_mb": 2.3,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/01-demo-wordpress.mp4"
+        },
+        {
+          "id": "demo-ftp",
+          "file": "02-demo-ftp.mp4",
+          "title": "Acesso Servidor FTP",
+          "description": "Demonstração do serviço FTP isolado, estabelecendo conexão com os dados do WordPress.",
+          "category": "devops",
+          "duration": "32s",
+          "size_mb": 0.72,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/02-demo-ftp.mp4"
+        },
+        {
+          "id": "demo-adminer",
+          "file": "03-demo-adminer.mp4",
+          "title": "Interface Adminer - MariaDB",
+          "description": "Gestão e manipulação do banco de dados MariaDB da infraestrutura através do cliente web Adminer.",
+          "category": "devops",
+          "duration": "30s",
+          "size_mb": 0.77,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/03-demo-adminer.mp4"
+        },
+        {
+          "id": "demo-myprofile",
+          "file": "04-demo-myprofile.mp4",
+          "title": "Aplicação Auxiliar - MyProfile",
+          "description": "Demonstração do site auxiliar pessoal que corre num contentor da infraestrutura Inception.",
+          "category": "devops",
+          "duration": "18s",
+          "size_mb": 1.4,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/04-demo-myprofile.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/Inception2.0"
+  },
+  "inception2-0": {
+    "id": "inception",
+    "name": "Inception 2.0 — Infraestrutura Docker",
+    "tagline": {
+      "pt": "Orquestração completa de uma infraestrutura web baseada em contentores Docker com NGINX, WordPress, MariaDB, Redis e Alpine Linux.",
+      "en": "Complete orchestration of a Docker container-based web infrastructure with NGINX, WordPress, MariaDB, Redis, and Alpine Linux."
+    },
+    "category": "devops",
+    "featured": true,
+    "architecture_type": "Docker Container-based Microservices Infrastructure",
+    "about": {
+      "pt": "Inception é um projeto focado em System Administration e DevOps, onde o objetivo é construir e orquestrar uma infraestrutura web completa utilizando Docker e Docker Compose a partir do zero. A arquitetura inclui múltiplos serviços configurados individualmente em contentores baseados em Alpine Linux 3.22, garantindo um ambiente leve (minimal attack surface) e seguro. A comunicação ocorre numa rede isolada (Docker Network), com persistência de dados via Docker Volumes e gestão segura de senhas via Docker Secrets. O ambiente providencia um site WordPress acelerado por Redis Cache, uma base de dados MariaDB com interface Adminer, um servidor FTP para transferências e uma landing page (MyProfile). Cada serviço possui health checks robustos e resolve o problema do PID 1, assegurando encerramentos corretos dos processos.",
+      "en": "Inception is a project focused on System Administration and DevOps, aiming to build and orchestrate a complete web infrastructure using Docker and Docker Compose from scratch. The architecture features multiple services individually configured in Alpine Linux 3.22 containers, ensuring a lightweight (minimal attack surface) and secure environment. Communication takes place on an isolated Docker Network, with data persistence via Docker Volumes and secure password management via Docker Secrets. The environment provides a WordPress site accelerated by Redis Cache, a MariaDB database with an Adminer interface, an FTP server for file transfers, and a landing page (MyProfile). Each service includes robust health checks and solves the PID 1 problem, ensuring graceful shutdowns."
+    },
+    "highlights": [
+      "Arquitetura multi-contentor orquestrada via Docker Compose numa rede isolada (bridge)",
+      "Criação de Dockerfiles personalizados a partir do Alpine Linux (sem usar imagens pré-configuradas)",
+      "Persistência de dados segura com Docker Volumes locais e gestão de credenciais via Docker Secrets",
+      "Reverse Proxy NGINX configurado com TLS 1.3",
+      "Sistema WordPress integrado nativamente com Redis Object Cache e base de dados relacional MariaDB",
+      "Serviços auxiliares de FTP (vsftpd) e administração de base de dados (Adminer)",
+      "Implementação de Health Checks automatizados e resolução de signals PID 1 para graceful shutdown"
+    ],
+    "technologies": [
+      "Docker",
+      "Docker Compose",
+      "Alpine Linux",
+      "NGINX",
+      "WordPress",
+      "MariaDB",
+      "Redis",
+      "vsftpd",
+      "Adminer"
+    ],
+    "links": {
+      "repository": "https://github.com/NdondaDaniel2020/Inception"
+    },
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/01-demo-wordpress.mp4",
+          "caption": "Demonstração do Sistema WordPress com Plugins, Redis Cache e Interface Administrativa"
+        },
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/02-demo-ftp.mp4",
+          "caption": "Acesso e Transferência de Ficheiros Segura via Servidor FTP"
+        },
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/03-demo-adminer.mp4",
+          "caption": "Acesso Seguro à Base de Dados MariaDB através da Interface Adminer"
+        },
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/04-demo-myprofile.mp4",
+          "caption": "Demonstração da Aplicação Auxiliar: MyProfile Landing Page"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/01-inception-readme.webp",
+          "caption": "Documentação e Estrutura da Infraestrutura (README)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/02-wordpress-home.webp",
+          "caption": "Página Principal do WordPress a correr na Infraestrutura Inception"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/03-adminer-login.webp",
+          "caption": "Página de Login do Adminer para Gestão de Base de Dados"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/04-myprofile-home.webp",
+          "caption": "Website Pessoal MyProfile a correr como serviço Docker"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/05-wordpress-dashboard.webp",
+          "caption": "Painel de Controlo do WordPress (WP Admin)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/10-wordpress-plugins.webp",
+          "caption": "Plugins Instalados no WordPress (Redis Cache, ElasticPress)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/14-wordpress-redis-cache.webp",
+          "caption": "Configuração da Conexão do WordPress ao Contentor Redis Cache"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/16-terminal-ftp-session.webp",
+          "caption": "Sessão FTP ativa mostrando conexão e transferência de arquivos"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-wordpress",
+          "file": "01-demo-wordpress.mp4",
+          "title": "Demonstração da Infraestrutura WordPress",
+          "description": "Navegação completa no WordPress configurado: Acesso via NGINX proxy, navegação no painel, verificação do status dos plugins e do Object Cache do Redis.",
+          "category": "devops",
+          "duration": "1m 14s",
+          "size_mb": 2.3,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/01-demo-wordpress.mp4"
+        },
+        {
+          "id": "demo-ftp",
+          "file": "02-demo-ftp.mp4",
+          "title": "Acesso Servidor FTP",
+          "description": "Demonstração do serviço FTP isolado, estabelecendo conexão com os dados do WordPress.",
+          "category": "devops",
+          "duration": "32s",
+          "size_mb": 0.72,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/02-demo-ftp.mp4"
+        },
+        {
+          "id": "demo-adminer",
+          "file": "03-demo-adminer.mp4",
+          "title": "Interface Adminer - MariaDB",
+          "description": "Gestão e manipulação do banco de dados MariaDB da infraestrutura através do cliente web Adminer.",
+          "category": "devops",
+          "duration": "30s",
+          "size_mb": 0.77,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/03-demo-adminer.mp4"
+        },
+        {
+          "id": "demo-myprofile",
+          "file": "04-demo-myprofile.mp4",
+          "title": "Aplicação Auxiliar - MyProfile",
+          "description": "Demonstração do site auxiliar pessoal que corre num contentor da infraestrutura Inception.",
+          "category": "devops",
+          "duration": "18s",
+          "size_mb": 1.4,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/04-demo-myprofile.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/Inception2.0"
+  },
+  "inception2.0": {
+    "id": "inception",
+    "name": "Inception 2.0 — Infraestrutura Docker",
+    "tagline": {
+      "pt": "Orquestração completa de uma infraestrutura web baseada em contentores Docker com NGINX, WordPress, MariaDB, Redis e Alpine Linux.",
+      "en": "Complete orchestration of a Docker container-based web infrastructure with NGINX, WordPress, MariaDB, Redis, and Alpine Linux."
+    },
+    "category": "devops",
+    "featured": true,
+    "architecture_type": "Docker Container-based Microservices Infrastructure",
+    "about": {
+      "pt": "Inception é um projeto focado em System Administration e DevOps, onde o objetivo é construir e orquestrar uma infraestrutura web completa utilizando Docker e Docker Compose a partir do zero. A arquitetura inclui múltiplos serviços configurados individualmente em contentores baseados em Alpine Linux 3.22, garantindo um ambiente leve (minimal attack surface) e seguro. A comunicação ocorre numa rede isolada (Docker Network), com persistência de dados via Docker Volumes e gestão segura de senhas via Docker Secrets. O ambiente providencia um site WordPress acelerado por Redis Cache, uma base de dados MariaDB com interface Adminer, um servidor FTP para transferências e uma landing page (MyProfile). Cada serviço possui health checks robustos e resolve o problema do PID 1, assegurando encerramentos corretos dos processos.",
+      "en": "Inception is a project focused on System Administration and DevOps, aiming to build and orchestrate a complete web infrastructure using Docker and Docker Compose from scratch. The architecture features multiple services individually configured in Alpine Linux 3.22 containers, ensuring a lightweight (minimal attack surface) and secure environment. Communication takes place on an isolated Docker Network, with data persistence via Docker Volumes and secure password management via Docker Secrets. The environment provides a WordPress site accelerated by Redis Cache, a MariaDB database with an Adminer interface, an FTP server for file transfers, and a landing page (MyProfile). Each service includes robust health checks and solves the PID 1 problem, ensuring graceful shutdowns."
+    },
+    "highlights": [
+      "Arquitetura multi-contentor orquestrada via Docker Compose numa rede isolada (bridge)",
+      "Criação de Dockerfiles personalizados a partir do Alpine Linux (sem usar imagens pré-configuradas)",
+      "Persistência de dados segura com Docker Volumes locais e gestão de credenciais via Docker Secrets",
+      "Reverse Proxy NGINX configurado com TLS 1.3",
+      "Sistema WordPress integrado nativamente com Redis Object Cache e base de dados relacional MariaDB",
+      "Serviços auxiliares de FTP (vsftpd) e administração de base de dados (Adminer)",
+      "Implementação de Health Checks automatizados e resolução de signals PID 1 para graceful shutdown"
+    ],
+    "technologies": [
+      "Docker",
+      "Docker Compose",
+      "Alpine Linux",
+      "NGINX",
+      "WordPress",
+      "MariaDB",
+      "Redis",
+      "vsftpd",
+      "Adminer"
+    ],
+    "links": {
+      "repository": "https://github.com/NdondaDaniel2020/Inception"
+    },
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/01-demo-wordpress.mp4",
+          "caption": "Demonstração do Sistema WordPress com Plugins, Redis Cache e Interface Administrativa"
+        },
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/02-demo-ftp.mp4",
+          "caption": "Acesso e Transferência de Ficheiros Segura via Servidor FTP"
+        },
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/03-demo-adminer.mp4",
+          "caption": "Acesso Seguro à Base de Dados MariaDB através da Interface Adminer"
+        },
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/04-demo-myprofile.mp4",
+          "caption": "Demonstração da Aplicação Auxiliar: MyProfile Landing Page"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/01-inception-readme.webp",
+          "caption": "Documentação e Estrutura da Infraestrutura (README)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/02-wordpress-home.webp",
+          "caption": "Página Principal do WordPress a correr na Infraestrutura Inception"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/03-adminer-login.webp",
+          "caption": "Página de Login do Adminer para Gestão de Base de Dados"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/04-myprofile-home.webp",
+          "caption": "Website Pessoal MyProfile a correr como serviço Docker"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/05-wordpress-dashboard.webp",
+          "caption": "Painel de Controlo do WordPress (WP Admin)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/10-wordpress-plugins.webp",
+          "caption": "Plugins Instalados no WordPress (Redis Cache, ElasticPress)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/14-wordpress-redis-cache.webp",
+          "caption": "Configuração da Conexão do WordPress ao Contentor Redis Cache"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/gallery/16-terminal-ftp-session.webp",
+          "caption": "Sessão FTP ativa mostrando conexão e transferência de arquivos"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-wordpress",
+          "file": "01-demo-wordpress.mp4",
+          "title": "Demonstração da Infraestrutura WordPress",
+          "description": "Navegação completa no WordPress configurado: Acesso via NGINX proxy, navegação no painel, verificação do status dos plugins e do Object Cache do Redis.",
+          "category": "devops",
+          "duration": "1m 14s",
+          "size_mb": 2.3,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/01-demo-wordpress.mp4"
+        },
+        {
+          "id": "demo-ftp",
+          "file": "02-demo-ftp.mp4",
+          "title": "Acesso Servidor FTP",
+          "description": "Demonstração do serviço FTP isolado, estabelecendo conexão com os dados do WordPress.",
+          "category": "devops",
+          "duration": "32s",
+          "size_mb": 0.72,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/02-demo-ftp.mp4"
+        },
+        {
+          "id": "demo-adminer",
+          "file": "03-demo-adminer.mp4",
+          "title": "Interface Adminer - MariaDB",
+          "description": "Gestão e manipulação do banco de dados MariaDB da infraestrutura através do cliente web Adminer.",
+          "category": "devops",
+          "duration": "30s",
+          "size_mb": 0.77,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/03-demo-adminer.mp4"
+        },
+        {
+          "id": "demo-myprofile",
+          "file": "04-demo-myprofile.mp4",
+          "title": "Aplicação Auxiliar - MyProfile",
+          "description": "Demonstração do site auxiliar pessoal que corre num contentor da infraestrutura Inception.",
+          "category": "devops",
+          "duration": "18s",
+          "size_mb": 1.4,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/videos/04-demo-myprofile.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/Inception2.0"
+  },
+  "stockcontrol": {
+    "id": "stockcontrol",
+    "name": "StockControl — Miss Xtrela",
+    "tagline": {
+      "pt": "Sistema Desktop Moderno de Controlo de Estoque com Autenticação por Reconhecimento Facial, Gráficos Interativos e Exportação de Relatórios",
+      "en": "Modern Desktop Inventory Management System with Facial Recognition Authentication, Interactive Charts, and Report Generation"
+    },
+    "category": "desktop",
+    "featured": true,
+    "architecture_type": "Desktop Application with MVC Architecture (Python, PySide6/Qt6, SQLite, OpenCV LBPH)",
+    "about": {
+      "pt": "O StockControl é uma aplicação desktop desenvolvida em Python com PySide6 (Qt6) para a gestão e controlo completo de estoque de produtos de beleza da marca Miss Xtrela. A aplicação combina uma interface gráfica moderna sem bordas nativas do sistema operativo com segurança biométrica avançada via reconhecimento facial em tempo real utilizando o algoritmo LBPH (Local Binary Patterns Histograms) do OpenCV com classificador Haar Cascade. O sistema implementa autenticação dupla (senha criptografada + Face ID), gestão completa de inventário com cadastro, edição, remoção e busca de produtos por categoria, controlo de quantidade mínima com alertas de reposição, histórico detalhado de movimentações (entradas e saídas), gráficos interativos de barras e linhas via QtCharts para acompanhamento mensal, indicadores circulares de progresso para status do estoque, envio assíncrono de notificações por e-mail em background via QThreadPool, exportação automática de relatórios em Excel (openpyxl) e suporte a temas configuráveis (Light/Dark mode) com persistência em JSON.",
+      "en": "StockControl is a desktop application built with Python and PySide6 (Qt6) for complete inventory management of beauty products for the Miss Xtrela brand. The application combines a modern frameless GUI with advanced biometric security via real-time facial recognition using OpenCV's LBPH (Local Binary Patterns Histograms) algorithm with Haar Cascade classifier. The system implements dual authentication (encrypted password + Face ID), full inventory management with product CRUD operations and category-based search, minimum stock level alerts with replenishment warnings, detailed movement history (entries and exits), interactive bar and line charts via QtCharts for monthly tracking, circular progress indicators for stock status, asynchronous email notifications via QThreadPool, automatic Excel report generation (openpyxl), and configurable theme support (Light/Dark mode) with JSON persistence."
+    },
+    "highlights": [
+      "Autenticação biométrica dupla com reconhecimento facial em tempo real (LBPH + Haar Cascade) e senha criptografada",
+      "Interface gráfica moderna frameless (sem bordas do SO) com PySide6/Qt6 e suporte a temas Light/Dark",
+      "Dashboard completo com cards de resumo, gráficos de barras e linhas interativos (QtCharts) e indicadores circulares",
+      "Gestão completa de inventário com cadastro, edição, remoção e busca de produtos por categoria e grupo",
+      "Controlo de quantidade mínima com alertas visuais de reposição e nível ótimo de estoque",
+      "Histórico detalhado de movimentações de entrada e saída com filtros por requisitor, data e tipo",
+      "Gráfico de distribuição por categoria com donut chart e legenda interativa de cores",
+      "Exportação automática de relatórios em Excel (openpyxl) com totais de entradas e saídas",
+      "Envio assíncrono de notificações por e-mail em background via QThreadPool sem bloquear a interface",
+      "Animações de transição fluidas entre painéis e componentes visuais reutilizáveis customizados"
+    ],
+    "technologies": [
+      "Python",
+      "PySide6 / Qt6",
+      "OpenCV",
+      "SQLite",
+      "QtCharts",
+      "Pandas",
+      "OpenPyXL",
+      "Haar Cascade",
+      "LBPH",
+      "uv"
+    ],
+    "links": {
+      "repository": "https://github.com/NdondaDaniel2020/stockControl"
+    },
+    "media": {
+      "cover": "/projects-media/stockcontrol/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "/projects-media/stockcontrol/gallery/demo.mp4",
+          "caption": "Demonstração Completa do StockControl: Login, Dashboard, Gestão de Estoque e Gráficos"
+        },
+        {
+          "type": "video",
+          "src": "/projects-media/stockcontrol/gallery/02-face-id-login.mp4",
+          "caption": "Animação do Reconhecimento Facial em Tempo Real via OpenCV LBPH para Autenticação Biométrica"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/01-lock-screen.webp",
+          "caption": "Ecrã de Bloqueio com Branding Miss Xtrela, Toggle Face ID e Troca de Utilizador"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/02-login-screen.webp",
+          "caption": "Formulário de Login com Autenticação por Senha e Alternativa Biométrica (Face ID)"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/03-dashboard.webp",
+          "caption": "Dashboard Principal com Cards de Resumo (Saídas, Entradas, Stock, Utilizador) e Gráfico de Movimentação Mensal"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/04-stock-management.webp",
+          "caption": "Painel de Gestão de Estoque com Filtros de Entrada/Saída e Botões de Ação Rápida"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/05-charts-analytics.webp",
+          "caption": "Gráficos de Linha Interativos: Visão Geral Anual e Detalhamento Mensal de Movimentações"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/06-settings-transactions.webp",
+          "caption": "Painel de Definições com Tabela de Transações, Filtros por Data e Exportação XLSX"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/07-stock-product-list.webp",
+          "caption": "Lista de Produtos com Donut Chart de Distribuição por Categoria, Quantidades e Valores em Kz"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-stockcontrol",
+          "file": "01-demo-stockcontrol.mp4",
+          "title": "Showcase Completo do StockControl — Miss Xtrela",
+          "description": "Demonstração prática de todas as funcionalidades: autenticação dupla (senha + Face ID), dashboard com gráficos interativos, gestão de inventário, movimentações de entrada/saída e exportação de relatórios.",
+          "category": "desktop",
+          "duration": "46s",
+          "size_mb": 0.98,
+          "src": "/projects-media/stockcontrol/videos/01-demo-stockcontrol.mp4"
+        },
+        {
+          "id": "face-id-login",
+          "file": "02-face-id-login.mp4",
+          "title": "Reconhecimento Facial em Tempo Real (OpenCV LBPH)",
+          "description": "Demonstração do fluxo de autenticação biométrica com detecção e reconhecimento facial em tempo real usando o algoritmo LBPH e classificador Haar Cascade do OpenCV.",
+          "category": "desktop",
+          "duration": "18s",
+          "size_mb": 0.21,
+          "src": "/projects-media/stockcontrol/videos/02-face-id-login.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/stockControl"
+  },
+  "stock-control": {
+    "id": "stockcontrol",
+    "name": "StockControl — Miss Xtrela",
+    "tagline": {
+      "pt": "Sistema Desktop Moderno de Controlo de Estoque com Autenticação por Reconhecimento Facial, Gráficos Interativos e Exportação de Relatórios",
+      "en": "Modern Desktop Inventory Management System with Facial Recognition Authentication, Interactive Charts, and Report Generation"
+    },
+    "category": "desktop",
+    "featured": true,
+    "architecture_type": "Desktop Application with MVC Architecture (Python, PySide6/Qt6, SQLite, OpenCV LBPH)",
+    "about": {
+      "pt": "O StockControl é uma aplicação desktop desenvolvida em Python com PySide6 (Qt6) para a gestão e controlo completo de estoque de produtos de beleza da marca Miss Xtrela. A aplicação combina uma interface gráfica moderna sem bordas nativas do sistema operativo com segurança biométrica avançada via reconhecimento facial em tempo real utilizando o algoritmo LBPH (Local Binary Patterns Histograms) do OpenCV com classificador Haar Cascade. O sistema implementa autenticação dupla (senha criptografada + Face ID), gestão completa de inventário com cadastro, edição, remoção e busca de produtos por categoria, controlo de quantidade mínima com alertas de reposição, histórico detalhado de movimentações (entradas e saídas), gráficos interativos de barras e linhas via QtCharts para acompanhamento mensal, indicadores circulares de progresso para status do estoque, envio assíncrono de notificações por e-mail em background via QThreadPool, exportação automática de relatórios em Excel (openpyxl) e suporte a temas configuráveis (Light/Dark mode) com persistência em JSON.",
+      "en": "StockControl is a desktop application built with Python and PySide6 (Qt6) for complete inventory management of beauty products for the Miss Xtrela brand. The application combines a modern frameless GUI with advanced biometric security via real-time facial recognition using OpenCV's LBPH (Local Binary Patterns Histograms) algorithm with Haar Cascade classifier. The system implements dual authentication (encrypted password + Face ID), full inventory management with product CRUD operations and category-based search, minimum stock level alerts with replenishment warnings, detailed movement history (entries and exits), interactive bar and line charts via QtCharts for monthly tracking, circular progress indicators for stock status, asynchronous email notifications via QThreadPool, automatic Excel report generation (openpyxl), and configurable theme support (Light/Dark mode) with JSON persistence."
+    },
+    "highlights": [
+      "Autenticação biométrica dupla com reconhecimento facial em tempo real (LBPH + Haar Cascade) e senha criptografada",
+      "Interface gráfica moderna frameless (sem bordas do SO) com PySide6/Qt6 e suporte a temas Light/Dark",
+      "Dashboard completo com cards de resumo, gráficos de barras e linhas interativos (QtCharts) e indicadores circulares",
+      "Gestão completa de inventário com cadastro, edição, remoção e busca de produtos por categoria e grupo",
+      "Controlo de quantidade mínima com alertas visuais de reposição e nível ótimo de estoque",
+      "Histórico detalhado de movimentações de entrada e saída com filtros por requisitor, data e tipo",
+      "Gráfico de distribuição por categoria com donut chart e legenda interativa de cores",
+      "Exportação automática de relatórios em Excel (openpyxl) com totais de entradas e saídas",
+      "Envio assíncrono de notificações por e-mail em background via QThreadPool sem bloquear a interface",
+      "Animações de transição fluidas entre painéis e componentes visuais reutilizáveis customizados"
+    ],
+    "technologies": [
+      "Python",
+      "PySide6 / Qt6",
+      "OpenCV",
+      "SQLite",
+      "QtCharts",
+      "Pandas",
+      "OpenPyXL",
+      "Haar Cascade",
+      "LBPH",
+      "uv"
+    ],
+    "links": {
+      "repository": "https://github.com/NdondaDaniel2020/stockControl"
+    },
+    "media": {
+      "cover": "/projects-media/stockcontrol/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "/projects-media/stockcontrol/gallery/demo.mp4",
+          "caption": "Demonstração Completa do StockControl: Login, Dashboard, Gestão de Estoque e Gráficos"
+        },
+        {
+          "type": "video",
+          "src": "/projects-media/stockcontrol/gallery/02-face-id-login.mp4",
+          "caption": "Animação do Reconhecimento Facial em Tempo Real via OpenCV LBPH para Autenticação Biométrica"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/01-lock-screen.webp",
+          "caption": "Ecrã de Bloqueio com Branding Miss Xtrela, Toggle Face ID e Troca de Utilizador"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/02-login-screen.webp",
+          "caption": "Formulário de Login com Autenticação por Senha e Alternativa Biométrica (Face ID)"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/03-dashboard.webp",
+          "caption": "Dashboard Principal com Cards de Resumo (Saídas, Entradas, Stock, Utilizador) e Gráfico de Movimentação Mensal"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/04-stock-management.webp",
+          "caption": "Painel de Gestão de Estoque com Filtros de Entrada/Saída e Botões de Ação Rápida"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/05-charts-analytics.webp",
+          "caption": "Gráficos de Linha Interativos: Visão Geral Anual e Detalhamento Mensal de Movimentações"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/06-settings-transactions.webp",
+          "caption": "Painel de Definições com Tabela de Transações, Filtros por Data e Exportação XLSX"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/stockcontrol/gallery/07-stock-product-list.webp",
+          "caption": "Lista de Produtos com Donut Chart de Distribuição por Categoria, Quantidades e Valores em Kz"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-stockcontrol",
+          "file": "01-demo-stockcontrol.mp4",
+          "title": "Showcase Completo do StockControl — Miss Xtrela",
+          "description": "Demonstração prática de todas as funcionalidades: autenticação dupla (senha + Face ID), dashboard com gráficos interativos, gestão de inventário, movimentações de entrada/saída e exportação de relatórios.",
+          "category": "desktop",
+          "duration": "46s",
+          "size_mb": 0.98,
+          "src": "/projects-media/stockcontrol/videos/01-demo-stockcontrol.mp4"
+        },
+        {
+          "id": "face-id-login",
+          "file": "02-face-id-login.mp4",
+          "title": "Reconhecimento Facial em Tempo Real (OpenCV LBPH)",
+          "description": "Demonstração do fluxo de autenticação biométrica com detecção e reconhecimento facial em tempo real usando o algoritmo LBPH e classificador Haar Cascade do OpenCV.",
+          "category": "desktop",
+          "duration": "18s",
+          "size_mb": 0.21,
+          "src": "/projects-media/stockcontrol/videos/02-face-id-login.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/stockControl"
+  },
+  "salesmanagement": {
+    "id": "salesmanagement",
+    "name": "SalesManagement MX",
+    "tagline": {
+      "pt": "Sistema Desktop PDV & ERP para Gestão Comercial com Fluent Design, Scanner Barcode por Câmera e Métricas em Tempo Real",
+      "en": "Desktop POS & ERP Retail Management Suite with Fluent Design, Camera Barcode Scanner, and Real-Time Analytics"
+    },
+    "category": "desktop",
+    "featured": true,
+    "architecture_type": "Layered Desktop Architecture (PySide6 / Qt, Clean Architecture with Models, Repositories, Services, and Background Workers)",
+    "about": {
+      "pt": "O SalesManagement MX é uma solução desktop completa de Ponto de Venda (PDV) e Planeamento de Recursos Empresariais (ERP) desenvolvida em Python e PySide6/Qt com estética Fluent Design da Microsoft. O sistema oferece controlo abrangente de inventário e stock com alertas de validade, registo de compras e vendas atómicas, leitura contínua de códigos de barras com visão computacional via câmara em thread dedicada (QThread) a 60+ FPS, emissão de faturas e recibos em PDF com ReportLab, além de dashboards dinâmicos com gráficos interativos de desempenho financeiro e ranking de operadores.",
+      "en": "SalesManagement MX is a comprehensive desktop Point of Sale (POS) and Enterprise Resource Planning (ERP) suite developed with Python and PySide6/Qt, featuring a sleek modern Microsoft Fluent Design UI. The system delivers complete inventory control with product expiration alerts, atomic sales and purchase transactions, non-blocking real-time computer vision barcode scanning via camera on a dedicated QThread at 60+ FPS, ReportLab PDF receipt/invoice generation, and dynamic analytical dashboards with performance charts and staff rankings."
+    },
+    "highlights": [
+      "Interface moderna Fluent Design com tema Dark e componentes fluidos (PySide6 / QFluentWidgets)",
+      "Arquitetura limpa em camadas (Models, Repositories, Services e Workers assíncronos)",
+      "Processamento de vídeo e leitura de código de barras em background com QThread a 60+ FPS",
+      "Transações ACID em SQLite com modo WAL (Write-Ahead Logging) e proteção total contra SQL Injection",
+      "Controle em tempo real de stock, produtos, categorias, perdas e alertas de validade",
+      "Emissão de pedidos de compra e recibos fiscais padronizados em PDF via ReportLab",
+      "Dashboards analíticos com métricas de vendas, histórico por categoria e desempenho de operadores",
+      "Gerenciador de pacotes e execução ultrarrápida com uv (Python 3.12)"
+    ],
+    "technologies": [
+      "Python",
+      "PySide6",
+      "Qt",
+      "QFluentWidgets",
+      "OpenCV",
+      "pyzbar",
+      "SQLite",
+      "ReportLab",
+      "uv",
+      "Pillow"
+    ],
+    "media": {
+      "cover": "/projects-media/salesmanagement/cover.webp",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/01-dashboard.webp",
+          "caption": "Dashboard Principal com Gráficos Analíticos, Métricas de Vendas e Desempenho da Equipa"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/02-inventory.webp",
+          "caption": "Painel de Inventário e Gestão de Produtos com Margens, Unidades e Preço em Kwanzas (Kz)"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/03-login.webp",
+          "caption": "Ecrã de Autenticação com Design Split Card, Suporte Biométrico e Splash Screen Animado"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/04-dashboard-analytics.webp",
+          "caption": "Dashboard Principal com Gráficos de Desempenho, Métricas e Ranking de Operadores"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/05-sales-actions.webp",
+          "caption": "Painel de Vendas com Ações Rápidas: Histórico, Relatório, Criar Produto e Pedido de Compra"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/06-inventory-chart.webp",
+          "caption": "Inventário com Gráfico de Evolução, Percentual de Stock e Lista de Produtos"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/07-inventory-home.webp",
+          "caption": "Ecrã Inicial do Inventário com Cards de Navegação Rápida"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/08-shopping-cart.webp",
+          "caption": "Carrinho de Compras com Itens, Quantidades e Valores Totais em Kwanzas"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/09-sales-report.webp",
+          "caption": "Relatório de Vendas Mensal com Gráfico de Barras e Percentuais por Categoria"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/10-product-search.webp",
+          "caption": "Modal de Pesquisa e Seleção de Produtos com Preços e Quantidades"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/11-barcode-scanner.webp",
+          "caption": "Scanner de Código de Barras por Câmera com Captura em Tempo Real"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/12-product-selector.webp",
+          "caption": "Modal de Seleção de Produtos para Pedido de Compra"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-salesmanagement",
+          "file": "01-demo-salesmanagement.mp4",
+          "title": "Demonstração Completa do SalesManagement MX",
+          "description": "Demonstração em tempo real das funcionalidades do SalesManagement MX: autenticação com splash screen animada, navegação Fluent Design, gestão de inventário e estoque, leitura de código de barras por visão computacional via câmera a 60+ FPS e relatórios analíticos de vendas.",
+          "category": "desktop",
+          "duration": "46s",
+          "size_mb": 0.8,
+          "src": "/projects-media/salesmanagement/videos/01-demo-salesmanagement.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/SalesManagement"
+  },
+  "sales-management": {
+    "id": "salesmanagement",
+    "name": "SalesManagement MX",
+    "tagline": {
+      "pt": "Sistema Desktop PDV & ERP para Gestão Comercial com Fluent Design, Scanner Barcode por Câmera e Métricas em Tempo Real",
+      "en": "Desktop POS & ERP Retail Management Suite with Fluent Design, Camera Barcode Scanner, and Real-Time Analytics"
+    },
+    "category": "desktop",
+    "featured": true,
+    "architecture_type": "Layered Desktop Architecture (PySide6 / Qt, Clean Architecture with Models, Repositories, Services, and Background Workers)",
+    "about": {
+      "pt": "O SalesManagement MX é uma solução desktop completa de Ponto de Venda (PDV) e Planeamento de Recursos Empresariais (ERP) desenvolvida em Python e PySide6/Qt com estética Fluent Design da Microsoft. O sistema oferece controlo abrangente de inventário e stock com alertas de validade, registo de compras e vendas atómicas, leitura contínua de códigos de barras com visão computacional via câmara em thread dedicada (QThread) a 60+ FPS, emissão de faturas e recibos em PDF com ReportLab, além de dashboards dinâmicos com gráficos interativos de desempenho financeiro e ranking de operadores.",
+      "en": "SalesManagement MX is a comprehensive desktop Point of Sale (POS) and Enterprise Resource Planning (ERP) suite developed with Python and PySide6/Qt, featuring a sleek modern Microsoft Fluent Design UI. The system delivers complete inventory control with product expiration alerts, atomic sales and purchase transactions, non-blocking real-time computer vision barcode scanning via camera on a dedicated QThread at 60+ FPS, ReportLab PDF receipt/invoice generation, and dynamic analytical dashboards with performance charts and staff rankings."
+    },
+    "highlights": [
+      "Interface moderna Fluent Design com tema Dark e componentes fluidos (PySide6 / QFluentWidgets)",
+      "Arquitetura limpa em camadas (Models, Repositories, Services e Workers assíncronos)",
+      "Processamento de vídeo e leitura de código de barras em background com QThread a 60+ FPS",
+      "Transações ACID em SQLite com modo WAL (Write-Ahead Logging) e proteção total contra SQL Injection",
+      "Controle em tempo real de stock, produtos, categorias, perdas e alertas de validade",
+      "Emissão de pedidos de compra e recibos fiscais padronizados em PDF via ReportLab",
+      "Dashboards analíticos com métricas de vendas, histórico por categoria e desempenho de operadores",
+      "Gerenciador de pacotes e execução ultrarrápida com uv (Python 3.12)"
+    ],
+    "technologies": [
+      "Python",
+      "PySide6",
+      "Qt",
+      "QFluentWidgets",
+      "OpenCV",
+      "pyzbar",
+      "SQLite",
+      "ReportLab",
+      "uv",
+      "Pillow"
+    ],
+    "media": {
+      "cover": "/projects-media/salesmanagement/cover.webp",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/01-dashboard.webp",
+          "caption": "Dashboard Principal com Gráficos Analíticos, Métricas de Vendas e Desempenho da Equipa"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/02-inventory.webp",
+          "caption": "Painel de Inventário e Gestão de Produtos com Margens, Unidades e Preço em Kwanzas (Kz)"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/03-login.webp",
+          "caption": "Ecrã de Autenticação com Design Split Card, Suporte Biométrico e Splash Screen Animado"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/04-dashboard-analytics.webp",
+          "caption": "Dashboard Principal com Gráficos de Desempenho, Métricas e Ranking de Operadores"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/05-sales-actions.webp",
+          "caption": "Painel de Vendas com Ações Rápidas: Histórico, Relatório, Criar Produto e Pedido de Compra"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/06-inventory-chart.webp",
+          "caption": "Inventário com Gráfico de Evolução, Percentual de Stock e Lista de Produtos"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/07-inventory-home.webp",
+          "caption": "Ecrã Inicial do Inventário com Cards de Navegação Rápida"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/08-shopping-cart.webp",
+          "caption": "Carrinho de Compras com Itens, Quantidades e Valores Totais em Kwanzas"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/09-sales-report.webp",
+          "caption": "Relatório de Vendas Mensal com Gráfico de Barras e Percentuais por Categoria"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/10-product-search.webp",
+          "caption": "Modal de Pesquisa e Seleção de Produtos com Preços e Quantidades"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/11-barcode-scanner.webp",
+          "caption": "Scanner de Código de Barras por Câmera com Captura em Tempo Real"
+        },
+        {
+          "type": "image",
+          "src": "/projects-media/salesmanagement/gallery/12-product-selector.webp",
+          "caption": "Modal de Seleção de Produtos para Pedido de Compra"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-salesmanagement",
+          "file": "01-demo-salesmanagement.mp4",
+          "title": "Demonstração Completa do SalesManagement MX",
+          "description": "Demonstração em tempo real das funcionalidades do SalesManagement MX: autenticação com splash screen animada, navegação Fluent Design, gestão de inventário e estoque, leitura de código de barras por visão computacional via câmera a 60+ FPS e relatórios analíticos de vendas.",
+          "category": "desktop",
+          "duration": "46s",
+          "size_mb": 0.8,
+          "src": "/projects-media/salesmanagement/videos/01-demo-salesmanagement.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/SalesManagement"
+  },
+  "antigravity-history-restorer": {
+    "id": "antigravity-history-restorer",
+    "name": "Antigravity History Restorer",
+    "tagline": {
+      "pt": "Extensão para Antigravity IDE que Recupera e Reindexa Conversas de Chat de IA Perdidas com 1 Clique via RPC no Language Server",
+      "en": "Antigravity IDE Extension that Recovers and Re-indexes Missing AI Chat Conversations with 1 Click via Language Server RPC"
+    },
+    "category": "tools",
+    "featured": true,
+    "architecture_type": "TypeScript VS Code Extension & Autonomous IPC Bridge for Antigravity Language Server RPC",
+    "about": {
+      "pt": "O Antigravity History Restorer é uma extensão desenvolvida para o Google Antigravity IDE (e forks do VS Code com suporte a IA) para resolver o problema crítico de perda temporária de histórico de chats em atualizações, reinstalações ou trocas de versão (ex: Standalone vs Snap). Embora o editor mantenha os bancos de dados SQLite preservados no disco (~/.gemini/antigravity-ide/conversations/), a interface gráfica pode perder o índice de resumos em cache (state.vscdb). A extensão atua de forma autônoma e 100% local: descobre dinamicamente o PID do Language Server ativo em execução na máquina, extrai as portas locais em escuta e o token CSRF de autenticação, e executa chamadas RPC no Connect Protocol para 'acordar' e reindexar cada conversa persistida, trazendo todas as sessões de volta à interface em segundos com barra de progresso em tempo real.",
+      "en": "Antigravity History Restorer is a developer extension built for Google Antigravity IDE (and AI-enabled VS Code forks) solving the critical issue of lost chat history after editor updates, reinstalls, or packaging transitions (e.g. Standalone vs Snap). While the IDE safely preserves SQLite trajectory databases on disk (~/.gemini/antigravity-ide/conversations/), the frontend UI cache (state.vscdb) can drop its conversation index. The extension operates autonomously and 100% locally: dynamically detecting the running Language Server PID, discovering listening localhost ports and the required CSRF authentication token, and dispatching Connect-Protocol RPC requests to re-index and revive every persisted chat trajectory back into the editor UI within seconds with a live native progress notification."
+    },
+    "highlights": [
+      "Recuperação de conversas em 1 clique pela Paleta de Comandos ('Antigravity: Restore Missing Chats')",
+      "Descoberta dinâmica e autônoma do processo do Language Server, portas locais ativas e token CSRF via IPC/lsof",
+      "Comunicação direta via RPC local com Connect-Protocol-Version: 1 e autenticação X-Codeium-Csrf-Token",
+      "Varredura não destrutiva dos bancos SQLite locais (~/.gemini/antigravity-ide/conversations/*.db) com 100% de segurança",
+      "Notificação nativa no VS Code com contagem e progresso em tempo real das conversas recuperadas",
+      "Publicada oficialmente no Open VSX Registry sob namespace verificado NdondaDaniel2020 com mais de 600 downloads",
+      "Compatibilidade multiplataforma testada em Linux (incluindo confinamento clássico do Snap), macOS e Windows",
+      "Bundle otimizado com esbuild para inicialização instantânea e zero dependências pesadas em runtime",
+      "Script CLI complementar em Python (scripts/restore_antigravity_history.py) para execução direta no terminal",
+      "Artigo técnico bilíngue (Português e Inglês) documentando engenharia reversa e arquitetura interna do editor"
+    ],
+    "technologies": [
+      "TypeScript",
+      "VS Code Extension API",
+      "Antigravity IDE",
+      "Connect Protocol / RPC",
+      "SQLite",
+      "Node.js",
+      "esbuild",
+      "Open VSX Registry",
+      "Linux / Snap",
+      "Python"
+    ],
+    "links": {
+      "repository": "https://github.com/NdondaDaniel2020/antigravity-history-restorer",
+      "marketplace": "https://open-vsx.org/extension/NdondaDaniel2020/antigravity-history-restorer"
+    },
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/gallery/demo.mp4",
+          "caption": "Demonstração Prática da Restauração de Histórico com 1 Clique no Antigravity IDE"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/gallery/01-open-vsx-registry.webp",
+          "caption": "Página Oficial da Extensão no Open VSX Registry com Mais de 600 Downloads e Versão 0.1.1"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/gallery/02-extension-overview.webp",
+          "caption": "Visão Geral Técnica, Recursos e Instruções de Uso na Interface de Extensões"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/gallery/03-ide-marketplace.webp",
+          "caption": "Extensão Instalada e Gerenciada Dentro da Loja de Extensões do Antigravity IDE"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/gallery/04-live-chat-restoration.webp",
+          "caption": "Execução em Tempo Real do Comando de Restauração com Notificação de Progresso e Indexação"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-history-restorer",
+          "file": "01-demo-history-restorer.mp4",
+          "title": "Showcase Completo do Antigravity History Restorer",
+          "description": "Demonstração prática da extensão Antigravity History Restorer recuperando conversas perdidas do cache da interface gráfica, comunicando-se com o Language Server local e reindexando todos os bancos SQLite de conversas em segundos.",
+          "category": "tools",
+          "duration": "46s",
+          "size_mb": 1.44,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/videos/01-demo-history-restorer.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-history-restorer"
+  },
+  "minishell": {
+    "id": "minishell",
+    "name": "Minishell (TeamWork Shell)",
+    "tagline": {
+      "pt": "Interpretador de Comandos UNIX em C com Gestão de Processos, Pipelines Concorrentes, Redirecionamentos e Sinais POSIX",
+      "en": "UNIX Command Interpreter in C with Process Management, Concurrent Pipelines, Redirections, and POSIX Signals"
+    },
+    "category": "systems",
+    "featured": true,
+    "architecture_type": "Unix Command Interpreter & Process Management Engine in C (POSIX)",
+    "about": {
+      "pt": "O Minishell é uma implementação em linguagem C de um interpretador de comandos (shell) compatível com o comportamento do Bash, desenvolvido no currículo comum da 42. O projeto simula o funcionamento interno de um sistema operativo ao implementar leitura interativa com histórico via GNU Readline, análise léxica (lexer/tokenizer) com tratamento estrito de aspas simples e duplas, expansão dinâmica de variáveis de ambiente ($VAR) e código de retorno ($?), execução de comandos externos via busca no PATH e comandos internos (built-ins) otimizados. O núcleo do motor gerencia pipelines encadeados (|) com criação concorrente de processos filhos (fork, pipe e dup2), redirecionamentos flexíveis (<, >, >> e Here-doc << com expansão), além de controlo robusto de sinais do terminal (SIGINT, SIGQUIT e EOF) para garantir estabilidade contínua sem vazamentos de memória.",
+      "en": "Minishell is a C implementation of a UNIX command line interpreter modeled after Bash behavior, developed as part of the 42 School common core curriculum. The project mirrors operating system internals by implementing interactive user input with history via GNU Readline, lexical parsing (lexer/tokenizer) with strict single/double quote handling, dynamic environment variable expansion ($VAR) and exit status retrieval ($?), external binary execution via PATH resolution, and optimized custom built-in commands. The execution engine orchestrates chained multi-stage pipelines (|) with concurrent child process management (fork, pipe, dup2), flexible I/O file redirections (<, >, >>, and Here-doc << with expansion), and robust terminal signal handling (SIGINT, SIGQUIT, EOF) guaranteeing non-blocking operation and zero memory leaks."
+    },
+    "highlights": [
+      "Motor de execução de processos UNIX com fork(), execve(), pipe() e dup2() para pipelines encadeados",
+      "Implementação completa de 7 comandos built-in essenciais: echo (com flag -n), cd, pwd, export, unset, env e exit",
+      "Parser léxico e expansor com suporte a aspas duplas, aspas simples, variáveis de ambiente ($VAR) e status de retorno ($?)",
+      "Suporte avançado a redirecionamentos de I/O: entrada (<), saída truncada (>), saída acumulada (>>) e Here-doc interativo (<<)",
+      "Gestão precisa de sinais POSIX com termios/sigaction (Ctrl-C para interrupção de linha, Ctrl-D para EOF e Ctrl-\\ sem interrupção)",
+      "Prompt interativo customizado ('TeamWork>') integrado à biblioteca GNU Readline com navegação no histórico",
+      "Resolução dinâmica de executáveis no PATH do sistema com suporte a caminhos absolutos e relativos",
+      "Gestão rigorosa de memória e encerramento seguro de descritores de arquivos, prevenindo leaks e processos zumbis"
+    ],
+    "technologies": [
+      "C",
+      "UNIX / POSIX",
+      "Process Management",
+      "Pipes & Redirections",
+      "Signal Handling",
+      "GNU Readline",
+      "Libft",
+      "Makefile",
+      "Linux"
+    ],
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/demo.mp4",
+          "caption": "Demonstração Completa do Minishell: Pipelines, Built-ins, Redirecionamentos e Sinais"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/01-pipelines-heredoc.webp",
+          "caption": "Execução de Here-doc (<< EOF) e Encadeamento de Comandos com Pipes no Prompt TeamWork"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/02-multi-pipe-filter.webp",
+          "caption": "Pipeline Sequencial Múltiplo (ls -l | sort | head) com Manipulação de Streams"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/03-advanced-pipe-chain.webp",
+          "caption": "Pipeline Avançado de 4 Estágios Processando Streams do Sistema Operativo"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/04-env-expansion.webp",
+          "caption": "Comando Built-in Export e Expansão Dinâmica de Variáveis de Ambiente ($A$B)"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/05-builtins-execution.webp",
+          "caption": "Validação de Built-ins (cd, pwd, echo, unset), Inspeção de Status ($?) e Gestão de Erros"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-minishell",
+          "file": "01-demo-minishell.mp4",
+          "title": "Showcase Completo do Minishell (UNIX Shell em C)",
+          "description": "Demonstração prática de todas as capacidades do Minishell: execução de binários externos via PATH, comandos internos (echo, cd, pwd, export, unset, env, exit), expansão de variáveis, sinais SIGINT/SIGQUIT, redirecionamentos complexos (<, >, >>, <<) e pipelines concorrentes.",
+          "category": "systems",
+          "duration": "165s",
+          "size_mb": 1.15,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/videos/01-demo-minishell.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/Minishell"
   },
   "webserver": {
     "id": "webserver",
@@ -175,89 +1368,260 @@
     },
     "githubUrl": "https://github.com/NdondaDaniel2020/Webserver"
   },
-  "minishell": {
-    "id": "minishell",
-    "name": "Minishell (TeamWork Shell)",
+  "solong": {
+    "id": "solong",
+    "name": "so_long (Ninja SoLong)",
     "tagline": {
-      "pt": "Interpretador de Comandos UNIX em C com Gestão de Processos, Pipelines Concorrentes, Redirecionamentos e Sinais POSIX",
-      "en": "UNIX Command Interpreter in C with Process Management, Concurrent Pipelines, Redirections, and POSIX Signals"
+      "pt": "Jogo 2D de Plataforma e Aventura em C com MiniLibX, Física de Gravidade, Validação Flood-Fill e IA Inimiga",
+      "en": "2D Platformer & Adventure Game in C with MiniLibX, Gravity Physics, Flood-Fill Validation, and Enemy AI"
     },
-    "category": "systems",
+    "category": "gamedev",
     "featured": true,
-    "architecture_type": "Unix Command Interpreter & Process Management Engine in C (POSIX)",
+    "architecture_type": "2D Tile-Based Game Engine with MiniLibX (X11) in C",
     "about": {
-      "pt": "O Minishell é uma implementação em linguagem C de um interpretador de comandos (shell) compatível com o comportamento do Bash, desenvolvido no currículo comum da 42. O projeto simula o funcionamento interno de um sistema operativo ao implementar leitura interativa com histórico via GNU Readline, análise léxica (lexer/tokenizer) com tratamento estrito de aspas simples e duplas, expansão dinâmica de variáveis de ambiente ($VAR) e código de retorno ($?), execução de comandos externos via busca no PATH e comandos internos (built-ins) otimizados. O núcleo do motor gerencia pipelines encadeados (|) com criação concorrente de processos filhos (fork, pipe e dup2), redirecionamentos flexíveis (<, >, >> e Here-doc << com expansão), além de controlo robusto de sinais do terminal (SIGINT, SIGQUIT e EOF) para garantir estabilidade contínua sem vazamentos de memória.",
-      "en": "Minishell is a C implementation of a UNIX command line interpreter modeled after Bash behavior, developed as part of the 42 School common core curriculum. The project mirrors operating system internals by implementing interactive user input with history via GNU Readline, lexical parsing (lexer/tokenizer) with strict single/double quote handling, dynamic environment variable expansion ($VAR) and exit status retrieval ($?), external binary execution via PATH resolution, and optimized custom built-in commands. The execution engine orchestrates chained multi-stage pipelines (|) with concurrent child process management (fork, pipe, dup2), flexible I/O file redirections (<, >, >>, and Here-doc << with expansion), and robust terminal signal handling (SIGINT, SIGQUIT, EOF) guaranteeing non-blocking operation and zero memory leaks."
+      "pt": "O so_long (Ninja SoLong) é um jogo 2D de aventura e plataformas desenvolvido em linguagem C utilizando a biblioteca gráfica MiniLibX (X11). No papel de uma ágil Kunoichi (ninja feminina), o jogador deve percorrer dojos e labirintos orientais, recolher todas as estrelas ninja (shurikens) e alcançar o portal místico de escape. O projeto destaca-se pelo parser estrito de mapas .ber com validação de caminho jogável via algoritmo Flood-Fill, gestão manual de janelas e eventos de teclado/fecho em X11, e um modo Bónus completo que introduz física de gravidade em tempo real (sistema de queda e pulo estilo platformer), ciclos de sprites animados, inteligência artificial de patrulha com perseguição de inimigos e um HUD dinâmico na tela desenhando contadores de passos e colecionáveis.",
+      "en": "so_long (Ninja SoLong) is a 2D tile-based platformer and adventure game developed in C using the MiniLibX (X11) graphics library. Controlling an agile Kunoichi (female ninja), the player must navigate oriental dojos and labyrinths, gather all ninja stars (shurikens), and escape through a mystical portal. The project features a strict .ber map parser with path validity verification using the Flood-Fill algorithm, low-level X11 window and keyboard event handling, and a full Bonus expansion introducing real-time gravity physics (platformer jump and fall system), animated sprite loops, patrolling enemy AI with dynamic player pursuit, and an on-screen HUD rendering move counters and collectible stats directly on the canvas."
     },
     "highlights": [
-      "Motor de execução de processos UNIX com fork(), execve(), pipe() e dup2() para pipelines encadeados",
-      "Implementação completa de 7 comandos built-in essenciais: echo (com flag -n), cd, pwd, export, unset, env e exit",
-      "Parser léxico e expansor com suporte a aspas duplas, aspas simples, variáveis de ambiente ($VAR) e status de retorno ($?)",
-      "Suporte avançado a redirecionamentos de I/O: entrada (<), saída truncada (>), saída acumulada (>>) e Here-doc interativo (<<)",
-      "Gestão precisa de sinais POSIX com termios/sigaction (Ctrl-C para interrupção de linha, Ctrl-D para EOF e Ctrl-\\ sem interrupção)",
-      "Prompt interativo customizado ('TeamWork>') integrado à biblioteca GNU Readline com navegação no histórico",
-      "Resolução dinâmica de executáveis no PATH do sistema com suporte a caminhos absolutos e relativos",
-      "Gestão rigorosa de memória e encerramento seguro de descritores de arquivos, prevenindo leaks e processos zumbis"
+      "Motor de jogo 2D em C puro renderizando sprites e texturas XPM via MiniLibX (X11)",
+      "Validação rigorosa de mapas .ber garantindo perímetro fechado e caminhos válidos através de Flood-Fill",
+      "Física de plataformas no modo Bónus com gravidade contínua, mecânica de pulo e verificação de piso",
+      "Sistema de IA Inimiga com patrulha dinâmica, perseguição do jogador e mecânica de combate por pulo superior",
+      "Animações de sprites para a Kunoichi e inimigos com taxas de atualização fluidas",
+      "HUD dinâmico na tela desenhando contagem de passos e status de estrelas recolhidas em tempo real",
+      "Tratamento robusto de eventos de janela (destruição limpa, escape seguro e libertação total de memória)",
+      "Separação modularizada de código entre Mandatory (top-down) e Bonus (platformer physics)",
+      "Biblioteca auxiliar Libft integrada para parsing e manipulação eficiente de strings e memória"
     ],
     "technologies": [
       "C",
-      "UNIX / POSIX",
-      "Process Management",
-      "Pipes & Redirections",
-      "Signal Handling",
-      "GNU Readline",
+      "MiniLibX",
+      "X11",
       "Libft",
+      "Gamedev",
       "Makefile",
-      "Linux"
+      "Linux",
+      "Flood-Fill",
+      "Physics Engine"
     ],
     "media": {
-      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/cover.webp",
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/cover.webp",
       "gallery": [
         {
           "type": "video",
-          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/demo.mp4",
-          "caption": "Demonstração Completa do Minishell: Pipelines, Built-ins, Redirecionamentos e Sinais"
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/demo.mp4",
+          "caption": "Showcase Completo de Gameplay: Física de Plataforma, Movimentação Ninja, Coleta de Shurikens e IA Inimiga"
         },
         {
           "type": "image",
-          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/01-pipelines-heredoc.webp",
-          "caption": "Execução de Here-doc (<< EOF) e Encadeamento de Comandos com Pipes no Prompt TeamWork"
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/01-gameplay-corridor.webp",
+          "caption": "Gameplay em Corredor: Kunoichi em Ação no Dojo Ninja"
         },
         {
           "type": "image",
-          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/02-multi-pipe-filter.webp",
-          "caption": "Pipeline Sequencial Múltiplo (ls -l | sort | head) com Manipulação de Streams"
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/02-level-maze.webp",
+          "caption": "Design de Níveis: Labirinto com Tatames, Obstáculos e Distribuição Estratégica de Colecionáveis"
         },
         {
           "type": "image",
-          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/03-advanced-pipe-chain.webp",
-          "caption": "Pipeline Avançado de 4 Estágios Processando Streams do Sistema Operativo"
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/03-gameplay-desktop.webp",
+          "caption": "Visão Geral da Janela MiniLibX no Ambiente Desktop Linux"
         },
         {
           "type": "image",
-          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/04-env-expansion.webp",
-          "caption": "Comando Built-in Export e Expansão Dinâmica de Variáveis de Ambiente ($A$B)"
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/04-bonus-patrol.webp",
+          "caption": "Modo Bónus: Patrulha e Perseguição de Inimigos com Detecção de Proximidade"
         },
         {
           "type": "image",
-          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/gallery/05-builtins-execution.webp",
-          "caption": "Validação de Built-ins (cd, pwd, echo, unset), Inspeção de Status ($?) e Gestão de Erros"
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/05-level-overview.webp",
+          "caption": "Visão Panorâmica de Nível Extenso com Múltiplas Plataformas e Portais"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/06-platformer-physics.webp",
+          "caption": "Mecânica de Física 2D: Gravidade, Saltos entre Plataformas e Combate"
         }
       ],
       "videos": [
         {
-          "id": "demo-minishell",
-          "file": "01-demo-minishell.mp4",
-          "title": "Showcase Completo do Minishell (UNIX Shell em C)",
-          "description": "Demonstração prática de todas as capacidades do Minishell: execução de binários externos via PATH, comandos internos (echo, cd, pwd, export, unset, env, exit), expansão de variáveis, sinais SIGINT/SIGQUIT, redirecionamentos complexos (<, >, >>, <<) e pipelines concorrentes.",
-          "category": "systems",
-          "duration": "165s",
-          "size_mb": 1.15,
-          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/videos/01-demo-minishell.mp4"
+          "id": "demo-solong",
+          "file": "01-demo-solong.mp4",
+          "title": "Demonstração Completa de Gameplay (Modo Bónus e Física)",
+          "description": "Showcase completo do Ninja SoLong: demonstração da movimentação fluida, saltos com gravidade, recolha de shurikens, evasão de inimigos e escape através do portal místico.",
+          "category": "gamedev",
+          "duration": "191s",
+          "size_mb": 1.84,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/videos/01-demo-solong.mp4"
         }
       ]
     },
-    "githubUrl": "https://github.com/NdondaDaniel2020/Minishell"
+    "githubUrl": "https://github.com/NdondaDaniel2020/SoLong"
+  },
+  "so_long": {
+    "id": "solong",
+    "name": "so_long (Ninja SoLong)",
+    "tagline": {
+      "pt": "Jogo 2D de Plataforma e Aventura em C com MiniLibX, Física de Gravidade, Validação Flood-Fill e IA Inimiga",
+      "en": "2D Platformer & Adventure Game in C with MiniLibX, Gravity Physics, Flood-Fill Validation, and Enemy AI"
+    },
+    "category": "gamedev",
+    "featured": true,
+    "architecture_type": "2D Tile-Based Game Engine with MiniLibX (X11) in C",
+    "about": {
+      "pt": "O so_long (Ninja SoLong) é um jogo 2D de aventura e plataformas desenvolvido em linguagem C utilizando a biblioteca gráfica MiniLibX (X11). No papel de uma ágil Kunoichi (ninja feminina), o jogador deve percorrer dojos e labirintos orientais, recolher todas as estrelas ninja (shurikens) e alcançar o portal místico de escape. O projeto destaca-se pelo parser estrito de mapas .ber com validação de caminho jogável via algoritmo Flood-Fill, gestão manual de janelas e eventos de teclado/fecho em X11, e um modo Bónus completo que introduz física de gravidade em tempo real (sistema de queda e pulo estilo platformer), ciclos de sprites animados, inteligência artificial de patrulha com perseguição de inimigos e um HUD dinâmico na tela desenhando contadores de passos e colecionáveis.",
+      "en": "so_long (Ninja SoLong) is a 2D tile-based platformer and adventure game developed in C using the MiniLibX (X11) graphics library. Controlling an agile Kunoichi (female ninja), the player must navigate oriental dojos and labyrinths, gather all ninja stars (shurikens), and escape through a mystical portal. The project features a strict .ber map parser with path validity verification using the Flood-Fill algorithm, low-level X11 window and keyboard event handling, and a full Bonus expansion introducing real-time gravity physics (platformer jump and fall system), animated sprite loops, patrolling enemy AI with dynamic player pursuit, and an on-screen HUD rendering move counters and collectible stats directly on the canvas."
+    },
+    "highlights": [
+      "Motor de jogo 2D em C puro renderizando sprites e texturas XPM via MiniLibX (X11)",
+      "Validação rigorosa de mapas .ber garantindo perímetro fechado e caminhos válidos através de Flood-Fill",
+      "Física de plataformas no modo Bónus com gravidade contínua, mecânica de pulo e verificação de piso",
+      "Sistema de IA Inimiga com patrulha dinâmica, perseguição do jogador e mecânica de combate por pulo superior",
+      "Animações de sprites para a Kunoichi e inimigos com taxas de atualização fluidas",
+      "HUD dinâmico na tela desenhando contagem de passos e status de estrelas recolhidas em tempo real",
+      "Tratamento robusto de eventos de janela (destruição limpa, escape seguro e libertação total de memória)",
+      "Separação modularizada de código entre Mandatory (top-down) e Bonus (platformer physics)",
+      "Biblioteca auxiliar Libft integrada para parsing e manipulação eficiente de strings e memória"
+    ],
+    "technologies": [
+      "C",
+      "MiniLibX",
+      "X11",
+      "Libft",
+      "Gamedev",
+      "Makefile",
+      "Linux",
+      "Flood-Fill",
+      "Physics Engine"
+    ],
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/demo.mp4",
+          "caption": "Showcase Completo de Gameplay: Física de Plataforma, Movimentação Ninja, Coleta de Shurikens e IA Inimiga"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/01-gameplay-corridor.webp",
+          "caption": "Gameplay em Corredor: Kunoichi em Ação no Dojo Ninja"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/02-level-maze.webp",
+          "caption": "Design de Níveis: Labirinto com Tatames, Obstáculos e Distribuição Estratégica de Colecionáveis"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/03-gameplay-desktop.webp",
+          "caption": "Visão Geral da Janela MiniLibX no Ambiente Desktop Linux"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/04-bonus-patrol.webp",
+          "caption": "Modo Bónus: Patrulha e Perseguição de Inimigos com Detecção de Proximidade"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/05-level-overview.webp",
+          "caption": "Visão Panorâmica de Nível Extenso com Múltiplas Plataformas e Portais"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/gallery/06-platformer-physics.webp",
+          "caption": "Mecânica de Física 2D: Gravidade, Saltos entre Plataformas e Combate"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-solong",
+          "file": "01-demo-solong.mp4",
+          "title": "Demonstração Completa de Gameplay (Modo Bónus e Física)",
+          "description": "Showcase completo do Ninja SoLong: demonstração da movimentação fluida, saltos com gravidade, recolha de shurikens, evasão de inimigos e escape através do portal místico.",
+          "category": "gamedev",
+          "duration": "191s",
+          "size_mb": 1.84,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/SoLong/main/.portfolio/videos/01-demo-solong.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/SoLong"
+  },
+  "auth": {
+    "id": "auth",
+    "name": "Auth (FastAPI Service)",
+    "tagline": {
+      "pt": "API de Autenticação e Autorização Assíncrona com FastAPI, RBAC Granular, Tokens JWT Rotativos e Rate Limiting no Redis",
+      "en": "Asynchronous Authentication & Authorization Microservice with FastAPI, Granular RBAC, Rotating JWTs, and Distributed Redis Rate Limiting"
+    },
+    "category": "backend",
+    "featured": true,
+    "architecture_type": "Async Event-Driven Hexagonal Architecture (FastAPI, SQLAlchemy 2.0, PostgreSQL, Redis, RabbitMQ)",
+    "about": {
+      "pt": "O Auth API é um microsserviço corporativo de autenticação, autorização e gestão de identidades construído com FastAPI assíncrono e SQLAlchemy 2.0. Desenvolvido para atuar como autoridade central de identidade (IdP), o sistema implementa fluxo completo de registro e login com hashing Argon2id, emissão de tokens JWT com estratégia de Refresh Token Rotation (RTR), proteção contra ataques de força bruta com rate limiting distribuído em janela deslizante (Sliding Window) no Redis, autorização baseada em papéis (RBAC) com dependências injetadas sem queries N+1, autenticação social OAuth2/OpenID Connect com Google, mensageria de eventos de auditoria e segurança via RabbitMQ/Kafka e observabilidade completa com métricas Prometheus.",
+      "en": "Auth API is an enterprise-grade identity and access management (IAM) microservice built with asynchronous FastAPI and SQLAlchemy 2.0. Designed as a central identity provider, the system features complete user registration and authentication workflows with Argon2id password hashing, rotating JWT session management with Refresh Token Rotation (RTR), distributed sliding-window rate limiting via Redis against brute-force attacks, role-based access control (RBAC) with clean dependency injection eliminating N+1 queries, Google OAuth2/OpenID Connect social sign-in, security event streaming with RabbitMQ/Kafka, and full Prometheus observability."
+    },
+    "highlights": [
+      "Autenticação assíncrona robusta com FastAPI e hashing criptográfico Argon2id de última geração",
+      "Gestão segura de sessões com JWT rotativo (Refresh Token Rotation - RTR) e revogação instantânea via Redis",
+      "Controle de Acesso Baseado em Papéis (RBAC) com permissões granulares e injeção de dependências sem queries N+1",
+      "Rate Limiting distribuído em janela deslizante (Sliding Window Counter) gerenciado pelo Redis",
+      "Login social unificado integrando OAuth2 e OpenID Connect (Google Auth) com vínculo de identidade híbrida",
+      "Persistência assíncrona com PostgreSQL e SQLAlchemy 2.0 (AsyncSession) e migrações estruturadas via Alembic",
+      "Disparo de eventos de auditoria e segurança em segundo plano via mensageria assíncrona (RabbitMQ / Kafka)",
+      "Observabilidade corporativa com endpoint Prometheus (/metrics) e logs estruturados em formato JSON",
+      "Documentação interativa automática com Swagger UI (OpenAPI 3.1) e ReDoc",
+      "Ambiente de desenvolvimento e testes ultrarrápido gerenciado com uv (Python 3.14)"
+    ],
+    "technologies": [
+      "FastAPI",
+      "Python",
+      "SQLAlchemy",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "RabbitMQ",
+      "Alembic",
+      "Argon2",
+      "JWT",
+      "Prometheus",
+      "Pydantic",
+      "uv"
+    ],
+    "media": {
+      "cover": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/cover.webp",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/gallery/01-swagger-ui.webp",
+          "caption": "Swagger UI Interativo com Documentação OpenAPI 3.1 dos Endpoints de Autenticação e RBAC"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/gallery/02-redoc-spec.webp",
+          "caption": "ReDoc com Especificação Técnica Detalhada dos Schemas Pydantic e Payloads"
+        },
+        {
+          "type": "image",
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/gallery/03-api-response.webp",
+          "caption": "Estrutura Padrão de Resposta JSON da API"
+        }
+      ],
+      "videos": [
+        {
+          "id": "demo-auth",
+          "file": "01-demo-auth.mp4",
+          "title": "Navegação no Swagger UI e Fluxos de Autenticação",
+          "description": "Demonstração interativa dos endpoints da API no Swagger UI: registro de usuário, login com obtenção de tokens JWT, validação de rotas protegidas por RBAC e visualização da documentação OpenAPI.",
+          "category": "backend",
+          "duration": "63s",
+          "size_mb": 6.1,
+          "src": "https://raw.githubusercontent.com/NdondaDaniel2020/Auth/main/.portfolio/videos/01-demo-auth.mp4"
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/NdondaDaniel2020/Auth"
   },
   "cub3d": {
     "id": "cub3d",
@@ -628,123 +1992,5 @@
       ]
     },
     "githubUrl": "https://github.com/Beyonders-ft-transcendence/BidLive"
-  },
-  "controlefinanceiro": {
-    "id": "controlefinanceiro",
-    "name": "ControleFinanceiro (Stock Control)",
-    "tagline": {
-      "pt": "Sistema Desktop de Gestão de Estoque, Controle de Vendas e Fluxo Financeiro com Reconhecimento Facial e SQLite",
-      "en": "Desktop POS, Inventory & Financial Management System with OpenCV Facial Recognition and SQLite"
-    },
-    "category": "desktop",
-    "featured": true,
-    "architecture_type": "Modular Desktop Architecture (Python, PySide6, OpenCV, SQLite)",
-    "about": {
-      "pt": "O ControleFinanceiro (Stock Control) é uma aplicação desktop completa desenvolvida para automatizar a gestão de pequenas e médias empresas. Com interface gráfica moderna e intuitiva construída com PySide6 (Qt for Python), o sistema integra controle de fluxo de caixa, entrada e saída de mercadorias, movimentações financeiras em tempo real, geração de relatórios de vendas e módulo de segurança avançado com autenticação biométrica via reconhecimento facial usando OpenCV.",
-      "en": "ControleFinanceiro (Stock Control) is an all-in-one desktop POS and financial management suite built with Python and PySide6 (Qt). Designed for streamlined business operations, it handles inventory tracking, real-time cash flow, automated sales analytics, and biometric access control via OpenCV facial recognition."
-    },
-    "highlights": [
-      "Interface gráfica desktop moderna desenvolvida com PySide6 (Qt) e animações fluidas",
-      "Autenticação biométrica avançada com reconhecimento facial via OpenCV",
-      "Gestão completa de estoque com alertas de reposição e controle de entradas/saídas",
-      "Módulo financeiro com fluxo de caixa, livro caixa e conciliação de receitas/despesas",
-      "Relatórios analíticos automatizados e gráficos de desempenho de vendas",
-      "Persistência transacional local ultra-confiável com SQLite"
-    ],
-    "technologies": [
-      "Python",
-      "PySide6",
-      "OpenCV",
-      "SQLite",
-      "Facial Recognition",
-      "Desktop POS",
-      "Financial Control"
-    ],
-    "media": {
-      "cover": "https://user-images.githubusercontent.com/108186371/210639045-f7182afe-bc6a-4c8c-acee-2286c7938d8a.png",
-      "gallery": [
-        {
-          "type": "image",
-          "src": "https://user-images.githubusercontent.com/108186371/210639045-f7182afe-bc6a-4c8c-acee-2286c7938d8a.png",
-          "caption": "Dashboard Principal - Visão Geral de Vendas, Estoque e Faturamento"
-        },
-        {
-          "type": "image",
-          "src": "https://user-images.githubusercontent.com/108186371/210638859-c82a0af4-7f64-4cd0-b95e-c8035bd6f9ec.png",
-          "caption": "Tela de Login com Suporte a Autenticação Facial Biométrica"
-        },
-        {
-          "type": "image",
-          "src": "https://user-images.githubusercontent.com/108186371/210639070-c7d1a8c3-84cf-4337-9b86-d29691667117.png",
-          "caption": "Movimentação Financeira - Entradas, Saídas e Categorização de Custos"
-        },
-        {
-          "type": "image",
-          "src": "https://user-images.githubusercontent.com/108186371/210639108-c61c9acb-0d4d-4ca6-bf9a-3aa8f2711070.png",
-          "caption": "Fluxo de Caixa Consolidado e Relatórios Diários"
-        }
-      ],
-      "videos": []
-    },
-    "githubUrl": "https://github.com/NdondaDaniel2020/ControleFinanceiro"
-  },
-  "inception": {
-    "id": "inception",
-    "name": "Inception (Docker Infrastructure)",
-    "tagline": {
-      "pt": "Infraestrutura de Microsserviços e Virtualização com Docker, Nginx TLS v1.3, WordPress e MariaDB em Redes Isoladas",
-      "en": "Multi-container Microservices Infrastructure with Docker Compose, Nginx TLS v1.3, WordPress, and MariaDB on Isolated Networks"
-    },
-    "category": "tools",
-    "featured": true,
-    "architecture_type": "Isolated Multi-Container DevOps Architecture (Docker, Docker Compose, Nginx Reverse Proxy, TLS)",
-    "about": {
-      "pt": "O Inception é um projeto de engenharia de sistemas e infraestrutura DevOps desenvolvido na 42 School. O objetivo é orquestrar uma infraestrutura completa e segura em ambiente multi-container usando Docker e Docker Compose, sem recorrer a imagens prontas do Docker Hub. Cada serviço (Nginx com TLS v1.2/v1.3 obrigatório, WordPress com php-fpm e banco de dados MariaDB) possui Dockerfile dedicado construído sobre Alpine/Debian, com persistência em volumes independentes e comunicação estritamente confinada em bridge network privada. Essa mesma arquitetura serve de espinha dorsal para os containers de produção e monitoramento do ecossistema BidLive.",
-      "en": "Inception is a system engineering and DevOps virtualization project developed at 42 School. It orchestrates a secure, resilient multi-container infrastructure using custom Dockerfiles and Docker Compose without public pre-built application images. Every service (Nginx with mandatory TLS v1.2/v1.3, WordPress with php-fpm, and MariaDB) runs isolated with independent volumes and strict private bridge networking, serving as the DevOps foundation leveraged in microservice platforms like BidLive."
-    },
-    "highlights": [
-      "Construção de Dockerfiles dedicados para cada serviço a partir de imagens base do Alpine/Debian",
-      "Nginx configurado como ponto único de entrada (Reverse Proxy) com TLS v1.2/v1.3 e certificados autoassinados",
-      "Isolamento total de portas: apenas o Nginx expõe a porta 443; MariaDB e WordPress comunicam-se via Docker Bridge Network",
-      "Persistência de dados consistente com Docker Volumes dedicados para o banco de dados e arquivos estáticos",
-      "Estratégia de reinicialização automática (restart: on-failure) para alta resiliência operacional",
-      "Fundação de infraestrutura compartilhada com a orquestração e monitoramento do BidLive"
-    ],
-    "technologies": [
-      "Docker",
-      "Docker Compose",
-      "Nginx",
-      "MariaDB",
-      "WordPress",
-      "TLS/SSL",
-      "DevOps",
-      "Linux",
-      "Bash",
-      "Networking"
-    ],
-    "media": {
-      "cover": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/13-grafana-nginx-conn.webp",
-      "gallery": [
-        {
-          "type": "image",
-          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/13-grafana-nginx-conn.webp",
-          "caption": "Orquestração de Rede e Conexões Seguras Nginx (TLS)"
-        },
-        {
-          "type": "image",
-          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/gallery/12-grafana-dashboards.webp",
-          "caption": "Métricas e Telemetria de Containers em Tempo Real"
-        }
-      ],
-      "videos": [
-        {
-          "id": "portainer-infra",
-          "title": "Orquestração de Containers via Portainer",
-          "description": "Visão geral da topologia de containers, redes virtuais e volumes isolados.",
-          "src": "https://raw.githubusercontent.com/Beyonders-ft-transcendence/BidLive/master/.portfolio/videos/04-portainer-bidlive.mp4"
-        }
-      ]
-    },
-    "githubUrl": "https://github.com/NdondaDaniel2020/Inception"
   }
 }

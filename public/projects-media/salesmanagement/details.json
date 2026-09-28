@@ -1,0 +1,114 @@
+{
+  "id": "salesmanagement",
+  "name": "SalesManagement MX",
+  "tagline": {
+    "pt": "Sistema Desktop PDV & ERP para Gestão Comercial com Fluent Design, Scanner Barcode por Câmera e Métricas em Tempo Real",
+    "en": "Desktop POS & ERP Retail Management Suite with Fluent Design, Camera Barcode Scanner, and Real-Time Analytics"
+  },
+  "category": "desktop",
+  "featured": true,
+  "architecture_type": "Layered Desktop Architecture (PySide6 / Qt, Clean Architecture with Models, Repositories, Services, and Background Workers)",
+  "about": {
+    "pt": "O SalesManagement MX é uma solução desktop completa de Ponto de Venda (PDV) e Planeamento de Recursos Empresariais (ERP) desenvolvida em Python e PySide6/Qt com estética Fluent Design da Microsoft. O sistema oferece controlo abrangente de inventário e stock com alertas de validade, registo de compras e vendas atómicas, leitura contínua de códigos de barras com visão computacional via câmara em thread dedicada (QThread) a 60+ FPS, emissão de faturas e recibos em PDF com ReportLab, além de dashboards dinâmicos com gráficos interativos de desempenho financeiro e ranking de operadores.",
+    "en": "SalesManagement MX is a comprehensive desktop Point of Sale (POS) and Enterprise Resource Planning (ERP) suite developed with Python and PySide6/Qt, featuring a sleek modern Microsoft Fluent Design UI. The system delivers complete inventory control with product expiration alerts, atomic sales and purchase transactions, non-blocking real-time computer vision barcode scanning via camera on a dedicated QThread at 60+ FPS, ReportLab PDF receipt/invoice generation, and dynamic analytical dashboards with performance charts and staff rankings."
+  },
+  "highlights": [
+    "Interface moderna Fluent Design com tema Dark e componentes fluidos (PySide6 / QFluentWidgets)",
+    "Arquitetura limpa em camadas (Models, Repositories, Services e Workers assíncronos)",
+    "Processamento de vídeo e leitura de código de barras em background com QThread a 60+ FPS",
+    "Transações ACID em SQLite com modo WAL (Write-Ahead Logging) e proteção total contra SQL Injection",
+    "Controle em tempo real de stock, produtos, categorias, perdas e alertas de validade",
+    "Emissão de pedidos de compra e recibos fiscais padronizados em PDF via ReportLab",
+    "Dashboards analíticos com métricas de vendas, histórico por categoria e desempenho de operadores",
+    "Gerenciador de pacotes e execução ultrarrápida com uv (Python 3.12)"
+  ],
+  "technologies": [
+    "Python",
+    "PySide6",
+    "Qt",
+    "QFluentWidgets",
+    "OpenCV",
+    "pyzbar",
+    "SQLite",
+    "ReportLab",
+    "uv",
+    "Pillow"
+  ],
+  "media": {
+    "cover": "cover.webp",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "gallery/01-dashboard.webp",
+        "caption": "Dashboard Principal com Gráficos Analíticos, Métricas de Vendas e Desempenho da Equipa"
+      },
+      {
+        "type": "image",
+        "src": "gallery/02-inventory.webp",
+        "caption": "Painel de Inventário e Gestão de Produtos com Margens, Unidades e Preço em Kwanzas (Kz)"
+      },
+      {
+        "type": "image",
+        "src": "gallery/03-login.webp",
+        "caption": "Ecrã de Autenticação com Design Split Card, Suporte Biométrico e Splash Screen Animado"
+      },
+      {
+        "type": "image",
+        "src": "gallery/04-dashboard-analytics.webp",
+        "caption": "Dashboard Principal com Gráficos de Desempenho, Métricas e Ranking de Operadores"
+      },
+      {
+        "type": "image",
+        "src": "gallery/05-sales-actions.webp",
+        "caption": "Painel de Vendas com Ações Rápidas: Histórico, Relatório, Criar Produto e Pedido de Compra"
+      },
+      {
+        "type": "image",
+        "src": "gallery/06-inventory-chart.webp",
+        "caption": "Inventário com Gráfico de Evolução, Percentual de Stock e Lista de Produtos"
+      },
+      {
+        "type": "image",
+        "src": "gallery/07-inventory-home.webp",
+        "caption": "Ecrã Inicial do Inventário com Cards de Navegação Rápida"
+      },
+      {
+        "type": "image",
+        "src": "gallery/08-shopping-cart.webp",
+        "caption": "Carrinho de Compras com Itens, Quantidades e Valores Totais em Kwanzas"
+      },
+      {
+        "type": "image",
+        "src": "gallery/09-sales-report.webp",
+        "caption": "Relatório de Vendas Mensal com Gráfico de Barras e Percentuais por Categoria"
+      },
+      {
+        "type": "image",
+        "src": "gallery/10-product-search.webp",
+        "caption": "Modal de Pesquisa e Seleção de Produtos com Preços e Quantidades"
+      },
+      {
+        "type": "image",
+        "src": "gallery/11-barcode-scanner.webp",
+        "caption": "Scanner de Código de Barras por Câmera com Captura em Tempo Real"
+      },
+      {
+        "type": "image",
+        "src": "gallery/12-product-selector.webp",
+        "caption": "Modal de Seleção de Produtos para Pedido de Compra"
+      }
+    ],
+    "videos": [
+      {
+        "id": "demo-salesmanagement",
+        "file": "01-demo-salesmanagement.mp4",
+        "title": "Demonstração Completa do SalesManagement MX",
+        "description": "Demonstração em tempo real das funcionalidades do SalesManagement MX: autenticação com splash screen animada, navegação Fluent Design, gestão de inventário e estoque, leitura de código de barras por visão computacional via câmera a 60+ FPS e relatórios analíticos de vendas.",
+        "category": "desktop",
+        "duration": "46s",
+        "size_mb": 0.8,
+        "src": "videos/01-demo-salesmanagement.mp4"
+      }
+    ]
+  }
+}
