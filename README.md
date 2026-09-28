@@ -1,38 +1,38 @@
-# ⚡ Ndonda Daniel Matondo — Portfolio & Engineering Showcase
+# aniel Matondo — Portfolio & Engineering Showcase
 
 > **Full Stack & Systems Engineer** focado em arquitetura backend de alta performance, sistemas em C/C++, ecossistema Python/FastAPI e aplicações web modernas com React + TypeScript.
 
-📫 **Email**: [ndondadaniel2020@gmail.com](mailto:ndondadaniel2020@gmail.com)  
-💼 **LinkedIn**: [Ndonda Daniel Matondo](https://www.linkedin.com/in/ndonda-daniel-matondo-098370402/)  
-🐙 **GitHub**: [@NdondaDaniel2020](https://github.com/NdondaDaniel2020)  
-✍️ **Medium**: [@ndondadaniel2020](https://medium.com/@ndondadaniel2020)
+**Email**: [ndondadaniel2020@gmail.com](mailto:ndondadaniel2020@gmail.com)  
+**LinkedIn**: [Ndonda Daniel Matondo](https://www.linkedin.com/in/ndonda-daniel-matondo-098370402/)  
+**GitHub**: [@NdondaDaniel2020](https://github.com/NdondaDaniel2020)  
+**Medium**: [@ndondadaniel2020](https://medium.com/@ndondadaniel2020)
 
 ---
 
-## 🚀 Visão Geral do Projeto
+## Visão Geral do Projeto
 
 Este repositório contém a versão moderna e reescrita do portfólio profissional de Ndonda Daniel Matondo. O projeto migrou de páginas HTML estáticas para uma **Single Page Application (SPA)** escalável, rápida e tipada, desenvolvida com **React 19, TypeScript e Vite**.
 
-### ✨ Principais Funcionalidades
+### Principais Funcionalidades
 
-- **🎨 Design System Dark Teal & Engenharia**:
+- **Design System Dark Teal & Engenharia**:
   - Estética refinada inspirada em interfaces técnicas e terminais de engenharia (`#00F2B0`, `#070B0D`, `#0E151A`).
   - Terminal interativo customizado no Hero (`arch_engine.py`) com gráfico dinâmico de throughput de requisições.
-- **☀️ Suporte a Tema Claro / Escuro (Dark / Light Mode)**:
+- **Suporte a Tema Claro / Escuro (Dark / Light Mode)**:
   - Alternância de tema com persistência no `localStorage` e detecção de preferência do sistema.
   - Alto contraste garantido em ambos os temas, com terminais e blocos de código preservando legibilidade técnica.
-- **🌍 Internacionalização (i18n)**:
+- **Internacionalização (i18n)**:
   - Alternador bilíngue completo (**Português** e **Inglês**) para navegação, descrições, métricas e projetos.
-- **📁 Exibição Paginada e Busca Inteligente**:
+- **Exibição Paginada e Busca Inteligente**:
   - Página `/projetos` com paginação compacta (`[ ← ] Página X de Y [ → ]`), cards de altura consistente com truncamento elegante (`line-clamp-4`), busca em tempo real com atalho de teclado `Ctrl + K` e filtros por stack.
-- **📝 Artigos Técnicos e Publicações**:
+- **Artigos Técnicos e Publicações**:
   - Página `/artigos` com visualizador de memória em C (`memory_inspect.c`), filtros por tópicos e integração direta com o Medium.
-- **🔄 Sincronização Automatizada via GitHub Actions**:
+- **Sincronização Automatizada via GitHub Actions**:
   - Script (`scripts/sync-data.ts`) e workflow que sincroniza automaticamente projetos públicos do GitHub e feeds RSS do Medium com fallback local seguro.
 
 ---
 
-## 🛠️ Stack Tecnológica
+## Stack Tecnológica
 
 | Camada | Tecnologias |
 | :--- | :--- |
@@ -45,7 +45,7 @@ Este repositório contém a versão moderna e reescrita do portfólio profission
 
 ---
 
-## 📂 Estrutura de Diretórios
+## Estrutura de Diretórios
 
 ```
 portfolio/
@@ -77,7 +77,7 @@ portfolio/
 
 ---
 
-## 💻 Como Rodar Localmente
+## Como Rodar Localmente
 
 ### Pré-requisitos
 - [Node.js](https://nodejs.org/) versão 18 ou superior
@@ -123,7 +123,7 @@ O projeto estará disponível em `http://localhost:5173`.
 
 ---
 
-## 🚢 Deploy na Vercel
+## Deploy na Vercel
 
 O projeto está totalmente preparado para a Vercel com suporte a rotas de SPA configuradas no `vercel.json`.
 
@@ -136,6 +136,6 @@ O projeto está totalmente preparado para a Vercel com suporte a rotas de SPA co
 
 ---
 
-## 📜 Licença
+## Licença
 
 Desenvolvido por **Ndonda Daniel Matondo**. Todos os direitos reservados © 2026.
