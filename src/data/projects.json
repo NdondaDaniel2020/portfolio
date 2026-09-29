@@ -1,5 +1,31 @@
 [
   {
+    "id": "cv",
+    "name": "cv",
+    "description": {
+      "pt": "Currículo profissional de Ndonda Daniel Matondo (Software Engineer) em versões Português e Inglês, código HTML/CSS e PDF ATS-friendly.",
+      "en": "Professional curriculum vitae of Ndonda Daniel Matondo (Software Engineer) in Portuguese and English, HTML/CSS source and ATS-friendly PDF."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "PDF",
+      "ATS-Friendly",
+      "Resume"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/cv",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-28",
+    "hasDetails": false,
+    "coverImage": null
+  },
+  {
     "id": "portfolio",
     "name": "portfolio",
     "description": {
@@ -22,7 +48,7 @@
       "Portfolio"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
-    "liveUrl": "https://portfolio-eight-orcin-84.vercel.app",
+    "liveUrl": "https://ndonda.vercel.app",
     "visualType": "terminal",
     "updatedAt": "2026-09-28",
     "hasDetails": false,
@@ -250,32 +276,6 @@
     "updatedAt": "2026-09-24",
     "hasDetails": true,
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/cover.webp"
-  },
-  {
-    "id": "cv",
-    "name": "cv",
-    "description": {
-      "pt": "Currículo profissional de Ndonda Daniel Matondo (Software Engineer) em versões Português e Inglês, código HTML/CSS e PDF ATS-friendly.",
-      "en": "Professional curriculum vitae of Ndonda Daniel Matondo (Software Engineer) in Portuguese and English, HTML/CSS source and ATS-friendly PDF."
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "HTML",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "PDF",
-      "ATS-Friendly",
-      "Resume"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/cv",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-19",
-    "hasDetails": false,
-    "coverImage": null
   },
   {
     "id": "reactexercises",

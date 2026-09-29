@@ -1,5 +1,34 @@
 [
   {
+    "id": "https://medium.com/p/aa2ee01362b2",
+    "title": {
+      "pt": "WebSockets Autenticados com Ticket-First Pattern e Escalabilidade com Redis Pub/Sub",
+      "en": "WebSockets Autenticados com Ticket-First Pattern e Escalabilidade com Redis Pub/Sub"
+    },
+    "summary": {
+      "pt": "Saga: Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python — Parte 7Comunicação em Tempo Real & Engenharia Distribuída: Por que p...",
+      "en": "Saga: Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python — Parte 7Comunicação em Tempo Real & Engenharia Distribuída: Por que p..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/websockets-autenticados-com-ticket-first-pattern-e-escalabilidade-com-redis-pub-sub-aa2ee01362b2?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-09-28",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "software-architecture",
+      "redis",
+      "websocket",
+      "python",
+      "fastapi"
+    ],
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*teDQeFamikXZkn0CeuNlHA.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌──────────┐                 ┌──────────┐                 ┌──────────┐\n│ Frontend │                 │ FastAPI  │                 │  Redis   │\n│ (Client) │                 │ (Backend)│                 │ (Cache)  │\n└────┬─────┘                 └────┬─────┘                 └────┬─────┘\n     │ 1. POST /api/auth/ws-ticket                              │\n     │    (Header: Authorization Bearer <jwt>)                  │\n     │───────────────────────────>│                             │\n     │                            │ 2. Gera ticket efêmero      │\n     │                            │    SETEX ws_ticket:<tkt> 15s│\n     │                            │────────────────────────────>│\n     │ 3. Retorna {\"ticket\": \"ws_tkt_01h...\"}                   │\n     │<───────────────────────────│                             │\n     │                                                          │\n     │ 4. Handshake WebSocket (GET /ws/connect?ticket=ws_tkt_01h)",
+      "language": "text"
+    }
+  },
+  {
     "id": "https://medium.com/p/b061eef454a1",
     "title": {
       "pt": "RBAC sem N+1: Como Modelar Permissões Granulares com SQLAlchemy 2.0 Async",
