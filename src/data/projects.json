@@ -1,29 +1,31 @@
 [
   {
-    "id": "cv",
-    "name": "cv",
+    "id": "webserver",
+    "name": "Webserver",
     "description": {
-      "pt": "Currículo profissional de Ndonda Daniel Matondo (Software Engineer) em versões Português e Inglês, código HTML/CSS e PDF ATS-friendly.",
-      "en": "Professional curriculum vitae of Ndonda Daniel Matondo (Software Engineer) in Portuguese and English, HTML/CSS source and ATS-friendly PDF."
+      "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
+      "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
     },
-    "category": "web",
-    "featured": false,
+    "category": "systems",
+    "featured": true,
     "pinned": false,
-    "stars": 0,
+    "stars": 1,
     "forks": 0,
     "language": "HTML",
     "technologies": [
-      "HTML5",
-      "CSS3",
-      "PDF",
-      "ATS-Friendly",
-      "Resume"
+      "C++98",
+      "HTTP/1.1",
+      "Epoll / Poll",
+      "I/O Multiplexing",
+      "CGI",
+      "NGINX Architecture",
+      "Networking"
     ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/cv",
+    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
     "visualType": "terminal",
-    "updatedAt": "2026-09-28",
-    "hasDetails": false,
-    "coverImage": null
+    "updatedAt": "2026-09-30",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp"
   },
   {
     "id": "portfolio",
@@ -49,6 +51,32 @@
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://ndonda.vercel.app",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-29",
+    "hasDetails": false,
+    "coverImage": null
+  },
+  {
+    "id": "cv",
+    "name": "cv",
+    "description": {
+      "pt": "Currículo profissional de Ndonda Daniel Matondo (Software Engineer) em versões Português e Inglês, código HTML/CSS e PDF ATS-friendly.",
+      "en": "Professional curriculum vitae of Ndonda Daniel Matondo (Software Engineer) in Portuguese and English, HTML/CSS source and ATS-friendly PDF."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "PDF",
+      "ATS-Friendly",
+      "Resume"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/cv",
     "visualType": "terminal",
     "updatedAt": "2026-09-28",
     "hasDetails": false,
@@ -160,34 +188,6 @@
     "updatedAt": "2026-09-26",
     "hasDetails": true,
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Minishell/main/.portfolio/cover.webp"
-  },
-  {
-    "id": "webserver",
-    "name": "Webserver",
-    "description": {
-      "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
-      "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
-    },
-    "category": "systems",
-    "featured": true,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "HTML",
-    "technologies": [
-      "C++98",
-      "HTTP/1.1",
-      "Epoll / Poll",
-      "I/O Multiplexing",
-      "CGI",
-      "NGINX Architecture",
-      "Networking"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-26",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp"
   },
   {
     "id": "solong",
