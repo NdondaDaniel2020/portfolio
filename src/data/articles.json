@@ -1,5 +1,34 @@
 [
   {
+    "id": "https://medium.com/p/f4db6d351ebd",
+    "title": {
+      "pt": "Connection Pooling em Ambientes Serverless: Lidando com PgBouncer, Supabase e IPv4",
+      "en": "Connection Pooling em Ambientes Serverless: Lidando com PgBouncer, Supabase e IPv4"
+    },
+    "summary": {
+      "pt": "Saga: Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python — Parte 8Engenharia de Dados & Infraestrutura em Nuvem: O colapso de c...",
+      "en": "Saga: Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python — Parte 8Engenharia de Dados & Infraestrutura em Nuvem: O colapso de c..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/connection-pooling-em-ambientes-serverless-lidando-com-pgbouncer-supabase-e-ipv4-f4db6d351ebd?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-09-30",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "python",
+      "software-architecture",
+      "backend",
+      "postgresql",
+      "serverless"
+    ],
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*hTh6HQt_k6JlLQ35AhS1xA.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "SEM CONNECTION POOLER (Colapso Serverless):\n[ Lambda / Vercel Instância 1 ] ──── (1 Conexão TCP) ────┐\n[ Lambda / Vercel Instância 2 ] ──── (1 Conexão TCP) ────┼──► [ PostgreSQL Supabase ]\n[ Lambda / Vercel Instância ... ] ── (1 Conexão TCP) ────┤     (Limite: 50 conexões!)\n[ Lambda / Vercel Instância 200 ] ── (1 Conexão TCP) ────┘     🚨 BANCO EXPLODE E TRAVA!",
+      "language": "text"
+    }
+  },
+  {
     "id": "https://medium.com/p/aa2ee01362b2",
     "title": {
       "pt": "WebSockets Autenticados com Ticket-First Pattern e Escalabilidade com Redis Pub/Sub",
@@ -257,35 +286,6 @@
       "type": "diagram",
       "filename": "architecture.ascii",
       "content": "┌─────────────────────────────────────────────────────────────────────────┐\n│               SÍNCRONO (BLOQUEANTE)  VS. ASSÍNCRONO (EVENT LOOP)        │\n├────────────────────────────────────┬────────────────────────────────────┤\n│ Modelo Síncrono (1 Requisição/vez) │ Modelo Assíncrono (Concorrência)   │\n├────────────────────────────────────┼────────────────────────────────────┤\n│ Req A: [ Consulta DB (Espera...) ] │ Req A: Inicia DB ─┐                │\n│ Req B: ⏳ Bloqueada esperando A    │ Req B: Inicia DB ─┼─► Event Loop   │\n│ Req C: ⏳ Bloqueada esperando B    │ Req C: Inicia DB ─┘   processa A,  │\n│                                    │                       B e C juntos!│\n│ 1 Thread = 1 tarefa por vez        │ 1 Thread = Milhares de requisições │\n└────────────────────────────────────┴────────────────────────────────────┘",
-      "language": "text"
-    }
-  },
-  {
-    "id": "https://medium.com/p/183f4be8f72c",
-    "title": {
-      "pt": "Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python",
-      "en": "Como Estruturei uma API de Autenticação em Nível de Produção com FastAPI e Python"
-    },
-    "summary": {
-      "pt": "Building in Public: Da concepção arquitetural às decisões de segurança defensiva (Argon2id, RTR, RBAC sem N+1, WebSockets e Event-Driven Architecture).\n\nO Pro...",
-      "en": "Building in Public: Da concepção arquitetural às decisões de segurança defensiva (Argon2id, RTR, RBAC sem N+1, WebSockets e Event-Driven Architecture).\n\nO Pro..."
-    },
-    "url": "https://medium.com/@ndondadaniel2020/como-estruturei-uma-api-de-autentica%C3%A7%C3%A3o-em-n%C3%ADvel-de-produ%C3%A7%C3%A3o-com-fastapi-e-python-183f4be8f72c?source=rss-b18fa6ebc4a7------2",
-    "publishedAt": "2026-09-12",
-    "readTime": "7 min de leitura",
-    "tags": [
-      "python",
-      "web-development",
-      "fastapi",
-      "software-architecture",
-      "authentication"
-    ],
-    "featured": false,
-    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*yzoPDPmBscwcmVCAbnUlhQ.jpeg",
-    "snippet": {
-      "type": "diagram",
-      "filename": "architecture.ascii",
-      "content": "┌─────────────────────────────────────────────────────────────────────────────┐\n│                            FLUXO ARQUITETURAL                               │\n├─────────────────┬─────────────────┬───────────────────┬─────────────────────┤\n│   HTTP / WS     │     SERVICE     │    REPOSITORY     │    INFRAESTRUTURA   │\n│  (FastAPI Core) │ (Regras de Neg) │ (SQLAlchemy 2.0)  │ (PostgreSQL/Redis)  │\n├─────────────────┼─────────────────┼───────────────────┼─────────────────────┤\n│  POST /login    │ Autentica Creds │ get_by_email()    │ Supabase (IPv4 Pool)│\n│                 │ Gera Tokens JWT │ save_refresh()    │ Upstash Redis       │\n│  POST /refresh  │ Executa RTR     │ revoke(jti)       │ EventBus / DLQ      │\n│  WS /ws:events  │ Valida Ticket   │ Log de Auditoria  │ Prometheus Metrics  │\n└─────────────────┴─────────────────┴───────────────────┴─────────────────────┘",
       "language": "text"
     }
   }

@@ -1,31 +1,47 @@
 [
   {
-    "id": "webserver",
-    "name": "Webserver",
+    "id": "antigravity-history-restorer",
+    "name": "antigravity-history-restorer",
     "description": {
-      "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
-      "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
+      "pt": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC.",
+      "en": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC."
     },
-    "category": "systems",
+    "category": "backend",
     "featured": true,
     "pinned": false,
-    "stars": 1,
+    "stars": 2,
     "forks": 0,
-    "language": "HTML",
+    "language": "TypeScript",
     "technologies": [
-      "C++98",
-      "HTTP/1.1",
-      "Epoll / Poll",
-      "I/O Multiplexing",
-      "CGI",
-      "NGINX Architecture",
-      "Networking"
+      "TypeScript"
     ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
+    "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-history-restorer",
+    "liveUrl": "https://open-vsx.org/extension/NdondaDaniel2020/antigravity-history-restorer",
+    "visualType": "terminal",
+    "updatedAt": "2026-10-01",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/cover.webp"
+  },
+  {
+    "id": "infrawatch",
+    "name": "InfraWatch",
+    "description": {
+      "pt": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring",
+      "en": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring"
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "Code",
+    "technologies": [
+      "Git"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/InfraWatch",
     "visualType": "terminal",
     "updatedAt": "2026-09-30",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp"
+    "hasDetails": false
   },
   {
     "id": "portfolio",
@@ -52,9 +68,37 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://ndonda.vercel.app",
     "visualType": "terminal",
-    "updatedAt": "2026-09-29",
+    "updatedAt": "2026-09-30",
     "hasDetails": false,
     "coverImage": null
+  },
+  {
+    "id": "webserver",
+    "name": "Webserver",
+    "description": {
+      "pt": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas.",
+      "en": "webserver em C++98 (padrão HTTP/1.1) desenvolvido para a 42. Capaz de gerenciar conexões simultâneas usando multiplexação de I/O (epoll/poll). Suporta métodos GET, POST e DELETE, upload de arquivos, execução de scripts CGI, redirecionamentos e páginas de erro customizadas."
+    },
+    "category": "systems",
+    "featured": true,
+    "pinned": false,
+    "stars": 1,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "C++98",
+      "HTTP/1.1",
+      "Epoll / Poll",
+      "I/O Multiplexing",
+      "CGI",
+      "NGINX Architecture",
+      "Networking"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/Webserver",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-30",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Webserver/master/.portfolio/cover.webp"
   },
   {
     "id": "cv",
@@ -137,29 +181,6 @@
     "updatedAt": "2026-09-27",
     "hasDetails": true,
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/ControleFinanceiro/main/.portfolio/cover.webp"
-  },
-  {
-    "id": "antigravity-history-restorer",
-    "name": "antigravity-history-restorer",
-    "description": {
-      "pt": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC.",
-      "en": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC."
-    },
-    "category": "backend",
-    "featured": true,
-    "pinned": false,
-    "stars": 1,
-    "forks": 0,
-    "language": "TypeScript",
-    "technologies": [
-      "TypeScript"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-history-restorer",
-    "liveUrl": "https://open-vsx.org/extension/NdondaDaniel2020/antigravity-history-restorer",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-26",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/cover.webp"
   },
   {
     "id": "minishell",
