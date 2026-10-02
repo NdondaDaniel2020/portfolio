@@ -1,28 +1,5 @@
 [
   {
-    "id": "antigravity-history-restorer",
-    "name": "antigravity-history-restorer",
-    "description": {
-      "pt": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC.",
-      "en": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC."
-    },
-    "category": "backend",
-    "featured": true,
-    "pinned": false,
-    "stars": 2,
-    "forks": 0,
-    "language": "TypeScript",
-    "technologies": [
-      "TypeScript"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-history-restorer",
-    "liveUrl": "https://open-vsx.org/extension/NdondaDaniel2020/antigravity-history-restorer",
-    "visualType": "terminal",
-    "updatedAt": "2026-10-01",
-    "hasDetails": true,
-    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/cover.webp"
-  },
-  {
     "id": "infrawatch",
     "name": "InfraWatch",
     "description": {
@@ -34,13 +11,13 @@
     "pinned": false,
     "stars": 0,
     "forks": 0,
-    "language": "Code",
+    "language": "Python",
     "technologies": [
       "Git"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/InfraWatch",
     "visualType": "terminal",
-    "updatedAt": "2026-09-30",
+    "updatedAt": "2026-10-02",
     "hasDetails": false
   },
   {
@@ -68,9 +45,32 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://ndonda.vercel.app",
     "visualType": "terminal",
-    "updatedAt": "2026-09-30",
+    "updatedAt": "2026-10-01",
     "hasDetails": false,
     "coverImage": null
+  },
+  {
+    "id": "antigravity-history-restorer",
+    "name": "antigravity-history-restorer",
+    "description": {
+      "pt": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC.",
+      "en": "Restore lost or unindexed AI chat history in Google Antigravity IDE after reinstallation, updates, or cache eviction via native Language Server RPC."
+    },
+    "category": "backend",
+    "featured": true,
+    "pinned": false,
+    "stars": 2,
+    "forks": 0,
+    "language": "TypeScript",
+    "technologies": [
+      "TypeScript"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-history-restorer",
+    "liveUrl": "https://open-vsx.org/extension/NdondaDaniel2020/antigravity-history-restorer",
+    "visualType": "terminal",
+    "updatedAt": "2026-10-01",
+    "hasDetails": true,
+    "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/cover.webp"
   },
   {
     "id": "webserver",
