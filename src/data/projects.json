@@ -1,26 +1,5 @@
 [
   {
-    "id": "infrawatch",
-    "name": "InfraWatch",
-    "description": {
-      "pt": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring",
-      "en": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring"
-    },
-    "category": "backend",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "technologies": [
-      "Git"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/InfraWatch",
-    "visualType": "terminal",
-    "updatedAt": "2026-10-04",
-    "hasDetails": false
-  },
-  {
     "id": "portfolio",
     "name": "portfolio",
     "description": {
@@ -45,9 +24,30 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://ndonda.vercel.app",
     "visualType": "terminal",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "hasDetails": false,
     "coverImage": null
+  },
+  {
+    "id": "infrawatch",
+    "name": "InfraWatch",
+    "description": {
+      "pt": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring",
+      "en": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring"
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Git"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/InfraWatch",
+    "visualType": "terminal",
+    "updatedAt": "2026-10-04",
+    "hasDetails": false
   },
   {
     "id": "antigravity-history-restorer",
@@ -493,7 +493,7 @@
     "featured": false,
     "pinned": false,
     "stars": 1,
-    "forks": 0,
+    "forks": 1,
     "language": "Python",
     "technologies": [
       "Python",
