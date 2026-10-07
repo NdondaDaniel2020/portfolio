@@ -1,5 +1,34 @@
 [
   {
+    "id": "https://medium.com/p/8ec7a886d897",
+    "title": {
+      "pt": "Arquitetura Orientada a Eventos (EDA) na Prática: RabbitMQ, Kafka e Políticas de Dead-Letter Queues…",
+      "en": "Arquitetura Orientada a Eventos (EDA) na Prática: RabbitMQ, Kafka e Políticas de Dead-Letter Queues…"
+    },
+    "summary": {
+      "pt": "Arquitetura Orientada a Eventos (EDA) na Prática: RabbitMQ, Kafka e Políticas de Dead-Letter Queues (DLQ) sem Perda de Mensagens\n\nSaga: Engenharia de Plataform...",
+      "en": "Arquitetura Orientada a Eventos (EDA) na Prática: RabbitMQ, Kafka e Políticas de Dead-Letter Queues (DLQ) sem Perda de Mensagens\n\nSaga: Engenharia de Plataform..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/arquitetura-orientada-a-eventos-eda-na-pr%C3%A1tica-rabbitmq-kafka-e-pol%C3%ADticas-de-dead-letter-queues-8ec7a886d897?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-10-06",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "system-design-interview",
+      "event-driven-architecture",
+      "fastapi",
+      "redis",
+      "rabbitmq"
+    ],
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*3t2ffCJ_pK3HExhvTl3qRQ.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌─────────────────────────────────────────────────────────────────────────────┐\n│                      FLUXO SÍNCRONO VS. EDA ASSÍNCRONO                      │\n├─────────────────────────────────────┬───────────────────────────────────────┤\n│ Fluxo Síncrono (Acoplamento Direto) │ Fluxo EDA Assíncrono (Alta Resiliência│\n├─────────────────────────────────────┼───────────────────────────────────────┤\n│ [ Requisição HTTP POST ]            │ [ Requisição HTTP POST ]              │\n│         │                           │         │                             │\n│         ▼                           │         ▼                             │\n│ 1. Salva no Banco (20ms)            │ 1. Salva no Banco (20ms)              │\n│         │                           │         │                             │\n│         ▼                           │         ▼                             │\n│ 2. Envia SMTP Externo (3500ms! ⏳)  │ 2. Publica no EventBus (1ms ⚡)        │\n│         │                           │         │                             │\n│         ▼                           │         ▼                             │",
+      "language": "text"
+    }
+  },
+  {
     "id": "https://medium.com/p/f4db6d351ebd",
     "title": {
       "pt": "Connection Pooling em Ambientes Serverless: Lidando com PgBouncer, Supabase e IPv4",
@@ -257,35 +286,6 @@
       "type": "diagram",
       "filename": "architecture.ascii",
       "content": "┌─────────────────────────────────────────────────────────────────────────┐\n│                     FLUXO DE DECISÃO NA REQUISIÇÃO                      │\n├─────────────────────────────────────────────────────────────────────────┤\n│ 1. REQUISIÇÃO HTTP CHEGA:                                               │\n│    └─► Tem token Bearer válido?                                         │\n│        ├─► NÃO: Rejeita imediatamente com HTTP 401 Unauthorized         │\n│        └─► SIM: Identidade confirmada (AuthN concluído). Avança!        │\n│                                                                         │\n│ 2. CONTROLE DE ACESSO:                                                  │\n│    └─► O usuário possui a permissão requerida para a rota?              │\n│        ├─► NÃO: Rejeita com HTTP 403 Forbidden (Sem permissão!)         │\n│        └─► SIM: Autorizado (AuthZ concluído). Executa regra de negócio! │\n└─────────────────────────────────────────────────────────────────────────┘",
-      "language": "text"
-    }
-  },
-  {
-    "id": "https://medium.com/p/c36abf7b3fc0",
-    "title": {
-      "pt": "Python Assíncrono Descomplicado: A Regra de Ouro do Event Loop e por que Migrei para o uv",
-      "en": "Python Assíncrono Descomplicado: A Regra de Ouro do Event Loop e por que Migrei para o uv"
-    },
-    "summary": {
-      "pt": "Photo by Chris Ried on Unsplash\nDo Zero ao Sênior em Python: Entenda de uma vez por todas a diferença entre concorrência e paralelismo, o perigo de congelar o...",
-      "en": "Photo by Chris Ried on Unsplash\nDo Zero ao Sênior em Python: Entenda de uma vez por todas a diferença entre concorrência e paralelismo, o perigo de congelar o..."
-    },
-    "url": "https://medium.com/@ndondadaniel2020/python-ass%C3%ADncrono-descomplicado-a-regra-de-ouro-do-event-loop-e-por-que-migrei-para-o-uv-c36abf7b3fc0?source=rss-b18fa6ebc4a7------2",
-    "publishedAt": "2026-09-13",
-    "readTime": "7 min de leitura",
-    "tags": [
-      "software-architecture",
-      "software-development",
-      "fastapi",
-      "python",
-      "asynchronous"
-    ],
-    "featured": false,
-    "coverImage": "https://cdn-images-1.medium.com/max/1024/0*SglTdI_TGuDU6MHb",
-    "snippet": {
-      "type": "diagram",
-      "filename": "architecture.ascii",
-      "content": "┌─────────────────────────────────────────────────────────────────────────┐\n│               SÍNCRONO (BLOQUEANTE)  VS. ASSÍNCRONO (EVENT LOOP)        │\n├────────────────────────────────────┬────────────────────────────────────┤\n│ Modelo Síncrono (1 Requisição/vez) │ Modelo Assíncrono (Concorrência)   │\n├────────────────────────────────────┼────────────────────────────────────┤\n│ Req A: [ Consulta DB (Espera...) ] │ Req A: Inicia DB ─┐                │\n│ Req B: ⏳ Bloqueada esperando A    │ Req B: Inicia DB ─┼─► Event Loop   │\n│ Req C: ⏳ Bloqueada esperando B    │ Req C: Inicia DB ─┘   processa A,  │\n│                                    │                       B e C juntos!│\n│ 1 Thread = 1 tarefa por vez        │ 1 Thread = Milhares de requisições │\n└────────────────────────────────────┴────────────────────────────────────┘",
       "language": "text"
     }
   }
