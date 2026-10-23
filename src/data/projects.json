@@ -1,23 +1,23 @@
 [
   {
-    "id": "infrawatch",
-    "name": "InfraWatch",
+    "id": "antigravity-bridge",
+    "name": "antigravity-bridge",
     "description": {
-      "pt": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring",
-      "en": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring"
+      "pt": "Bridge and synchronize AI chat conversations between Antigravity IDE, Antigravity 2.0, and agy CLI.",
+      "en": "Bridge and synchronize AI chat conversations between Antigravity IDE, Antigravity 2.0, and agy CLI."
     },
     "category": "backend",
     "featured": false,
     "pinned": false,
     "stars": 0,
     "forks": 0,
-    "language": "Python",
+    "language": "Code",
     "technologies": [
       "Git"
     ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/InfraWatch",
+    "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-bridge",
     "visualType": "terminal",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-23",
     "hasDetails": false
   },
   {
@@ -39,7 +39,7 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-history-restorer",
     "liveUrl": "https://open-vsx.org/extension/NdondaDaniel2020/antigravity-history-restorer",
     "visualType": "terminal",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-23",
     "hasDetails": true,
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/cover.webp"
   },
@@ -68,9 +68,30 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://ndonda.me",
     "visualType": "terminal",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-22",
     "hasDetails": false,
     "coverImage": null
+  },
+  {
+    "id": "infrawatch",
+    "name": "InfraWatch",
+    "description": {
+      "pt": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring",
+      "en": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring"
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Git"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/InfraWatch",
+    "visualType": "terminal",
+    "updatedAt": "2026-10-21",
+    "hasDetails": false
   },
   {
     "id": "webserver",
