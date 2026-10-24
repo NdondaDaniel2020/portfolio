@@ -1,7 +1,7 @@
 [
   {
-    "id": "antigravity-bridge",
-    "name": "antigravity-bridge",
+    "id": "antigravity-platform-bridge",
+    "name": "antigravity-platform-bridge",
     "description": {
       "pt": "Bridge and synchronize AI chat conversations between Antigravity IDE, Antigravity 2.0, and agy CLI.",
       "en": "Bridge and synchronize AI chat conversations between Antigravity IDE, Antigravity 2.0, and agy CLI."
@@ -11,13 +11,14 @@
     "pinned": false,
     "stars": 0,
     "forks": 0,
-    "language": "Code",
+    "language": "TypeScript",
     "technologies": [
-      "Git"
+      "TypeScript"
     ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-bridge",
+    "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-platform-bridge",
+    "liveUrl": "https://open-vsx.org/extension/NdondaDaniel2020/antigravity-bridge",
     "visualType": "terminal",
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-10-24",
     "hasDetails": false
   },
   {
@@ -68,7 +69,7 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://ndonda.me",
     "visualType": "terminal",
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-10-23",
     "hasDetails": false,
     "coverImage": null
   },
@@ -803,6 +804,27 @@
     "updatedAt": "2025-07-04",
     "hasDetails": false,
     "coverImage": null
+  },
+  {
+    "id": "antigravity-bridge",
+    "name": "antigravity-bridge",
+    "description": {
+      "pt": "Bridge and synchronize AI chat conversations between Antigravity IDE, Antigravity 2.0, and agy CLI.",
+      "en": "Bridge and synchronize AI chat conversations between Antigravity IDE, Antigravity 2.0, and agy CLI."
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "Code",
+    "technologies": [
+      "Git"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/antigravity-bridge",
+    "visualType": "terminal",
+    "updatedAt": "2026-10-23",
+    "hasDetails": false
   },
   {
     "id": "bidlive",
