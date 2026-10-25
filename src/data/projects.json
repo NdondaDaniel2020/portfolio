@@ -1,5 +1,55 @@
 [
   {
+    "id": "infrawatch",
+    "name": "InfraWatch",
+    "description": {
+      "pt": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring",
+      "en": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring"
+    },
+    "category": "backend",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "technologies": [
+      "Git"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/InfraWatch",
+    "visualType": "terminal",
+    "updatedAt": "2026-10-25",
+    "hasDetails": false
+  },
+  {
+    "id": "portfolio",
+    "name": "portfolio",
+    "description": {
+      "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
+      "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 2,
+    "forks": 0,
+    "language": "TypeScript",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "GitHub Actions",
+      "Git",
+      "Portfolio"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
+    "liveUrl": "https://ndonda.me",
+    "visualType": "terminal",
+    "updatedAt": "2026-10-24",
+    "hasDetails": false,
+    "coverImage": null
+  },
+  {
     "id": "antigravity-platform-bridge",
     "name": "antigravity-platform-bridge",
     "description": {
@@ -43,56 +93,6 @@
     "updatedAt": "2026-10-23",
     "hasDetails": true,
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/antigravity-history-restorer/main/.portfolio/cover.webp"
-  },
-  {
-    "id": "portfolio",
-    "name": "portfolio",
-    "description": {
-      "pt": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos.",
-      "en": "Portfólio pessoal e showcase de engenharia construído com React, TypeScript e Tailwind CSS. Conta com pipeline de CI/CD para auto-atualização de projetos e artigos."
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 2,
-    "forks": 0,
-    "language": "TypeScript",
-    "technologies": [
-      "TypeScript",
-      "React",
-      "Tailwind CSS",
-      "Vite",
-      "GitHub Actions",
-      "Git",
-      "Portfolio"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
-    "liveUrl": "https://ndonda.me",
-    "visualType": "terminal",
-    "updatedAt": "2026-10-23",
-    "hasDetails": false,
-    "coverImage": null
-  },
-  {
-    "id": "infrawatch",
-    "name": "InfraWatch",
-    "description": {
-      "pt": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring",
-      "en": "Enterprise Observability & NOC Telemetry Platform with Automated GLPI Incident Management, Micro-Probes & Real-time SLA Monitoring"
-    },
-    "category": "backend",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "technologies": [
-      "Git"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/InfraWatch",
-    "visualType": "terminal",
-    "updatedAt": "2026-10-21",
-    "hasDetails": false
   },
   {
     "id": "webserver",
