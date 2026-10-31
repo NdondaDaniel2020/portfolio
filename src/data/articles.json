@@ -1,5 +1,63 @@
 [
   {
+    "id": "https://medium.com/p/e3f578248601",
+    "title": {
+      "pt": "Observabilidade de Produção: Métricas Prometheus (/metrics), Percentis p95/p99 e Logs Estruturados…",
+      "en": "Observabilidade de Produção: Métricas Prometheus (/metrics), Percentis p95/p99 e Logs Estruturados…"
+    },
+    "summary": {
+      "pt": "Observabilidade de Produção: Métricas Prometheus (/metrics), Percentis p95/p99 e Logs Estruturados em JSON para Grafana Loki\n\nSaga: Engenharia de Plataforma em...",
+      "en": "Observabilidade de Produção: Métricas Prometheus (/metrics), Percentis p95/p99 e Logs Estruturados em JSON para Grafana Loki\n\nSaga: Engenharia de Plataforma em..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/observabilidade-de-produ%C3%A7%C3%A3o-m%C3%A9tricas-prometheus-metrics-percentis-p95-p99-e-logs-estruturados-e3f578248601?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-10-20",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "devops",
+      "site-reliability-engineer",
+      "observability",
+      "python",
+      "software-architecture"
+    ],
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*oM6zpG-wax0XOk_bt5AgJA.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌─────────────────────────────────────────────────────────────────────────────┐\n│                       OS 4 SINAIS DE OURO DO GOOGLE SRE                     │\n├────────────────────┬─────────────────────────────┬──────────────────────────┤\n│ Sinal de Ouro      │ Métrica Coletada na API     │ O que Revela em Produção │\n├────────────────────┼─────────────────────────────┼──────────────────────────┤\n│ 1. Latência        │http_request_duration_seconds│ Quanto tempo o usuário   │\n│    (Latency)       │ (Histograma)                │ leva para receber dados  │\n├────────────────────┼─────────────────────────────┼──────────────────────────┤\n│ 2. Tráfego         │ http_requests_total         │ A demanda atual do       │\n│    (Traffic)       │ (Contador)                  │ sistema (RPS / Volume)   │\n├────────────────────┼─────────────────────────────┼──────────────────────────┤\n│ 3. Erros           │ http_requests_total{status} │ Proporção de falhas      │\n│    (Errors)        │ (Filtro status=~\"5..\")      │ (4xx do cliente / 5xx)   │\n├────────────────────┼─────────────────────────────┼──────────────────────────┤",
+      "language": "text"
+    }
+  },
+  {
+    "id": "https://medium.com/p/6046ef8d0e63",
+    "title": {
+      "pt": "Resiliência Operacional &amp; Ciclo de Vida (Lifespan): Graceful Shutdown sem Derrubar Conexões Ativas…",
+      "en": "Resiliência Operacional &amp; Ciclo de Vida (Lifespan): Graceful Shutdown sem Derrubar Conexões Ativas…"
+    },
+    "summary": {
+      "pt": "Resiliência Operacional & Ciclo de Vida (Lifespan): Graceful Shutdown sem Derrubar Conexões Ativas, Redlock e Background Tasks Seguras\n\nSaga: Engenharia de Pla...",
+      "en": "Resiliência Operacional & Ciclo de Vida (Lifespan): Graceful Shutdown sem Derrubar Conexões Ativas, Redlock e Background Tasks Seguras\n\nSaga: Engenharia de Pla..."
+    },
+    "url": "https://medium.com/@ndondadaniel2020/resili%C3%AAncia-operacional-ciclo-de-vida-lifespan-graceful-shutdown-sem-derrubar-conex%C3%B5es-ativas-6046ef8d0e63?source=rss-b18fa6ebc4a7------2",
+    "publishedAt": "2026-10-17",
+    "readTime": "7 min de leitura",
+    "tags": [
+      "devops",
+      "distributed-systems",
+      "fastapi",
+      "software-architecture",
+      "python"
+    ],
+    "featured": false,
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*12dDrnmsddgTQ_QMoppG8Q.jpeg",
+    "snippet": {
+      "type": "diagram",
+      "filename": "architecture.ascii",
+      "content": "┌───────────────────────────────────────────────────┐\n          │          BOOT SEQUENCE (INICIALIZAÇÃO)            │\n          ├───────────────────────────────────────────────────┤\n          │ 1. setup_logging() (Logs Estruturados JSON)       │\n          │ 2. init_redis() (Pools de Conexões Redis)         │\n          │ 3. init_db() (Seeds de Roles e Permissões)        │\n          │ 4. broker_lifespan() (Barramento EventBus/Rabbit) │\n          │ 5. setup_notifications() (Subscrição de Handlers) │\n          │ 6. setup_ws_event_handlers() (WebSockets Cluster) │\n          │ 7. start_token_cleanup_loop() (Task em Background)│\n          └────────────────────────┬──────────────────────────┘\n                                   │\n                                   ▼\n                     [ API PRONTA (RECEBE TRÁFEGO) ]",
+      "language": "text"
+    }
+  },
+  {
     "id": "https://medium.com/p/8ec7a886d897",
     "title": {
       "pt": "Arquitetura Orientada a Eventos (EDA) na Prática: RabbitMQ, Kafka e Políticas de Dead-Letter Queues…",
@@ -228,64 +286,6 @@
       "type": "diagram",
       "filename": "architecture.ascii",
       "content": "┌─────────────────────────────────────────────────────────────────────────────┐\n│                       ARQUITETURA DE DUPLA CAMADA                           │\n├──────────────────────────────┬──────────────────────────────────────────────┤\n│ Camada 1: Por IP             │ Camada 2: Por Conta / E-mail                 │\n├──────────────────────────────┼──────────────────────────────────────────────┤\n│ Chave: 'rate_limit:ip:{ip}'  │ Chave: 'login_failures:{email}'              │\n│ Alvo: Anti-DDoS / Scraping   │ Alvo: Anti-Brute Force / Credential Stuffing │\n│ Ação: HTTP 429 Too Many Req  │ Ação: HTTP 423 Locked (Account Lockout)      │\n│ Efeito: Bloqueia a máquina   │ Efeito: Congela a conta temporariamente      │\n└──────────────────────────────┴──────────────────────────────────────────────┘",
-      "language": "text"
-    }
-  },
-  {
-    "id": "https://medium.com/p/29a101199c9a",
-    "title": {
-      "pt": "Além do JWT Básico: Por que Abandonei o Bcrypt pelo Argon2id e Como Implementei Rotação de Refresh…",
-      "en": "Além do JWT Básico: Por que Abandonei o Bcrypt pelo Argon2id e Como Implementei Rotação de Refresh…"
-    },
-    "summary": {
-      "pt": "Além do JWT Básico: Por que Abandonei o Bcrypt pelo Argon2id e Como Implementei Rotação de Refresh Tokens (RTR)\n\nSaga: Como Estruturei uma API de Autenticação...",
-      "en": "Além do JWT Básico: Por que Abandonei o Bcrypt pelo Argon2id e Como Implementei Rotação de Refresh Tokens (RTR)\n\nSaga: Como Estruturei uma API de Autenticação..."
-    },
-    "url": "https://medium.com/@ndondadaniel2020/al%C3%A9m-do-jwt-b%C3%A1sico-por-que-abandonei-o-bcrypt-pelo-argon2id-e-como-implementei-rota%C3%A7%C3%A3o-de-refresh-29a101199c9a?source=rss-b18fa6ebc4a7------2",
-    "publishedAt": "2026-09-14",
-    "readTime": "7 min de leitura",
-    "tags": [
-      "cybersecurity",
-      "python",
-      "software-engineering",
-      "web-development",
-      "fastapi"
-    ],
-    "featured": false,
-    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*lkCLU6UyFZDg7qO4oS1udg.jpeg",
-    "snippet": {
-      "type": "diagram",
-      "filename": "architecture.ascii",
-      "content": "┌─────────────────────────────────────────────────────────────────────────────┐\n│                          EVOLUÇÃO DOS ALGORITMOS                            │\n├───────────────────┬─────────────────────┬───────────────────────────────────┤\n│ Algoritmo         │ Característica      │ Vetor de Ataque Atual             │\n├───────────────────┼─────────────────────┼───────────────────────────────────┤\n│ MD5 / SHA-256     │ Rápido (Checksum)   │ Bilhões de hashes/seg via GPU/ASIC│\n│ PBKDF2 / Bcrypt   │ CPU-Bound           │ Paralelizável em farms de GPUs    │\n│ Argon2id (PHC)    │ Memory-Hard Hashing │ Inviável para GPUs (exige RAM)    │\n└───────────────────┴─────────────────────┴───────────────────────────────────┘",
-      "language": "text"
-    }
-  },
-  {
-    "id": "https://medium.com/p/4a211e0fb753",
-    "title": {
-      "pt": "Stateless vs. Stateful: Quando Usar Sessões ou Tokens na sua Arquitetura",
-      "en": "Stateless vs. Stateful: Quando Usar Sessões ou Tokens na sua Arquitetura"
-    },
-    "summary": {
-      "pt": "Arquitetura de Software em Camadas: A separação definitiva entre Autenticação (AuthN) e Autorização (AuthZ), Cookies HttpOnly vs. Bearer Tokens e o padrão Rou...",
-      "en": "Arquitetura de Software em Camadas: A separação definitiva entre Autenticação (AuthN) e Autorização (AuthZ), Cookies HttpOnly vs. Bearer Tokens e o padrão Rou..."
-    },
-    "url": "https://medium.com/@ndondadaniel2020/stateless-vs-stateful-quando-usar-sess%C3%B5es-ou-tokens-na-sua-arquitetura-4a211e0fb753?source=rss-b18fa6ebc4a7------2",
-    "publishedAt": "2026-09-14",
-    "readTime": "7 min de leitura",
-    "tags": [
-      "software-architecture",
-      "fastapi",
-      "python",
-      "authentication",
-      "web-development"
-    ],
-    "featured": false,
-    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*9vKVFwCWea7vkvqqZjwRAQ.jpeg",
-    "snippet": {
-      "type": "diagram",
-      "filename": "architecture.ascii",
-      "content": "┌─────────────────────────────────────────────────────────────────────────┐\n│                     FLUXO DE DECISÃO NA REQUISIÇÃO                      │\n├─────────────────────────────────────────────────────────────────────────┤\n│ 1. REQUISIÇÃO HTTP CHEGA:                                               │\n│    └─► Tem token Bearer válido?                                         │\n│        ├─► NÃO: Rejeita imediatamente com HTTP 401 Unauthorized         │\n│        └─► SIM: Identidade confirmada (AuthN concluído). Avança!        │\n│                                                                         │\n│ 2. CONTROLE DE ACESSO:                                                  │\n│    └─► O usuário possui a permissão requerida para a rota?              │\n│        ├─► NÃO: Rejeita com HTTP 403 Forbidden (Sem permissão!)         │\n│        └─► SIM: Autorizado (AuthZ concluído). Executa regra de negócio! │\n└─────────────────────────────────────────────────────────────────────────┘",
       "language": "text"
     }
   }
