@@ -9,7 +9,7 @@
     "category": "backend",
     "featured": false,
     "pinned": false,
-    "stars": 0,
+    "stars": 1,
     "forks": 0,
     "language": "Python",
     "technologies": [
@@ -45,7 +45,7 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/portfolio",
     "liveUrl": "https://ndonda.me",
     "visualType": "terminal",
-    "updatedAt": "2026-10-31",
+    "updatedAt": "2026-11-01",
     "hasDetails": false,
     "coverImage": null
   },
