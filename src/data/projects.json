@@ -321,32 +321,6 @@
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/cub3D/master/.portfolio/cover.webp"
   },
   {
-    "id": "reactexercises",
-    "name": "ReactExercises",
-    "description": {
-      "pt": "exemplos de interfaces com react.",
-      "en": "exemplos de interfaces com react."
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "technologies": [
-      "React",
-      "TypeScript",
-      "Vite",
-      "UI/UX",
-      "Frontend Exercises"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-16",
-    "hasDetails": false,
-    "coverImage": null
-  },
-  {
     "id": "regex",
     "name": "regex",
     "description": {
@@ -368,62 +342,6 @@
     "githubUrl": "https://github.com/NdondaDaniel2020/regex",
     "visualType": "terminal",
     "updatedAt": "2026-09-16",
-    "hasDetails": false,
-    "coverImage": null
-  },
-  {
-    "id": "fullstackcrudwebapplication",
-    "name": "FullStackCRUDWebApplication",
-    "description": {
-      "pt": "Aplicação web Full Stack completa com React, Vite, Node.js, Express, Prisma ORM e MongoDB, com operações CRUD completas e API RESTful.",
-      "en": "Full Stack web application built with React, Vite, Node.js, Express, Prisma ORM, and MongoDB, featuring complete CRUD operations and RESTful API."
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "technologies": [
-      "React",
-      "Node.js",
-      "Express",
-      "Prisma",
-      "MongoDB",
-      "Vite",
-      "REST API",
-      "Full Stack"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/FullStackCRUDWebApplication",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": false,
-    "coverImage": null
-  },
-  {
-    "id": "sidebarmenureact",
-    "name": "sidebarMenuReact",
-    "description": {
-      "pt": "Componente de menu lateral responsivo construído em React com Vite, animações fluidas em CSS3 e suporte a submenus interativos.",
-      "en": "Responsive sidebar menu component built with React and Vite, fluid CSS3 animations, and interactive nested submenus."
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "technologies": [
-      "React",
-      "Vite",
-      "CSS3",
-      "Responsive Design",
-      "UI Components",
-      "Frontend"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/sidebarMenuReact",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
     "hasDetails": false,
     "coverImage": null
   },
@@ -525,33 +443,6 @@
       "UI Templates"
     ],
     "githubUrl": "https://github.com/NdondaDaniel2020/MainSplashScreen",
-    "visualType": "terminal",
-    "updatedAt": "2026-09-14",
-    "hasDetails": false,
-    "coverImage": null
-  },
-  {
-    "id": "sidebarmenu",
-    "name": "SidebarMenu",
-    "description": {
-      "pt": "Este projeto  é um exemplo de um menu lateral web",
-      "en": "Este projeto  é um exemplo de um menu lateral web"
-    },
-    "category": "web",
-    "featured": false,
-    "pinned": false,
-    "stars": 0,
-    "forks": 0,
-    "language": "HTML",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Sidebar",
-      "Responsive Design",
-      "Accordion Menu"
-    ],
-    "githubUrl": "https://github.com/NdondaDaniel2020/SidebarMenu",
     "visualType": "terminal",
     "updatedAt": "2026-09-14",
     "hasDetails": false,
@@ -778,6 +669,115 @@
     "updatedAt": "2026-09-14",
     "hasDetails": true,
     "coverImage": "https://raw.githubusercontent.com/NdondaDaniel2020/Inception2.0/master/.portfolio/cover.webp"
+  },
+  {
+    "id": "reactexercises",
+    "name": "ReactExercises",
+    "description": {
+      "pt": "exemplos de interfaces com react.",
+      "en": "exemplos de interfaces com react."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "UI/UX",
+      "Frontend Exercises"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/ReactExercises",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-16",
+    "hasDetails": false,
+    "coverImage": null
+  },
+  {
+    "id": "fullstackcrudwebapplication",
+    "name": "FullStackCRUDWebApplication",
+    "description": {
+      "pt": "Aplicação web Full Stack completa com React, Vite, Node.js, Express, Prisma ORM e MongoDB, com operações CRUD completas e API RESTful.",
+      "en": "Full Stack web application built with React, Vite, Node.js, Express, Prisma ORM, and MongoDB, featuring complete CRUD operations and RESTful API."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "MongoDB",
+      "Vite",
+      "REST API",
+      "Full Stack"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/FullStackCRUDWebApplication",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-14",
+    "hasDetails": false,
+    "coverImage": null
+  },
+  {
+    "id": "sidebarmenureact",
+    "name": "sidebarMenuReact",
+    "description": {
+      "pt": "Componente de menu lateral responsivo construído em React com Vite, animações fluidas em CSS3 e suporte a submenus interativos.",
+      "en": "Responsive sidebar menu component built with React and Vite, fluid CSS3 animations, and interactive nested submenus."
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "technologies": [
+      "React",
+      "Vite",
+      "CSS3",
+      "Responsive Design",
+      "UI Components",
+      "Frontend"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/sidebarMenuReact",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-14",
+    "hasDetails": false,
+    "coverImage": null
+  },
+  {
+    "id": "sidebarmenu",
+    "name": "SidebarMenu",
+    "description": {
+      "pt": "Este projeto  é um exemplo de um menu lateral web",
+      "en": "Este projeto  é um exemplo de um menu lateral web"
+    },
+    "category": "web",
+    "featured": false,
+    "pinned": false,
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Sidebar",
+      "Responsive Design",
+      "Accordion Menu"
+    ],
+    "githubUrl": "https://github.com/NdondaDaniel2020/SidebarMenu",
+    "visualType": "terminal",
+    "updatedAt": "2026-09-14",
+    "hasDetails": false,
+    "coverImage": null
   },
   {
     "id": "cpp",
